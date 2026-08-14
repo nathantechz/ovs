@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVS - Optometry Education Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        // Replace with your GA ID when ready
+        // gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/" class="logo">
+                    <i class="fas fa-eye"></i> OVS
+                </a>
+                <span class="tagline">Optometry Learning Hub</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link active" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="courses">Courses</a>
+                <a href="#" class="nav-link" data-page="resources">Resources</a>
+                <a href="#" class="nav-link" data-page="about">About</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Home Page -->
+            <div id="home" class="page active">
+                <section class="hero">
+                    <h1>Welcome to OVS</h1>
+                    <p>The World's Most Comprehensive Optometry Education Platform</p>
+                    <p class="subtitle">Lecture notes, syllabuses, and learning materials from top optometry programs worldwide</p>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search courses, topics, or materials...">
+                        <button id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                </section>
+
+                <section class="featured-courses">
+                    <h2>Featured Topics</h2>
+                    <div class="course-grid" id="featuredCourses">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </section>
+
+                <section class="stats">
+                    <div class="stat-card">
+                        <h3>150+</h3>
+                        <p>Lecture Notes</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>25+</h3>
+                        <p>Universities</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>10+</h3>
+                        <p>Countries</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>24/7</h3>
+                        <p>Access Anytime</p>
+                    </div>
+                </section>
+
+                <section class="features">
+                    <h2>Why Choose OVS?</h2>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-book"></i>
+                            <h3>World-Class Content</h3>
+                            <p>Curated from top optometry schools globally with simple, clear explanations</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-globe"></i>
+                            <h3>Global Perspective</h3>
+                            <p>Syllabuses and materials from different countries and educational systems</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-download"></i>
+                            <h3>Easy Access</h3>
+                            <p>Download lecture notes, PDFs, and study materials instantly</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile Friendly</h3>
+                            <p>Study on any device - responsive design for seamless learning</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Courses Page -->
+            <div id="courses" class="page">
+                <div class="page-header">
+                    <h1>Explore Courses</h1>
+                    <p>Browse our comprehensive collection of optometry materials</p>
+                </div>
+
+                <div class="courses-layout">
+                    <aside class="sidebar">
+                        <div class="filter-group">
+                            <h3>Filter by Category</h3>
+                            <div id="categoryFilters">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h3>Filter by Level</h3>
+                            <label><input type="checkbox" value="undergraduate"> Undergraduate</label>
+                            <label><input type="checkbox" value="graduate"> Graduate</label>
+                            <label><input type="checkbox" value="clinical"> Clinical Practice</label>
+                        </div>
+                        <div class="filter-group">
+                            <h3>Filter by Country</h3>
+                            <select id="countryFilter">
+                                <option value="">All Countries</option>
+                                <option value="usa">USA</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
+                                <option value="india">India</option>
+                                <option value="others">Other Countries</option>
+                            </select>
+                        </div>
+                    </aside>
+
+                    <main class="courses-main">
+                        <div class="courses-grid" id="coursesGrid">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+            <!-- Resources Page -->
+            <div id="resources" class="page">
+                <div class="page-header">
+                    <h1>Resources & Syllabuses</h1>
+                    <p>University syllabuses and curriculum guides from around the world</p>
+                </div>
+
+                <div class="resources-grid" id="resourcesGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- About Page -->
+            <div id="about" class="page">
+                <div class="page-header">
+                    <h1>About OVS</h1>
+                    <p>Our Mission & Vision</p>
+                </div>
+
+                <section class="about-content">
+                    <div class="about-card">
+                        <h2>Our Mission</h2>
+                        <p>To democratize optometry education by providing accessible, world-class learning materials to students and faculty across the globe. We believe quality education should be free and available to everyone, regardless of geographic location or economic status.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h2>What We Offer</h2>
+                        <ul>
+                            <li><strong>Lecture Notes:</strong> Comprehensive, well-explained optometry concepts from leading universities</li>
+                            <li><strong>Syllabuses:</strong> Curriculum guidelines from optometry programs worldwide</li>
+                            <li><strong>Study Materials:</strong> Downloadable resources, PDFs, and reference materials</li>
+                            <li><strong>Global Perspective:</strong> Content from multiple countries and educational systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card">
+                        <h2>Our Content</h2>
+                        <p>All materials are sourced from:</p>
+                        <ul>
+                            <li>Peer-reviewed academic publications</li>
+                            <li>Optometry school websites and open educational resources</li>
+                            <li>Contributions from faculty and experienced practitioners</li>
+                            <li>Leading optometry textbooks (with proper attribution)</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card">
+                        <h2>Future Plans</h2>
+                        <ul>
+                            <li>Interactive case studies and clinical scenarios</li>
+                            <li>Video lectures and tutorials</li>
+                            <li>Practice questions and quizzes</li>
+                            <li>AI-powered study recommendations</li>
+                            <li>Community forums for peer learning</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card">
+                        <h2>Contact & Contributions</h2>
+                        <p>If you're an optometry educator, student, or professional interested in contributing materials or suggesting improvements, please reach out to us.</p>
+                        <p><strong>Email:</strong> info@ovs-education.org</p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/nathantechz/ovs" target="_blank">github.com/nathantechz/ovs</a></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OVS Platform</h4>
+                    <ul>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Optometry Virtual Study Platform. All rights reserved. | Dedicated to advancing optometry education worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

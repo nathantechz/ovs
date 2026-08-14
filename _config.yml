@@ -1,0 +1,36 @@
+title: OVS - Optometry Virtual Study Platform
+description: World-class optometry education resources for students and faculty worldwide
+url: "https://nathantechz.github.io/ovs"
+baseurl: "/ovs"
+author: Nathan
+email: mn.nathantech@gmail.com
+
+# Build settings
+theme: null
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  courses:
+    output: false
+  resources:
+    output: false
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - .gitignore
+
+# Repository
+repository: nathantechz/ovs
+
+# Social media
+twitter_username: null
+github_username: nathantechz
+
+# Analytics
+google_analytics: null
