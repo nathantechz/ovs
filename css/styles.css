@@ -436,13 +436,13 @@ body {
 }
 
 .courses-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
+    width: 100%;
 }
 
 .courses-grid {
-    display: contents;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
 }
 
 /* Resources Grid */

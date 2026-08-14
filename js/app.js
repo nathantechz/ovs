@@ -1,17 +1,12 @@
 // Initialize app on page load
 document.addEventListener('DOMContentLoaded', () => {
-    initializeApp();
-    setupEventListeners();
-    renderHomePage();
-});
-
-// Initialize app
-function initializeApp() {
     setupPageNavigation();
+    setupEventListeners();
     renderFeaturedCourses();
-    renderCategories();
+    renderCategoriesFilter();
     renderResources();
-}
+    renderCourses();
+});
 
 // Setup navigation between pages
 function setupPageNavigation() {
@@ -167,7 +162,7 @@ function renderCourses(filter = {}) {
 }
 
 // Render category filters
-function renderCategories() {
+function renderCategoriesFilter() {
     const container = document.getElementById('categoryFilters');
     if (!container) return;
 
@@ -222,9 +217,11 @@ function setupFilterListeners() {
     }
 
     // Level filters
-    const levelFilters = document.querySelectorAll('input[type="checkbox"][value="undergraduate"], input[type="checkbox"][value="graduate"], input[type="checkbox"][value="clinical"]');
-    levelFilters.forEach(filter => {
-        filter.addEventListener('change', applyFilters);
+    const levelCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+    levelCheckboxes.forEach(checkbox => {
+        if (checkbox.value === 'undergraduate' || checkbox.value === 'graduate' || checkbox.value === 'clinical') {
+            checkbox.addEventListener('change', applyFilters);
+        }
     });
 }
 
@@ -232,7 +229,9 @@ function setupFilterListeners() {
 function applyFilters() {
     const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(c => c.value);
     const selectedCountry = document.getElementById('countryFilter')?.value || '';
-    const selectedLevels = Array.from(document.querySelectorAll('input[type="checkbox"][value="undergraduate"]:checked, input[type="checkbox"][value="graduate"]:checked, input[type="checkbox"][value="clinical"]:checked')).map(c => c.value);
+    const selectedLevels = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).filter(c =>
+        c.value === 'undergraduate' || c.value === 'graduate' || c.value === 'clinical'
+    ).map(c => c.value);
 
     let filter = {};
 
@@ -292,11 +291,6 @@ function navigateToCourse(courseId) {
     }
 }
 
-// Render home page
-function renderHomePage() {
-    // This is called on initial load
-}
-
 // Helper functions
 function getLevelName(levelId) {
     const level = levels.find(l => l.id === levelId);
@@ -326,13 +320,3 @@ function trackSearch(searchTerm) {
         });
     }
 }
-
-// Re-setup filters when courses page is visited
-const observer = new MutationObserver(() => {
-    const coursesPage = document.getElementById('courses');
-    if (coursesPage && coursesPage.classList.contains('active')) {
-        setupFilterListeners();
-    }
-});
-
-observer.observe(document.body, { subtree: true, attributes: true, attributeFilter: ['class'] });
