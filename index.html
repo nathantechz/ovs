@@ -29,6 +29,7 @@
             <div class="nav-menu" id="navMenu">
                 <a href="#" class="nav-link active" data-page="home">Home</a>
                 <a href="#" class="nav-link" data-page="courses">Courses</a>
+                <a href="#" class="nav-link" data-page="textbooks">📚 Textbooks</a>
                 <a href="#" class="nav-link" data-page="resources">Resources</a>
                 <a href="#" class="nav-link" data-page="about">About</a>
             </div>
@@ -151,6 +152,62 @@
                 </div>
             </div>
 
+            <!-- Textbooks Page -->
+            <div id="textbooks" class="page">
+                <div class="page-header">
+                    <h1>📚 Optometry Textbooks Library</h1>
+                    <p>123+ Professional Reference Books (22 Categories)</p>
+                </div>
+
+                <section class="textbooks-intro">
+                    <div class="intro-card">
+                        <h3>Comprehensive Reference Library</h3>
+                        <p>Access our curated collection of 123+ professional optometry textbooks covering all aspects of vision science, clinical practice, and eye health.</p>
+                    </div>
+                </section>
+
+                <section class="textbook-search">
+                    <input type="text" id="textbook-search-input" placeholder="Search textbooks by title, author, or subject..." class="search-input">
+                    <button id="textbook-search-btn" class="btn-search"><i class="fas fa-search"></i> Search</button>
+                </section>
+
+                <section class="textbook-stats">
+                    <div class="stat-box">
+                        <h4>123+</h4>
+                        <p>Textbooks</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>22</h4>
+                        <p>Subject Categories</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>42</h4>
+                        <p>Courses Linked</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>All Levels</h4>
+                        <p>Beginner to Advanced</p>
+                    </div>
+                </section>
+
+                <div class="textbooks-layout">
+                    <aside class="textbooks-sidebar">
+                        <div class="filter-group">
+                            <h3>Browse by Subject</h3>
+                            <div id="textbook-categories">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </aside>
+
+                    <main class="textbooks-main">
+                        <div id="textbooks-grid" class="textbooks-grid">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </main>
+                </div>
+            </div>
+
             <!-- Resources Page -->
             <div id="resources" class="page">
                 <div class="page-header">
@@ -256,6 +313,11 @@
     </footer>
 
     <script src="js/data.js"></script>
+    <script src="js/materials-data.js"></script>
+    <script src="js/curriculum-standards.js"></script>
+    <script src="js/universities-global.js"></script>
+    <script src="js/textbooks-index.js"></script>
+    <script src="js/faculty-dashboard.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

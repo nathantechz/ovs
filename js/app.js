@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCategoriesFilter();
     renderResources();
     renderCourses();
+    renderTextbookCategories();
+    renderAllTextbooks();
 });
 
 // Setup navigation between pages
@@ -320,3 +322,148 @@ function trackSearch(searchTerm) {
         });
     }
 }
+
+// Render textbook categories
+function renderTextbookCategories() {
+    const container = document.getElementById('textbook-categories');
+    if (!container || typeof textbooksIndex === 'undefined') return;
+
+    const categories = getAllCategories();
+
+    container.innerHTML = categories.map(cat => `
+        <label class="textbook-category-filter">
+            <input type="checkbox" value="${cat.id}" class="textbook-category-input">
+            <span>${cat.category}</span>
+            ${cat.bookCount ? `<small>(${cat.bookCount})</small>` : ''}
+        </label>
+    `).join('');
+
+    // Setup listeners
+    document.querySelectorAll('.textbook-category-input').forEach(input => {
+        input.addEventListener('change', filterTextbooks);
+    });
+}
+
+// Render all textbooks
+function renderAllTextbooks(filter = null) {
+    const container = document.getElementById('textbooks-grid');
+    if (!container || typeof textbooksIndex === 'undefined') return;
+
+    const categories = getAllCategories();
+    let html = '';
+
+    categories.forEach(category => {
+        if (filter && !filter.includes(category.id)) return;
+
+        html += `
+            <div class="textbook-card">
+                <div class="textbook-card-header">
+                    <div class="textbook-card-title">${category.category}</div>
+                </div>
+                <div class="textbook-card-body">
+                    <div class="textbook-card-category">📚 Reference Collection</div>
+                    ${category.bookCount ? `
+                        <div class="textbook-card-info">
+                            <strong>${category.bookCount} Books Available</strong>
+                            Size: ${category.size}
+                        </div>
+                    ` : ''}
+                    <div class="textbook-card-info">
+                        ${category.description || 'Comprehensive reference materials'}
+                    </div>
+                    ${category.highlights ? `
+                        <div class="textbook-card-highlights">
+                            <strong>Topics Covered:</strong>
+                            <ul>
+                                ${category.highlights.slice(0, 3).map(h => `<li>${h}</li>`).join('')}
+                                ${category.highlights.length > 3 ? `<li>+ ${category.highlights.length - 3} more</li>` : ''}
+                            </ul>
+                        </div>
+                    ` : ''}
+                </div>
+                <div class="textbook-card-footer">
+                    <button class="btn-textbook-info" onclick="viewTextbookCategory('${category.id}')">
+                        View All Books
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html || '<p class="no-textbooks">No textbooks found matching your criteria.</p>';
+}
+
+// Filter textbooks
+function filterTextbooks() {
+    const selected = Array.from(document.querySelectorAll('.textbook-category-input:checked')).map(c => c.value);
+    renderAllTextbooks(selected.length > 0 ? selected : null);
+}
+
+// View textbook category
+function viewTextbookCategory(categoryId) {
+    const category = getTextbooksByCategory(categoryId);
+    if (category) {
+        alert(`${category.category}\n\n${category.description || 'Comprehensive reference materials'}\n\nBooks: ${category.bookCount || 'Multiple'}`);
+    }
+}
+
+// Search textbooks
+function searchTextbooksFunction() {
+    const input = document.getElementById('textbook-search-input');
+    if (!input) return;
+
+    const query = input.value.trim();
+    if (!query) {
+        renderAllTextbooks();
+        return;
+    }
+
+    if (typeof searchTextbooks !== 'undefined') {
+        const results = searchTextbooks(query);
+        const container = document.getElementById('textbooks-grid');
+
+        if (results.length === 0) {
+            container.innerHTML = '<p class="no-textbooks">No textbooks found matching your search.</p>';
+            return;
+        }
+
+        let html = '';
+        const processedCategories = new Set();
+
+        results.forEach(result => {
+            if (result.type === 'category' && !processedCategories.has(result.id)) {
+                processedCategories.add(result.id);
+                html += `
+                    <div class="textbook-card">
+                        <div class="textbook-card-header">
+                            <div class="textbook-card-title">${result.category}</div>
+                        </div>
+                        <div class="textbook-card-body">
+                            <div class="textbook-card-category">Match: Category</div>
+                            <div class="textbook-card-info">${result.description || ''}</div>
+                        </div>
+                    </div>
+                `;
+            }
+        });
+
+        container.innerHTML = html;
+    }
+}
+
+// Setup textbook search
+document.addEventListener('DOMContentLoaded', () => {
+    const searchBtn = document.getElementById('textbook-search-btn');
+    const searchInput = document.getElementById('textbook-search-input');
+
+    if (searchBtn) {
+        searchBtn.addEventListener('click', searchTextbooksFunction);
+    }
+    if (searchInput) {
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchTextbooksFunction();
+            }
+        });
+    }
+});
