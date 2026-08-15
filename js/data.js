@@ -72,6 +72,18 @@ const coursesData = [
         materials: 20,
         degree: "Bachelor of Optometry"
     },
+    {
+        id: 43,
+        title: "Physical Optics",
+        category: "refraction",
+        level: "undergraduate",
+        country: "usa",
+        description: "Wave nature of light, interference, diffraction, and polarization phenomena",
+        icon: "fa-lightbulb",
+        lectures: 14,
+        materials: 28,
+        degree: "Bachelor of Optometry"
+    },
 
     // Anatomy & Physiology Courses
     {
