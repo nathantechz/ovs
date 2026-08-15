@@ -204,6 +204,7 @@ body {
     max-width: 500px;
     margin: 30px auto 0;
     gap: 10px;
+    position: relative;
 }
 
 .search-bar input {
@@ -234,6 +235,103 @@ body {
 
 .search-bar button:hover {
     background-color: var(--primary-dark);
+}
+
+/* Search suggestions dropdown */
+.search-suggestions {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 60;
+    background-color: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    max-height: 340px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.search-suggestions.is-open {
+    display: block;
+    animation: fadeIn 0.15s ease-out;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.15s ease;
+}
+
+.suggestion:last-child {
+    border-bottom: none;
+}
+
+.suggestion:hover,
+.suggestion.is-active {
+    background-color: var(--primary-light);
+}
+
+.suggestion > i {
+    color: var(--primary-color);
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.suggestion-text {
+    min-width: 0;
+}
+
+.suggestion-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.suggestion-meta {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.suggestion-tag {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background-color: #e8f8f0;
+    color: var(--secondary-color);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.suggestion-empty {
+    padding: 16px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Cards that navigate somewhere */
+.is-clickable {
+    cursor: pointer;
+}
+
+.is-clickable:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
 }
 
 /* Featured Courses */
@@ -1325,6 +1423,15 @@ body {
 .btn-download-small:hover {
     background-color: #009d45;
     transform: translateY(-2px);
+}
+
+/* Study notes open a page rather than downloading a file */
+.btn-download-small.btn-read {
+    background-color: var(--primary-color);
+}
+
+.btn-download-small.btn-read:hover {
+    background-color: var(--primary-dark);
 }
 
 .btn-download {

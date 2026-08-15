@@ -43,6 +43,10 @@ const availableMaterials = {
 
     "Physical Optics": {
         folder: "materials/Physical Optics",
+        studyNotes: [
+            { title: "Topic 1 — The Nature of Light", url: "notes/physical-optics-01-nature-of-light.html" },
+            { title: "Topic 2 — Sources of Light, Radiometry & Photometry", url: "notes/physical-optics-02-sources-and-photometry.html" }
+        ],
         lectures: [
             { week: 1, title: "The Nature of Light", file: "Lecture PPT/Week 1 The_Nature_of_Light.pdf" },
             { week: 2, title: "Light Wave Anatomy", file: "Lecture PPT/Week 2 Light_Wave_Anatomy.pdf" },
@@ -102,6 +106,25 @@ function renderMaterialsForDownload(courseName) {
     let html = `
         <div class="materials-section">
             <h3>${courseName}</h3>
+
+            ${course.studyNotes ? `
+                <div class="material-group">
+                    <h4>Study Notes (${course.studyNotes.length})</h4>
+                    <div class="material-list">
+                        ${course.studyNotes.map(note => `
+                            <div class="material-item">
+                                <span class="material-info">
+                                    <i class="fas fa-file-lines"></i>
+                                    ${note.title}
+                                </span>
+                                <a href="${note.url}" class="btn-download-small btn-read" target="_blank" rel="noopener">
+                                    <i class="fas fa-book-open"></i> Read notes
+                                </a>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            ` : ''}
 
             ${course.lectures ? `
                 <div class="material-group">
@@ -202,4 +225,22 @@ function renderMaterialsForDownload(courseName) {
 // Get all available courses with materials
 function getAvailableCourses() {
     return Object.keys(availableMaterials);
+}
+
+// Course titles in data.js do not always match the folder names used above, so
+// map the ones that differ. Without this the materials exist but never surface
+// on the course detail page.
+const materialsAliases = {
+    "Anatomy & Physiology of the Eye": "Ocular Anatomy & Physiology",
+    "Binocular Vision Physiology": "Strabismus"
+};
+
+// Resolve a course title to its key in availableMaterials, or null if it has none.
+function resolveMaterialsKey(courseTitle) {
+    if (availableMaterials[courseTitle]) return courseTitle;
+
+    const alias = materialsAliases[courseTitle];
+    if (alias && availableMaterials[alias]) return alias;
+
+    return null;
 }

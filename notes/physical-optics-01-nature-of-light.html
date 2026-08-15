@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Nature of Light — Physical Optics Notes</title>
+<link rel="stylesheet" href="notes.css">
+</head>
+<body>
+
+<nav class="note-nav">
+    <div class="note-nav-inner">
+        <a href="../index.html">&larr; Optometry Learning Hub</a>
+        <span class="course-tag">Physical Optics &middot; Topic 1</span>
+    </div>
+</nav>
+
+<main>
+
+<header class="note-header">
+    <div class="note-eyebrow">Physical Optics</div>
+    <h1>The Nature of Light</h1>
+    <p class="note-summary">
+        Light as an electromagnetic oscillation — the wave equation, simple harmonic
+        motion, the transverse nature of the oscillation, and the four quantities that
+        describe any wave: frequency, wavelength, amplitude and phase.
+    </p>
+</header>
+
+<h2>1. Light as an electromagnetic oscillation</h2>
+
+<p>
+    Light is not a substance travelling through space. It is a <strong>disturbance in the
+    electromagnetic field</strong> — a pattern of oscillating electric and magnetic fields
+    that regenerate each other as they move.
+</p>
+
+<p>Maxwell's insight was that the two fields sustain one another:</p>
+
+<ul>
+    <li>A <strong>changing electric field</strong> creates a magnetic field.</li>
+    <li>A <strong>changing magnetic field</strong> creates an electric field.</li>
+</ul>
+
+<p>
+    Once started, neither field needs a medium to keep going — each one continuously
+    regenerates the other. This is why light crosses the vacuum of space, and why the
+    old idea of a "luminiferous aether" turned out to be unnecessary.
+</p>
+
+<p>In a light wave the two fields are locked in a fixed geometry:</p>
+
+<ul>
+    <li>The electric field <strong>E</strong> and magnetic field <strong>B</strong> are
+        <strong>perpendicular to each other</strong>.</li>
+    <li>Both are <strong>perpendicular to the direction of travel</strong>.</li>
+    <li>They oscillate <strong>in phase</strong> — peaking and crossing zero together.</li>
+</ul>
+
+<figure>
+<svg viewBox="0 0 620 220" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Electric field oscillating vertically and magnetic field oscillating horizontally, both perpendicular to the direction of propagation">
+    <line x1="40" y1="130" x2="580" y2="130" stroke="#6b7280" stroke-width="1.5"/>
+    <polygon points="580,130 570,126 570,134" fill="#6b7280"/>
+    <text x="556" y="150" font-size="13" fill="#6b7280">z (travel)</text>
+
+    <path d="M40 130 Q 85 55 130 130 T 220 130 T 310 130 T 400 130 T 490 130"
+          fill="none" stroke="#0066cc" stroke-width="2.5"/>
+    <text x="48" y="52" font-size="13" fill="#0066cc" font-weight="bold">E (electric)</text>
+
+    <path d="M40 130 Q 85 172 130 130 T 220 130 T 310 130 T 400 130 T 490 130"
+          fill="none" stroke="#00a854" stroke-width="2.5" stroke-dasharray="5 3"/>
+    <text x="48" y="200" font-size="13" fill="#00a854" font-weight="bold">B (magnetic)</text>
+
+    <line x1="130" y1="130" x2="130" y2="60" stroke="#0066cc" stroke-width="1" opacity="0.4"/>
+    <line x1="130" y1="130" x2="130" y2="168" stroke="#00a854" stroke-width="1" opacity="0.4"/>
+</svg>
+<figcaption>
+    E and B oscillate at right angles to each other and to the direction of travel.
+    By convention the <strong>plane of polarisation</strong> is described by the E field.
+</figcaption>
+</figure>
+
+<p>
+    In vacuum both fields travel at <code>c = 3.00 &times; 10<sup>8</sup> m/s</code>. Maxwell
+    derived this speed from purely electrical and magnetic constants, and it matched the
+    measured speed of light — which is how we know light <em>is</em> an electromagnetic wave.
+</p>
+
+<h2>2. The wave equation</h2>
+
+<p>
+    Any disturbance that propagates without changing shape obeys the wave equation. For the
+    electric field of light travelling along <em>z</em>:
+</p>
+
+<span class="eq">
+    &part;²E/&part;z² = (1/v²) &middot; &part;²E/&part;t²
+    <span class="where">where v is the speed of the wave in the medium</span>
+</span>
+
+<p>
+    You will rarely solve this in clinical practice, but its <strong>solution</strong> is the
+    equation you use constantly. For a wave of a single frequency:
+</p>
+
+<span class="eq">
+    E(z, t) = E<sub>0</sub> sin(kz &minus; &omega;t + &phi;)
+    <span class="where">
+        E<sub>0</sub> = amplitude &middot; k = 2&pi;/&lambda; (wave number) &middot;
+        &omega; = 2&pi;f (angular frequency) &middot; &phi; = initial phase
+    </span>
+</span>
+
+<p>
+    Read it this way: <strong>the field at any point is a sine wave in time, and at any
+    instant it is a sine wave in space.</strong> That single sentence is the whole content
+    of the equation.
+</p>
+
+<h2>3. Sinusoidal and simple harmonic oscillation</h2>
+
+<p>
+    Why a <em>sine</em> wave specifically? Because light is generated by charges undergoing
+    <strong>simple harmonic motion (SHM)</strong>, and SHM always produces a sinusoid.
+</p>
+
+<p>A system performs SHM when the restoring force is proportional to the displacement:</p>
+
+<span class="eq">
+    F = &minus;kx &nbsp;&rarr;&nbsp; x(t) = A sin(&omega;t + &phi;)
+    <span class="where">the minus sign means the force always pulls back toward equilibrium</span>
+</span>
+
+<p>
+    An electron displaced within an atom feels exactly this kind of restoring force. It
+    oscillates sinusoidally, and an accelerating charge radiates — so the emitted field is
+    also sinusoidal. The sine wave is not an approximation chosen for convenience; it is
+    what the physics produces.
+</p>
+
+<p>
+    Real light sources emit in short bursts called <strong>wave trains</strong> (typically
+    ~10<sup>-8</sup> s from a thermal source). A perfectly infinite sine wave is an
+    idealisation — and the finite length of real wave trains is precisely what limits
+    <strong>coherence</strong>, which you will meet in the interference topics.
+</p>
+
+<h2>4. The transverse nature of the oscillation</h2>
+
+<p>
+    Light is a <strong>transverse</strong> wave: the oscillation is perpendicular to the
+    direction of travel. Sound, by contrast, is <strong>longitudinal</strong> — air molecules
+    move back and forth along the direction of travel.
+</p>
+
+<div class="table-wrap">
+<table>
+    <thead>
+        <tr><th>Property</th><th>Transverse (light)</th><th>Longitudinal (sound)</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Oscillation direction</td><td>Perpendicular to travel</td><td>Along travel</td></tr>
+        <tr><td>Can be polarised?</td><td><strong>Yes</strong></td><td>No</td></tr>
+        <tr><td>Needs a medium?</td><td>No</td><td>Yes</td></tr>
+    </tbody>
+</table>
+</div>
+
+<div class="callout">
+    <span class="callout-title">Why this matters</span>
+    <strong>Polarisation is the proof of transversality.</strong> A longitudinal wave has no
+    "sideways" direction to distinguish, so it cannot be polarised. The fact that light
+    <em>can</em> be polarised — and that Polaroid filters work at all — is direct experimental
+    evidence that its oscillation is transverse.
+</div>
+
+<div class="callout clinical">
+    <span class="callout-title">Clinical link</span>
+    Every polarising tool in the clinic depends on this: polarised sunglasses cutting
+    horizontally-polarised glare from roads and water, the polarised strips in stereoacuity
+    tests (Titmus, Randot), and polarised duochrome and binocular balance techniques. All of
+    them exist only because light oscillates transversely.
+</div>
+
+<h2>5. Frequency, wavelength, amplitude and phase</h2>
+
+<h3>Frequency (f)</h3>
+<p>
+    Oscillations per second, in hertz (Hz). Frequency is set by the source and
+    <strong>never changes</strong> when light enters a new medium. Visible light spans roughly
+    4.3 &times; 10<sup>14</sup> Hz (red) to 7.5 &times; 10<sup>14</sup> Hz (violet).
+    <strong>Colour follows frequency, not wavelength.</strong>
+</p>
+
+<h3>Wavelength (&lambda;)</h3>
+<p>
+    The distance between successive corresponding points, in nanometres for visible light
+    (~380–780 nm). Wavelength <em>does</em> change with medium:
+</p>
+
+<span class="eq">
+    v = f&lambda; &nbsp;&nbsp;and&nbsp;&nbsp; n = c/v &nbsp;&rarr;&nbsp; &lambda;<sub>medium</sub> = &lambda;<sub>vacuum</sub> / n
+    <span class="where">f stays fixed, v drops, so &lambda; must shorten</span>
+</span>
+
+<p>
+    In the eye this is not a footnote. With the vitreous at n &asymp; 1.336, a 555 nm ray
+    travels at about 415 nm inside the eye.
+</p>
+
+<h3>Amplitude (A)</h3>
+<p>
+    The maximum displacement of the field. What the eye perceives as brightness is
+    <strong>intensity</strong>, and intensity goes as the <em>square</em> of amplitude:
+</p>
+
+<span class="eq">
+    I &prop; A²
+    <span class="where">double the amplitude &rarr; four times the intensity</span>
+</span>
+
+<h3>Phase (&phi;)</h3>
+<p>
+    Where a wave sits in its cycle, in degrees or radians. Phase has no meaning for a single
+    wave in isolation — it matters only when two waves are compared:
+</p>
+
+<ul>
+    <li><strong>In phase</strong> (0°, 360°): crests align &rarr; constructive interference.</li>
+    <li><strong>Antiphase</strong> (180°): crest meets trough &rarr; destructive interference.</li>
+</ul>
+
+<div class="callout clinical">
+    <span class="callout-title">Clinical link</span>
+    Controlled phase difference is what makes <strong>anti-reflection coatings</strong> work.
+    A coating one quarter-wavelength thick returns the second reflection 180° out of phase
+    with the first, so the two cancel and the transmitted light increases — the reason coated
+    spectacle lenses look clearer and photograph without ghost reflections.
+</div>
+
+<h2>6. Relationships worth memorising</h2>
+
+<div class="table-wrap">
+<table>
+    <thead>
+        <tr><th>Relationship</th><th>Equation</th><th>Note</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Wave speed</td><td>v = f&lambda;</td><td>c = f&lambda; in vacuum</td></tr>
+        <tr><td>Refractive index</td><td>n = c/v</td><td>always &ge; 1</td></tr>
+        <tr><td>Wavelength in medium</td><td>&lambda;<sub>n</sub> = &lambda;<sub>0</sub>/n</td><td>f unchanged</td></tr>
+        <tr><td>Angular frequency</td><td>&omega; = 2&pi;f</td><td>radians per second</td></tr>
+        <tr><td>Wave number</td><td>k = 2&pi;/&lambda;</td><td>radians per metre</td></tr>
+        <tr><td>Intensity</td><td>I &prop; A²</td><td>not linear in amplitude</td></tr>
+        <tr><td>Photon energy</td><td>E = hf = hc/&lambda;</td><td>h = 6.63 &times; 10<sup>-34</sup> J&middot;s</td></tr>
+    </tbody>
+</table>
+</div>
+
+<div class="checklist">
+    <h2>Check yourself</h2>
+    <ul>
+        <li>Why can light travel through a vacuum when sound cannot?</li>
+        <li>A 500 nm ray enters the crystalline lens (n = 1.42). What happens to its
+            frequency, speed and wavelength?</li>
+        <li>Why is polarisation impossible for a longitudinal wave?</li>
+        <li>Two beams have amplitudes in the ratio 1:3. What is the ratio of their intensities?</li>
+        <li>What phase difference between two waves gives complete cancellation, and where in
+            optometry is that used deliberately?</li>
+    </ul>
+</div>
+
+<footer class="note-footer">
+    <span>Reference: <em>Principles of Physical Optics</em>, Charles A. Bennett, 2nd Edition</span>
+    <a href="physical-optics-02-sources-and-photometry.html">Next: Sources of Light &amp; Photometry &rarr;</a>
+</footer>
+
+</main>
+</body>
+</html>

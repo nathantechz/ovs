@@ -8,36 +8,66 @@ document.addEventListener('DOMContentLoaded', () => {
     renderResources();
     renderCourses();
     renderMaterials();
+    renderTextbookCategories();
+    renderAllTextbooks();
+    setupSearchSuggestions();
+    setupCardLinks();
 });
 
-// Setup navigation between pages
-function setupPageNavigation() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const pages = document.querySelectorAll('.page');
+// Make the static home/contact cards act as real links. Only .course-card had a
+// handler, so everything else on the page looked clickable but did nothing.
+function setupCardLinks() {
+    // Feature cards -> the section of the site each one describes
+    const featureTargets = ['courses', 'resources', 'materials', 'courses'];
+    document.querySelectorAll('.features .feature-card').forEach((card, i) => {
+        makeCardNavigate(card, featureTargets[i] || 'courses');
+    });
 
-    navLinks.forEach(link => {
+    // Stat cards -> the page the number refers to
+    const statTargets = ['materials', 'resources', 'resources', 'courses'];
+    document.querySelectorAll('.stats .stat-card').forEach((card, i) => {
+        makeCardNavigate(card, statTargets[i] || 'courses');
+    });
+}
+
+function makeCardNavigate(card, pageName) {
+    card.classList.add('is-clickable');
+    card.setAttribute('role', 'link');
+    card.setAttribute('tabindex', '0');
+
+    const go = () => showPage(pageName);
+    card.addEventListener('click', go);
+    card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            go();
+        }
+    });
+}
+
+// Single place that switches pages, so nav links, cards and search all agree.
+function showPage(pageName) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+    const page = document.getElementById(pageName);
+    if (page) page.classList.add('active');
+
+    const link = document.querySelector(`.nav-link[data-page="${pageName}"]`);
+    if (link) link.classList.add('active');
+
+    closeNavMenu();
+    window.scrollTo(0, 0);
+    trackPageView(pageName);
+}
+
+// Setup navigation between pages. Covers any [data-page] element, not just the
+// navbar, so in-page links like the one on the About page work too.
+function setupPageNavigation() {
+    document.querySelectorAll('[data-page]').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            const pageName = link.getAttribute('data-page');
-
-            // Hide all pages
-            pages.forEach(page => page.classList.remove('active'));
-
-            // Remove active from all nav links
-            navLinks.forEach(l => l.classList.remove('active'));
-
-            // Show selected page
-            const selectedPage = document.getElementById(pageName);
-            if (selectedPage) {
-                selectedPage.classList.add('active');
-                link.classList.add('active');
-            }
-
-            // Close mobile menu
-            closeNavMenu();
-
-            // Scroll to top
-            window.scrollTo(0, 0);
+            showPage(link.getAttribute('data-page'));
         });
     });
 }
@@ -137,19 +167,12 @@ function closeNavMenu() {
     navMenu.classList.remove('active');
 }
 
-// Fuzzy search algorithm (Levenshtein distance)
-function calculateSimilarity(str1, str2) {
-    const s1 = str1.toLowerCase();
-    const s2 = str2.toLowerCase();
+// Levenshtein similarity ratio between two words, 0..1
+function levenshteinRatio(a, b) {
+    if (!a.length || !b.length) return 0;
 
-    // If one string is substring of other, high score
-    if (s1.includes(s2) || s2.includes(s1)) {
-        return 0.9;
-    }
-
-    // Levenshtein distance
-    const m = s1.length;
-    const n = s2.length;
+    const m = a.length;
+    const n = b.length;
     const dp = Array(n + 1).fill(null).map(() => Array(m + 1).fill(0));
 
     for (let i = 0; i <= m; i++) dp[0][i] = i;
@@ -157,7 +180,7 @@ function calculateSimilarity(str1, str2) {
 
     for (let i = 1; i <= n; i++) {
         for (let j = 1; j <= m; j++) {
-            const cost = s1[j - 1] === s2[i - 1] ? 0 : 1;
+            const cost = a[j - 1] === b[i - 1] ? 0 : 1;
             dp[i][j] = Math.min(
                 dp[i - 1][j] + 1,      // deletion
                 dp[i][j - 1] + 1,      // insertion
@@ -167,11 +190,48 @@ function calculateSimilarity(str1, str2) {
     }
 
     const maxLen = Math.max(m, n);
-    const distance = dp[n][m];
-    const similarity = (maxLen - distance) / maxLen;
-
-    return Math.max(0, similarity);
+    return Math.max(0, (maxLen - dp[n][m]) / maxLen);
 }
+
+// How well a single field matches the query, 0..1.
+// Exact and prefix matches win outright; otherwise every query word is matched
+// against its best word in the field so typos and partial phrases still land.
+function fieldScore(text, query) {
+    if (!text) return 0;
+
+    const t = text.toLowerCase().trim();
+    const q = query.toLowerCase().trim();
+
+    if (t === q) return 1;
+    if (t.startsWith(q)) return 0.95;
+    if (t.includes(q)) return 0.9;
+
+    const queryWords = q.split(/\s+/).filter(Boolean);
+    const textWords = t.split(/[^a-z0-9]+/).filter(Boolean);
+    if (!queryWords.length || !textWords.length) return 0;
+
+    let total = 0;
+    for (const qw of queryWords) {
+        let best = 0;
+        for (const tw of textWords) {
+            const s = tw === qw ? 1
+                : tw.startsWith(qw) ? 0.9
+                : tw.includes(qw) ? 0.8
+                : levenshteinRatio(tw, qw);
+            if (s > best) best = s;
+        }
+        total += best;
+    }
+
+    // Word-level matches cap below a true substring hit so those still rank first.
+    return (total / queryWords.length) * 0.85;
+}
+
+// Relative importance of each field. A hit in any one field is enough, so the
+// per-field scores are combined with max() rather than summed — summing them
+// meant even a perfect title match could not clear the threshold.
+const SEARCH_WEIGHTS = { title: 1, category: 0.8, description: 0.7, degree: 0.6 };
+const SEARCH_THRESHOLD = 0.55;
 
 // Search courses with fuzzy matching
 function searchCourses(searchTerm) {
@@ -180,22 +240,19 @@ function searchCourses(searchTerm) {
     }
 
     const term = searchTerm.toLowerCase().trim();
-    const THRESHOLD = 0.6; // Minimum similarity score
 
     return coursesData
         .map(course => {
-            // Calculate similarity scores across multiple fields
-            const titleScore = calculateSimilarity(course.title, term);
-            const descriptionScore = calculateSimilarity(course.description, term);
-            const categoryScore = calculateSimilarity(course.category, term);
-            const degreeScore = course.degree ? calculateSimilarity(course.degree, term) : 0;
-
-            // Weighted scoring
-            const score = (titleScore * 0.4) + (descriptionScore * 0.3) + (categoryScore * 0.2) + (degreeScore * 0.1);
+            const score = Math.max(
+                fieldScore(course.title, term) * SEARCH_WEIGHTS.title,
+                fieldScore(course.category, term) * SEARCH_WEIGHTS.category,
+                fieldScore(course.description, term) * SEARCH_WEIGHTS.description,
+                course.degree ? fieldScore(course.degree, term) * SEARCH_WEIGHTS.degree : 0
+            );
 
             return { course, score };
         })
-        .filter(item => item.score >= THRESHOLD)
+        .filter(item => item.score >= SEARCH_THRESHOLD)
         .sort((a, b) => b.score - a.score) // Sort by relevance
         .map(item => item.course);
 }
@@ -452,31 +509,120 @@ function performSearch() {
     if (!searchInput) return;
 
     const searchTerm = searchInput.value.trim();
+    if (!searchTerm) return;
 
-    if (!searchTerm) {
-        alert('Please enter a search term');
-        return;
-    }
+    hideSearchSuggestions();
+    trackSearch(searchTerm);
 
-    // Navigate to courses page
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-
-    const coursesPage = document.getElementById('courses');
-    const coursesLink = document.querySelector('[data-page="courses"]');
-
-    if (coursesPage) {
-        coursesPage.classList.add('active');
-    }
-    if (coursesLink) {
-        coursesLink.classList.add('active');
-    }
-
-    // Render filtered courses
+    showPage('courses');
     renderCourses({ search: searchTerm });
+}
 
-    closeNavMenu();
-    window.scrollTo(0, 0);
+// Live suggestion dropdown under the home search box.
+function setupSearchSuggestions() {
+    const input = document.getElementById('searchInput');
+    const list = document.getElementById('searchSuggestions');
+    if (!input || !list) return;
+
+    let activeIndex = -1;
+
+    const render = () => {
+        const term = input.value.trim();
+        if (term.length < 2) return hideSearchSuggestions();
+
+        const matches = searchCourses(term).slice(0, 6);
+        if (!matches.length) {
+            list.innerHTML = `<div class="suggestion-empty">No matches for “${escapeHtml(term)}”</div>`;
+            list.classList.add('is-open');
+            input.setAttribute('aria-expanded', 'true');
+            activeIndex = -1;
+            return;
+        }
+
+        activeIndex = -1;
+        list.innerHTML = matches.map((course, i) => {
+            const hasMaterials = typeof resolveMaterialsKey === 'function'
+                && resolveMaterialsKey(course.title);
+            return `
+                <div class="suggestion" role="option" data-index="${i}" data-course-id="${course.id}">
+                    <i class="fas ${course.icon}"></i>
+                    <div class="suggestion-text">
+                        <div class="suggestion-title">${escapeHtml(course.title)}</div>
+                        <div class="suggestion-meta">
+                            ${escapeHtml(getLevelName(course.level))}
+                            &middot; ${course.lectures} lectures
+                            ${hasMaterials ? '<span class="suggestion-tag">Materials ready</span>' : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        list.classList.add('is-open');
+        input.setAttribute('aria-expanded', 'true');
+    };
+
+    const setActive = (next) => {
+        const items = list.querySelectorAll('.suggestion');
+        if (!items.length) return;
+
+        activeIndex = (next + items.length) % items.length;
+        items.forEach((el, i) => el.classList.toggle('is-active', i === activeIndex));
+        items[activeIndex].scrollIntoView({ block: 'nearest' });
+    };
+
+    input.addEventListener('input', render);
+    input.addEventListener('focus', render);
+
+    input.addEventListener('keydown', (e) => {
+        const items = list.querySelectorAll('.suggestion');
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            setActive(activeIndex + 1);
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            setActive(activeIndex - 1);
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (activeIndex >= 0 && items[activeIndex]) {
+                navigateToCourse(Number(items[activeIndex].dataset.courseId));
+                hideSearchSuggestions();
+            } else {
+                performSearch();
+            }
+        } else if (e.key === 'Escape') {
+            hideSearchSuggestions();
+        }
+    });
+
+    list.addEventListener('mousedown', (e) => {
+        const item = e.target.closest('.suggestion');
+        if (!item) return;
+        e.preventDefault();
+        navigateToCourse(Number(item.dataset.courseId));
+        hideSearchSuggestions();
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-bar')) hideSearchSuggestions();
+    });
+}
+
+function hideSearchSuggestions() {
+    const list = document.getElementById('searchSuggestions');
+    const input = document.getElementById('searchInput');
+    if (list) {
+        list.classList.remove('is-open');
+        list.innerHTML = '';
+    }
+    if (input) input.setAttribute('aria-expanded', 'false');
+}
+
+function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, c => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
 }
 
 // Navigate to course detail page
@@ -539,8 +685,12 @@ function navigateToCourse(courseId) {
     `;
 
     // Check if materials are available
-    if (typeof availableMaterials !== 'undefined' && availableMaterials[course.title]) {
-        html += renderMaterialsForDownload(course.title);
+    const materialsKey = typeof resolveMaterialsKey === 'function'
+        ? resolveMaterialsKey(course.title)
+        : null;
+
+    if (materialsKey) {
+        html += renderMaterialsForDownload(materialsKey);
     } else {
         html += `
             <div class="materials-section">
