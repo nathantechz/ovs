@@ -139,7 +139,6 @@ def main():
         files = [f for f in files if not os.path.basename(f).startswith('~$') and "Syllabus" not in f and "Document" not in f]
         files.sort()
         
-        print(f"\nProcessing {len(files)} practical guides for {course_name}...")
         parsed_list = []
         for f in files:
             pdata = parse_docx_content(f)
@@ -180,10 +179,9 @@ def main():
                 "file": os.path.relpath(item["file"], f"materials/{course_name}"),
                 "onlineUrl": f"notes/{html_name}"
             })
-            print(f"  ✓ {pdata['title']} -> {html_name}")
             
     # Regenerate the master materials list directly from our script engine with practicals integrated
-    from make_notes_accessible_and_practical import parse_courses_from_data_js, build_pedagogical_lecture, generate_markdown as gen_md, generate_html as gen_html
+    from make_notes_accessible_and_practical import parse_courses_from_data_js, build_pedagogical_lecture
     all_courses = parse_courses_from_data_js()
     
     master_materials = {}
@@ -241,14 +239,48 @@ def main():
         f.write("// Fully Integrated with Lecture Notes, Reading Guides, and Practical Clinical Procedures\n\n")
         f.write(f"const availableMaterials = {json.dumps(master_materials, indent=4)};\n\n")
         f.write("""
+function normalizeCourseName(name) {
+    if (!name) return "";
+    return name
+        .replace(/&amp;/g, '&')
+        .replace(/[^\w\s]/g, '')
+        .replace(/\\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+}
+
+const materialsAliases = {
+    "Anatomy & Physiology of the Eye": "Ocular Anatomy & Physiology",
+    "Binocular Vision Physiology": "Strabismus"
+};
+
+function resolveMaterialsKey(courseTitle) {
+    if (!courseTitle) return null;
+    if (availableMaterials[courseTitle]) return courseTitle;
+    
+    const alias = materialsAliases[courseTitle];
+    if (alias && availableMaterials[alias]) return alias;
+    
+    // Normalized case-insensitive lookup
+    const normTarget = normalizeCourseName(courseTitle);
+    for (const key in availableMaterials) {
+        if (normalizeCourseName(key) === normTarget) {
+            return key;
+        }
+    }
+    return null;
+}
+
 function renderMaterialsForDownload(courseName) {
-    const course = availableMaterials[courseName] || availableMaterials[resolveMaterialsKey(courseName)];
+    const resolvedKey = resolveMaterialsKey(courseName) || courseName;
+    const course = availableMaterials[resolvedKey];
+    
     if (!course) {
         return `
             <div class="materials-section">
-                <h3>${courseName}</h3>
+                <h3>📥 Course Materials</h3>
                 <p style="color: var(--text-secondary); text-align: center; padding: 30px;">
-                    Study materials are currently being prepared.
+                    Study materials for <strong>${courseName}</strong> are currently being prepared.
                 </p>
             </div>
         `;
@@ -256,7 +288,7 @@ function renderMaterialsForDownload(courseName) {
 
     let html = `
         <div class="materials-section">
-            <h3>${courseName}</h3>
+            <h3>📥 Course Materials &amp; Clinical Guides</h3>
 
             ${course.readings && course.readings.length > 0 ? `
                 <div class="material-group">
@@ -274,7 +306,7 @@ function renderMaterialsForDownload(courseName) {
                                             <i class="fas fa-eye"></i> Read Online
                                         </a>
                                     ` : ''}
-                                    <a href="${course.folder}/${reading.file}" download class="btn-download-small" onclick="trackDownload('${reading.file}', '${courseName}')">
+                                    <a href="${course.folder}/${reading.file}" download class="btn-download-small" onclick="trackDownload('${reading.file}', '${resolvedKey}')">
                                         <i class="fas fa-download"></i> Download Notes
                                     </a>
                                 </div>
@@ -300,7 +332,7 @@ function renderMaterialsForDownload(courseName) {
                                             <i class="fas fa-eye"></i> Read Protocol
                                         </a>
                                     ` : ''}
-                                    <a href="${course.folder}/${practical.file}" download class="btn-download-small" onclick="trackDownload('${practical.file}', '${courseName}')">
+                                    <a href="${course.folder}/${practical.file}" download class="btn-download-small" onclick="trackDownload('${practical.file}', '${resolvedKey}')">
                                         <i class="fas fa-download"></i> Download .docx
                                     </a>
                                 </div>
@@ -321,7 +353,7 @@ function renderMaterialsForDownload(courseName) {
                                     <strong>Week ${lecture.week}:</strong> ${lecture.title}
                                 </span>
                                 <div class="material-actions">
-                                    <a href="${course.folder}/${lecture.file}" download class="btn-download-small" onclick="trackDownload('${lecture.file}', '${courseName}')">
+                                    <a href="${course.folder}/${lecture.file}" download class="btn-download-small" onclick="trackDownload('${lecture.file}', '${resolvedKey}')">
                                         <i class="fas fa-download"></i> Download PDF
                                     </a>
                                 </div>
@@ -351,18 +383,6 @@ function renderMaterialsForDownload(courseName) {
 
 function getAvailableCourses() {
     return Object.keys(availableMaterials);
-}
-
-const materialsAliases = {
-    "Anatomy & Physiology of the Eye": "Ocular Anatomy & Physiology",
-    "Binocular Vision Physiology": "Strabismus"
-};
-
-function resolveMaterialsKey(courseTitle) {
-    if (availableMaterials[courseTitle]) return courseTitle;
-    const alias = materialsAliases[courseTitle];
-    if (alias && availableMaterials[alias]) return alias;
-    return null;
 }
 """)
     print("\n✓ Successfully integrated 27 practical clinical examination guides into js/materials-list.js!")

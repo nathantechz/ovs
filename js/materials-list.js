@@ -3860,14 +3860,48 @@ const availableMaterials = {
 };
 
 
+function normalizeCourseName(name) {
+    if (!name) return "";
+    return name
+        .replace(/&amp;/g, '&')
+        .replace(/[^\w\s]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+}
+
+const materialsAliases = {
+    "Anatomy & Physiology of the Eye": "Ocular Anatomy & Physiology",
+    "Binocular Vision Physiology": "Strabismus"
+};
+
+function resolveMaterialsKey(courseTitle) {
+    if (!courseTitle) return null;
+    if (availableMaterials[courseTitle]) return courseTitle;
+    
+    const alias = materialsAliases[courseTitle];
+    if (alias && availableMaterials[alias]) return alias;
+    
+    // Normalized case-insensitive lookup
+    const normTarget = normalizeCourseName(courseTitle);
+    for (const key in availableMaterials) {
+        if (normalizeCourseName(key) === normTarget) {
+            return key;
+        }
+    }
+    return null;
+}
+
 function renderMaterialsForDownload(courseName) {
-    const course = availableMaterials[courseName] || availableMaterials[resolveMaterialsKey(courseName)];
+    const resolvedKey = resolveMaterialsKey(courseName) || courseName;
+    const course = availableMaterials[resolvedKey];
+    
     if (!course) {
         return `
             <div class="materials-section">
-                <h3>${courseName}</h3>
+                <h3>📥 Course Materials</h3>
                 <p style="color: var(--text-secondary); text-align: center; padding: 30px;">
-                    Study materials are currently being prepared.
+                    Study materials for <strong>${courseName}</strong> are currently being prepared.
                 </p>
             </div>
         `;
@@ -3875,7 +3909,7 @@ function renderMaterialsForDownload(courseName) {
 
     let html = `
         <div class="materials-section">
-            <h3>${courseName}</h3>
+            <h3>📥 Course Materials &amp; Clinical Guides</h3>
 
             ${course.readings && course.readings.length > 0 ? `
                 <div class="material-group">
@@ -3893,7 +3927,7 @@ function renderMaterialsForDownload(courseName) {
                                             <i class="fas fa-eye"></i> Read Online
                                         </a>
                                     ` : ''}
-                                    <a href="${course.folder}/${reading.file}" download class="btn-download-small" onclick="trackDownload('${reading.file}', '${courseName}')">
+                                    <a href="${course.folder}/${reading.file}" download class="btn-download-small" onclick="trackDownload('${reading.file}', '${resolvedKey}')">
                                         <i class="fas fa-download"></i> Download Notes
                                     </a>
                                 </div>
@@ -3919,7 +3953,7 @@ function renderMaterialsForDownload(courseName) {
                                             <i class="fas fa-eye"></i> Read Protocol
                                         </a>
                                     ` : ''}
-                                    <a href="${course.folder}/${practical.file}" download class="btn-download-small" onclick="trackDownload('${practical.file}', '${courseName}')">
+                                    <a href="${course.folder}/${practical.file}" download class="btn-download-small" onclick="trackDownload('${practical.file}', '${resolvedKey}')">
                                         <i class="fas fa-download"></i> Download .docx
                                     </a>
                                 </div>
@@ -3940,7 +3974,7 @@ function renderMaterialsForDownload(courseName) {
                                     <strong>Week ${lecture.week}:</strong> ${lecture.title}
                                 </span>
                                 <div class="material-actions">
-                                    <a href="${course.folder}/${lecture.file}" download class="btn-download-small" onclick="trackDownload('${lecture.file}', '${courseName}')">
+                                    <a href="${course.folder}/${lecture.file}" download class="btn-download-small" onclick="trackDownload('${lecture.file}', '${resolvedKey}')">
                                         <i class="fas fa-download"></i> Download PDF
                                     </a>
                                 </div>
@@ -3970,16 +4004,4 @@ function renderMaterialsForDownload(courseName) {
 
 function getAvailableCourses() {
     return Object.keys(availableMaterials);
-}
-
-const materialsAliases = {
-    "Anatomy & Physiology of the Eye": "Ocular Anatomy & Physiology",
-    "Binocular Vision Physiology": "Strabismus"
-};
-
-function resolveMaterialsKey(courseTitle) {
-    if (availableMaterials[courseTitle]) return courseTitle;
-    const alias = materialsAliases[courseTitle];
-    if (alias && availableMaterials[alias]) return alias;
-    return null;
 }

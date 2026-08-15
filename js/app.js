@@ -787,13 +787,9 @@ function renderCourseDetail(course) {
         </div>
     `;
 
-    // Check if materials are available
-    const materialsKey = typeof resolveMaterialsKey === 'function'
-        ? resolveMaterialsKey(course.title)
-        : null;
-
-    if (materialsKey) {
-        html += renderMaterialsForDownload(materialsKey);
+    // Render course study notes, practicals, and textbook materials
+    if (typeof renderMaterialsForDownload === 'function') {
+        html += renderMaterialsForDownload(course.title);
     } else {
         html += `
             <div class="materials-section">

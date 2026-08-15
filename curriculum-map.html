@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Map — Optometry Learning Hub</title>
+<link rel="stylesheet" href="notes/notes.css">
+<style>
+.map-head { max-width: 1100px; margin: 0 auto; padding: 36px 24px 8px; }
+.map-wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px 80px; }
+.lede { color: var(--text-muted); font-size: 17px; max-width: 70ch; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 8px; }
+.stat { background: var(--surface); border: 1px solid var(--border);
+        border-radius: 8px; padding: 10px 16px; }
+.stat b { display: block; font-size: 21px; color: var(--primary); }
+.stat span { font-size: 12.5px; color: var(--text-muted); }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 6px;
+             position: sticky; top: 0; background: var(--bg); padding: 12px 0;
+             z-index: 5; border-bottom: 1px solid var(--border); }
+.controls input { flex: 1; min-width: 200px; padding: 10px 14px; font-size: 15px;
+                   border: 1px solid var(--border); border-radius: 8px;
+                   background: var(--bg); color: var(--text); }
+.controls button { padding: 10px 16px; border-radius: 8px; cursor: pointer;
+                    border: 1px solid var(--border); background: var(--bg);
+                    color: var(--text); font: inherit; }
+.controls button.on { background: var(--primary); color: #fff; border-color: var(--primary); }
+.group { margin-top: 40px; }
+.group > h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .07em;
+               color: var(--text-muted); border: none; padding: 0; margin-bottom: 14px; }
+.subjects { display: grid; gap: 16px; }
+.subject { border: 1px solid var(--border); border-radius: 12px;
+            padding: 18px 20px; background: var(--surface); }
+.subject > header { display: flex; flex-wrap: wrap; gap: 10px;
+                     justify-content: space-between; align-items: baseline;
+                     margin-bottom: 14px; }
+.subject h3 { margin: 0; font-size: 18px; }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-size: 11.5px; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+        background: var(--bg); border: 1px solid var(--border); color: var(--text-muted); }
+.tag.shared { background: #e8f8f0; border-color: #00a854; color: #00794a; }
+.sources { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 14px; }
+.src { background: var(--bg); border: 1px solid var(--border);
+        border-radius: 8px; padding: 12px 14px; }
+.src-site { border-color: var(--primary); }
+.src h4 { margin: 0 0 8px; font-size: 12.5px; color: var(--text-muted);
+           display: flex; justify-content: space-between; gap: 8px; font-weight: 600; }
+.src-site h4 { color: var(--primary); }
+.src ul { margin: 0; padding-left: 16px; }
+.src li { font-size: 14px; margin-bottom: 5px; }
+.src a { color: var(--primary); text-decoration: none; }
+.src a:hover { text-decoration: underline; }
+.code { font-family: ui-monospace, Menlo, monospace; font-size: 12px;
+         color: var(--text-muted); }
+.subject.hidden { display: none; }
+.group.hidden { display: none; }
+@media (prefers-color-scheme: dark) {
+  .tag.shared { background: #10251c; color: #4ade80; }
+}
+</style>
+</head>
+<body>
+
+<nav class="note-nav">
+    <div class="note-nav-inner">
+        <a class="note-return" href="index.html#/">&larr; Optometry Learning Hub</a>
+        <span class="course-tag">Curriculum Map</span>
+    </div>
+</nav>
+
+<div class="map-head">
+    <div class="note-eyebrow">Cross-institution</div>
+    <h1>Curriculum Map</h1>
+    <p class="lede">
+        Schools teach the same material under different names. Southern College calls it
+        <em>Optics of the Eye</em>, MCPHS calls it <em>Visual Optics</em>, this site calls it
+        <em>Physical Optics</em>. Each card below is one subject, with every course that
+        teaches it grouped by institution — so equivalents line up side by side.
+    </p>
+
+    <div class="stats">
+        <div class="stat"><b>25</b><span>subjects</span></div>
+        <div class="stat"><b>260</b><span>courses</span></div>
+        <div class="stat"><b>24</b><span>taught at 2+ institutions</span></div>
+        <div class="stat"><b>4</b><span>sources</span></div>
+    </div>
+</div>
+
+<div class="map-wrap">
+    <div class="controls">
+        <input id="q" type="search" placeholder="Filter subjects and courses…" aria-label="Filter">
+        <button id="sharedOnly" type="button">Only shared subjects</button>
+    </div>
+
+    
+        <section class="group">
+            <h2>Optics</h2>
+            <div class="subjects">
+            <article class="subject" data-sources="4" data-label="physical &amp; visual optics">
+                <header>
+                    <h3>Physical &amp; Visual Optics</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">10 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>2</span></h4>
+                    <ul><li><span class="code">OPT 630</span> Geometrical and Physical Optics (with lab)</li><li><span class="code">OPT 631</span> Visual Optics (with lab)</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>5</span></h4>
+                    <ul><li><a href="index.html#/course/2">Advanced Optics &amp; Lens Design</a></li><li><a href="index.html#/course/4">Aspheric &amp; High-Order Aberrations</a></li><li><a href="index.html#/course/3">Geometric Optics</a></li><li><a href="index.html#/course/43">Physical Optics</a></li><li><a href="index.html#/course/5">Wavefront Analysis &amp; Measurement</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>2</span></h4>
+                    <ul><li><span class="code">OPT 111</span> Optics of the Eye I</li><li><span class="code">OPT 121</span> Optics of the Eye II</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>1</span></h4>
+                    <ul><li><span class="code">VS 121</span> Visual Optics</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="ophthalmic optics &amp; dispensing">
+                <header>
+                    <h3>Ophthalmic Optics &amp; Dispensing</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">5 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>1</span></h4>
+                    <ul><li><span class="code">OPT 632</span> Ophthalmic Optics I (w/lab)</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>1</span></h4>
+                    <ul><li><a href="index.html#/course/49">Ophthalmic Dispensing &amp; Laboratory Technology</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>2</span></h4>
+                    <ul><li><span class="code">OPT 127</span> Ophthalmic Optics I</li><li><span class="code">OPT 217</span> Ophthalmic Optics II &amp; Environmental Vision</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>1</span></h4>
+                    <ul><li><span class="code">OPT 133</span> Clinical Ophthalmic Optics</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="1" data-label="refraction &amp; refractive error">
+                <header>
+                    <h3>Refraction &amp; Refractive Error</h3>
+                    <div class="tags">
+                        <span class="tag">Single source</span>
+                        <span class="tag count">2 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>2</span></h4>
+                    <ul><li><a href="index.html#/course/20">Refraction &amp; Optical Correction</a></li><li><a href="index.html#/course/1">Refraction &amp; Optics Fundamentals</a></li></ul>
+                </div></div>
+            </article></div>
+        </section>
+        <section class="group">
+            <h2>Basic & Vision Science</h2>
+            <div class="subjects">
+            <article class="subject" data-sources="4" data-label="ocular anatomy &amp; physiology">
+                <header>
+                    <h3>Ocular Anatomy &amp; Physiology</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">14 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>5</span></h4>
+                    <ul><li><span class="code">OPT 610</span> Clinical Anatomy (with lab)</li><li><span class="code">OPT 656</span> Histology and Embryology</li><li><span class="code">OPT 613</span> Neuro Anatomy and Physiology</li><li><span class="code">OPT 611</span> Ocular Anatomy and Physiology</li><li><span class="code">OPT 640</span> Systems Based Physiology</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>3</span></h4>
+                    <ul><li><a href="index.html#/course/7">Anatomy &amp; Physiology of the Eye</a></li><li><a href="index.html#/course/10">Anterior Segment Anatomy</a></li><li><a href="index.html#/course/11">Binocular Vision Physiology</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>3</span></h4>
+                    <ul><li><span class="code">OPT 112</span> Anatomy, Histology, &amp; Physiology I</li><li><span class="code">OPT 122</span> Anatomy, Histology, &amp; Physiology II</li><li><span class="code">OPT 114</span> Ocular Anatomy &amp; Physiology</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>3</span></h4>
+                    <ul><li><span class="code">OBHS 231</span> AIODP Integrated Human Physiology</li><li><span class="code">VS 111</span> Ocular Anatomy and Physiology</li><li><span class="code">OBHS 122</span> Systems II: Gross Anatomy</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="neuroanatomy &amp; visual neuroscience">
+                <header>
+                    <h3>Neuroanatomy &amp; Visual Neuroscience</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">10 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>3</span></h4>
+                    <ul><li><span class="code">OPT 613</span> Neuro Anatomy and Physiology</li><li><span class="code">OPT 722</span> Oculomotor Function</li><li><span class="code">OPT 705</span> Visual Neurophysiology &amp; Neuro-Diagnostics</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>2</span></h4>
+                    <ul><li><a href="index.html#/course/26">Neuro-Ophthalmology</a></li><li><a href="index.html#/course/9">Visual Neuroscience</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>2</span></h4>
+                    <ul><li><span class="code">OPT 311</span> Neuro Eye Disease</li><li><span class="code">OPT 113</span> Neuroanatomy</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>3</span></h4>
+                    <ul><li><span class="code">OPT 321</span> Neuro-optometry</li><li><span class="code">VS 131</span> Neurobiology of the Visual System</li><li><span class="code">OBHS 121</span> Systems I: Neuroscience</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="ocular biochemistry &amp; cell biology">
+                <header>
+                    <h3>Ocular Biochemistry &amp; Cell Biology</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">7 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>3</span></h4>
+                    <ul><li><span class="code">OPT 711</span> Immunology</li><li><span class="code">OPT 657</span> Microbiology</li><li><span class="code">OPT 612</span> Ocular Biochemistry</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>1</span></h4>
+                    <ul><li><a href="index.html#/course/12">Biochemistry of the Eye</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>1</span></h4>
+                    <ul><li><span class="code">OPT 116</span> Biochemistry</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>2</span></h4>
+                    <ul><li><span class="code">VS 113</span> Biochemistry of the Eye</li><li><span class="code">OPT 122</span> Ocular Microbiology</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="visual perception &amp; psychophysics">
+                <header>
+                    <h3>Visual Perception &amp; Psychophysics</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">5 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>1</span></h4>
+                    <ul><li><span class="code">OPT 622</span> Visual Perception</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>1</span></h4>
+                    <ul><li><a href="index.html#/course/46">Visual Perception &amp; Psychophysics</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>1</span></h4>
+                    <ul><li><span class="code">OPT 126</span> Visual Sensation &amp; Perception</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>1</span></h4>
+                    <ul><li><span class="code">VS 122</span> Visual Perception</li></ul>
+                </div></div>
+            </article></div>
+        </section>
+        <section class="group">
+            <h2>Clinical Practice</h2>
+            <div class="subjects">
+            <article class="subject" data-sources="4" data-label="clinical rotations &amp; internships">
+                <header>
+                    <h3>Clinical Rotations &amp; Internships</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">37 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>3</span></h4>
+                    <ul><li><span class="code">OPTC 971</span> Externship Rotation I</li><li><span class="code">OPTC 972</span> Externship Rotation II</li><li><span class="code">OPTC 973</span> Externship Rotation III</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>1</span></h4>
+                    <ul><li><a href="index.html#/course/41">Specialty Clinics &amp; Case Management</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>9</span></h4>
+                    <ul><li><span class="code">CLN 404</span> Clinical Externship</li><li><span class="code">CLN 306</span> Clinical Internship I</li><li><span class="code">CLN 316</span> Clinical Internship II</li><li><span class="code">CLN 326</span> Clinical Internship III</li><li><span class="code">CLN 402</span> Clinical Pediatric Primary Care</li><li><span class="code">CLN 400</span> Clinical Primary Care</li><li><span class="code">CLN 203</span> Foundations of Clinical Care I</li><li><span class="code">CLN 216</span> Foundations of Clinical Care II</li><li><span class="code">CLN 226</span> Foundations of Clinical Care III</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>18</span></h4>
+                    <ul><li><span class="code">OPT 325</span> Clinical Management of Vision Problems</li><li><span class="code">CLN 131</span> Clinical Rotation I</li><li><span class="code">CLN 211</span> Clinical Rotation II</li><li><span class="code">CLN 221</span> Clinical Rotation III</li><li><span class="code">CLN 232</span> Clinical Rotation IV</li><li><span class="code">CLN 312</span> Clinical Rotation V</li><li><span class="code">CLN 322</span> Clinical Rotation VI</li><li><span class="code">CLN 336</span> Externship I</li><li><span class="code">CLN 416</span> Externship I or II</li><li><span class="code">CLN 426</span> Externship II</li><li><span class="code">CLN 224</span> Primary Eye Care Clinic I</li><li><span class="code">CLN 321</span> Primary Eye Care Clinic IV</li><li><span class="code">CLN 231</span> Primary Eye Care II</li><li><span class="code">CLN 311</span> Primary Eye Care III</li><li><span class="code">CLN 314</span> Special Clinical Rotation I</li><li><span class="code">CLN 324</span> Special Clinical Rotation II</li><li><span class="code">CLN 414</span> Special Clinical Rotation IV</li><li><span class="code">CLN 424</span> Special Clinical Rotation V</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="clinical methods &amp; procedures">
+                <header>
+                    <h3>Clinical Methods &amp; Procedures</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">23 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>5</span></h4>
+                    <ul><li><span class="code">OPT 845</span> Advanced Optometric Theory &amp; Methods</li><li><span class="code">OPT 650</span> Optometry Theory and Methods I</li><li><span class="code">OPT 652</span> Optometry Theory and Methods II</li><li><span class="code">OPT 653</span> Optometry Theory and Methods III</li><li><span class="code">OPT 751</span> Optometry Theory and Methods IV</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>5</span></h4>
+                    <ul><li><a href="index.html#/course/13">Clinical Skills &amp; Examinations</a></li><li><a href="index.html#/course/15">Fundus Examination Techniques</a></li><li><a href="index.html#/course/1">Refraction &amp; Optics Fundamentals</a></li><li><a href="index.html#/course/14">Slit Lamp Biomicroscopy</a></li><li><a href="index.html#/course/17">Tonometry &amp; Intraocular Pressure Management</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>5</span></h4>
+                    <ul><li><span class="code">OPT 110</span> Optometric Theory &amp; Methods I</li><li><span class="code">OPT 120</span> Optometric Theory &amp; Methods II</li><li><span class="code">OPT 210</span> Optometric Theory &amp; Methods III</li><li><span class="code">OPT 220</span> Optometric Theory &amp; Methods IV</li><li><span class="code">OPT 200</span> Optometric Theory &amp; Methods Lab</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>8</span></h4>
+                    <ul><li><span class="code">OPT 2210</span> Business Fundamentals I</li><li><span class="code">OPT 324</span> Business Fundamentals II</li><li><span class="code">OPT 132</span> CEVS II</li><li><span class="code">OPT 213</span> CEVS III</li><li><span class="code">OPT 221</span> CEVS IV</li><li><span class="code">OPT 121</span> Clinical Evaluation of the Visual System (CEVS) I</li><li><span class="code">OBHS 111</span> Fundamentals 1</li><li><span class="code">OBHS 112</span> Fundamentals II</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="vision therapy &amp; rehabilitation">
+                <header>
+                    <h3>Vision Therapy &amp; Rehabilitation</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">14 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>1</span></h4>
+                    <ul><li><span class="code">OPT 754</span> Low Vision and Geriatrics (w/lab)</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>2</span></h4>
+                    <ul><li><a href="index.html#/course/47">Advanced Vision Therapy &amp; Orthoptics</a></li><li><a href="index.html#/course/44">Low Vision Rehabilitation &amp; Assistive Aids</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>3</span></h4>
+                    <ul><li><span class="code">CLN 405</span> Clinical Vision Therapy &amp; Low Vision Rehabilitation</li><li><span class="code">OPT 302</span> Vision Rehabilitation &amp; Aging</li><li><span class="code">OPT 227</span> Vision Therapy</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>6</span></h4>
+                    <ul><li><span class="code">OPT 314</span> Low Vision</li><li><span class="code">CLN 413</span> Ocular Disease &amp; Low Vision II</li><li><span class="code">CLN 423</span> Ocular Disease and Low Vision III</li><li><span class="code">CLN 234</span> Vision Therapy I (Summer 1 or 2)</li><li><span class="code">CLN 316</span> Vision Therapy II</li><li><span class="code">CLN 326</span> Vision Therapy III</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="contact lenses">
+                <header>
+                    <h3>Contact Lenses</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">14 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>2</span></h4>
+                    <ul><li><span class="code">OPT 752</span> Contact Lenses I</li><li><span class="code">OPT 855</span> Contact Lenses II</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>3</span></h4>
+                    <ul><li><a href="index.html#/course/18">Contact Lens Fitting &amp; Management</a></li><li><a href="index.html#/course/6">Contact Lens Optics</a></li><li><a href="index.html#/course/19">Specialized Contact Lens Applications</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>3</span></h4>
+                    <ul><li><span class="code">CLN 401</span> Clinical Cornea &amp; Contact Lens</li><li><span class="code">OPT 225</span> Contact Lenses I</li><li><span class="code">OPT 305</span> Contact Lenses II</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>4</span></h4>
+                    <ul><li><span class="code">OPT 312</span> Contact Lenses I</li><li><span class="code">OPT 322</span> Contact Lenses II</li><li><span class="code">CLN 412</span> Cornea &amp; Contact Lens II</li><li><span class="code">CLN 422</span> Cornea and Contact Lens III</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="binocular vision &amp; ocular motility">
+                <header>
+                    <h3>Binocular Vision &amp; Ocular Motility</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">10 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>3</span></h4>
+                    <ul><li><span class="code">OPT 757</span> Clinical Binocular Vision I</li><li><span class="code">OPT 852</span> Clinical Binocular Vision II (with lab)</li><li><span class="code">OPT 756</span> Foundations of Binocular Vision</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>1</span></h4>
+                    <ul><li><a href="index.html#/course/11">Binocular Vision Physiology</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>3</span></h4>
+                    <ul><li><span class="code">OPT 215</span> Binocular Vision: Basic Concepts &amp; Applications</li><li><span class="code">OPT 125</span> Ocular Motility</li><li><span class="code">OPT 304</span> Strabismus &amp; Amblyopia</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>3</span></h4>
+                    <ul><li><span class="code">OPT 224</span> Anomalies of Binocular Vision I</li><li><span class="code">OPT 311</span> Anomalies of Binocular Vision II</li><li><span class="code">VS 132</span> Eye Movements and Principles of Binocular Vision</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="2" data-label="diagnostic imaging &amp; instrumentation">
+                <header>
+                    <h3>Diagnostic Imaging &amp; Instrumentation</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 2 institutions</span>
+                        <span class="tag count">4 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>3</span></h4>
+                    <ul><li><a href="index.html#/course/34">Advanced Diagnostic Imaging</a></li><li><a href="index.html#/course/48">Optometric Instrumentation &amp; Calibration</a></li><li><a href="index.html#/course/16">Visual Field Testing &amp; Interpretation</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>1</span></h4>
+                    <ul><li><span class="code">OPT 231</span> Ophthalmic Imaging</li></ul>
+                </div></div>
+            </article></div>
+        </section>
+        <section class="group">
+            <h2>Ocular & Systemic Disease</h2>
+            <div class="subjects">
+            <article class="subject" data-sources="4" data-label="anterior segment disease">
+                <header>
+                    <h3>Anterior Segment Disease</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">13 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>3</span></h4>
+                    <ul><li><span class="code">OPT 750</span> Anterior Segment Ocular Disease I</li><li><span class="code">OPT 759</span> Anterior Segment Ocular Disease II</li><li><span class="code">OPT 768</span> Ocular Surface Disorders (with lab)</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>3</span></h4>
+                    <ul><li><a href="index.html#/course/10">Anterior Segment Anatomy</a></li><li><a href="index.html#/course/25">Corneal Pathology &amp; Disease</a></li><li><a href="index.html#/course/27">Uveitis &amp; Inflammatory Conditions</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>2</span></h4>
+                    <ul><li><span class="code">OPT 221</span> Anterior Segment Disease &amp; Treatment</li><li><span class="code">CLN 401</span> Clinical Cornea &amp; Contact Lens</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>3</span></h4>
+                    <ul><li><span class="code">CLN 412</span> Cornea &amp; Contact Lens II</li><li><span class="code">CLN 422</span> Cornea and Contact Lens III</li><li><span class="code">OPT 222</span> Diseases of the Anterior Segment</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="systemic disease &amp; ocular manifestations">
+                <header>
+                    <h3>Systemic Disease &amp; Ocular Manifestations</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">12 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>4</span></h4>
+                    <ul><li><span class="code">OPT 854</span> Ocular Manifestations of Systemic Disease</li><li><span class="code">OPT 766</span> Pathophysiology</li><li><span class="code">OPT 655</span> Systemic Disease</li><li><span class="code">OPT 640</span> Systems Based Physiology</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>4</span></h4>
+                    <ul><li><a href="index.html#/course/22">Cataract Pathology &amp; Management</a></li><li><a href="index.html#/course/25">Corneal Pathology &amp; Disease</a></li><li><a href="index.html#/course/21">Ocular Diseases &amp; Pathology</a></li><li><a href="index.html#/course/30">Systemic Diseases &amp; Ocular Manifestations</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>3</span></h4>
+                    <ul><li><span class="code">OPT 201</span> Basic Pathology</li><li><span class="code">OPT 211</span> Medical Pathology</li><li><span class="code">OPT 321</span> Systemic Disease &amp; Ocular Manifestations</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>1</span></h4>
+                    <ul><li><span class="code">OPT 328</span> Assessment of Systemic Diseases in Optometry</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="pharmacology">
+                <header>
+                    <h3>Pharmacology</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">11 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>3</span></h4>
+                    <ul><li><span class="code">OPT 712</span> Ocular Pharmacology</li><li><span class="code">OPT 709</span> Systemic Pharmacology I</li><li><span class="code">OPT 710</span> Systemic Pharmacology II</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>3</span></h4>
+                    <ul><li><a href="index.html#/course/37">Advanced Ocular Pharmacology</a></li><li><a href="index.html#/course/32">Pharmacology for Optometry</a></li><li><a href="index.html#/course/38">Therapeutic Optometry</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>3</span></h4>
+                    <ul><li><span class="code">OPT 224</span> Ocular Pharmacology</li><li><span class="code">OPT 202</span> Systemic Pharmacology I</li><li><span class="code">OPT 212</span> Systemic Pharmacology II</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>2</span></h4>
+                    <ul><li><span class="code">OPT 212</span> Ocular Pharmacology</li><li><span class="code">OPT 238</span> Systemic Pharmacology</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="posterior segment &amp; retinal disease">
+                <header>
+                    <h3>Posterior Segment &amp; Retinal Disease</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">9 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>2</span></h4>
+                    <ul><li><span class="code">OPT 753</span> Posterior Segment Ocular Disease I</li><li><span class="code">OPT 857</span> Posterior Segment Ocular Disease II</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>2</span></h4>
+                    <ul><li><a href="index.html#/course/8">Retinal &amp; Choroidal Structure</a></li><li><a href="index.html#/course/24">Retinal Diseases &amp; Degeneration</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>2</span></h4>
+                    <ul><li><span class="code">OPT 223</span> Posterior Segment Disease &amp; Treatment I</li><li><span class="code">OPT 313</span> Posterior Segment Disease &amp; Treatment II</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>3</span></h4>
+                    <ul><li><span class="code">OPT 329</span> Advanced Posterior Segment Evaluation</li><li><span class="code">OPT 225</span> Diseases of the Posterior Segment</li><li><span class="code">OPT 319</span> Diseases of the Posterior Segment II</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="glaucoma">
+                <header>
+                    <h3>Glaucoma</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">6 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>2</span></h4>
+                    <ul><li><span class="code">OPT 851</span> Glaucoma I</li><li><span class="code">OPT 859</span> Glaucoma II</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>2</span></h4>
+                    <ul><li><a href="index.html#/course/23">Glaucoma: Assessment &amp; Treatment</a></li><li><a href="index.html#/course/17">Tonometry &amp; Intraocular Pressure Management</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>1</span></h4>
+                    <ul><li><span class="code">OPT 308</span> Glaucoma</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>1</span></h4>
+                    <ul><li><span class="code">OPT 316</span> Glaucoma</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="surgical &amp; peri-operative care">
+                <header>
+                    <h3>Surgical &amp; Peri-operative Care</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">5 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>1</span></h4>
+                    <ul><li><span class="code">OPT 820</span> Cataract and Refractive Surgery</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>1</span></h4>
+                    <ul><li><a href="index.html#/course/35">Surgical Considerations in Optometry</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>1</span></h4>
+                    <ul><li><span class="code">OPT 319</span> Optometric Surgical Procedures &amp; Peri-operative Management</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>1</span></h4>
+                    <ul><li><span class="code">OPT 323</span> Injections and Surgical Procedures</li></ul>
+                </div></div>
+            </article></div>
+        </section>
+        <section class="group">
+            <h2>Patient Populations</h2>
+            <div class="subjects">
+            <article class="subject" data-sources="4" data-label="pediatric optometry">
+                <header>
+                    <h3>Pediatric Optometry</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">11 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>2</span></h4>
+                    <ul><li><span class="code">OPT 840</span> Special Populations and Topics</li><li><span class="code">OPT 721</span> Visual Development</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>2</span></h4>
+                    <ul><li><a href="index.html#/course/28">Pediatric Eye Disease</a></li><li><a href="index.html#/course/29">Refractive Errors in Children</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>2</span></h4>
+                    <ul><li><span class="code">CLN 402</span> Clinical Pediatric Primary Care</li><li><span class="code">OPT 218</span> Pediatric Optometry</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>3</span></h4>
+                    <ul><li><span class="code">OPT 318</span> Pediatric Optometry</li><li><span class="code">CLN 411</span> Pediatric Optometry II</li><li><span class="code">CLN 421</span> Pediatric Optometry III</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="public health &amp; community eye care">
+                <header>
+                    <h3>Public Health &amp; Community Eye Care</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">8 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>1</span></h4>
+                    <ul><li><span class="code">OPT 691</span> Optometry and Public Health</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>4</span></h4>
+                    <ul><li><a href="index.html#/course/42">Digital Vision &amp; Ergonomics</a></li><li><a href="index.html#/course/50">Environmental Optometry &amp; Ergonomics</a></li><li><a href="index.html#/course/33">Public Health &amp; Epidemiology</a></li><li><a href="index.html#/course/45">Sports &amp; Performance Vision Training</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>1</span></h4>
+                    <ul><li><span class="code">OPT 323</span> Public Health in Optometry</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>2</span></h4>
+                    <ul><li><span class="code">CLN 212</span> Community Eye Care I</li><li><span class="code">CLN 222</span> Community Eye Care II</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="2" data-label="geriatric &amp; aging vision">
+                <header>
+                    <h3>Geriatric &amp; Aging Vision</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 2 institutions</span>
+                        <span class="tag count">2 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Southern College of Optometry<span>1</span></h4>
+                    <ul><li><span class="code">OPT 302</span> Vision Rehabilitation &amp; Aging</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>1</span></h4>
+                    <ul><li><span class="code">OPT 313</span> Geriatric Optometry</li></ul>
+                </div></div>
+            </article></div>
+        </section>
+        <section class="group">
+            <h2>Professional Practice</h2>
+            <div class="subjects">
+            <article class="subject" data-sources="4" data-label="practice management &amp; business">
+                <header>
+                    <h3>Practice Management &amp; Business</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">13 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>2</span></h4>
+                    <ul><li><span class="code">OPT 741</span> Practice and Business Management</li><li><span class="code">OPT 830</span> Professional Ethics</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>1</span></h4>
+                    <ul><li><a href="index.html#/course/39">Practice Management &amp; Entrepreneurship</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>4</span></h4>
+                    <ul><li><span class="code">OPT 129</span> Optometric Practice I</li><li><span class="code">OPT 219</span> Optometric Practice II</li><li><span class="code">OPT 312</span> Optometric Practice Strategies and Operations I</li><li><span class="code">OPT 322</span> Optometric Practice Strategies and Operations II</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>6</span></h4>
+                    <ul><li><span class="code">OPT 2210</span> Business Fundamentals I</li><li><span class="code">OPT 324</span> Business Fundamentals II</li><li><span class="code">OPT 226</span> Clinicolegal Aspects of Optometry</li><li><span class="code">OPT 514</span> Concepts of Practice Management ELECTIVE</li><li><span class="code">CLN 213</span> Product Management I</li><li><span class="code">CLN 223</span> Product Management II</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="4" data-label="professional &amp; communication skills">
+                <header>
+                    <h3>Professional &amp; Communication Skills</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 4 institutions</span>
+                        <span class="tag count">11 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>2</span></h4>
+                    <ul><li><span class="code">OPT 810</span> Integrative Seminar</li><li><span class="code">OPT 951</span> Online Clinical Seminar</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>1</span></h4>
+                    <ul><li><a href="index.html#/course/31">Patient Communication &amp; Counseling</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>5</span></h4>
+                    <ul><li><span class="code">OPT 307</span> Integrative Clinical Analysis I</li><li><span class="code">OPT 317</span> Integrative Clinical Analysis II</li><li><span class="code">OPT 318</span> Seminar</li><li><span class="code">OPT 118</span> Strategies for Academic Success I</li><li><span class="code">OPT 128</span> Strategies for Academic Success II</li></ul>
+                </div>
+                <div class="src">
+                    <h4>University of Alabama at Birmingham<span>3</span></h4>
+                    <ul><li><span class="code">OPT 2211</span> Optometric Clinical Seminar 2</li><li><span class="code">OPT 124</span> Optometric Clinical Seminar Series</li><li><span class="code">OPT 134</span> Professional Communications</li></ul>
+                </div></div>
+            </article>
+            <article class="subject" data-sources="3" data-label="research methods &amp; evidence">
+                <header>
+                    <h3>Research Methods &amp; Evidence</h3>
+                    <div class="tags">
+                        <span class="tag shared">Taught at 3 institutions</span>
+                        <span class="tag count">5 courses</span>
+                    </div>
+                </header>
+                <div class="sources">
+                <div class="src">
+                    <h4>Massachusetts College of Pharmacy and Health Sciences (mcphs)<span>1</span></h4>
+                    <ul><li><span class="code">OPT 860</span> Research and Statistical Methods</li></ul>
+                </div>
+                <div class="src src-site">
+                    <h4>Optometry Learning Hub<span>3</span></h4>
+                    <ul><li><a href="index.html#/course/40">Clinical Research &amp; Evidence Synthesis</a></li><li><a href="index.html#/course/33">Public Health &amp; Epidemiology</a></li><li><a href="index.html#/course/36">Research Methods &amp; Statistics</a></li></ul>
+                </div>
+                <div class="src">
+                    <h4>Southern College of Optometry<span>1</span></h4>
+                    <ul><li><span class="code">OPT 209</span> Evidence Based Medicine</li></ul>
+                </div></div>
+            </article></div>
+        </section>
+
+    <p class="lede" style="margin-top:40px; font-size:14px;">
+        Built from 260 courses across 4 sources.
+        18 courses matched no subject and are excluded rather than
+        forced into a category. Curricula scraped 2026-08-15 11:30:56.
+    </p>
+</div>
+
+<script>
+(function () {
+    const q = document.getElementById('q');
+    const sharedBtn = document.getElementById('sharedOnly');
+    const subjects = [...document.querySelectorAll('.subject')];
+    let sharedOnly = false;
+
+    function apply() {
+        const term = q.value.trim().toLowerCase();
+
+        subjects.forEach(function (el) {
+            const matchesTerm = !term || el.textContent.toLowerCase().includes(term);
+            const matchesShared = !sharedOnly || Number(el.dataset.sources) > 1;
+            el.classList.toggle('hidden', !(matchesTerm && matchesShared));
+        });
+
+        // Hide a group heading when everything under it is filtered out.
+        document.querySelectorAll('.group').forEach(function (group) {
+            const anyVisible = group.querySelector('.subject:not(.hidden)');
+            group.classList.toggle('hidden', !anyVisible);
+        });
+    }
+
+    q.addEventListener('input', apply);
+    sharedBtn.addEventListener('click', function () {
+        sharedOnly = !sharedOnly;
+        sharedBtn.classList.toggle('on', sharedOnly);
+        apply();
+    });
+})();
+</script>
+
+</body>
+</html>

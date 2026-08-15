@@ -1,0 +1,4842 @@
+{
+  "generated_from": {
+    "syllabi": "data/syllabi.json",
+    "site_catalogue": "js/data.js",
+    "extracted_at": "2026-08-15 11:30:56"
+  },
+  "counts": {
+    "subjects": 25,
+    "courses": 260,
+    "edges": 261,
+    "unmapped": 18,
+    "sharedSubjects": 24
+  },
+  "nodes": [
+    {
+      "id": "subject:optics-physical",
+      "type": "subject",
+      "label": "Physical & Visual Optics",
+      "group": "optics",
+      "courseCount": 10,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:optics-ophthalmic",
+      "type": "subject",
+      "label": "Ophthalmic Optics & Dispensing",
+      "group": "optics",
+      "courseCount": 5,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:refraction",
+      "type": "subject",
+      "label": "Refraction & Refractive Error",
+      "group": "optics",
+      "courseCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "Optometry Learning Hub"
+      ]
+    },
+    {
+      "id": "subject:anatomy",
+      "type": "subject",
+      "label": "Ocular Anatomy & Physiology",
+      "group": "foundations",
+      "courseCount": 14,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:neuro",
+      "type": "subject",
+      "label": "Neuroanatomy & Visual Neuroscience",
+      "group": "foundations",
+      "courseCount": 10,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:biochem",
+      "type": "subject",
+      "label": "Ocular Biochemistry & Cell Biology",
+      "group": "foundations",
+      "courseCount": 7,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:perception",
+      "type": "subject",
+      "label": "Visual Perception & Psychophysics",
+      "group": "foundations",
+      "courseCount": 5,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:binocular",
+      "type": "subject",
+      "label": "Binocular Vision & Ocular Motility",
+      "group": "clinical",
+      "courseCount": 10,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:vision-therapy",
+      "type": "subject",
+      "label": "Vision Therapy & Rehabilitation",
+      "group": "clinical",
+      "courseCount": 14,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:contact-lens",
+      "type": "subject",
+      "label": "Contact Lenses",
+      "group": "clinical",
+      "courseCount": 14,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:clinical-methods",
+      "type": "subject",
+      "label": "Clinical Methods & Procedures",
+      "group": "clinical",
+      "courseCount": 23,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:clinical-practice",
+      "type": "subject",
+      "label": "Clinical Rotations & Internships",
+      "group": "clinical",
+      "courseCount": 37,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:anterior-segment",
+      "type": "subject",
+      "label": "Anterior Segment Disease",
+      "group": "disease",
+      "courseCount": 13,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:posterior-segment",
+      "type": "subject",
+      "label": "Posterior Segment & Retinal Disease",
+      "group": "disease",
+      "courseCount": 9,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:glaucoma",
+      "type": "subject",
+      "label": "Glaucoma",
+      "group": "disease",
+      "courseCount": 6,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:systemic",
+      "type": "subject",
+      "label": "Systemic Disease & Ocular Manifestations",
+      "group": "disease",
+      "courseCount": 12,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:pharmacology",
+      "type": "subject",
+      "label": "Pharmacology",
+      "group": "disease",
+      "courseCount": 11,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:surgery",
+      "type": "subject",
+      "label": "Surgical & Peri-operative Care",
+      "group": "disease",
+      "courseCount": 5,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:pediatrics",
+      "type": "subject",
+      "label": "Pediatric Optometry",
+      "group": "populations",
+      "courseCount": 11,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:geriatrics",
+      "type": "subject",
+      "label": "Geriatric & Aging Vision",
+      "group": "populations",
+      "courseCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:public-health",
+      "type": "subject",
+      "label": "Public Health & Community Eye Care",
+      "group": "populations",
+      "courseCount": 8,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:practice-management",
+      "type": "subject",
+      "label": "Practice Management & Business",
+      "group": "professional",
+      "courseCount": 13,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:research",
+      "type": "subject",
+      "label": "Research Methods & Evidence",
+      "group": "professional",
+      "courseCount": 5,
+      "sourceCount": 3,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry"
+      ]
+    },
+    {
+      "id": "subject:imaging",
+      "type": "subject",
+      "label": "Diagnostic Imaging & Instrumentation",
+      "group": "clinical",
+      "courseCount": 4,
+      "sourceCount": 2,
+      "sources": [
+        "Optometry Learning Hub",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "subject:professional-skills",
+      "type": "subject",
+      "label": "Professional & Communication Skills",
+      "group": "professional",
+      "courseCount": 11,
+      "sourceCount": 4,
+      "sources": [
+        "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+        "Optometry Learning Hub",
+        "Southern College of Optometry",
+        "University of Alabama at Birmingham"
+      ]
+    },
+    {
+      "id": "olh:1",
+      "type": "course",
+      "label": "Refraction & Optics Fundamentals",
+      "source": "Optometry Learning Hub",
+      "courseId": 1,
+      "category": "refraction",
+      "href": "#/course/1",
+      "subjects": [
+        "refraction",
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "olh:2",
+      "type": "course",
+      "label": "Advanced Optics & Lens Design",
+      "source": "Optometry Learning Hub",
+      "courseId": 2,
+      "category": "refraction",
+      "href": "#/course/2",
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "olh:3",
+      "type": "course",
+      "label": "Geometric Optics",
+      "source": "Optometry Learning Hub",
+      "courseId": 3,
+      "category": "refraction",
+      "href": "#/course/3",
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "olh:4",
+      "type": "course",
+      "label": "Aspheric & High-Order Aberrations",
+      "source": "Optometry Learning Hub",
+      "courseId": 4,
+      "category": "refraction",
+      "href": "#/course/4",
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "olh:5",
+      "type": "course",
+      "label": "Wavefront Analysis & Measurement",
+      "source": "Optometry Learning Hub",
+      "courseId": 5,
+      "category": "refraction",
+      "href": "#/course/5",
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "olh:6",
+      "type": "course",
+      "label": "Contact Lens Optics",
+      "source": "Optometry Learning Hub",
+      "courseId": 6,
+      "category": "refraction",
+      "href": "#/course/6",
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "olh:43",
+      "type": "course",
+      "label": "Physical Optics",
+      "source": "Optometry Learning Hub",
+      "courseId": 43,
+      "category": "refraction",
+      "href": "#/course/43",
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "olh:7",
+      "type": "course",
+      "label": "Anatomy & Physiology of the Eye",
+      "source": "Optometry Learning Hub",
+      "courseId": 7,
+      "category": "anatomy",
+      "href": "#/course/7",
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "olh:8",
+      "type": "course",
+      "label": "Retinal & Choroidal Structure",
+      "source": "Optometry Learning Hub",
+      "courseId": 8,
+      "category": "anatomy",
+      "href": "#/course/8",
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "olh:9",
+      "type": "course",
+      "label": "Visual Neuroscience",
+      "source": "Optometry Learning Hub",
+      "courseId": 9,
+      "category": "anatomy",
+      "href": "#/course/9",
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "olh:10",
+      "type": "course",
+      "label": "Anterior Segment Anatomy",
+      "source": "Optometry Learning Hub",
+      "courseId": 10,
+      "category": "anatomy",
+      "href": "#/course/10",
+      "subjects": [
+        "anatomy",
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "olh:11",
+      "type": "course",
+      "label": "Binocular Vision Physiology",
+      "source": "Optometry Learning Hub",
+      "courseId": 11,
+      "category": "anatomy",
+      "href": "#/course/11",
+      "subjects": [
+        "anatomy",
+        "binocular"
+      ]
+    },
+    {
+      "id": "olh:12",
+      "type": "course",
+      "label": "Biochemistry of the Eye",
+      "source": "Optometry Learning Hub",
+      "courseId": 12,
+      "category": "anatomy",
+      "href": "#/course/12",
+      "subjects": [
+        "biochem"
+      ]
+    },
+    {
+      "id": "olh:13",
+      "type": "course",
+      "label": "Clinical Skills & Examinations",
+      "source": "Optometry Learning Hub",
+      "courseId": 13,
+      "category": "clinical",
+      "href": "#/course/13",
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "olh:14",
+      "type": "course",
+      "label": "Slit Lamp Biomicroscopy",
+      "source": "Optometry Learning Hub",
+      "courseId": 14,
+      "category": "clinical",
+      "href": "#/course/14",
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "olh:15",
+      "type": "course",
+      "label": "Fundus Examination Techniques",
+      "source": "Optometry Learning Hub",
+      "courseId": 15,
+      "category": "clinical",
+      "href": "#/course/15",
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "olh:16",
+      "type": "course",
+      "label": "Visual Field Testing & Interpretation",
+      "source": "Optometry Learning Hub",
+      "courseId": 16,
+      "category": "clinical",
+      "href": "#/course/16",
+      "subjects": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "olh:17",
+      "type": "course",
+      "label": "Tonometry & Intraocular Pressure Management",
+      "source": "Optometry Learning Hub",
+      "courseId": 17,
+      "category": "clinical",
+      "href": "#/course/17",
+      "subjects": [
+        "clinical-methods",
+        "glaucoma"
+      ]
+    },
+    {
+      "id": "olh:18",
+      "type": "course",
+      "label": "Contact Lens Fitting & Management",
+      "source": "Optometry Learning Hub",
+      "courseId": 18,
+      "category": "clinical",
+      "href": "#/course/18",
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "olh:19",
+      "type": "course",
+      "label": "Specialized Contact Lens Applications",
+      "source": "Optometry Learning Hub",
+      "courseId": 19,
+      "category": "clinical",
+      "href": "#/course/19",
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "olh:20",
+      "type": "course",
+      "label": "Refraction & Optical Correction",
+      "source": "Optometry Learning Hub",
+      "courseId": 20,
+      "category": "clinical",
+      "href": "#/course/20",
+      "subjects": [
+        "refraction"
+      ]
+    },
+    {
+      "id": "olh:21",
+      "type": "course",
+      "label": "Ocular Diseases & Pathology",
+      "source": "Optometry Learning Hub",
+      "courseId": 21,
+      "category": "ocular-diseases",
+      "href": "#/course/21",
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "olh:22",
+      "type": "course",
+      "label": "Cataract Pathology & Management",
+      "source": "Optometry Learning Hub",
+      "courseId": 22,
+      "category": "ocular-diseases",
+      "href": "#/course/22",
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "olh:23",
+      "type": "course",
+      "label": "Glaucoma: Assessment & Treatment",
+      "source": "Optometry Learning Hub",
+      "courseId": 23,
+      "category": "ocular-diseases",
+      "href": "#/course/23",
+      "subjects": [
+        "glaucoma"
+      ]
+    },
+    {
+      "id": "olh:24",
+      "type": "course",
+      "label": "Retinal Diseases & Degeneration",
+      "source": "Optometry Learning Hub",
+      "courseId": 24,
+      "category": "ocular-diseases",
+      "href": "#/course/24",
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "olh:25",
+      "type": "course",
+      "label": "Corneal Pathology & Disease",
+      "source": "Optometry Learning Hub",
+      "courseId": 25,
+      "category": "ocular-diseases",
+      "href": "#/course/25",
+      "subjects": [
+        "anterior-segment",
+        "systemic"
+      ]
+    },
+    {
+      "id": "olh:26",
+      "type": "course",
+      "label": "Neuro-Ophthalmology",
+      "source": "Optometry Learning Hub",
+      "courseId": 26,
+      "category": "ocular-diseases",
+      "href": "#/course/26",
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "olh:27",
+      "type": "course",
+      "label": "Uveitis & Inflammatory Conditions",
+      "source": "Optometry Learning Hub",
+      "courseId": 27,
+      "category": "ocular-diseases",
+      "href": "#/course/27",
+      "subjects": [
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "olh:28",
+      "type": "course",
+      "label": "Pediatric Eye Disease",
+      "source": "Optometry Learning Hub",
+      "courseId": 28,
+      "category": "ocular-diseases",
+      "href": "#/course/28",
+      "subjects": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "olh:29",
+      "type": "course",
+      "label": "Refractive Errors in Children",
+      "source": "Optometry Learning Hub",
+      "courseId": 29,
+      "category": "ocular-diseases",
+      "href": "#/course/29",
+      "subjects": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "olh:30",
+      "type": "course",
+      "label": "Systemic Diseases & Ocular Manifestations",
+      "source": "Optometry Learning Hub",
+      "courseId": 30,
+      "category": "ocular-diseases",
+      "href": "#/course/30",
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "olh:31",
+      "type": "course",
+      "label": "Patient Communication & Counseling",
+      "source": "Optometry Learning Hub",
+      "courseId": 31,
+      "category": "clinical",
+      "href": "#/course/31",
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "olh:32",
+      "type": "course",
+      "label": "Pharmacology for Optometry",
+      "source": "Optometry Learning Hub",
+      "courseId": 32,
+      "category": "clinical",
+      "href": "#/course/32",
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "olh:33",
+      "type": "course",
+      "label": "Public Health & Epidemiology",
+      "source": "Optometry Learning Hub",
+      "courseId": 33,
+      "category": "anatomy",
+      "href": "#/course/33",
+      "subjects": [
+        "public-health",
+        "research"
+      ]
+    },
+    {
+      "id": "olh:34",
+      "type": "course",
+      "label": "Advanced Diagnostic Imaging",
+      "source": "Optometry Learning Hub",
+      "courseId": 34,
+      "category": "clinical",
+      "href": "#/course/34",
+      "subjects": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "olh:35",
+      "type": "course",
+      "label": "Surgical Considerations in Optometry",
+      "source": "Optometry Learning Hub",
+      "courseId": 35,
+      "category": "clinical",
+      "href": "#/course/35",
+      "subjects": [
+        "surgery"
+      ]
+    },
+    {
+      "id": "olh:36",
+      "type": "course",
+      "label": "Research Methods & Statistics",
+      "source": "Optometry Learning Hub",
+      "courseId": 36,
+      "category": "refraction",
+      "href": "#/course/36",
+      "subjects": [
+        "research"
+      ]
+    },
+    {
+      "id": "olh:37",
+      "type": "course",
+      "label": "Advanced Ocular Pharmacology",
+      "source": "Optometry Learning Hub",
+      "courseId": 37,
+      "category": "clinical",
+      "href": "#/course/37",
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "olh:38",
+      "type": "course",
+      "label": "Therapeutic Optometry",
+      "source": "Optometry Learning Hub",
+      "courseId": 38,
+      "category": "clinical",
+      "href": "#/course/38",
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "olh:39",
+      "type": "course",
+      "label": "Practice Management & Entrepreneurship",
+      "source": "Optometry Learning Hub",
+      "courseId": 39,
+      "category": "clinical",
+      "href": "#/course/39",
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "olh:40",
+      "type": "course",
+      "label": "Clinical Research & Evidence Synthesis",
+      "source": "Optometry Learning Hub",
+      "courseId": 40,
+      "category": "refraction",
+      "href": "#/course/40",
+      "subjects": [
+        "research"
+      ]
+    },
+    {
+      "id": "olh:41",
+      "type": "course",
+      "label": "Specialty Clinics & Case Management",
+      "source": "Optometry Learning Hub",
+      "courseId": 41,
+      "category": "clinical",
+      "href": "#/course/41",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "olh:42",
+      "type": "course",
+      "label": "Digital Vision & Ergonomics",
+      "source": "Optometry Learning Hub",
+      "courseId": 42,
+      "category": "clinical",
+      "href": "#/course/42",
+      "subjects": [
+        "public-health"
+      ]
+    },
+    {
+      "id": "olh:44",
+      "type": "course",
+      "label": "Low Vision Rehabilitation & Assistive Aids",
+      "source": "Optometry Learning Hub",
+      "courseId": 44,
+      "category": "clinical",
+      "href": "#/course/44",
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "olh:45",
+      "type": "course",
+      "label": "Sports & Performance Vision Training",
+      "source": "Optometry Learning Hub",
+      "courseId": 45,
+      "category": "clinical",
+      "href": "#/course/45",
+      "subjects": [
+        "public-health"
+      ]
+    },
+    {
+      "id": "olh:46",
+      "type": "course",
+      "label": "Visual Perception & Psychophysics",
+      "source": "Optometry Learning Hub",
+      "courseId": 46,
+      "category": "anatomy",
+      "href": "#/course/46",
+      "subjects": [
+        "perception"
+      ]
+    },
+    {
+      "id": "olh:47",
+      "type": "course",
+      "label": "Advanced Vision Therapy & Orthoptics",
+      "source": "Optometry Learning Hub",
+      "courseId": 47,
+      "category": "clinical",
+      "href": "#/course/47",
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "olh:48",
+      "type": "course",
+      "label": "Optometric Instrumentation & Calibration",
+      "source": "Optometry Learning Hub",
+      "courseId": 48,
+      "category": "refraction",
+      "href": "#/course/48",
+      "subjects": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "olh:49",
+      "type": "course",
+      "label": "Ophthalmic Dispensing & Laboratory Technology",
+      "source": "Optometry Learning Hub",
+      "courseId": 49,
+      "category": "refraction",
+      "href": "#/course/49",
+      "subjects": [
+        "optics-ophthalmic"
+      ]
+    },
+    {
+      "id": "olh:50",
+      "type": "course",
+      "label": "Environmental Optometry & Ergonomics",
+      "source": "Optometry Learning Hub",
+      "courseId": 50,
+      "category": "clinical",
+      "href": "#/course/50",
+      "subjects": [
+        "public-health"
+      ]
+    },
+    {
+      "id": "olh:51",
+      "type": "course",
+      "label": "Ocular Prosthetics & Anophthalmic Care",
+      "source": "Optometry Learning Hub",
+      "courseId": 51,
+      "category": "ocular-diseases",
+      "href": "#/course/51",
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:OBHS 111:0",
+      "type": "course",
+      "label": "Fundamentals 1",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 111",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 111:1",
+      "type": "course",
+      "label": "Intro to Optometry",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 111",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:OPT 112:2",
+      "type": "course",
+      "label": "Geometric and Clinical Optics",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 112",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:VS 111:3",
+      "type": "course",
+      "label": "Ocular Anatomy and Physiology",
+      "source": "University of Alabama at Birmingham",
+      "code": "VS 111",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "University of Alab:VS 113:4",
+      "type": "course",
+      "label": "Biochemistry of the Eye",
+      "source": "University of Alabama at Birmingham",
+      "code": "VS 113",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "biochem"
+      ]
+    },
+    {
+      "id": "University of Alab:OBHS 112:5",
+      "type": "course",
+      "label": "Fundamentals II",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 112",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "University of Alab:OBHS 121:6",
+      "type": "course",
+      "label": "Systems I: Neuroscience",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 121",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "University of Alab:OBHS 122:7",
+      "type": "course",
+      "label": "Systems II: Gross Anatomy",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 122",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "University of Alab:OBHS 123:8",
+      "type": "course",
+      "label": "Systems III: Cardiovascular and Respiratory",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 123",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:OPT 121:9",
+      "type": "course",
+      "label": "Clinical Evaluation of the Visual System (CEVS) I",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 121",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 122:10",
+      "type": "course",
+      "label": "Ocular Microbiology",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 122",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "biochem"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 124:11",
+      "type": "course",
+      "label": "Optometric Clinical Seminar Series",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 124",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "University of Alab:VS 121:12",
+      "type": "course",
+      "label": "Visual Optics",
+      "source": "University of Alabama at Birmingham",
+      "code": "VS 121",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "University of Alab:VS 122:13",
+      "type": "course",
+      "label": "Visual Perception",
+      "source": "University of Alabama at Birmingham",
+      "code": "VS 122",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "perception"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 131:14",
+      "type": "course",
+      "label": "Clinical Rotation I",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 131",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:OBHS 131:15",
+      "type": "course",
+      "label": "Systems IV: Renal",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 131",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:OPT 132:16",
+      "type": "course",
+      "label": "CEVS II",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 132",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 133:17",
+      "type": "course",
+      "label": "Clinical Ophthalmic Optics",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 133",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "optics-ophthalmic"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 134:18",
+      "type": "course",
+      "label": "Professional Communications",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 134",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "University of Alab:VS 131:19",
+      "type": "course",
+      "label": "Neurobiology of the Visual System",
+      "source": "University of Alabama at Birmingham",
+      "code": "VS 131",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "University of Alab:VS 132:20",
+      "type": "course",
+      "label": "Eye Movements and Principles of Binocular Vision",
+      "source": "University of Alabama at Birmingham",
+      "code": "VS 132",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "University of Alab:OBHS 211:21",
+      "type": "course",
+      "label": "Systems V: Gastrointestinal & Musculoskeletal/Skin",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 211",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:CLN 211:22",
+      "type": "course",
+      "label": "Clinical Rotation II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 211",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 212:23",
+      "type": "course",
+      "label": "Community Eye Care I",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 212",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "public-health"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 213:24",
+      "type": "course",
+      "label": "Product Management I",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 213",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 212:25",
+      "type": "course",
+      "label": "Ocular Pharmacology",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 212",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 213:26",
+      "type": "course",
+      "label": "CEVS III",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 213",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "University of Alab:VS 211:27",
+      "type": "course",
+      "label": "Visual Perception",
+      "source": "University of Alabama at Birmingham",
+      "code": "VS 211",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "perception"
+      ]
+    },
+    {
+      "id": "University of Alab:OBHS 212:28",
+      "type": "course",
+      "label": "Systems VI: Hematology & Endocrine",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 212",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:CLN 221:29",
+      "type": "course",
+      "label": "Clinical Rotation III",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 221",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 222:30",
+      "type": "course",
+      "label": "Community Eye Care II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 222",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "public-health"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 223:31",
+      "type": "course",
+      "label": "Product Management II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 223",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 224:32",
+      "type": "course",
+      "label": "Primary Eye Care Clinic I",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 224",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 221:33",
+      "type": "course",
+      "label": "CEVS IV",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 221",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 222:34",
+      "type": "course",
+      "label": "Diseases of the Anterior Segment",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 222",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 224:35",
+      "type": "course",
+      "label": "Anomalies of Binocular Vision I",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 224",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 225:36",
+      "type": "course",
+      "label": "Diseases of the Posterior Segment",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 225",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 226:37",
+      "type": "course",
+      "label": "Clinicolegal Aspects of Optometry",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 226",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 2210:38",
+      "type": "course",
+      "label": "Business Fundamentals I",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 2210",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-methods",
+        "practice-management"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 2211:39",
+      "type": "course",
+      "label": "Optometric Clinical Seminar 2",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 2211",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 516:40",
+      "type": "course",
+      "label": "Spanish for Eye Care ELECTIVE",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 516",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:OPT 231:41",
+      "type": "course",
+      "label": "Ophthalmic Imaging",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 231",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 238:42",
+      "type": "course",
+      "label": "Systemic Pharmacology",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 238",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 231:43",
+      "type": "course",
+      "label": "Primary Eye Care II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 231",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 232:44",
+      "type": "course",
+      "label": "Clinical Rotation IV",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 232",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 234:45",
+      "type": "course",
+      "label": "Vision Therapy I (Summer 1 or 2)",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 234",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 602:46",
+      "type": "course",
+      "label": "AIODP Geometric and Clinical Optics",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 602",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:CLN 602:47",
+      "type": "course",
+      "label": "AIODP CLN ROT I",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 602",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:OBHS 231:48",
+      "type": "course",
+      "label": "AIODP Integrated Human Physiology",
+      "source": "University of Alabama at Birmingham",
+      "code": "OBHS 231",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 311:49",
+      "type": "course",
+      "label": "Primary Eye Care III",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 311",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 312:50",
+      "type": "course",
+      "label": "Clinical Rotation V",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 312",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 316:51",
+      "type": "course",
+      "label": "Vision Therapy II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 316",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 314:52",
+      "type": "course",
+      "label": "Special Clinical Rotation I",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 314",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 311:53",
+      "type": "course",
+      "label": "Anomalies of Binocular Vision II",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 311",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 312:54",
+      "type": "course",
+      "label": "Contact Lenses I",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 312",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 313:55",
+      "type": "course",
+      "label": "Geriatric Optometry",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 313",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "geriatrics"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 314:56",
+      "type": "course",
+      "label": "Low Vision",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 314",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 316:57",
+      "type": "course",
+      "label": "Glaucoma",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 316",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "glaucoma"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 318:58",
+      "type": "course",
+      "label": "Pediatric Optometry",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 318",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 319:59",
+      "type": "course",
+      "label": "Diseases of the Posterior Segment II",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 319",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 321:60",
+      "type": "course",
+      "label": "Primary Eye Care Clinic IV",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 321",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 322:61",
+      "type": "course",
+      "label": "Clinical Rotation VI",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 322",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 326:62",
+      "type": "course",
+      "label": "Vision Therapy III",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 326",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 324:63",
+      "type": "course",
+      "label": "Special Clinical Rotation II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 324",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 321:64",
+      "type": "course",
+      "label": "Neuro-optometry",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 321",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 322:65",
+      "type": "course",
+      "label": "Contact Lenses II",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 322",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 323:66",
+      "type": "course",
+      "label": "Injections and Surgical Procedures",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 323",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "surgery"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 324:67",
+      "type": "course",
+      "label": "Business Fundamentals II",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 324",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-methods",
+        "practice-management"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 325:68",
+      "type": "course",
+      "label": "Clinical Management of Vision Problems",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 325",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 326:69",
+      "type": "course",
+      "label": "Ophthalmic Lasers",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 326",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:OPT 328:70",
+      "type": "course",
+      "label": "Assessment of Systemic Diseases in Optometry",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 328",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 329:71",
+      "type": "course",
+      "label": "Advanced Posterior Segment Evaluation",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 329",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 515:72",
+      "type": "course",
+      "label": "Advanced Vision and Learning ELECTIVE",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 515",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "University of Alab:CLN 336:73",
+      "type": "course",
+      "label": "Externship I",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 336",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 411:74",
+      "type": "course",
+      "label": "Pediatric Optometry II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 411",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 412:75",
+      "type": "course",
+      "label": "Cornea & Contact Lens II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 412",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "contact-lens",
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 413:76",
+      "type": "course",
+      "label": "Ocular Disease & Low Vision II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 413",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 414:77",
+      "type": "course",
+      "label": "Special Clinical Rotation IV",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 414",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 416:78",
+      "type": "course",
+      "label": "Externship I or II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 416",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:OPT 514:79",
+      "type": "course",
+      "label": "Concepts of Practice Management ELECTIVE",
+      "source": "University of Alabama at Birmingham",
+      "code": "OPT 514",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 421:80",
+      "type": "course",
+      "label": "Pediatric Optometry III",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 421",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 422:81",
+      "type": "course",
+      "label": "Cornea and Contact Lens III",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 422",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "contact-lens",
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 423:82",
+      "type": "course",
+      "label": "Ocular Disease and Low Vision III",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 423",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 424:83",
+      "type": "course",
+      "label": "Special Clinical Rotation V",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 424",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "University of Alab:CLN 426:84",
+      "type": "course",
+      "label": "Externship II",
+      "source": "University of Alabama at Birmingham",
+      "code": "CLN 426",
+      "term": "School of Optometry",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 610:0",
+      "type": "course",
+      "label": "Clinical Anatomy (with lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 610",
+      "term": "Year I -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 611:1",
+      "type": "course",
+      "label": "Ocular Anatomy and Physiology",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 611",
+      "term": "Year I -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 630:2",
+      "type": "course",
+      "label": "Geometrical and Physical Optics (with lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 630",
+      "term": "Year I -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 650:3",
+      "type": "course",
+      "label": "Optometry Theory and Methods I",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 650",
+      "term": "Year I -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 656:4",
+      "type": "course",
+      "label": "Histology and Embryology",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 656",
+      "term": "Year I -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 721:5",
+      "type": "course",
+      "label": "Visual Development",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 721",
+      "term": "Year I -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 612:6",
+      "type": "course",
+      "label": "Ocular Biochemistry",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 612",
+      "term": "Year I - Spring",
+      "credits": null,
+      "subjects": [
+        "biochem"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 613:7",
+      "type": "course",
+      "label": "Neuro Anatomy and Physiology",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 613",
+      "term": "Year I - Spring",
+      "credits": null,
+      "subjects": [
+        "anatomy",
+        "neuro"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 622:8",
+      "type": "course",
+      "label": "Visual Perception",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 622",
+      "term": "Year I - Spring",
+      "credits": null,
+      "subjects": [
+        "perception"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 631:9",
+      "type": "course",
+      "label": "Visual Optics (with lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 631",
+      "term": "Year I - Spring",
+      "credits": null,
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 652:10",
+      "type": "course",
+      "label": "Optometry Theory and Methods II",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 652",
+      "term": "Year I - Spring",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 657:11",
+      "type": "course",
+      "label": "Microbiology",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 657",
+      "term": "Year I - Spring",
+      "credits": null,
+      "subjects": [
+        "biochem"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 709:12",
+      "type": "course",
+      "label": "Systemic Pharmacology I",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 709",
+      "term": "Year I - Spring",
+      "credits": null,
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 632:13",
+      "type": "course",
+      "label": "Ophthalmic Optics I (w/lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 632",
+      "term": "Year I - Summer",
+      "credits": null,
+      "subjects": [
+        "optics-ophthalmic"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 640:14",
+      "type": "course",
+      "label": "Systems Based Physiology",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 640",
+      "term": "Year I - Summer",
+      "credits": null,
+      "subjects": [
+        "anatomy",
+        "systemic"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 653:15",
+      "type": "course",
+      "label": "Optometry Theory and Methods III",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 653",
+      "term": "Year I - Summer",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 705:16",
+      "type": "course",
+      "label": "Visual Neurophysiology & Neuro-Diagnostics",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 705",
+      "term": "Year I - Summer",
+      "credits": null,
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 710:17",
+      "type": "course",
+      "label": "Systemic Pharmacology II",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 710",
+      "term": "Year I - Summer",
+      "credits": null,
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 711:18",
+      "type": "course",
+      "label": "Immunology",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 711",
+      "term": "Year I - Summer",
+      "credits": null,
+      "subjects": [
+        "biochem"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 722:19",
+      "type": "course",
+      "label": "Oculomotor Function",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 722",
+      "term": "Year I - Summer",
+      "credits": null,
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 830:20",
+      "type": "course",
+      "label": "Professional Ethics",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 830",
+      "term": "Year I - Summer",
+      "credits": null,
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 655:21",
+      "type": "course",
+      "label": "Systemic Disease",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 655",
+      "term": "Year II -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 712:22",
+      "type": "course",
+      "label": "Ocular Pharmacology",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 712",
+      "term": "Year II -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 750:23",
+      "type": "course",
+      "label": "Anterior Segment Ocular Disease I",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 750",
+      "term": "Year II -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 751:24",
+      "type": "course",
+      "label": "Optometry Theory and Methods IV",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 751",
+      "term": "Year II -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 756:25",
+      "type": "course",
+      "label": "Foundations of Binocular Vision",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 756",
+      "term": "Year II -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 766:26",
+      "type": "course",
+      "label": "Pathophysiology",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 766",
+      "term": "Year II -\u00a0Fall",
+      "credits": null,
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 752:27",
+      "type": "course",
+      "label": "Contact Lenses I",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 752",
+      "term": "Year II - Spring",
+      "credits": null,
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 753:28",
+      "type": "course",
+      "label": "Posterior Segment Ocular Disease I",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 753",
+      "term": "Year II - Spring",
+      "credits": null,
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 757:29",
+      "type": "course",
+      "label": "Clinical Binocular Vision I",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 757",
+      "term": "Year II - Spring",
+      "credits": null,
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 851:30",
+      "type": "course",
+      "label": "Glaucoma I",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 851",
+      "term": "Year II - Spring",
+      "credits": null,
+      "subjects": [
+        "glaucoma"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 854:31",
+      "type": "course",
+      "label": "Ocular Manifestations of Systemic Disease",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 854",
+      "term": "Year II - Spring",
+      "credits": null,
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 758:32",
+      "type": "course",
+      "label": "Neuro Optometry",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 758",
+      "term": "Year II - Summer",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "Massachusetts Coll:OPT 759:33",
+      "type": "course",
+      "label": "Anterior Segment Ocular Disease II",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 759",
+      "term": "Year II - Summer",
+      "credits": null,
+      "subjects": [
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 768:34",
+      "type": "course",
+      "label": "Ocular Surface Disorders (with lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 768",
+      "term": "Year II - Summer",
+      "credits": null,
+      "subjects": [
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 810:35",
+      "type": "course",
+      "label": "Integrative Seminar",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 810",
+      "term": "Year II - Summer",
+      "credits": null,
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 852:36",
+      "type": "course",
+      "label": "Clinical Binocular Vision II (with lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 852",
+      "term": "Year II - Summer",
+      "credits": null,
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 855:37",
+      "type": "course",
+      "label": "Contact Lenses II",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 855",
+      "term": "Year II - Summer",
+      "credits": null,
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 859:38",
+      "type": "course",
+      "label": "Glaucoma II",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 859",
+      "term": "Year II - Summer",
+      "credits": null,
+      "subjects": [
+        "glaucoma"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 691:39",
+      "type": "course",
+      "label": "Optometry and Public Health",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 691",
+      "term": "Year III - Fall",
+      "credits": null,
+      "subjects": [
+        "public-health"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 754:40",
+      "type": "course",
+      "label": "Low Vision and Geriatrics (w/lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 754",
+      "term": "Year III - Fall",
+      "credits": null,
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 755:41",
+      "type": "course",
+      "label": "Pediatrics (with lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 755",
+      "term": "Year III - Fall",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "Massachusetts Coll:OPT 820:42",
+      "type": "course",
+      "label": "Cataract and Refractive Surgery",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 820",
+      "term": "Year III - Fall",
+      "credits": null,
+      "subjects": [
+        "surgery"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 857:43",
+      "type": "course",
+      "label": "Posterior Segment Ocular Disease II",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 857",
+      "term": "Year III - Fall",
+      "credits": null,
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 899:44",
+      "type": "course",
+      "label": "Independent Study",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 899",
+      "term": "Year III - Fall",
+      "credits": null,
+      "subjects": []
+    },
+    {
+      "id": "Massachusetts Coll:OPT 741:45",
+      "type": "course",
+      "label": "Practice and Business Management",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 741",
+      "term": "Year III - Spring",
+      "credits": null,
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 840:46",
+      "type": "course",
+      "label": "Special Populations and Topics",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 840",
+      "term": "Year III - Spring",
+      "credits": null,
+      "subjects": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 845:47",
+      "type": "course",
+      "label": "Advanced Optometric Theory & Methods",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 845",
+      "term": "Year III - Spring",
+      "credits": null,
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 860:48",
+      "type": "course",
+      "label": "Research and Statistical Methods",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 860",
+      "term": "Year III - Spring",
+      "credits": null,
+      "subjects": [
+        "research"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPT 951:49",
+      "type": "course",
+      "label": "Online Clinical Seminar",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPT 951",
+      "term": "Year III - SummerYear IV - Fall/Spring",
+      "credits": null,
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPTC 971:50",
+      "type": "course",
+      "label": "Externship Rotation I",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPTC 971",
+      "term": "Year III - SummerYear IV - Fall/Spring",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPTC 972:51",
+      "type": "course",
+      "label": "Externship Rotation II",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPTC 972",
+      "term": "Year III - SummerYear IV - Fall/Spring",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Massachusetts Coll:OPTC 973:52",
+      "type": "course",
+      "label": "Externship Rotation III",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "code": "OPTC 973",
+      "term": "Year III - SummerYear IV - Fall/Spring",
+      "credits": null,
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 110:0",
+      "type": "course",
+      "label": "Optometric Theory & Methods I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 110",
+      "term": "Fall Semester",
+      "credits": "6",
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 111:1",
+      "type": "course",
+      "label": "Optics of the Eye I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 111",
+      "term": "Fall Semester",
+      "credits": "5",
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 112:2",
+      "type": "course",
+      "label": "Anatomy, Histology, & Physiology I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 112",
+      "term": "Fall Semester",
+      "credits": "4.5",
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 113:3",
+      "type": "course",
+      "label": "Neuroanatomy",
+      "source": "Southern College of Optometry",
+      "code": "OPT 113",
+      "term": "Fall Semester",
+      "credits": "2",
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 114:4",
+      "type": "course",
+      "label": "Ocular Anatomy & Physiology",
+      "source": "Southern College of Optometry",
+      "code": "OPT 114",
+      "term": "Fall Semester",
+      "credits": "4",
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 116:5",
+      "type": "course",
+      "label": "Biochemistry",
+      "source": "Southern College of Optometry",
+      "code": "OPT 116",
+      "term": "Fall Semester",
+      "credits": "1.5",
+      "subjects": [
+        "biochem"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 118:6",
+      "type": "course",
+      "label": "Strategies for Academic Success I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 118",
+      "term": "Fall Semester",
+      "credits": "0.5",
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 120:7",
+      "type": "course",
+      "label": "Optometric Theory & Methods II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 120",
+      "term": "Spring Semester",
+      "credits": "5",
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 121:8",
+      "type": "course",
+      "label": "Optics of the Eye II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 121",
+      "term": "Spring Semester",
+      "credits": "5",
+      "subjects": [
+        "optics-physical"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 122:9",
+      "type": "course",
+      "label": "Anatomy, Histology, & Physiology II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 122",
+      "term": "Spring Semester",
+      "credits": "4.5",
+      "subjects": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 125:10",
+      "type": "course",
+      "label": "Ocular Motility",
+      "source": "Southern College of Optometry",
+      "code": "OPT 125",
+      "term": "Spring Semester",
+      "credits": "1.5",
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 126:11",
+      "type": "course",
+      "label": "Visual Sensation & Perception",
+      "source": "Southern College of Optometry",
+      "code": "OPT 126",
+      "term": "Spring Semester",
+      "credits": "5.5",
+      "subjects": [
+        "perception"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 127:12",
+      "type": "course",
+      "label": "Ophthalmic Optics I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 127",
+      "term": "Spring Semester",
+      "credits": "1.5",
+      "subjects": [
+        "optics-ophthalmic"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 128:13",
+      "type": "course",
+      "label": "Strategies for Academic Success II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 128",
+      "term": "Spring Semester",
+      "credits": "0.5",
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 129:14",
+      "type": "course",
+      "label": "Optometric Practice I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 129",
+      "term": "Spring Semester",
+      "credits": "1",
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 200:15",
+      "type": "course",
+      "label": "Optometric Theory & Methods Lab",
+      "source": "Southern College of Optometry",
+      "code": "OPT 200",
+      "term": "Summer Mini-Semester",
+      "credits": "1",
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 201:16",
+      "type": "course",
+      "label": "Basic Pathology",
+      "source": "Southern College of Optometry",
+      "code": "OPT 201",
+      "term": "Summer Mini-Semester",
+      "credits": "2",
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 202:17",
+      "type": "course",
+      "label": "Systemic Pharmacology I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 202",
+      "term": "Summer Mini-Semester",
+      "credits": "2",
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 203:18",
+      "type": "course",
+      "label": "Foundations of Clinical Care I",
+      "source": "Southern College of Optometry",
+      "code": "CLN 203",
+      "term": "Summer Mini-Semester",
+      "credits": "0.5",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 209:19",
+      "type": "course",
+      "label": "Evidence Based Medicine",
+      "source": "Southern College of Optometry",
+      "code": "OPT 209",
+      "term": "Summer Mini-Semester",
+      "credits": "2",
+      "subjects": [
+        "research"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 210:20",
+      "type": "course",
+      "label": "Optometric Theory & Methods III",
+      "source": "Southern College of Optometry",
+      "code": "OPT 210",
+      "term": "Fall Semester",
+      "credits": "4",
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 211:21",
+      "type": "course",
+      "label": "Medical Pathology",
+      "source": "Southern College of Optometry",
+      "code": "OPT 211",
+      "term": "Fall Semester",
+      "credits": "3",
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 212:22",
+      "type": "course",
+      "label": "Systemic Pharmacology II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 212",
+      "term": "Fall Semester",
+      "credits": "3",
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 215:23",
+      "type": "course",
+      "label": "Binocular Vision: Basic Concepts & Applications",
+      "source": "Southern College of Optometry",
+      "code": "OPT 215",
+      "term": "Fall Semester",
+      "credits": "2.5",
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 216:24",
+      "type": "course",
+      "label": "Foundations of Clinical Care II",
+      "source": "Southern College of Optometry",
+      "code": "CLN 216",
+      "term": "Fall Semester",
+      "credits": "1.5",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 217:25",
+      "type": "course",
+      "label": "Ophthalmic Optics II & Environmental Vision",
+      "source": "Southern College of Optometry",
+      "code": "OPT 217",
+      "term": "Fall Semester",
+      "credits": "3",
+      "subjects": [
+        "optics-ophthalmic"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 218:26",
+      "type": "course",
+      "label": "Pediatric Optometry",
+      "source": "Southern College of Optometry",
+      "code": "OPT 218",
+      "term": "Fall Semester",
+      "credits": "3",
+      "subjects": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 219:27",
+      "type": "course",
+      "label": "Optometric Practice II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 219",
+      "term": "Fall Semester",
+      "credits": "1",
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 220:28",
+      "type": "course",
+      "label": "Optometric Theory & Methods IV",
+      "source": "Southern College of Optometry",
+      "code": "OPT 220",
+      "term": "Spring Semester",
+      "credits": "2.5",
+      "subjects": [
+        "clinical-methods"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 221:29",
+      "type": "course",
+      "label": "Anterior Segment Disease & Treatment",
+      "source": "Southern College of Optometry",
+      "code": "OPT 221",
+      "term": "Spring Semester",
+      "credits": "5",
+      "subjects": [
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 223:30",
+      "type": "course",
+      "label": "Posterior Segment Disease & Treatment I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 223",
+      "term": "Spring Semester",
+      "credits": "3.5",
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 224:31",
+      "type": "course",
+      "label": "Ocular Pharmacology",
+      "source": "Southern College of Optometry",
+      "code": "OPT 224",
+      "term": "Spring Semester",
+      "credits": "2",
+      "subjects": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 225:32",
+      "type": "course",
+      "label": "Contact Lenses I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 225",
+      "term": "Spring Semester",
+      "credits": "3",
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 226:33",
+      "type": "course",
+      "label": "Foundations of Clinical Care III",
+      "source": "Southern College of Optometry",
+      "code": "CLN 226",
+      "term": "Spring Semester",
+      "credits": "1.5",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 227:34",
+      "type": "course",
+      "label": "Vision Therapy",
+      "source": "Southern College of Optometry",
+      "code": "OPT 227",
+      "term": "Spring Semester",
+      "credits": "3",
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 302:35",
+      "type": "course",
+      "label": "Vision Rehabilitation & Aging",
+      "source": "Southern College of Optometry",
+      "code": "OPT 302",
+      "term": "Summer Semester",
+      "credits": "2.5",
+      "subjects": [
+        "vision-therapy",
+        "geriatrics"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 304:36",
+      "type": "course",
+      "label": "Strabismus & Amblyopia",
+      "source": "Southern College of Optometry",
+      "code": "OPT 304",
+      "term": "Summer Semester",
+      "credits": "2.5",
+      "subjects": [
+        "binocular"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 305:37",
+      "type": "course",
+      "label": "Contact Lenses II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 305",
+      "term": "Summer Semester",
+      "credits": "4",
+      "subjects": [
+        "contact-lens"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 306:38",
+      "type": "course",
+      "label": "Clinical Internship I",
+      "source": "Southern College of Optometry",
+      "code": "CLN 306",
+      "term": "Summer Semester",
+      "credits": "7",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 307:39",
+      "type": "course",
+      "label": "Integrative Clinical Analysis I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 307",
+      "term": "Summer Semester",
+      "credits": "2",
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 308:40",
+      "type": "course",
+      "label": "Glaucoma",
+      "source": "Southern College of Optometry",
+      "code": "OPT 308",
+      "term": "Summer Semester",
+      "credits": "2",
+      "subjects": [
+        "glaucoma"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 311:41",
+      "type": "course",
+      "label": "Neuro Eye Disease",
+      "source": "Southern College of Optometry",
+      "code": "OPT 311",
+      "term": "Summer Semester",
+      "credits": "2",
+      "subjects": [
+        "neuro"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 312:42",
+      "type": "course",
+      "label": "Optometric Practice Strategies and Operations I",
+      "source": "Southern College of Optometry",
+      "code": "OPT 312",
+      "term": "Summer Semester",
+      "credits": "2",
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 313:43",
+      "type": "course",
+      "label": "Posterior Segment Disease & Treatment II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 313",
+      "term": "Summer Semester",
+      "credits": "3",
+      "subjects": [
+        "posterior-segment"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 316:44",
+      "type": "course",
+      "label": "Clinical Internship II",
+      "source": "Southern College of Optometry",
+      "code": "CLN 316",
+      "term": "Summer Semester",
+      "credits": "7",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 317:45",
+      "type": "course",
+      "label": "Integrative Clinical Analysis II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 317",
+      "term": "Summer Semester",
+      "credits": "2",
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 318:46",
+      "type": "course",
+      "label": "Seminar",
+      "source": "Southern College of Optometry",
+      "code": "OPT 318",
+      "term": "Summer Semester",
+      "credits": "1.5",
+      "subjects": [
+        "professional-skills"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 319:47",
+      "type": "course",
+      "label": "Optometric Surgical Procedures & Peri-operative Management",
+      "source": "Southern College of Optometry",
+      "code": "OPT 319",
+      "term": "Summer Semester",
+      "credits": "2",
+      "subjects": [
+        "surgery"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 320:48",
+      "type": "course",
+      "label": "Optometric Surgical Procedures & Peri-operative Management",
+      "source": "Southern College of Optometry",
+      "code": "OPT 320",
+      "term": "Spring Semester",
+      "credits": "3",
+      "subjects": [
+        "surgery"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 321:49",
+      "type": "course",
+      "label": "Systemic Disease & Ocular Manifestations",
+      "source": "Southern College of Optometry",
+      "code": "OPT 321",
+      "term": "Spring Semester",
+      "credits": "1.5",
+      "subjects": [
+        "systemic"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 322:50",
+      "type": "course",
+      "label": "Optometric Practice Strategies and Operations II",
+      "source": "Southern College of Optometry",
+      "code": "OPT 322",
+      "term": "Spring Semester",
+      "credits": "2",
+      "subjects": [
+        "practice-management"
+      ]
+    },
+    {
+      "id": "Southern College o:OPT 323:51",
+      "type": "course",
+      "label": "Public Health in Optometry",
+      "source": "Southern College of Optometry",
+      "code": "OPT 323",
+      "term": "Spring Semester",
+      "credits": "2",
+      "subjects": [
+        "public-health"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 326:52",
+      "type": "course",
+      "label": "Clinical Internship III",
+      "source": "Southern College of Optometry",
+      "code": "CLN 326",
+      "term": "Spring Semester",
+      "credits": "7",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 400:53",
+      "type": "course",
+      "label": "Clinical Primary Care",
+      "source": "Southern College of Optometry",
+      "code": "CLN 400",
+      "term": "Summer Semester",
+      "credits": "3",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 401:54",
+      "type": "course",
+      "label": "Clinical Cornea & Contact Lens",
+      "source": "Southern College of Optometry",
+      "code": "CLN 401",
+      "term": "Summer Semester",
+      "credits": "3",
+      "subjects": [
+        "contact-lens",
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 402:55",
+      "type": "course",
+      "label": "Clinical Pediatric Primary Care",
+      "source": "Southern College of Optometry",
+      "code": "CLN 402",
+      "term": "Summer Semester",
+      "credits": "3",
+      "subjects": [
+        "clinical-practice",
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 403:56",
+      "type": "course",
+      "label": "Clinical Advanced Care Ocular Disease",
+      "source": "Southern College of Optometry",
+      "code": "CLN 403",
+      "term": "Summer Semester",
+      "credits": "3",
+      "subjects": []
+    },
+    {
+      "id": "Southern College o:CLN 405:57",
+      "type": "course",
+      "label": "Clinical Vision Therapy & Low Vision Rehabilitation",
+      "source": "Southern College of Optometry",
+      "code": "CLN 405",
+      "term": "Summer Semester",
+      "credits": "2",
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 404:58",
+      "type": "course",
+      "label": "Clinical Externship",
+      "source": "Southern College of Optometry",
+      "code": "CLN 404",
+      "term": "Summer Semester",
+      "credits": "14",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 410:59",
+      "type": "course",
+      "label": "Clinical Primary Care",
+      "source": "Southern College of Optometry",
+      "code": "CLN 410",
+      "term": "Fall Semester",
+      "credits": "3",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 411:60",
+      "type": "course",
+      "label": "Clinical Cornea & Contact Lens",
+      "source": "Southern College of Optometry",
+      "code": "CLN 411",
+      "term": "Fall Semester",
+      "credits": "3",
+      "subjects": [
+        "contact-lens",
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 412:61",
+      "type": "course",
+      "label": "Clinical Pediatric Primary Care",
+      "source": "Southern College of Optometry",
+      "code": "CLN 412",
+      "term": "Fall Semester",
+      "credits": "3",
+      "subjects": [
+        "clinical-practice",
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 413:62",
+      "type": "course",
+      "label": "Clinical Advanced Care Ocular Disease",
+      "source": "Southern College of Optometry",
+      "code": "CLN 413",
+      "term": "Fall Semester",
+      "credits": "3",
+      "subjects": []
+    },
+    {
+      "id": "Southern College o:CLN 415:63",
+      "type": "course",
+      "label": "Clinical Vision Therapy & Low Vision Rehabilitation",
+      "source": "Southern College of Optometry",
+      "code": "CLN 415",
+      "term": "Fall Semester",
+      "credits": "2",
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 414:64",
+      "type": "course",
+      "label": "Clinical Externship",
+      "source": "Southern College of Optometry",
+      "code": "CLN 414",
+      "term": "Fall Semester",
+      "credits": "14",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 420:65",
+      "type": "course",
+      "label": "Clinical Primary Care",
+      "source": "Southern College of Optometry",
+      "code": "CLN 420",
+      "term": "Spring Semester",
+      "credits": "3",
+      "subjects": [
+        "clinical-practice"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 421:66",
+      "type": "course",
+      "label": "Clinical Cornea & Contact Lens",
+      "source": "Southern College of Optometry",
+      "code": "CLN 421",
+      "term": "Spring Semester",
+      "credits": "3",
+      "subjects": [
+        "contact-lens",
+        "anterior-segment"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 422:67",
+      "type": "course",
+      "label": "Clinical Pediatric Primary Care",
+      "source": "Southern College of Optometry",
+      "code": "CLN 422",
+      "term": "Spring Semester",
+      "credits": "3",
+      "subjects": [
+        "clinical-practice",
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 423:68",
+      "type": "course",
+      "label": "Clinical Advanced Care Ocular Disease",
+      "source": "Southern College of Optometry",
+      "code": "CLN 423",
+      "term": "Spring Semester",
+      "credits": "3",
+      "subjects": []
+    },
+    {
+      "id": "Southern College o:CLN 425:69",
+      "type": "course",
+      "label": "Clinical Vision Therapy & Low Vision Rehabilitation",
+      "source": "Southern College of Optometry",
+      "code": "CLN 425",
+      "term": "Spring Semester",
+      "credits": "2",
+      "subjects": [
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "Southern College o:CLN 424:70",
+      "type": "course",
+      "label": "Clinical Externship",
+      "source": "Southern College of Optometry",
+      "code": "CLN 424",
+      "term": "Spring Semester",
+      "credits": "14",
+      "subjects": [
+        "clinical-practice"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "olh:1",
+      "to": "subject:refraction",
+      "matched": "\\brefraction\\b"
+    },
+    {
+      "from": "olh:1",
+      "to": "subject:clinical-methods",
+      "matched": "\\bfundamentals\\b"
+    },
+    {
+      "from": "olh:2",
+      "to": "subject:optics-physical",
+      "matched": "\\blens design\\b"
+    },
+    {
+      "from": "olh:3",
+      "to": "subject:optics-physical",
+      "matched": "\\bgeometric(al)? optics\\b"
+    },
+    {
+      "from": "olh:4",
+      "to": "subject:optics-physical",
+      "matched": "\\baberration"
+    },
+    {
+      "from": "olh:5",
+      "to": "subject:optics-physical",
+      "matched": "\\bwavefront\\b"
+    },
+    {
+      "from": "olh:6",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "olh:43",
+      "to": "subject:optics-physical",
+      "matched": "\\bphysical optics\\b"
+    },
+    {
+      "from": "olh:7",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "olh:8",
+      "to": "subject:posterior-segment",
+      "matched": "\\bretinal\\b"
+    },
+    {
+      "from": "olh:9",
+      "to": "subject:neuro",
+      "matched": "\\bneuroscience\\b"
+    },
+    {
+      "from": "olh:10",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "olh:10",
+      "to": "subject:anterior-segment",
+      "matched": "\\banterior segment\\b"
+    },
+    {
+      "from": "olh:11",
+      "to": "subject:anatomy",
+      "matched": "\\bphysiology\\b"
+    },
+    {
+      "from": "olh:11",
+      "to": "subject:binocular",
+      "matched": "\\bbinocular\\b"
+    },
+    {
+      "from": "olh:12",
+      "to": "subject:biochem",
+      "matched": "\\bbiochemistry\\b"
+    },
+    {
+      "from": "olh:13",
+      "to": "subject:clinical-methods",
+      "matched": "\\bclinical (methods|procedures|skills)\\b"
+    },
+    {
+      "from": "olh:14",
+      "to": "subject:clinical-methods",
+      "matched": "\\bslit lamp\\b"
+    },
+    {
+      "from": "olh:15",
+      "to": "subject:clinical-methods",
+      "matched": "\\bexamination\\b"
+    },
+    {
+      "from": "olh:16",
+      "to": "subject:imaging",
+      "matched": "\\bvisual field"
+    },
+    {
+      "from": "olh:17",
+      "to": "subject:clinical-methods",
+      "matched": "\\btonometry\\b"
+    },
+    {
+      "from": "olh:17",
+      "to": "subject:glaucoma",
+      "matched": "\\bintraocular pressure\\b"
+    },
+    {
+      "from": "olh:18",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "olh:19",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "olh:20",
+      "to": "subject:refraction",
+      "matched": "\\brefraction\\b"
+    },
+    {
+      "from": "olh:21",
+      "to": "subject:systemic",
+      "matched": "\\bpatholog"
+    },
+    {
+      "from": "olh:22",
+      "to": "subject:systemic",
+      "matched": "\\bpatholog"
+    },
+    {
+      "from": "olh:23",
+      "to": "subject:glaucoma",
+      "matched": "\\bglaucoma\\b"
+    },
+    {
+      "from": "olh:24",
+      "to": "subject:posterior-segment",
+      "matched": "\\bretinal\\b"
+    },
+    {
+      "from": "olh:25",
+      "to": "subject:anterior-segment",
+      "matched": "\\bcorneal\\b"
+    },
+    {
+      "from": "olh:25",
+      "to": "subject:systemic",
+      "matched": "\\bpatholog"
+    },
+    {
+      "from": "olh:26",
+      "to": "subject:neuro",
+      "matched": "\\bneuro-?ophthalm"
+    },
+    {
+      "from": "olh:27",
+      "to": "subject:anterior-segment",
+      "matched": "\\buveitis\\b"
+    },
+    {
+      "from": "olh:28",
+      "to": "subject:pediatrics",
+      "matched": "\\bpediatric\\b"
+    },
+    {
+      "from": "olh:29",
+      "to": "subject:pediatrics",
+      "matched": "\\bchild"
+    },
+    {
+      "from": "olh:30",
+      "to": "subject:systemic",
+      "matched": "\\bsystemic disease"
+    },
+    {
+      "from": "olh:31",
+      "to": "subject:professional-skills",
+      "matched": "\\bcommunicat"
+    },
+    {
+      "from": "olh:32",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "olh:33",
+      "to": "subject:public-health",
+      "matched": "\\bpublic health\\b"
+    },
+    {
+      "from": "olh:33",
+      "to": "subject:research",
+      "matched": "\\bepidemiology\\b"
+    },
+    {
+      "from": "olh:34",
+      "to": "subject:imaging",
+      "matched": "\\bimaging\\b"
+    },
+    {
+      "from": "olh:35",
+      "to": "subject:surgery",
+      "matched": "\\bsurgic"
+    },
+    {
+      "from": "olh:36",
+      "to": "subject:research",
+      "matched": "\\bresearch\\b"
+    },
+    {
+      "from": "olh:37",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "olh:38",
+      "to": "subject:pharmacology",
+      "matched": "\\btherapeutic"
+    },
+    {
+      "from": "olh:39",
+      "to": "subject:practice-management",
+      "matched": "\\bpractice management\\b"
+    },
+    {
+      "from": "olh:40",
+      "to": "subject:research",
+      "matched": "\\bresearch\\b"
+    },
+    {
+      "from": "olh:41",
+      "to": "subject:clinical-practice",
+      "matched": "\\bspecialty clinic"
+    },
+    {
+      "from": "olh:42",
+      "to": "subject:public-health",
+      "matched": "\\bergonomic"
+    },
+    {
+      "from": "olh:44",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision rehabilitation\\b"
+    },
+    {
+      "from": "olh:45",
+      "to": "subject:public-health",
+      "matched": "\\bsports\\b"
+    },
+    {
+      "from": "olh:46",
+      "to": "subject:perception",
+      "matched": "\\bvisual perception\\b"
+    },
+    {
+      "from": "olh:47",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision therapy\\b"
+    },
+    {
+      "from": "olh:48",
+      "to": "subject:imaging",
+      "matched": "\\binstrument"
+    },
+    {
+      "from": "olh:49",
+      "to": "subject:optics-ophthalmic",
+      "matched": "\\bdispensing\\b"
+    },
+    {
+      "from": "olh:50",
+      "to": "subject:public-health",
+      "matched": "\\bergonomic"
+    },
+    {
+      "from": "University of Alab:OBHS 111:0",
+      "to": "subject:clinical-methods",
+      "matched": "\\bfundamentals\\b"
+    },
+    {
+      "from": "University of Alab:VS 111:3",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "University of Alab:VS 113:4",
+      "to": "subject:biochem",
+      "matched": "\\bbiochemistry\\b"
+    },
+    {
+      "from": "University of Alab:OBHS 112:5",
+      "to": "subject:clinical-methods",
+      "matched": "\\bfundamentals\\b"
+    },
+    {
+      "from": "University of Alab:OBHS 121:6",
+      "to": "subject:neuro",
+      "matched": "\\bneuroscience\\b"
+    },
+    {
+      "from": "University of Alab:OBHS 122:7",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "University of Alab:OPT 121:9",
+      "to": "subject:clinical-methods",
+      "matched": "\\bclinical evaluation\\b"
+    },
+    {
+      "from": "University of Alab:OPT 122:10",
+      "to": "subject:biochem",
+      "matched": "\\bmicrobiolog"
+    },
+    {
+      "from": "University of Alab:OPT 124:11",
+      "to": "subject:professional-skills",
+      "matched": "\\bseminar\\b"
+    },
+    {
+      "from": "University of Alab:VS 121:12",
+      "to": "subject:optics-physical",
+      "matched": "\\bvisual optics\\b"
+    },
+    {
+      "from": "University of Alab:VS 122:13",
+      "to": "subject:perception",
+      "matched": "\\bvisual perception\\b"
+    },
+    {
+      "from": "University of Alab:CLN 131:14",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:OPT 132:16",
+      "to": "subject:clinical-methods",
+      "matched": "\\bcevs\\b"
+    },
+    {
+      "from": "University of Alab:OPT 133:17",
+      "to": "subject:optics-ophthalmic",
+      "matched": "\\bophthalmic optics\\b"
+    },
+    {
+      "from": "University of Alab:OPT 134:18",
+      "to": "subject:professional-skills",
+      "matched": "\\bcommunicat"
+    },
+    {
+      "from": "University of Alab:VS 131:19",
+      "to": "subject:neuro",
+      "matched": "\\bneurobiolog"
+    },
+    {
+      "from": "University of Alab:VS 132:20",
+      "to": "subject:binocular",
+      "matched": "\\bbinocular\\b"
+    },
+    {
+      "from": "University of Alab:CLN 211:22",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:CLN 212:23",
+      "to": "subject:public-health",
+      "matched": "\\bcommunity eye care\\b"
+    },
+    {
+      "from": "University of Alab:CLN 213:24",
+      "to": "subject:practice-management",
+      "matched": "\\bproduct management\\b"
+    },
+    {
+      "from": "University of Alab:OPT 212:25",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "University of Alab:OPT 213:26",
+      "to": "subject:clinical-methods",
+      "matched": "\\bcevs\\b"
+    },
+    {
+      "from": "University of Alab:VS 211:27",
+      "to": "subject:perception",
+      "matched": "\\bvisual perception\\b"
+    },
+    {
+      "from": "University of Alab:CLN 221:29",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:CLN 222:30",
+      "to": "subject:public-health",
+      "matched": "\\bcommunity eye care\\b"
+    },
+    {
+      "from": "University of Alab:CLN 223:31",
+      "to": "subject:practice-management",
+      "matched": "\\bproduct management\\b"
+    },
+    {
+      "from": "University of Alab:CLN 224:32",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinic\\b"
+    },
+    {
+      "from": "University of Alab:OPT 221:33",
+      "to": "subject:clinical-methods",
+      "matched": "\\bcevs\\b"
+    },
+    {
+      "from": "University of Alab:OPT 222:34",
+      "to": "subject:anterior-segment",
+      "matched": "\\banterior segment\\b"
+    },
+    {
+      "from": "University of Alab:OPT 224:35",
+      "to": "subject:binocular",
+      "matched": "\\bbinocular\\b"
+    },
+    {
+      "from": "University of Alab:OPT 225:36",
+      "to": "subject:posterior-segment",
+      "matched": "\\bposterior segment\\b"
+    },
+    {
+      "from": "University of Alab:OPT 226:37",
+      "to": "subject:practice-management",
+      "matched": "\\bclinicolegal\\b"
+    },
+    {
+      "from": "University of Alab:OPT 2210:38",
+      "to": "subject:clinical-methods",
+      "matched": "\\bfundamentals\\b"
+    },
+    {
+      "from": "University of Alab:OPT 2210:38",
+      "to": "subject:practice-management",
+      "matched": "\\bbusiness\\b"
+    },
+    {
+      "from": "University of Alab:OPT 2211:39",
+      "to": "subject:professional-skills",
+      "matched": "\\bseminar\\b"
+    },
+    {
+      "from": "University of Alab:OPT 231:41",
+      "to": "subject:imaging",
+      "matched": "\\bimaging\\b"
+    },
+    {
+      "from": "University of Alab:OPT 238:42",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "University of Alab:CLN 231:43",
+      "to": "subject:clinical-practice",
+      "matched": "\\bprimary (eye )?care\\b"
+    },
+    {
+      "from": "University of Alab:CLN 232:44",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:CLN 234:45",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision therapy\\b"
+    },
+    {
+      "from": "University of Alab:OBHS 231:48",
+      "to": "subject:anatomy",
+      "matched": "\\bphysiology\\b"
+    },
+    {
+      "from": "University of Alab:CLN 311:49",
+      "to": "subject:clinical-practice",
+      "matched": "\\bprimary (eye )?care\\b"
+    },
+    {
+      "from": "University of Alab:CLN 312:50",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:CLN 316:51",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision therapy\\b"
+    },
+    {
+      "from": "University of Alab:CLN 314:52",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:OPT 311:53",
+      "to": "subject:binocular",
+      "matched": "\\bbinocular\\b"
+    },
+    {
+      "from": "University of Alab:OPT 312:54",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "University of Alab:OPT 313:55",
+      "to": "subject:geriatrics",
+      "matched": "\\bgeriatric\\b"
+    },
+    {
+      "from": "University of Alab:OPT 314:56",
+      "to": "subject:vision-therapy",
+      "matched": "\\blow vision\\b"
+    },
+    {
+      "from": "University of Alab:OPT 316:57",
+      "to": "subject:glaucoma",
+      "matched": "\\bglaucoma\\b"
+    },
+    {
+      "from": "University of Alab:OPT 318:58",
+      "to": "subject:pediatrics",
+      "matched": "\\bpediatric\\b"
+    },
+    {
+      "from": "University of Alab:OPT 319:59",
+      "to": "subject:posterior-segment",
+      "matched": "\\bposterior segment\\b"
+    },
+    {
+      "from": "University of Alab:CLN 321:60",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinic\\b"
+    },
+    {
+      "from": "University of Alab:CLN 322:61",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:CLN 326:62",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision therapy\\b"
+    },
+    {
+      "from": "University of Alab:CLN 324:63",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:OPT 321:64",
+      "to": "subject:neuro",
+      "matched": "\\bneuro-?optometry\\b"
+    },
+    {
+      "from": "University of Alab:OPT 322:65",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "University of Alab:OPT 323:66",
+      "to": "subject:surgery",
+      "matched": "\\bsurgic"
+    },
+    {
+      "from": "University of Alab:OPT 324:67",
+      "to": "subject:clinical-methods",
+      "matched": "\\bfundamentals\\b"
+    },
+    {
+      "from": "University of Alab:OPT 324:67",
+      "to": "subject:practice-management",
+      "matched": "\\bbusiness\\b"
+    },
+    {
+      "from": "University of Alab:OPT 325:68",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical management\\b"
+    },
+    {
+      "from": "University of Alab:OPT 328:70",
+      "to": "subject:systemic",
+      "matched": "\\bsystemic disease"
+    },
+    {
+      "from": "University of Alab:OPT 329:71",
+      "to": "subject:posterior-segment",
+      "matched": "\\bposterior segment\\b"
+    },
+    {
+      "from": "University of Alab:CLN 336:73",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    },
+    {
+      "from": "University of Alab:CLN 411:74",
+      "to": "subject:pediatrics",
+      "matched": "\\bpediatric\\b"
+    },
+    {
+      "from": "University of Alab:CLN 412:75",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "University of Alab:CLN 412:75",
+      "to": "subject:anterior-segment",
+      "matched": "\\bcornea\\b"
+    },
+    {
+      "from": "University of Alab:CLN 413:76",
+      "to": "subject:vision-therapy",
+      "matched": "\\blow vision\\b"
+    },
+    {
+      "from": "University of Alab:CLN 414:77",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:CLN 416:78",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    },
+    {
+      "from": "University of Alab:OPT 514:79",
+      "to": "subject:practice-management",
+      "matched": "\\bpractice management\\b"
+    },
+    {
+      "from": "University of Alab:CLN 421:80",
+      "to": "subject:pediatrics",
+      "matched": "\\bpediatric\\b"
+    },
+    {
+      "from": "University of Alab:CLN 422:81",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "University of Alab:CLN 422:81",
+      "to": "subject:anterior-segment",
+      "matched": "\\bcornea\\b"
+    },
+    {
+      "from": "University of Alab:CLN 423:82",
+      "to": "subject:vision-therapy",
+      "matched": "\\blow vision\\b"
+    },
+    {
+      "from": "University of Alab:CLN 424:83",
+      "to": "subject:clinical-practice",
+      "matched": "\\bclinical rotation\\b"
+    },
+    {
+      "from": "University of Alab:CLN 426:84",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 610:0",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 611:1",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 630:2",
+      "to": "subject:optics-physical",
+      "matched": "\\bphysical optics\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 650:3",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 656:4",
+      "to": "subject:anatomy",
+      "matched": "\\bhistology\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 721:5",
+      "to": "subject:pediatrics",
+      "matched": "\\bvisual development\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 612:6",
+      "to": "subject:biochem",
+      "matched": "\\bbiochemistry\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 613:7",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 613:7",
+      "to": "subject:neuro",
+      "matched": "\\bneuro anatomy\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 622:8",
+      "to": "subject:perception",
+      "matched": "\\bvisual perception\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 631:9",
+      "to": "subject:optics-physical",
+      "matched": "\\bvisual optics\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 652:10",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 657:11",
+      "to": "subject:biochem",
+      "matched": "\\bmicrobiolog"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 709:12",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 632:13",
+      "to": "subject:optics-ophthalmic",
+      "matched": "\\bophthalmic optics\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 640:14",
+      "to": "subject:anatomy",
+      "matched": "\\bphysiology\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 640:14",
+      "to": "subject:systemic",
+      "matched": "\\bsystems based physiolog"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 653:15",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 705:16",
+      "to": "subject:neuro",
+      "matched": "\\bneurophysiolog"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 710:17",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 711:18",
+      "to": "subject:biochem",
+      "matched": "\\bimmunolog"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 722:19",
+      "to": "subject:neuro",
+      "matched": "\\boculomotor\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 830:20",
+      "to": "subject:practice-management",
+      "matched": "\\bethic"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 655:21",
+      "to": "subject:systemic",
+      "matched": "\\bsystemic disease"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 712:22",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 750:23",
+      "to": "subject:anterior-segment",
+      "matched": "\\banterior segment\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 751:24",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 756:25",
+      "to": "subject:binocular",
+      "matched": "\\bbinocular\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 766:26",
+      "to": "subject:systemic",
+      "matched": "\\bpathophysiolog"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 752:27",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 753:28",
+      "to": "subject:posterior-segment",
+      "matched": "\\bposterior segment\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 757:29",
+      "to": "subject:binocular",
+      "matched": "\\bbinocular\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 851:30",
+      "to": "subject:glaucoma",
+      "matched": "\\bglaucoma\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 854:31",
+      "to": "subject:systemic",
+      "matched": "\\bsystemic disease"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 759:33",
+      "to": "subject:anterior-segment",
+      "matched": "\\banterior segment\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 768:34",
+      "to": "subject:anterior-segment",
+      "matched": "\\bocular surface\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 810:35",
+      "to": "subject:professional-skills",
+      "matched": "\\bseminar\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 852:36",
+      "to": "subject:binocular",
+      "matched": "\\bbinocular\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 855:37",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 859:38",
+      "to": "subject:glaucoma",
+      "matched": "\\bglaucoma\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 691:39",
+      "to": "subject:public-health",
+      "matched": "\\bpublic health\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 754:40",
+      "to": "subject:vision-therapy",
+      "matched": "\\blow vision\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 820:42",
+      "to": "subject:surgery",
+      "matched": "\\bsurgery\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 857:43",
+      "to": "subject:posterior-segment",
+      "matched": "\\bposterior segment\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 741:45",
+      "to": "subject:practice-management",
+      "matched": "\\bbusiness\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 840:46",
+      "to": "subject:pediatrics",
+      "matched": "\\bspecial populations\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 845:47",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 860:48",
+      "to": "subject:research",
+      "matched": "\\bresearch\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPT 951:49",
+      "to": "subject:professional-skills",
+      "matched": "\\bseminar\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPTC 971:50",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPTC 972:51",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    },
+    {
+      "from": "Massachusetts Coll:OPTC 973:52",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    },
+    {
+      "from": "Southern College o:OPT 110:0",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Southern College o:OPT 111:1",
+      "to": "subject:optics-physical",
+      "matched": "\\boptics of the eye\\b"
+    },
+    {
+      "from": "Southern College o:OPT 112:2",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "Southern College o:OPT 113:3",
+      "to": "subject:neuro",
+      "matched": "\\bneuroanatomy\\b"
+    },
+    {
+      "from": "Southern College o:OPT 114:4",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "Southern College o:OPT 116:5",
+      "to": "subject:biochem",
+      "matched": "\\bbiochemistry\\b"
+    },
+    {
+      "from": "Southern College o:OPT 118:6",
+      "to": "subject:professional-skills",
+      "matched": "\\bacademic success\\b"
+    },
+    {
+      "from": "Southern College o:OPT 120:7",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Southern College o:OPT 121:8",
+      "to": "subject:optics-physical",
+      "matched": "\\boptics of the eye\\b"
+    },
+    {
+      "from": "Southern College o:OPT 122:9",
+      "to": "subject:anatomy",
+      "matched": "\\banatomy\\b"
+    },
+    {
+      "from": "Southern College o:OPT 125:10",
+      "to": "subject:binocular",
+      "matched": "\\bocular motility\\b"
+    },
+    {
+      "from": "Southern College o:OPT 126:11",
+      "to": "subject:perception",
+      "matched": "\\bperception\\b"
+    },
+    {
+      "from": "Southern College o:OPT 127:12",
+      "to": "subject:optics-ophthalmic",
+      "matched": "\\bophthalmic optics\\b"
+    },
+    {
+      "from": "Southern College o:OPT 128:13",
+      "to": "subject:professional-skills",
+      "matched": "\\bacademic success\\b"
+    },
+    {
+      "from": "Southern College o:OPT 129:14",
+      "to": "subject:practice-management",
+      "matched": "\\boptometric practice\\b"
+    },
+    {
+      "from": "Southern College o:OPT 200:15",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Southern College o:OPT 201:16",
+      "to": "subject:systemic",
+      "matched": "\\bbasic patholog"
+    },
+    {
+      "from": "Southern College o:OPT 202:17",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "Southern College o:CLN 203:18",
+      "to": "subject:clinical-practice",
+      "matched": "\\bfoundations of clinical care\\b"
+    },
+    {
+      "from": "Southern College o:OPT 209:19",
+      "to": "subject:research",
+      "matched": "\\bevidence[- ]based\\b"
+    },
+    {
+      "from": "Southern College o:OPT 210:20",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Southern College o:OPT 211:21",
+      "to": "subject:systemic",
+      "matched": "\\bpatholog"
+    },
+    {
+      "from": "Southern College o:OPT 212:22",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "Southern College o:OPT 215:23",
+      "to": "subject:binocular",
+      "matched": "\\bbinocular\\b"
+    },
+    {
+      "from": "Southern College o:CLN 216:24",
+      "to": "subject:clinical-practice",
+      "matched": "\\bfoundations of clinical care\\b"
+    },
+    {
+      "from": "Southern College o:OPT 217:25",
+      "to": "subject:optics-ophthalmic",
+      "matched": "\\bophthalmic optics\\b"
+    },
+    {
+      "from": "Southern College o:OPT 218:26",
+      "to": "subject:pediatrics",
+      "matched": "\\bpediatric\\b"
+    },
+    {
+      "from": "Southern College o:OPT 219:27",
+      "to": "subject:practice-management",
+      "matched": "\\boptometric practice\\b"
+    },
+    {
+      "from": "Southern College o:OPT 220:28",
+      "to": "subject:clinical-methods",
+      "matched": "\\btheory (and|&) methods\\b"
+    },
+    {
+      "from": "Southern College o:OPT 221:29",
+      "to": "subject:anterior-segment",
+      "matched": "\\banterior segment\\b"
+    },
+    {
+      "from": "Southern College o:OPT 223:30",
+      "to": "subject:posterior-segment",
+      "matched": "\\bposterior segment\\b"
+    },
+    {
+      "from": "Southern College o:OPT 224:31",
+      "to": "subject:pharmacology",
+      "matched": "\\bpharmacolog"
+    },
+    {
+      "from": "Southern College o:OPT 225:32",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "Southern College o:CLN 226:33",
+      "to": "subject:clinical-practice",
+      "matched": "\\bfoundations of clinical care\\b"
+    },
+    {
+      "from": "Southern College o:OPT 227:34",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision therapy\\b"
+    },
+    {
+      "from": "Southern College o:OPT 302:35",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision rehabilitation\\b"
+    },
+    {
+      "from": "Southern College o:OPT 302:35",
+      "to": "subject:geriatrics",
+      "matched": "\\baging\\b"
+    },
+    {
+      "from": "Southern College o:OPT 304:36",
+      "to": "subject:binocular",
+      "matched": "\\bstrabismus\\b"
+    },
+    {
+      "from": "Southern College o:OPT 305:37",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "Southern College o:CLN 306:38",
+      "to": "subject:clinical-practice",
+      "matched": "\\binternship\\b"
+    },
+    {
+      "from": "Southern College o:OPT 307:39",
+      "to": "subject:professional-skills",
+      "matched": "\\bintegrative clinical analysis\\b"
+    },
+    {
+      "from": "Southern College o:OPT 308:40",
+      "to": "subject:glaucoma",
+      "matched": "\\bglaucoma\\b"
+    },
+    {
+      "from": "Southern College o:OPT 311:41",
+      "to": "subject:neuro",
+      "matched": "\\bneuro eye\\b"
+    },
+    {
+      "from": "Southern College o:OPT 312:42",
+      "to": "subject:practice-management",
+      "matched": "\\bpractice strategies\\b"
+    },
+    {
+      "from": "Southern College o:OPT 313:43",
+      "to": "subject:posterior-segment",
+      "matched": "\\bposterior segment\\b"
+    },
+    {
+      "from": "Southern College o:CLN 316:44",
+      "to": "subject:clinical-practice",
+      "matched": "\\binternship\\b"
+    },
+    {
+      "from": "Southern College o:OPT 317:45",
+      "to": "subject:professional-skills",
+      "matched": "\\bintegrative clinical analysis\\b"
+    },
+    {
+      "from": "Southern College o:OPT 318:46",
+      "to": "subject:professional-skills",
+      "matched": "\\bseminar\\b"
+    },
+    {
+      "from": "Southern College o:OPT 319:47",
+      "to": "subject:surgery",
+      "matched": "\\bsurgic"
+    },
+    {
+      "from": "Southern College o:OPT 320:48",
+      "to": "subject:surgery",
+      "matched": "\\bsurgic"
+    },
+    {
+      "from": "Southern College o:OPT 321:49",
+      "to": "subject:systemic",
+      "matched": "\\bsystemic disease"
+    },
+    {
+      "from": "Southern College o:OPT 322:50",
+      "to": "subject:practice-management",
+      "matched": "\\bpractice strategies\\b"
+    },
+    {
+      "from": "Southern College o:OPT 323:51",
+      "to": "subject:public-health",
+      "matched": "\\bpublic health\\b"
+    },
+    {
+      "from": "Southern College o:CLN 326:52",
+      "to": "subject:clinical-practice",
+      "matched": "\\binternship\\b"
+    },
+    {
+      "from": "Southern College o:CLN 400:53",
+      "to": "subject:clinical-practice",
+      "matched": "\\bprimary (eye )?care\\b"
+    },
+    {
+      "from": "Southern College o:CLN 401:54",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "Southern College o:CLN 401:54",
+      "to": "subject:anterior-segment",
+      "matched": "\\bcornea\\b"
+    },
+    {
+      "from": "Southern College o:CLN 402:55",
+      "to": "subject:clinical-practice",
+      "matched": "\\bprimary (eye )?care\\b"
+    },
+    {
+      "from": "Southern College o:CLN 402:55",
+      "to": "subject:pediatrics",
+      "matched": "\\bpediatric\\b"
+    },
+    {
+      "from": "Southern College o:CLN 405:57",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision therapy\\b"
+    },
+    {
+      "from": "Southern College o:CLN 404:58",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    },
+    {
+      "from": "Southern College o:CLN 410:59",
+      "to": "subject:clinical-practice",
+      "matched": "\\bprimary (eye )?care\\b"
+    },
+    {
+      "from": "Southern College o:CLN 411:60",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "Southern College o:CLN 411:60",
+      "to": "subject:anterior-segment",
+      "matched": "\\bcornea\\b"
+    },
+    {
+      "from": "Southern College o:CLN 412:61",
+      "to": "subject:clinical-practice",
+      "matched": "\\bprimary (eye )?care\\b"
+    },
+    {
+      "from": "Southern College o:CLN 412:61",
+      "to": "subject:pediatrics",
+      "matched": "\\bpediatric\\b"
+    },
+    {
+      "from": "Southern College o:CLN 415:63",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision therapy\\b"
+    },
+    {
+      "from": "Southern College o:CLN 414:64",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    },
+    {
+      "from": "Southern College o:CLN 420:65",
+      "to": "subject:clinical-practice",
+      "matched": "\\bprimary (eye )?care\\b"
+    },
+    {
+      "from": "Southern College o:CLN 421:66",
+      "to": "subject:contact-lens",
+      "matched": "\\bcontact lens"
+    },
+    {
+      "from": "Southern College o:CLN 421:66",
+      "to": "subject:anterior-segment",
+      "matched": "\\bcornea\\b"
+    },
+    {
+      "from": "Southern College o:CLN 422:67",
+      "to": "subject:clinical-practice",
+      "matched": "\\bprimary (eye )?care\\b"
+    },
+    {
+      "from": "Southern College o:CLN 422:67",
+      "to": "subject:pediatrics",
+      "matched": "\\bpediatric\\b"
+    },
+    {
+      "from": "Southern College o:CLN 425:69",
+      "to": "subject:vision-therapy",
+      "matched": "\\bvision therapy\\b"
+    },
+    {
+      "from": "Southern College o:CLN 424:70",
+      "to": "subject:clinical-practice",
+      "matched": "\\bexternship\\b"
+    }
+  ],
+  "unmapped": [
+    {
+      "course": "Ocular Prosthetics & Anophthalmic Care",
+      "source": "Optometry Learning Hub"
+    },
+    {
+      "course": "Intro to Optometry",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Geometric and Clinical Optics",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Systems III: Cardiovascular and Respiratory",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Systems IV: Renal",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Systems V: Gastrointestinal & Musculoskeletal/Skin",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Systems VI: Hematology & Endocrine",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Spanish for Eye Care ELECTIVE",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "AIODP Geometric and Clinical Optics",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "AIODP CLN ROT I",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Ophthalmic Lasers",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Advanced Vision and Learning ELECTIVE",
+      "source": "University of Alabama at Birmingham"
+    },
+    {
+      "course": "Neuro Optometry",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)"
+    },
+    {
+      "course": "Pediatrics (with lab)",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)"
+    },
+    {
+      "course": "Independent Study",
+      "source": "Massachusetts College of Pharmacy and Health Sciences (mcphs)"
+    },
+    {
+      "course": "Clinical Advanced Care Ocular Disease",
+      "source": "Southern College of Optometry"
+    },
+    {
+      "course": "Clinical Advanced Care Ocular Disease",
+      "source": "Southern College of Optometry"
+    },
+    {
+      "course": "Clinical Advanced Care Ocular Disease",
+      "source": "Southern College of Optometry"
+    }
+  ]
+}
