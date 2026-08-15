@@ -242,3 +242,73 @@ figcaption {
     .note-nav { display: none; }
     body { background: #fff; color: #000; }
 }
+
+/* Download panel — the only place a topic can be downloaded from */
+.note-downloads {
+    margin-top: 44px;
+    padding: 22px 24px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.note-downloads h2 {
+    margin: 0 0 4px;
+    padding: 0;
+    border: none;
+    font-size: 18px;
+}
+
+.note-downloads p {
+    color: var(--text-muted);
+    font-size: 14.5px;
+    margin-bottom: 16px;
+}
+
+.download-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.dl {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 11px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+    color: var(--text);
+    text-decoration: none;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dl:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+.dl:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.dl-fmt {
+    font-weight: 650;
+    font-size: 14.5px;
+    color: var(--primary);
+}
+
+.dl-meta {
+    font-size: 12.5px;
+    color: var(--text-muted);
+}
+
+@media print {
+    .note-downloads { display: none; }
+}

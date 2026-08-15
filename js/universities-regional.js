@@ -1,9 +1,10 @@
 // Global Optometry Universities Database - Organized by Region
-// Auto-generated: 2026-08-15 10:17:59
-// Source: CURATED LIST maintained in scripts/scrape-universities-enhanced.py
-// NOTE: this is not yet scraped from the web — the per-body parsers are stubs
-//       that return hand-entered data. Verify entries against the accreditors.
-// Total Universities: 29
+// Generated: 2026-08-15 10:42:03 by scripts/update-universities.py
+//
+// 24 entries scraped live from the ASCO member directory
+// 32 entries are hand-curated (source: "curated")
+// Every record carries a `source` field saying which it is.
+// Total: 56
 
 const universitiesByRegion = {
     "North America": {
@@ -15,124 +16,312 @@ const universitiesByRegion = {
                 {
                     "name": "University of Alabama at Birmingham",
                     "city": "Birmingham",
-                    "state": "AL",
-                    "program": "Doctor of Optometry",
+                    "state": "Alabama",
+                    "country": "USA",
                     "degree": "O.D.",
+                    "program": "Doctor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "ACOE"
+                    "accreditation": "ACOE",
+                    "url": "https://www.uab.edu/optometry",
+                    "source": "scraped:ASCO"
                 },
                 {
-                    "name": "University of Houston College of Optometry",
-                    "city": "Houston",
-                    "state": "TX",
-                    "program": "Doctor of Optometry",
+                    "name": "Arizona College of Optometry, Midwestern University",
+                    "city": "Glendale",
+                    "state": "Arizona",
+                    "country": "USA",
                     "degree": "O.D.",
+                    "program": "Doctor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "ACOE"
+                    "accreditation": "ACOE",
+                    "url": "https://www.midwestern.edu/academics/degrees-programs/doctor-optometry-program/arizona-college-optometry",
+                    "source": "scraped:ASCO"
                 },
                 {
-                    "name": "Indiana University School of Optometry",
-                    "city": "Bloomington",
-                    "state": "IN",
-                    "program": "Doctor of Optometry",
-                    "degree": "O.D.",
-                    "duration": "4 years",
-                    "accreditation": "ACOE"
-                },
-                {
-                    "name": "Pacific University College of Optometry",
-                    "city": "Forest Grove",
-                    "state": "OR",
-                    "program": "Doctor of Optometry",
-                    "degree": "O.D.",
-                    "duration": "4 years",
-                    "accreditation": "ACOE"
-                },
-                {
-                    "name": "Ohio State University College of Optometry",
-                    "city": "Columbus",
-                    "state": "OH",
-                    "program": "Doctor of Optometry",
-                    "degree": "O.D.",
-                    "duration": "4 years",
-                    "accreditation": "ACOE"
-                },
-                {
-                    "name": "University of Missouri - St. Louis College of Optometry",
-                    "city": "St. Louis",
-                    "state": "MO",
-                    "program": "Doctor of Optometry",
-                    "degree": "O.D.",
-                    "duration": "4 years",
-                    "accreditation": "ACOE"
-                },
-                {
-                    "name": "Nova Southeastern University College of Optometry",
-                    "city": "Fort Lauderdale",
-                    "state": "FL",
-                    "program": "Doctor of Optometry",
-                    "degree": "O.D.",
-                    "duration": "4 years",
-                    "accreditation": "ACOE"
-                },
-                {
-                    "name": "Southern California College of Optometry",
+                    "name": "Southern California College of Optometry at Marshall B. Ketchum University",
                     "city": "Fullerton",
-                    "state": "CA",
-                    "program": "Doctor of Optometry",
+                    "state": "California",
+                    "country": "USA",
                     "degree": "O.D.",
+                    "program": "Doctor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "ACOE"
+                    "accreditation": "ACOE",
+                    "url": "https://www.ketchum.edu/optometry",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "University of California \u2013 Berkeley",
+                    "city": "Berkeley",
+                    "state": "California",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://optometry.berkeley.edu",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Western University of Health Sciences",
+                    "city": "Pomona",
+                    "state": "California",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.westernu.edu/optometry",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Nova Southeastern University",
+                    "city": "Fort Lauderdale",
+                    "state": "Florida",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://optometry.nova.edu/",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Chicago College of Optometry",
+                    "city": "Downers Grove",
+                    "state": "Illinois",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.midwestern.edu/academics/degrees-programs/doctor-optometry-program/chicago-college-optometry",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Illinois College of Optometry",
+                    "city": "Chicago",
+                    "state": "Illinois",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.ico.edu",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Indiana University",
+                    "city": "Bloomington",
+                    "state": "Indiana",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.optometry.iu.edu",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "University of Pikeville \u2013 Kentucky College of Optometry",
+                    "city": "Pikeville",
+                    "state": "Kentucky",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.upike.edu/KYCO",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+                    "city": "Worcester",
+                    "state": "Massachusetts",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.mcphs.edu/academics/school-of-optometry/optometry/optometry-od",
+                    "source": "scraped:ASCO"
                 },
                 {
                     "name": "New England College of Optometry",
                     "city": "Boston",
-                    "state": "MA",
-                    "program": "Doctor of Optometry",
+                    "state": "Massachusetts",
+                    "country": "USA",
                     "degree": "O.D.",
+                    "program": "Doctor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "ACOE"
+                    "accreditation": "ACOE",
+                    "url": "https://www.neco.edu",
+                    "source": "scraped:ASCO"
                 },
                 {
-                    "name": "University of California, Berkeley School of Optometry",
-                    "city": "Berkeley",
-                    "state": "CA",
-                    "program": "Master of Science in Vision Science",
-                    "degree": "MS",
-                    "duration": "2 years",
-                    "accreditation": "ACOE"
+                    "name": "Michigan College of Optometry at Ferris State University",
+                    "city": "Big Rapids",
+                    "state": "Michigan",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.ferris.edu/mco",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "University of Detroit-mercy School of Optometry",
+                    "city": "Novi",
+                    "state": "Michigan",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://optometry.udmercy.edu/",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "University of Missouri at St. Louis",
+                    "city": "St. Louis",
+                    "state": "Missouri",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.umsl.edu/divisions/optometry",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "State University of New York",
+                    "city": "New York",
+                    "state": "New York",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.sunyopt.edu",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "The Ohio State University",
+                    "city": "Columbus",
+                    "state": "Ohio",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://optometry.osu.edu",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Northeastern State University \u2013 Oklahoma College of Optometry",
+                    "city": "Tahlequah",
+                    "state": "Oklahoma",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://optometry.nsuok.edu/",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Pacific University",
+                    "city": "Forest Grove",
+                    "state": "Oregon",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.pacificu.edu/optometry/",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Pennsylvania College of Optometry at Drexel University, Elkins Park Campus",
+                    "city": "Elkins Park",
+                    "state": "Pennsylvania",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.salus.edu/optometry",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Inter American University of Puerto Rico",
+                    "city": "Bayamon",
+                    "state": "Puerto Rico",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.optonet.inter.edu",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "Southern College of Optometry",
+                    "city": "Memphis",
+                    "state": "Tennessee",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.sco.edu",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "University of Houston",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://www.opt.uh.edu",
+                    "source": "scraped:ASCO"
+                },
+                {
+                    "name": "University of the Incarnate Word",
+                    "city": "Rockville",
+                    "state": "Texas",
+                    "country": "USA",
+                    "degree": "O.D.",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "ACOE",
+                    "url": "https://rm.edu/od/",
+                    "source": "scraped:ASCO"
                 }
             ],
             "Canada": [
                 {
                     "name": "University of Waterloo School of Optometry",
                     "city": "Waterloo",
-                    "province": "ON",
                     "country": "Canada",
-                    "program": "Doctor of Optometry",
                     "degree": "O.D.",
+                    "program": "Doctor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "OCOS"
+                    "accreditation": "ACOE",
+                    "source": "curated"
                 },
                 {
-                    "name": "University of Montreal School of Optometry",
+                    "name": "Universit\u00e9 de Montr\u00e9al \u00c9cole d'optom\u00e9trie",
                     "city": "Montreal",
-                    "province": "QC",
                     "country": "Canada",
-                    "program": "Doctor of Optometry",
                     "degree": "O.D.",
-                    "duration": "4 years",
-                    "accreditation": "OCOS"
-                },
-                {
-                    "name": "University of British Columbia School of Optometry",
-                    "city": "Vancouver",
-                    "province": "BC",
-                    "country": "Canada",
                     "program": "Doctor of Optometry",
-                    "degree": "O.D.",
-                    "duration": "4 years",
-                    "accreditation": "OCOS"
+                    "duration": "5 years",
+                    "accreditation": "ACOE",
+                    "source": "curated"
                 }
             ]
         }
@@ -147,40 +336,98 @@ const universitiesByRegion = {
                     "name": "University of Manchester",
                     "city": "Manchester",
                     "country": "United Kingdom",
-                    "program": "BSc Optometry",
                     "degree": "BSc",
+                    "program": "BSc Optometry",
                     "duration": "3 years",
-                    "accreditation": "GOC"
+                    "accreditation": "GOC",
+                    "source": "curated"
                 },
                 {
-                    "name": "City University London",
+                    "name": "City, University of London",
                     "city": "London",
                     "country": "United Kingdom",
-                    "program": "BSc Optometry",
                     "degree": "BSc",
+                    "program": "BSc Optometry",
                     "duration": "3 years",
-                    "accreditation": "GOC"
+                    "accreditation": "GOC",
+                    "source": "curated"
                 },
                 {
                     "name": "University of Plymouth",
                     "city": "Plymouth",
                     "country": "United Kingdom",
-                    "program": "BSc Optometry",
                     "degree": "BSc",
+                    "program": "BSc Optometry",
                     "duration": "3 years",
-                    "accreditation": "GOC"
+                    "accreditation": "GOC",
+                    "source": "curated"
                 },
                 {
                     "name": "University of Bradford",
                     "city": "Bradford",
                     "country": "United Kingdom",
-                    "program": "BSc Optometry",
                     "degree": "BSc",
+                    "program": "BSc Optometry",
                     "duration": "3 years",
-                    "accreditation": "GOC"
+                    "accreditation": "GOC",
+                    "source": "curated"
+                },
+                {
+                    "name": "Aston University",
+                    "city": "Birmingham",
+                    "country": "United Kingdom",
+                    "degree": "MOptom",
+                    "program": "Optometry",
+                    "duration": "4 years",
+                    "accreditation": "GOC",
+                    "source": "curated"
+                },
+                {
+                    "name": "Cardiff University",
+                    "city": "Cardiff",
+                    "country": "United Kingdom",
+                    "degree": "BSc",
+                    "program": "BSc Optometry",
+                    "duration": "3 years",
+                    "accreditation": "GOC",
+                    "source": "curated"
+                },
+                {
+                    "name": "Glasgow Caledonian University",
+                    "city": "Glasgow",
+                    "country": "United Kingdom",
+                    "degree": "BSc",
+                    "program": "BSc Optometry",
+                    "duration": "4 years",
+                    "accreditation": "GOC",
+                    "source": "curated"
+                },
+                {
+                    "name": "University of Hertfordshire",
+                    "city": "Hatfield",
+                    "country": "United Kingdom",
+                    "degree": "BSc",
+                    "program": "BSc Optometry",
+                    "duration": "3 years",
+                    "accreditation": "GOC",
+                    "source": "curated"
+                },
+                {
+                    "name": "Ulster University",
+                    "city": "Coleraine",
+                    "country": "United Kingdom",
+                    "degree": "BSc",
+                    "program": "BSc Optometry",
+                    "duration": "3 years",
+                    "accreditation": "GOC",
+                    "source": "curated"
                 }
             ],
-            "Europe": []
+            "Spain": [],
+            "France": [],
+            "Germany": [],
+            "Netherlands": [],
+            "Belgium": []
         }
     },
     "Asia-Pacific": {
@@ -192,130 +439,258 @@ const universitiesByRegion = {
                 {
                     "name": "Manipal Academy of Higher Education",
                     "city": "Manipal",
-                    "state": "Karnataka",
                     "country": "India",
-                    "program": "Bachelor of Optometry",
                     "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "AIOS, COO"
+                    "accreditation": "State",
+                    "source": "curated"
                 },
                 {
                     "name": "VIT Vellore",
                     "city": "Vellore",
-                    "state": "Tamil Nadu",
                     "country": "India",
-                    "program": "Bachelor of Optometry",
                     "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "AIOS"
+                    "accreditation": "State",
+                    "source": "curated"
                 },
                 {
                     "name": "Aravind Eye Care Academy",
                     "city": "Madurai",
-                    "state": "Tamil Nadu",
                     "country": "India",
-                    "program": "Certified Optometry Specialist",
-                    "degree": "COS",
-                    "duration": "3 years",
-                    "accreditation": "AIOS"
-                },
-                {
-                    "name": "MGR Medical University",
-                    "city": "Chennai",
-                    "state": "Tamil Nadu",
-                    "country": "India",
-                    "program": "Bachelor of Optometry",
                     "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "AIOS, COO"
+                    "accreditation": "State",
+                    "source": "curated"
                 },
                 {
-                    "name": "Algappa University",
+                    "name": "Dr. M.G.R. Educational and Research Institute",
+                    "city": "Chennai",
+                    "country": "India",
+                    "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "State",
+                    "source": "curated"
+                },
+                {
+                    "name": "Alagappa University",
                     "city": "Karaikudi",
-                    "state": "Tamil Nadu",
                     "country": "India",
-                    "program": "Bachelor of Optometry",
                     "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "AIOS"
+                    "accreditation": "State",
+                    "source": "curated"
                 },
                 {
-                    "name": "SRM Deemed University",
+                    "name": "SRM Institute of Science and Technology",
                     "city": "Chennai",
-                    "state": "Tamil Nadu",
                     "country": "India",
-                    "program": "Bachelor of Optometry",
                     "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "AIOS, COO"
+                    "accreditation": "State",
+                    "source": "curated"
                 },
                 {
                     "name": "Amrita Vishwa Vidyapeetham",
                     "city": "Coimbatore",
-                    "state": "Tamil Nadu",
                     "country": "India",
-                    "program": "Bachelor of Optometry",
                     "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "AIOS"
+                    "accreditation": "State",
+                    "source": "curated"
                 },
                 {
                     "name": "Chitkara University",
                     "city": "Patiala",
-                    "state": "Punjab",
                     "country": "India",
-                    "program": "Bachelor of Optometry",
                     "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
                     "duration": "4 years",
-                    "accreditation": "AIOS"
+                    "accreditation": "State",
+                    "source": "curated"
+                },
+                {
+                    "name": "Elite School of Optometry",
+                    "city": "Chennai",
+                    "country": "India",
+                    "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "State",
+                    "source": "curated"
+                },
+                {
+                    "name": "LV Prasad Eye Institute (Bausch & Lomb School of Optometry)",
+                    "city": "Hyderabad",
+                    "country": "India",
+                    "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "State",
+                    "source": "curated"
+                },
+                {
+                    "name": "All India Institute of Medical Sciences (AIIMS)",
+                    "city": "New Delhi",
+                    "country": "India",
+                    "degree": "B.Optom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "State",
+                    "source": "curated"
                 }
             ],
             "Australia": [
                 {
                     "name": "University of Melbourne",
                     "city": "Melbourne",
-                    "state": "VIC",
                     "country": "Australia",
-                    "program": "Master of Science in Clinical Optometry",
-                    "degree": "MSc",
-                    "duration": "2 years",
-                    "accreditation": "AOPTOM"
+                    "degree": "OD",
+                    "program": "Doctor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "OCANZ",
+                    "source": "curated"
                 },
                 {
                     "name": "UNSW Sydney",
                     "city": "Sydney",
-                    "state": "NSW",
                     "country": "Australia",
-                    "program": "Master of Clinical Optometry",
-                    "degree": "MCOptom",
-                    "duration": "2 years",
-                    "accreditation": "AOPTOM"
+                    "degree": "BOptom/MClinOptom",
+                    "program": "Optometry",
+                    "duration": "5 years",
+                    "accreditation": "OCANZ",
+                    "source": "curated"
                 },
                 {
                     "name": "Queensland University of Technology",
                     "city": "Brisbane",
-                    "state": "QLD",
                     "country": "Australia",
-                    "program": "Bachelor of Vision Science",
-                    "degree": "BVS",
-                    "duration": "4 years",
-                    "accreditation": "AOPTOM"
+                    "degree": "BVisSc/MOptom",
+                    "program": "Optometry",
+                    "duration": "5 years",
+                    "accreditation": "OCANZ",
+                    "source": "curated"
                 },
                 {
                     "name": "Flinders University",
                     "city": "Adelaide",
-                    "state": "SA",
                     "country": "Australia",
-                    "program": "Bachelor of Optometry",
-                    "degree": "B.Optom",
-                    "duration": "4 years",
-                    "accreditation": "AOPTOM"
+                    "degree": "BMedSc/MOptom",
+                    "program": "Optometry",
+                    "duration": "5 years",
+                    "accreditation": "OCANZ",
+                    "source": "curated"
+                },
+                {
+                    "name": "Deakin University",
+                    "city": "Geelong",
+                    "country": "Australia",
+                    "degree": "BVisSc/MOptom",
+                    "program": "Optometry",
+                    "duration": "3.5 years",
+                    "accreditation": "OCANZ",
+                    "source": "curated"
                 }
-            ]
+            ],
+            "New Zealand": [
+                {
+                    "name": "University of Auckland",
+                    "city": "Auckland",
+                    "country": "New Zealand",
+                    "degree": "BOptom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "5 years",
+                    "accreditation": "OCANZ",
+                    "source": "curated"
+                }
+            ],
+            "China": [],
+            "Japan": [],
+            "South Korea": [],
+            "Thailand": [],
+            "Singapore": []
+        }
+    },
+    "South America": {
+        "region": "South America",
+        "icon": "fa-map-marker-alt",
+        "description": "Optometry programs across South America",
+        "countries": {
+            "Brazil": [],
+            "Argentina": [],
+            "Colombia": [],
+            "Chile": []
+        }
+    },
+    "Africa": {
+        "region": "Africa",
+        "icon": "fa-map-marker-alt",
+        "description": "Optometry programs across Africa",
+        "countries": {
+            "South Africa": [
+                {
+                    "name": "University of KwaZulu-Natal",
+                    "city": "Durban",
+                    "country": "South Africa",
+                    "degree": "BOptom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "HPCSA",
+                    "source": "curated"
+                },
+                {
+                    "name": "University of Johannesburg",
+                    "city": "Johannesburg",
+                    "country": "South Africa",
+                    "degree": "BOptom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "HPCSA",
+                    "source": "curated"
+                },
+                {
+                    "name": "University of the Free State",
+                    "city": "Bloemfontein",
+                    "country": "South Africa",
+                    "degree": "BOptom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "HPCSA",
+                    "source": "curated"
+                },
+                {
+                    "name": "University of Limpopo",
+                    "city": "Polokwane",
+                    "country": "South Africa",
+                    "degree": "BOptom",
+                    "program": "Bachelor of Optometry",
+                    "duration": "4 years",
+                    "accreditation": "HPCSA",
+                    "source": "curated"
+                }
+            ],
+            "Nigeria": [],
+            "Kenya": []
+        }
+    },
+    "Middle East": {
+        "region": "Middle East",
+        "icon": "fa-map-marker-alt",
+        "description": "Optometry programs in Middle East",
+        "countries": {
+            "Saudi Arabia": [],
+            "United Arab Emirates": [],
+            "Iran": []
         }
     }
 };
-
 
 // Get all universities
 function getAllUniversities() {
@@ -349,4 +724,4 @@ function getTotalUniversitiesCount() {
 }
 
 // Last updated timestamp
-const lastUpdated = "2026-08-15T10:17:59.369496";
+const lastUpdated = "2026-08-15T10:42:03.024617";
