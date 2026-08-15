@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCategoriesFilter();
     renderResources();
     renderCourses();
-    renderTextbookCategories();
-    renderAllTextbooks();
+    renderMaterials();
 });
 
 // Setup navigation between pages
@@ -174,6 +173,21 @@ function renderCategoriesFilter() {
             <i class="fas ${cat.icon}"></i> ${cat.name}
         </label>
     `).join('');
+}
+
+// Render materials for download
+function renderMaterials() {
+    const container = document.getElementById('materialsContainer');
+    if (!container || typeof availableMaterials === 'undefined') return;
+
+    const courses = getAvailableCourses();
+    let html = '';
+
+    courses.forEach(courseName => {
+        html += renderMaterialsForDownload(courseName);
+    });
+
+    container.innerHTML = html;
 }
 
 // Render resources

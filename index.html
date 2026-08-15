@@ -17,6 +17,62 @@
     </script>
 </head>
 <body>
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="registration-modal">
+        <div class="registration-content">
+            <div class="registration-header">
+                <h2>Welcome to OLH</h2>
+                <p>Join our community of optometry educators and students</p>
+            </div>
+            <form id="registrationForm" class="registration-form">
+                <label for="registrationEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="registrationEmail"
+                    placeholder="your.email@university.edu"
+                    required
+                >
+                <button type="submit" class="btn-register">
+                    <i class="fas fa-check"></i> Register & Continue
+                </button>
+            </form>
+            <p class="registration-info">
+                <i class="fas fa-lock"></i> Your email is secure and will only be used for platform updates.
+            </p>
+            <p class="forgot-password-link">
+                <a href="#" onclick="event.preventDefault(); showForgotPasswordModal();">Forgot password?</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgotPasswordModal" class="registration-modal">
+        <div class="registration-content">
+            <div class="registration-header">
+                <h2>Reset Your Access</h2>
+                <p>Enter your email to reset your password</p>
+            </div>
+            <form id="forgotPasswordForm" class="registration-form">
+                <label for="forgotPasswordEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="forgotPasswordEmail"
+                    placeholder="your.email@university.edu"
+                    required
+                >
+                <button type="submit" class="btn-register">
+                    <i class="fas fa-key"></i> Reset Password
+                </button>
+            </form>
+            <p class="registration-info">
+                <i class="fas fa-info-circle"></i> We'll log you out and let you register again with a new email.
+            </p>
+            <p class="forgot-password-link">
+                <a href="#" onclick="event.preventDefault(); hideForgotPasswordModal();">Back to login</a>
+            </p>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -29,7 +85,7 @@
             <div class="nav-menu" id="navMenu">
                 <a href="#" class="nav-link active" data-page="home">Home</a>
                 <a href="#" class="nav-link" data-page="courses">Courses</a>
-                <a href="#" class="nav-link" data-page="textbooks">📚 Textbooks</a>
+                <a href="#" class="nav-link" data-page="materials">📥 Materials</a>
                 <a href="#" class="nav-link" data-page="resources">Resources</a>
                 <a href="#" class="nav-link" data-page="about">About</a>
             </div>
@@ -149,6 +205,32 @@
                             <!-- Populated by JavaScript -->
                         </div>
                     </main>
+                </div>
+            </div>
+
+            <!-- Materials Download Page -->
+            <div id="materials" class="page">
+                <div class="page-header">
+                    <h1>📥 Download Lecture Materials</h1>
+                    <p>All lecture presentations, notes, practicals, and resources - Ready to Download</p>
+                </div>
+
+                <section class="materials-info">
+                    <div class="info-card">
+                        <h3>✅ What You Can Download</h3>
+                        <p>All materials from our integrated courses are available here:</p>
+                        <ul>
+                            <li>📺 <strong>Lecture Presentations</strong> - PowerPoint slides in PDF format</li>
+                            <li>📖 <strong>Reading Notes</strong> - Week-by-week study guides</li>
+                            <li>📝 <strong>Lecture Notes</strong> - Comprehensive handwritten notes</li>
+                            <li>🔬 <strong>Practical Guides</strong> - Clinical examination procedures</li>
+                            <li>📕 <strong>Textbook References</strong> - Professional reference materials</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div id="materialsContainer" class="materials-container">
+                    <!-- Populated by JavaScript -->
                 </div>
             </div>
 
@@ -314,10 +396,12 @@
 
     <script src="js/data.js"></script>
     <script src="js/materials-data.js"></script>
+    <script src="js/materials-list.js"></script>
     <script src="js/curriculum-standards.js"></script>
     <script src="js/universities-global.js"></script>
     <script src="js/textbooks-index.js"></script>
     <script src="js/faculty-dashboard.js"></script>
+    <script src="js/auth.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
