@@ -5,17 +5,17 @@ const courseTopics = {
     "Optics & Refraction": {
         description: "Light, optics, refraction, lens design, and vision correction",
         icon: "fa-glasses",
-        courses: [1, 2, 3, 4, 5, 6, 237] // Course IDs
+        courses: [1, 2, 3, 4, 5, 6, 48, 49, 43] // Course IDs
     },
     "Ocular Anatomy & Physiology": {
         description: "Eye structure, visual system, and biological functions",
         icon: "fa-eye",
-        courses: [7, 8, 9, 10, 11, 12]
+        courses: [7, 8, 9, 10, 11, 12, 46]
     },
     "Clinical Skills & Examination": {
         description: "Patient examination, diagnostic techniques, and clinical procedures",
         icon: "fa-stethoscope",
-        courses: [13, 14, 15, 16, 17]
+        courses: [13, 14, 15, 16, 17, 44, 47]
     },
     "Contact Lens Practice": {
         description: "Contact lens fitting, design, and specialized applications",
@@ -25,7 +25,7 @@ const courseTopics = {
     "Ocular Diseases & Pathology": {
         description: "Eye disease diagnosis, pathology, and management",
         icon: "fa-hospital",
-        courses: [20, 21, 22, 23, 24, 25, 26, 27, 28]
+        courses: [20, 21, 22, 23, 24, 25, 26, 27, 28, 51]
     },
     "Pediatric Vision & Development": {
         description: "Children's eye care, refractive errors, and vision development",
@@ -35,12 +35,12 @@ const courseTopics = {
     "Systemic & Occupational Vision": {
         description: "Systemic diseases affecting vision, occupational eye health",
         icon: "fa-heart",
-        courses: [31, 32, 33, 34, 35]
+        courses: [31, 32, 33, 34, 35, 50]
     },
     "Advanced Clinical Topics": {
         description: "Specialized areas: low vision, sports vision, professional care",
         icon: "fa-graduation-cap",
-        courses: [36, 37, 38, 39, 40, 41, 42]
+        courses: [36, 37, 38, 39, 40, 41, 42, 44, 45, 47]
     }
 };
 

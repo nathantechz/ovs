@@ -527,6 +527,102 @@ const coursesData = [
         lectures: 9,
         materials: 18,
         degree: "Doctor of Optometry"
+    },
+    {
+        id: 44,
+        title: "Low Vision Rehabilitation & Assistive Aids",
+        category: "clinical",
+        level: "graduate",
+        country: "usa",
+        description: "Assessment, magnification calculation, optical and electronic assistive technology for visual impairment",
+        icon: "fa-magnifying-glass",
+        lectures: 10,
+        materials: 20,
+        degree: "Master in Clinical Optometry"
+    },
+    {
+        id: 45,
+        title: "Sports & Performance Vision Training",
+        category: "clinical",
+        level: "graduate",
+        country: "usa",
+        description: "Visual performance assessment, sports-specific training, dynamic visual acuity, and eye-hand coordination",
+        icon: "fa-volleyball",
+        lectures: 8,
+        materials: 16,
+        degree: "Master in Clinical Optometry"
+    },
+    {
+        id: 46,
+        title: "Visual Perception & Psychophysics",
+        category: "anatomy",
+        level: "undergraduate",
+        country: "uk",
+        description: "Psychophysical thresholds, spatial frequency tuning, color constancy, depth perception, and motion processing",
+        icon: "fa-brain",
+        lectures: 12,
+        materials: 24,
+        degree: "Bachelor of Optometry"
+    },
+    {
+        id: 47,
+        title: "Advanced Vision Therapy & Orthoptics",
+        category: "clinical",
+        level: "graduate",
+        country: "usa",
+        description: "Orthoptic treatment protocols, accommodative-convergence therapy, free-space stereograms, and Brock string training",
+        icon: "fa-dumbbell",
+        lectures: 10,
+        materials: 20,
+        degree: "Doctor of Optometry"
+    },
+    {
+        id: 48,
+        title: "Optometric Instrumentation & Calibration",
+        category: "refraction",
+        level: "undergraduate",
+        country: "germany",
+        description: "Optical engineering principles, calibration, slit lamps, autokeratometers, perimeters, and OCT maintenance",
+        icon: "fa-microscope",
+        lectures: 10,
+        materials: 20,
+        degree: "Bachelor of Optometry"
+    },
+    {
+        id: 49,
+        title: "Ophthalmic Dispensing & Laboratory Technology",
+        category: "refraction",
+        level: "undergraduate",
+        country: "uk",
+        description: "Spectacle frame fitting, lens surfacing, beveling, edging, position-of-wear compensation, and ANSI standards",
+        icon: "fa-glasses",
+        lectures: 12,
+        materials: 24,
+        degree: "Bachelor of Optometry"
+    },
+    {
+        id: 50,
+        title: "Environmental Optometry & Ergonomics",
+        category: "clinical",
+        level: "undergraduate",
+        country: "australia",
+        description: "Industrial eye safety, radiation protection, workplace illumination standards, and visual ergonomics",
+        icon: "fa-shield-halved",
+        lectures: 8,
+        materials: 16,
+        degree: "Bachelor of Optometry"
+    },
+    {
+        id: 51,
+        title: "Ocular Prosthetics & Anophthalmic Care",
+        category: "ocular-diseases",
+        level: "graduate",
+        country: "india",
+        description: "Custom impression molding, scleral shell fitting, orbital implant management, and aesthetic rehabilitation",
+        icon: "fa-eye-slash",
+        lectures: 8,
+        materials: 16,
+        degree: "Doctor of Optometry"
     }
 ];
 

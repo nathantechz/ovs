@@ -1,0 +1,149 @@
+# Practical Clinical Guide: Keratometry
+## Ocular Anatomy & Physiology &middot; Clinical Examination Protocol
+
+---
+
+## Clinical Procedure & Protocol
+
+
+### 1. Purpose of the Procedure
+
+Measure Corneal Curvature: To determine the curvature of the anterior corneal surface (specifically the central 3mm zone).
+
+Assess Astigmatism: To quantify the amount and axis of corneal astigmatism and differentiate it from internal (lenticular) astigmatism.
+
+Contact Lens Fitting: To determine the Base Curve required for a contact lens so it fits the shape of the eye properly (not too tight or too loose).
+
+Detect Abnormalities: To identify irregular corneal surfaces, such as in Keratoconus (where the mires appear distorted) or corneal scarring.
+
+Biometry: To calculate the power of the Intraocular Lens (IOL) needed before cataract surgery.
+
+
+### 2. Equipment Required
+
+Keratometer (Ophthalmometer): The standard manual device (e.g., Bausch & Lomb type) is most common in diploma courses.
+
+
+### Occluder: To cover the eye not being tested.
+
+
+### Alcohol Swabs/Chin Rest Papers: For hygiene.
+
+
+### 3. Detailed Procedure (Bausch & Lomb Type)
+
+
+### Part A: Setup and Focusing
+
+
+### Focus the Eyepiece:
+
+Why? To ensure the examiner's own vision doesn't affect the measurement (accommodation).
+
+How: Hold a white piece of paper or an occluder in front of the objective lens. Turn the eyepiece counter-clockwise until the cross-hair (reticle) is blurry. Then, slowly turn it clockwise until the cross-hair is sharp and black. Stop immediately once it is clear.
+
+
+### Patient Positioning:
+
+Adjust the chin rest and stool height so the patient is comfortable.
+
+Align the patient's outer canthus (corner of the eye) with the black marker on the side of the instrument.
+
+Instruct the patient to place their chin in the cup and forehead firmly against the rest.
+
+Occlude the left eye to test the right eye first.
+
+
+### Part B: Alignment
+
+
+### Gross Alignment:
+
+Turn the instrument on.
+
+Look from the outside (side of the machine). Raise or lower the instrument until the light from the keratometer reflects roughly in the center of the patient's cornea.
+
+
+### Fine Alignment:
+
+Look through the eyepiece. You will see three circles (mires).
+
+Use the joystick to center the cross-hair inside the bottom-right circle.
+
+
+### Part C: Measurement
+
+
+### Focus the Mires:
+
+Use the focusing knob (usually the large outer ring or joystick twist) to make the bottom-right circlesingle.
+
+Tip: If the circle looks doubled, the instrument is out of focus. Adjust until it is sharp and single.
+
+
+### Find the Axis (Principal Meridians):
+
+Rotate the entire tube of the instrument (using the handles) until the horizontal lines of the plus (+) signs and the vertical lines of the minus (-) signs are continuous and aligned with their spurs.
+
+
+### Measure the Horizontal Meridian (Primary):
+
+Turn the left measuring drum to move the plus (+) signs.
+
+Adjust until the two plus signs overlap perfectly to form a single cross.
+
+
+### Measure the Vertical Meridian (Secondary):
+
+Turn the right measuring drum to move the minus (-) signs.
+
+Adjust until the two minus signs overlap perfectly to form a single line.
+
+
+### 4. Interpretation of Mires
+
+Clear/Regular: If the circles are round and sharp, the corneal surface is regular.
+
+Distorted/Wavy: If the circles look wavy or broken, it indicates irregular astigmatism or dry eye. Ask the patient to blink; if it clears, it was dry eye. If it stays wavy, it may be corneal scarring or Keratoconus.
+
+
+### 5. Documentation (Recording Method)
+
+Record the Power (in Diopters) and the Axis (in degrees) for both the horizontal and vertical meridians.
+
+
+### Format:
+
+
+### Method 1 (Power/Axis): Record the two readings separately.
+
+OD: 42.50 @ 180 / 43.50 @ 090
+
+Method 2 (Flat/Steep): Identify the flatter curve (lower number) and steeper curve (higher number).
+
+OD: 42.50 / 43.50 @ 090
+
+
+### Mires: Note the quality.
+
+Mires: Clear.
+
+
+### Astigmatism: Calculate the difference (cylinder).
+
+Example: 43.50 - 42.50 = -1.00 D of Corneal Astigmatism.
+
+
+### Example Recording:
+
+
+### Keratometry:
+
+OD: 42.00 @ 180 / 44.00 @ 90 (Mires clear) -> -2.00 D Astigmatism.
+
+OS: 42.00 @ 180 / 42.50 @ 90 (Mires distorted) -> Irregular.
+
+
+---
+
+**Reference:** Clinical Procedures & Practical Examination Protocols (Ocular Anatomy & Physiology)

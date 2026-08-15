@@ -1,0 +1,1591 @@
+{
+  "extracted_at": "2026-08-15 11:30:56",
+  "source": "ASCO member directory -> each school's own curriculum page",
+  "schools_attempted": 24,
+  "schools_with_courses": 3,
+  "total_courses": 209,
+  "schools": [
+    {
+      "school": "University of Alabama at Birmingham",
+      "state": "Alabama",
+      "url": "https://www.uab.edu/optometry",
+      "curriculum_pages": [
+        "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum",
+        "https://www.uab.edu/students/academics/advising#"
+      ],
+      "courses": [
+        {
+          "code": "OBHS 111",
+          "title": "Fundamentals 1",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 111",
+          "title": "Intro to Optometry",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 112",
+          "title": "Geometric and Clinical Optics",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "VS 111",
+          "title": "Ocular Anatomy and Physiology",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "VS 113",
+          "title": "Biochemistry of the Eye",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OBHS 112",
+          "title": "Fundamentals II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OBHS 121",
+          "title": "Systems I: Neuroscience",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OBHS 122",
+          "title": "Systems II: Gross Anatomy",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OBHS 123",
+          "title": "Systems III: Cardiovascular and Respiratory",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 121",
+          "title": "Clinical Evaluation of the Visual System (CEVS) I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 122",
+          "title": "Ocular Microbiology",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 124",
+          "title": "Optometric Clinical Seminar Series",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "VS 121",
+          "title": "Visual Optics",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "VS 122",
+          "title": "Visual Perception",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 131",
+          "title": "Clinical Rotation I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OBHS 131",
+          "title": "Systems IV: Renal",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 132",
+          "title": "CEVS II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 133",
+          "title": "Clinical Ophthalmic Optics",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 134",
+          "title": "Professional Communications",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "VS 131",
+          "title": "Neurobiology of the Visual System",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "VS 132",
+          "title": "Eye Movements and Principles of Binocular Vision",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OBHS 211",
+          "title": "Systems V: Gastrointestinal & Musculoskeletal/Skin",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 211",
+          "title": "Clinical Rotation II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 212",
+          "title": "Community Eye Care I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 213",
+          "title": "Product Management I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 212",
+          "title": "Ocular Pharmacology",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 213",
+          "title": "CEVS III",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "VS 211",
+          "title": "Visual Perception",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OBHS 212",
+          "title": "Systems VI: Hematology & Endocrine",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 221",
+          "title": "Clinical Rotation III",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 222",
+          "title": "Community Eye Care II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 223",
+          "title": "Product Management II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 224",
+          "title": "Primary Eye Care Clinic I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 221",
+          "title": "CEVS IV",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 222",
+          "title": "Diseases of the Anterior Segment",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 224",
+          "title": "Anomalies of Binocular Vision I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 225",
+          "title": "Diseases of the Posterior Segment",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 226",
+          "title": "Clinicolegal Aspects of Optometry",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 2210",
+          "title": "Business Fundamentals I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 2211",
+          "title": "Optometric Clinical Seminar 2",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 516",
+          "title": "Spanish for Eye Care ELECTIVE",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 231",
+          "title": "Ophthalmic Imaging",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 238",
+          "title": "Systemic Pharmacology",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 231",
+          "title": "Primary Eye Care II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 232",
+          "title": "Clinical Rotation IV",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 234",
+          "title": "Vision Therapy I (Summer 1 or 2)",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 602",
+          "title": "AIODP Geometric and Clinical Optics",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 602",
+          "title": "AIODP CLN ROT I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OBHS 231",
+          "title": "AIODP Integrated Human Physiology",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 311",
+          "title": "Primary Eye Care III",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 312",
+          "title": "Clinical Rotation V",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 316",
+          "title": "Vision Therapy II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 314",
+          "title": "Special Clinical Rotation I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 311",
+          "title": "Anomalies of Binocular Vision II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 312",
+          "title": "Contact Lenses I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 313",
+          "title": "Geriatric Optometry",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 314",
+          "title": "Low Vision",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 316",
+          "title": "Glaucoma",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 318",
+          "title": "Pediatric Optometry",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 319",
+          "title": "Diseases of the Posterior Segment II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 321",
+          "title": "Primary Eye Care Clinic IV",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 322",
+          "title": "Clinical Rotation VI",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 326",
+          "title": "Vision Therapy III",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 324",
+          "title": "Special Clinical Rotation II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 321",
+          "title": "Neuro-optometry",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 322",
+          "title": "Contact Lenses II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 323",
+          "title": "Injections and Surgical Procedures",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 324",
+          "title": "Business Fundamentals II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 325",
+          "title": "Clinical Management of Vision Problems",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 326",
+          "title": "Ophthalmic Lasers",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 328",
+          "title": "Assessment of Systemic Diseases in Optometry",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 329",
+          "title": "Advanced Posterior Segment Evaluation",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 515",
+          "title": "Advanced Vision and Learning ELECTIVE",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 336",
+          "title": "Externship I",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 411",
+          "title": "Pediatric Optometry II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 412",
+          "title": "Cornea & Contact Lens II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 413",
+          "title": "Ocular Disease & Low Vision II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 414",
+          "title": "Special Clinical Rotation IV",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 416",
+          "title": "Externship I or II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "OPT 514",
+          "title": "Concepts of Practice Management ELECTIVE",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 421",
+          "title": "Pediatric Optometry III",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 422",
+          "title": "Cornea and Contact Lens III",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 423",
+          "title": "Ocular Disease and Low Vision III",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 424",
+          "title": "Special Clinical Rotation V",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        },
+        {
+          "code": "CLN 426",
+          "title": "Externship II",
+          "term": "School of Optometry",
+          "source_url": "https://www.uab.edu/optometry/home/academics/doctor-of-optometry/curriculum"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "school": "Arizona College of Optometry, Midwestern University",
+      "state": "Arizona",
+      "url": "https://www.midwestern.edu/academics/degrees-programs/doctor-optometry-program/arizona-college-optometry",
+      "curriculum_pages": [],
+      "courses": [],
+      "status": "no_curriculum_page_found"
+    },
+    {
+      "school": "Southern California College of Optometry at Marshall B. Ketchum University",
+      "state": "California",
+      "url": "https://www.ketchum.edu/optometry",
+      "curriculum_pages": [
+        "https://www.ketchum.edu/admissions/optometry/scco-curriculum",
+        "https://www.ketchum.edu/admissions-programs/pa/curriculum",
+        "https://www.ketchum.edu/admissions/pharmacy/curriculum"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "University of California \u2013 Berkeley",
+      "state": "California",
+      "url": "https://optometry.berkeley.edu",
+      "curriculum_pages": [
+        "https://optometry.berkeley.edu/academics/curriculum/"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Western University of Health Sciences",
+      "state": "California",
+      "url": "https://www.westernu.edu/optometry",
+      "curriculum_pages": [
+        "https://www.westernu.edu/optometry/programs/doctor-of-optometry/curriculum/",
+        "https://www.westernu.edu/optometry/academic-program/"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Nova Southeastern University",
+      "state": "Florida",
+      "url": "https://optometry.nova.edu/",
+      "curriculum_pages": [
+        "https://optometry.nova.edu/_resources/binaries/residency/forms/primary-care-curriculums.pdf",
+        "https://optometry.nova.edu/_resources/binaries/residency/forms/ocular-disease-curriculum.pdf",
+        "https://optometry.nova.edu/_resources/binaries/residency/forms/pediatrics-and-bv-curriculum.pdf",
+        "https://optometry.nova.edu/_resources/binaries/residency/forms/cornea-and-contact-lens-curriculum.pdf"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Chicago College of Optometry",
+      "state": "Illinois",
+      "url": "https://www.midwestern.edu/academics/degrees-programs/doctor-optometry-program/chicago-college-optometry",
+      "curriculum_pages": [],
+      "courses": [],
+      "status": "no_curriculum_page_found"
+    },
+    {
+      "school": "Illinois College of Optometry",
+      "state": "Illinois",
+      "url": "https://www.ico.edu",
+      "curriculum_pages": [
+        "https://www.ico.edu/curriculum"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Indiana University",
+      "state": "Indiana",
+      "url": "https://www.optometry.iu.edu",
+      "curriculum_pages": [],
+      "courses": [],
+      "status": "no_curriculum_page_found"
+    },
+    {
+      "school": "University of Pikeville \u2013 Kentucky College of Optometry",
+      "state": "Kentucky",
+      "url": "https://www.upike.edu/KYCO",
+      "curriculum_pages": [],
+      "courses": [],
+      "status": "no_curriculum_page_found"
+    },
+    {
+      "school": "Massachusetts College of Pharmacy and Health Sciences (mcphs)",
+      "state": "Massachusetts",
+      "url": "https://www.mcphs.edu/academics/school-of-optometry/optometry/optometry-od",
+      "curriculum_pages": [
+        "https://www.mcphs.edu/academics/programs/optometry-od/curriculum",
+        "https://www.mcphs.edu/academics/prerequisite-courses"
+      ],
+      "courses": [
+        {
+          "code": "OPT 610",
+          "title": "Clinical Anatomy (with lab)",
+          "term": "Year I -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 611",
+          "title": "Ocular Anatomy and Physiology",
+          "term": "Year I -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 630",
+          "title": "Geometrical and Physical Optics (with lab)",
+          "term": "Year I -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 650",
+          "title": "Optometry Theory and Methods I",
+          "term": "Year I -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 656",
+          "title": "Histology and Embryology",
+          "term": "Year I -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 721",
+          "title": "Visual Development",
+          "term": "Year I -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 612",
+          "title": "Ocular Biochemistry",
+          "term": "Year I - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 613",
+          "title": "Neuro Anatomy and Physiology",
+          "term": "Year I - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 622",
+          "title": "Visual Perception",
+          "term": "Year I - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 631",
+          "title": "Visual Optics (with lab)",
+          "term": "Year I - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 652",
+          "title": "Optometry Theory and Methods II",
+          "term": "Year I - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 657",
+          "title": "Microbiology",
+          "term": "Year I - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 709",
+          "title": "Systemic Pharmacology I",
+          "term": "Year I - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 632",
+          "title": "Ophthalmic Optics I (w/lab)",
+          "term": "Year I - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 640",
+          "title": "Systems Based Physiology",
+          "term": "Year I - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 653",
+          "title": "Optometry Theory and Methods III",
+          "term": "Year I - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 705",
+          "title": "Visual Neurophysiology & Neuro-Diagnostics",
+          "term": "Year I - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 710",
+          "title": "Systemic Pharmacology II",
+          "term": "Year I - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 711",
+          "title": "Immunology",
+          "term": "Year I - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 722",
+          "title": "Oculomotor Function",
+          "term": "Year I - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 830",
+          "title": "Professional Ethics",
+          "term": "Year I - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 655",
+          "title": "Systemic Disease",
+          "term": "Year II -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 712",
+          "title": "Ocular Pharmacology",
+          "term": "Year II -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 750",
+          "title": "Anterior Segment Ocular Disease I",
+          "term": "Year II -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 751",
+          "title": "Optometry Theory and Methods IV",
+          "term": "Year II -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 756",
+          "title": "Foundations of Binocular Vision",
+          "term": "Year II -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 766",
+          "title": "Pathophysiology",
+          "term": "Year II -\u00a0Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 752",
+          "title": "Contact Lenses I",
+          "term": "Year II - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 753",
+          "title": "Posterior Segment Ocular Disease I",
+          "term": "Year II - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 757",
+          "title": "Clinical Binocular Vision I",
+          "term": "Year II - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 851",
+          "title": "Glaucoma I",
+          "term": "Year II - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 854",
+          "title": "Ocular Manifestations of Systemic Disease",
+          "term": "Year II - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 758",
+          "title": "Neuro Optometry",
+          "term": "Year II - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 759",
+          "title": "Anterior Segment Ocular Disease II",
+          "term": "Year II - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 768",
+          "title": "Ocular Surface Disorders (with lab)",
+          "term": "Year II - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 810",
+          "title": "Integrative Seminar",
+          "term": "Year II - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 852",
+          "title": "Clinical Binocular Vision II (with lab)",
+          "term": "Year II - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 855",
+          "title": "Contact Lenses II",
+          "term": "Year II - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 859",
+          "title": "Glaucoma II",
+          "term": "Year II - Summer",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 691",
+          "title": "Optometry and Public Health",
+          "term": "Year III - Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 754",
+          "title": "Low Vision and Geriatrics (w/lab)",
+          "term": "Year III - Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 755",
+          "title": "Pediatrics (with lab)",
+          "term": "Year III - Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 820",
+          "title": "Cataract and Refractive Surgery",
+          "term": "Year III - Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 857",
+          "title": "Posterior Segment Ocular Disease II",
+          "term": "Year III - Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 899",
+          "title": "Independent Study",
+          "term": "Year III - Fall",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 741",
+          "title": "Practice and Business Management",
+          "term": "Year III - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 840",
+          "title": "Special Populations and Topics",
+          "term": "Year III - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 845",
+          "title": "Advanced Optometric Theory & Methods",
+          "term": "Year III - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 860",
+          "title": "Research and Statistical Methods",
+          "term": "Year III - Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPT 951",
+          "title": "Online Clinical Seminar",
+          "term": "Year III - SummerYear IV - Fall/Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPTC 971",
+          "title": "Externship Rotation I",
+          "term": "Year III - SummerYear IV - Fall/Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPTC 972",
+          "title": "Externship Rotation II",
+          "term": "Year III - SummerYear IV - Fall/Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        },
+        {
+          "code": "OPTC 973",
+          "title": "Externship Rotation III",
+          "term": "Year III - SummerYear IV - Fall/Spring",
+          "source_url": "https://www.mcphs.edu/academics/programs/optometry-od/curriculum"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "school": "New England College of Optometry",
+      "state": "Massachusetts",
+      "url": "https://www.neco.edu",
+      "curriculum_pages": [
+        "https://www.neco.edu/wp-content/uploads/2026/06/2026-2027AY-OD-curriculum-1.pdf"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Michigan College of Optometry at Ferris State University",
+      "state": "Michigan",
+      "url": "https://www.ferris.edu/mco",
+      "curriculum_pages": [
+        "https://www.ferris.edu/academics/Wac/homepage.htm",
+        "https://www.ferris.edu/administration/academicaffairs/vpoffice/senate/univcurrcomm/homepage.htm",
+        "https://www.ferris.edu/administration/academicaffairs/Resources/PCAFs.htm"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "University of Detroit-mercy School of Optometry",
+      "state": "Michigan",
+      "url": "https://optometry.udmercy.edu/",
+      "curriculum_pages": [],
+      "courses": [],
+      "status": "no_curriculum_page_found"
+    },
+    {
+      "school": "University of Missouri at St. Louis",
+      "state": "Missouri",
+      "url": "https://www.umsl.edu/divisions/optometry",
+      "curriculum_pages": [
+        "https://www.umsl.edu/divisions/optometry/ce-courses/index.html",
+        "https://www.umsl.edu/acp/drop.html",
+        "https://www.umsl.edu/acp/acp_high_schools.html",
+        "https://www.umsl.edu/~academicadvising/"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "State University of New York",
+      "state": "New York",
+      "url": "https://www.sunyopt.edu",
+      "curriculum_pages": [
+        "https://www.sunyopt.edu/academics/programs/od-program/od-curriculum/microcredential-programs/",
+        "https://www.sunyopt.edu/academics/programs/continuing-education-ce/online-ce-courses/"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "The Ohio State University",
+      "state": "Ohio",
+      "url": "https://optometry.osu.edu",
+      "curriculum_pages": [
+        "https://optometry.osu.edu/academics/doctor-optometry/curriculum",
+        "https://optometry.osu.edu/academics/graduate-program/graduate-program-curriculum",
+        "https://optometry.osu.edu/alumni-ce/continuing-education/optometry-online-continuing-education-course-listing"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Northeastern State University \u2013 Oklahoma College of Optometry",
+      "state": "Oklahoma",
+      "url": "https://optometry.nsuok.edu/",
+      "curriculum_pages": [
+        "https://optometry.nsuok.edu/CurrentStudents/CurriculumandCatalog.aspx"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Pacific University",
+      "state": "Oregon",
+      "url": "https://www.pacificu.edu/optometry/",
+      "curriculum_pages": [
+        "https://www.pacificu.edu/optometry-od/curriculum"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Pennsylvania College of Optometry at Drexel University, Elkins Park Campus",
+      "state": "Pennsylvania",
+      "url": "https://www.salus.edu/optometry",
+      "curriculum_pages": [
+        "https://www.salus.edu/colleges/optometry/graduate-and-specialized-programming/continuing-education-events/index.html#",
+        "https://www.salus.edu/academics/home.html#",
+        "https://www.salus.edu/academics/academic-assessment/index.html#",
+        "https://www.salus.edu/academics/graduation-retention-rates.html#"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Inter American University of Puerto Rico",
+      "state": "Puerto Rico",
+      "url": "https://www.optonet.inter.edu",
+      "curriculum_pages": [
+        "https://optonet.inter.edu/academic-program/"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "Southern College of Optometry",
+      "state": "Tennessee",
+      "url": "https://www.sco.edu",
+      "curriculum_pages": [
+        "https://www.sco.edu/curriculum",
+        "https://www.sco.edu/curriculum-hours-verification-students",
+        "https://www.sco.edu/curriculum-hours-verification-alumni",
+        "https://www.sco.edu/spring-ce-courses-at-a-glance"
+      ],
+      "courses": [
+        {
+          "code": "OPT 110",
+          "title": "Optometric Theory & Methods I",
+          "term": "Fall Semester",
+          "credits": "6",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 111",
+          "title": "Optics of the Eye I",
+          "term": "Fall Semester",
+          "credits": "5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 112",
+          "title": "Anatomy, Histology, & Physiology I",
+          "term": "Fall Semester",
+          "credits": "4.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 113",
+          "title": "Neuroanatomy",
+          "term": "Fall Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 114",
+          "title": "Ocular Anatomy & Physiology",
+          "term": "Fall Semester",
+          "credits": "4",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 116",
+          "title": "Biochemistry",
+          "term": "Fall Semester",
+          "credits": "1.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 118",
+          "title": "Strategies for Academic Success I",
+          "term": "Fall Semester",
+          "credits": "0.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 120",
+          "title": "Optometric Theory & Methods II",
+          "term": "Spring Semester",
+          "credits": "5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 121",
+          "title": "Optics of the Eye II",
+          "term": "Spring Semester",
+          "credits": "5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 122",
+          "title": "Anatomy, Histology, & Physiology II",
+          "term": "Spring Semester",
+          "credits": "4.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 125",
+          "title": "Ocular Motility",
+          "term": "Spring Semester",
+          "credits": "1.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 126",
+          "title": "Visual Sensation & Perception",
+          "term": "Spring Semester",
+          "credits": "5.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 127",
+          "title": "Ophthalmic Optics I",
+          "term": "Spring Semester",
+          "credits": "1.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 128",
+          "title": "Strategies for Academic Success II",
+          "term": "Spring Semester",
+          "credits": "0.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 129",
+          "title": "Optometric Practice I",
+          "term": "Spring Semester",
+          "credits": "1",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 200",
+          "title": "Optometric Theory & Methods Lab",
+          "term": "Summer Mini-Semester",
+          "credits": "1",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 201",
+          "title": "Basic Pathology",
+          "term": "Summer Mini-Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 202",
+          "title": "Systemic Pharmacology I",
+          "term": "Summer Mini-Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 203",
+          "title": "Foundations of Clinical Care I",
+          "term": "Summer Mini-Semester",
+          "credits": "0.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 209",
+          "title": "Evidence Based Medicine",
+          "term": "Summer Mini-Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 210",
+          "title": "Optometric Theory & Methods III",
+          "term": "Fall Semester",
+          "credits": "4",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 211",
+          "title": "Medical Pathology",
+          "term": "Fall Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 212",
+          "title": "Systemic Pharmacology II",
+          "term": "Fall Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 215",
+          "title": "Binocular Vision: Basic Concepts & Applications",
+          "term": "Fall Semester",
+          "credits": "2.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 216",
+          "title": "Foundations of Clinical Care II",
+          "term": "Fall Semester",
+          "credits": "1.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 217",
+          "title": "Ophthalmic Optics II & Environmental Vision",
+          "term": "Fall Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 218",
+          "title": "Pediatric Optometry",
+          "term": "Fall Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 219",
+          "title": "Optometric Practice II",
+          "term": "Fall Semester",
+          "credits": "1",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 220",
+          "title": "Optometric Theory & Methods IV",
+          "term": "Spring Semester",
+          "credits": "2.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 221",
+          "title": "Anterior Segment Disease & Treatment",
+          "term": "Spring Semester",
+          "credits": "5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 223",
+          "title": "Posterior Segment Disease & Treatment I",
+          "term": "Spring Semester",
+          "credits": "3.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 224",
+          "title": "Ocular Pharmacology",
+          "term": "Spring Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 225",
+          "title": "Contact Lenses I",
+          "term": "Spring Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 226",
+          "title": "Foundations of Clinical Care III",
+          "term": "Spring Semester",
+          "credits": "1.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 227",
+          "title": "Vision Therapy",
+          "term": "Spring Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 302",
+          "title": "Vision Rehabilitation & Aging",
+          "term": "Summer Semester",
+          "credits": "2.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 304",
+          "title": "Strabismus & Amblyopia",
+          "term": "Summer Semester",
+          "credits": "2.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 305",
+          "title": "Contact Lenses II",
+          "term": "Summer Semester",
+          "credits": "4",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 306",
+          "title": "Clinical Internship I",
+          "term": "Summer Semester",
+          "credits": "7",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 307",
+          "title": "Integrative Clinical Analysis I",
+          "term": "Summer Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 308",
+          "title": "Glaucoma",
+          "term": "Summer Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 311",
+          "title": "Neuro Eye Disease",
+          "term": "Summer Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 312",
+          "title": "Optometric Practice Strategies and Operations I",
+          "term": "Summer Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 313",
+          "title": "Posterior Segment Disease & Treatment II",
+          "term": "Summer Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 316",
+          "title": "Clinical Internship II",
+          "term": "Summer Semester",
+          "credits": "7",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 317",
+          "title": "Integrative Clinical Analysis II",
+          "term": "Summer Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 318",
+          "title": "Seminar",
+          "term": "Summer Semester",
+          "credits": "1.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 319",
+          "title": "Optometric Surgical Procedures & Peri-operative Management",
+          "term": "Summer Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 320",
+          "title": "Optometric Surgical Procedures & Peri-operative Management",
+          "term": "Spring Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 321",
+          "title": "Systemic Disease & Ocular Manifestations",
+          "term": "Spring Semester",
+          "credits": "1.5",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 322",
+          "title": "Optometric Practice Strategies and Operations II",
+          "term": "Spring Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "OPT 323",
+          "title": "Public Health in Optometry",
+          "term": "Spring Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 326",
+          "title": "Clinical Internship III",
+          "term": "Spring Semester",
+          "credits": "7",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 400",
+          "title": "Clinical Primary Care",
+          "term": "Summer Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 401",
+          "title": "Clinical Cornea & Contact Lens",
+          "term": "Summer Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 402",
+          "title": "Clinical Pediatric Primary Care",
+          "term": "Summer Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 403",
+          "title": "Clinical Advanced Care Ocular Disease",
+          "term": "Summer Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 405",
+          "title": "Clinical Vision Therapy & Low Vision Rehabilitation",
+          "term": "Summer Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 404",
+          "title": "Clinical Externship",
+          "term": "Summer Semester",
+          "credits": "14",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 410",
+          "title": "Clinical Primary Care",
+          "term": "Fall Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 411",
+          "title": "Clinical Cornea & Contact Lens",
+          "term": "Fall Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 412",
+          "title": "Clinical Pediatric Primary Care",
+          "term": "Fall Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 413",
+          "title": "Clinical Advanced Care Ocular Disease",
+          "term": "Fall Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 415",
+          "title": "Clinical Vision Therapy & Low Vision Rehabilitation",
+          "term": "Fall Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 414",
+          "title": "Clinical Externship",
+          "term": "Fall Semester",
+          "credits": "14",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 420",
+          "title": "Clinical Primary Care",
+          "term": "Spring Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 421",
+          "title": "Clinical Cornea & Contact Lens",
+          "term": "Spring Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 422",
+          "title": "Clinical Pediatric Primary Care",
+          "term": "Spring Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 423",
+          "title": "Clinical Advanced Care Ocular Disease",
+          "term": "Spring Semester",
+          "credits": "3",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 425",
+          "title": "Clinical Vision Therapy & Low Vision Rehabilitation",
+          "term": "Spring Semester",
+          "credits": "2",
+          "source_url": "https://www.sco.edu/curriculum"
+        },
+        {
+          "code": "CLN 424",
+          "title": "Clinical Externship",
+          "term": "Spring Semester",
+          "credits": "14",
+          "source_url": "https://www.sco.edu/curriculum"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "school": "University of Houston",
+      "state": "Texas",
+      "url": "https://www.opt.uh.edu",
+      "curriculum_pages": [
+        "https://www.opt.uh.edu/education/doctor-of-optometry/curriculum.cfm",
+        "https://www.opt.uh.edu/education/graduate-programs/curriculum.cfm"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    },
+    {
+      "school": "University of the Incarnate Word",
+      "state": "Texas",
+      "url": "https://rm.edu/od/",
+      "curriculum_pages": [
+        "https://rm.edu/od/curriculum/",
+        "https://rm.edu/prerequisite-courses/"
+      ],
+      "courses": [],
+      "status": "no_courses_found"
+    }
+  ]
+}

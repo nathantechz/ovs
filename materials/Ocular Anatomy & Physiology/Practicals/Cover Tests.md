@@ -1,0 +1,161 @@
+# Practical Clinical Guide: Cover Tests
+## Ocular Anatomy & Physiology &middot; Clinical Examination Protocol
+
+---
+
+## Clinical Procedure & Protocol
+
+
+### 1. Purpose of the Tests
+
+Differentiation: The primary purpose is to distinguish between a Phoria (a latent or "hidden" deviation kept in check by eye muscles working together) and a Tropia (a manifest or "obvious" squint where the eye is turned),.
+
+Cover-Uncover Test: Specifically used to determine if a Tropia is present. If no Tropia is found, it is used to check for the recovery of a Phoria,.
+
+Cross-Cover (Alternating) Test: Used to reveal the total deviation (both latent and manifest). It breaks down fusion completely to make the deviation visible and is used to measure the size of the turn,.
+
+
+### 2. Equipment Required
+
+
+### Occluder: A paddle to cover the eye.
+
+
+### Fixation Targets:
+
+Distance: A single isolated letter on the chart, one line larger than the patient's best vision (e.g., a 6/12 or 20/40 letter),.
+
+Near: A fixation stick (budgie stick) with pictures or letters detailed enough to control accommodation (focusing),.
+
+Prism Bar or Loose Prisms: To measure the size of the deviation.
+
+
+### 3. Detailed Procedures
+
+
+### Preparation
+
+Lighting: Keep the room lights on. The examiner needs to see the patient's eyes clearly,.
+
+Position: Sit directly in front of the patient (about 40-50 cm away). Do not block their view of the distance target,.
+
+Correction: Usually performed with the patient wearing their glasses (habitual correction).
+
+Instruction: Ask the patient to look at the target and "keep it clear" or "keep it single." This ensures they are focusing (accommodating) correctly,.
+
+
+### Part A: The Cover-Uncover Test (Checking for Tropia)
+
+Activity: Cover one eye and watch the OTHER eye.
+
+
+### Cover the Left Eye: Watch the Right (uncovered) eye.
+
+
+### Observe Movement:
+
+No Movement: The Right eye was already looking at the target. (No Tropia in the Right eye).
+
+Movement Seen: The Right eye moves to pick up the target. A Tropia is present,.
+
+If the eye moves OUT: It was turned in (Esotropia).
+
+If the eye moves IN: It was turned out (Exotropia).
+
+If the eye moves DOWN: It was turned up (Hypertropia).
+
+Repeat for the Other Eye: Cover the Right eye and watch the Left (uncovered) eye to see if it moves.
+
+Check for Phoria (Recovery): If the eyes did not move when the other was covered (no Tropia), watch the eye as you uncover it.
+
+If the eye drifted while under the cover and moves back to fixate when uncovered, a Phoria is present,.
+
+
+### Part B: The Cross-Cover / Alternating Cover Test (Measuring Deviation)
+
+Activity: Move the cover back and forth without letting the patient see with both eyes.
+
+Continuous Cover: Place the cover over the Right eye for 2–3 seconds, then quickly move it to the Left eye. Do not allow the patient to see binocularly (with both eyes) in between,.
+
+Observe the Eye Being Uncovered: As you move the paddle away from the Right eye to the Left, watch the Right eye. Then watch the Left eye as you move the paddle back.
+
+
+### Direction of Movement:
+
+Eye moves OUT: The eye was resting in an inward position (Eso deviation).
+
+Eye moves IN: The eye was resting in an outward position (Exo deviation).
+
+
+### Measurement (Neutralization):
+
+Place a prism bar in front of one eye.
+
+
+### Base OUT prism for Esodeviation (eyes turned in).
+
+
+### Base IN prism for Exodeviation (eyes turned out).
+
+Increase the prism power while performing the alternating cover test until the eye stops moving. This is the size of the deviation,.
+
+
+### 4. Method to Document (Recording)
+
+Record the findings for both Distance (D) and Near (N).
+
+
+### Type of Deviation:
+
+
+### P: Phoria (latent).
+
+
+### T: Tropia (manifest).
+
+
+### (T): Intermittent Tropia.
+
+
+### Direction:
+
+
+### E / SOP: Esophoria (In).
+
+
+### X / XOP: Exophoria (Out).
+
+
+### R Hyper: Right Hyper (Right eye Up).
+
+
+### Ortho: No deviation found.
+
+
+### Magnitude: The amount of prism diopters ($\Delta$).
+
+Eye (for Tropias): R (Right), L (Left), or Alt (Alternating).
+
+
+### Example 1 (Normal Phoria):
+
+CT: 2 $\Delta$ XP at dist, 6 $\Delta$ XP' at near.
+
+(Translation: 2 prism diopter Exophoria at distance, 6 Exophoria at near).
+
+
+### Example 2 (Strabismus/Squint):
+
+CT: 25 $\Delta$ RET at near.
+
+(Translation: 25 prism diopter Right Esotropia at near).
+
+
+### Example 3 (No Deviation):
+
+CT: Ortho at dist and near..
+
+
+---
+
+**Reference:** Clinical Procedures & Practical Examination Protocols (Ocular Anatomy & Physiology)
