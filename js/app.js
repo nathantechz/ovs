@@ -137,6 +137,69 @@ function closeNavMenu() {
     navMenu.classList.remove('active');
 }
 
+// Fuzzy search algorithm (Levenshtein distance)
+function calculateSimilarity(str1, str2) {
+    const s1 = str1.toLowerCase();
+    const s2 = str2.toLowerCase();
+
+    // If one string is substring of other, high score
+    if (s1.includes(s2) || s2.includes(s1)) {
+        return 0.9;
+    }
+
+    // Levenshtein distance
+    const m = s1.length;
+    const n = s2.length;
+    const dp = Array(n + 1).fill(null).map(() => Array(m + 1).fill(0));
+
+    for (let i = 0; i <= m; i++) dp[0][i] = i;
+    for (let i = 0; i <= n; i++) dp[i][0] = i;
+
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= m; j++) {
+            const cost = s1[j - 1] === s2[i - 1] ? 0 : 1;
+            dp[i][j] = Math.min(
+                dp[i - 1][j] + 1,      // deletion
+                dp[i][j - 1] + 1,      // insertion
+                dp[i - 1][j - 1] + cost // substitution
+            );
+        }
+    }
+
+    const maxLen = Math.max(m, n);
+    const distance = dp[n][m];
+    const similarity = (maxLen - distance) / maxLen;
+
+    return Math.max(0, similarity);
+}
+
+// Search courses with fuzzy matching
+function searchCourses(searchTerm) {
+    if (!searchTerm || searchTerm.trim().length === 0) {
+        return coursesData;
+    }
+
+    const term = searchTerm.toLowerCase().trim();
+    const THRESHOLD = 0.6; // Minimum similarity score
+
+    return coursesData
+        .map(course => {
+            // Calculate similarity scores across multiple fields
+            const titleScore = calculateSimilarity(course.title, term);
+            const descriptionScore = calculateSimilarity(course.description, term);
+            const categoryScore = calculateSimilarity(course.category, term);
+            const degreeScore = course.degree ? calculateSimilarity(course.degree, term) : 0;
+
+            // Weighted scoring
+            const score = (titleScore * 0.4) + (descriptionScore * 0.3) + (categoryScore * 0.2) + (degreeScore * 0.1);
+
+            return { course, score };
+        })
+        .filter(item => item.score >= THRESHOLD)
+        .sort((a, b) => b.score - a.score) // Sort by relevance
+        .map(item => item.course);
+}
+
 // Render featured courses on homepage
 function renderFeaturedCourses() {
     const container = document.getElementById('featuredCourses');
@@ -182,11 +245,8 @@ function renderCourses(filter = {}) {
         filtered = filtered.filter(c => c.country === filter.country);
     }
     if (filter.search) {
-        const searchTerm = filter.search.toLowerCase();
-        filtered = filtered.filter(c =>
-            c.title.toLowerCase().includes(searchTerm) ||
-            c.description.toLowerCase().includes(searchTerm)
-        );
+        // Use fuzzy search for better matching
+        filtered = searchCourses(filter.search);
     }
 
     if (filtered.length === 0) {
