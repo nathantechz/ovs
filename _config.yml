@@ -3,7 +3,6 @@ description: World-class optometry education resources for students and faculty 
 url: "https://nathantechz.github.io/ovs"
 baseurl: "/ovs"
 author: Nathan
-email: mn.nathantech@gmail.com
 
 # Build settings
 theme: null
