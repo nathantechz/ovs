@@ -22,9 +22,9 @@
         <div class="container">
             <div class="nav-brand">
                 <a href="/" class="logo">
-                    <i class="fas fa-eye"></i> OLS
+                    <i class="fas fa-eye"></i> OLH
                 </a>
-                <span class="tagline">Optometry Learning System</span>
+                <span class="tagline">Optometry Learning Hub</span>
             </div>
             <div class="nav-menu" id="navMenu">
                 <a href="#" class="nav-link active" data-page="home">Home</a>
@@ -88,7 +88,7 @@
                 </section>
 
                 <section class="features">
-                    <h2>Why Choose OVS?</h2>
+                    <h2>Why Choose OLH?</h2>
                     <div class="feature-grid">
                         <div class="feature-card">
                             <i class="fas fa-book"></i>
@@ -269,7 +269,7 @@
                         <div class="info-card">
                             <i class="fas fa-globe"></i>
                             <h3>Website</h3>
-                            <p><a href="https://nathantechz.github.io/ovs" target="_blank">OLS - Optometry Learning System</a></p>
+                            <p><a href="https://nathantechz.github.io/ovs" target="_blank">OLH - Optometry Learning Hub</a></p>
                         </div>
                         <div class="info-card">
                             <i class="fas fa-code-branch"></i>
@@ -325,7 +325,7 @@
             <!-- About Page -->
             <div id="about" class="page">
                 <div class="page-header">
-                    <h1>About OVS</h1>
+                    <h1>About OLH</h1>
                     <p>Our Mission & Vision</p>
                 </div>
 
@@ -382,7 +382,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>OVS Platform</h4>
+                    <h4>OLH Platform</h4>
                     <ul>
                         <li><a href="#courses">Courses</a></li>
                         <li><a href="#resources">Resources</a></li>
@@ -419,7 +419,11 @@
     <script src="js/materials-list.js"></script>
     <script src="js/curriculum-standards.js"></script>
     <script src="js/universities-regional.js"></script>
-    <script src="js/universities-global.js"></script>
+    <!-- js/universities-global.js is intentionally not loaded. Nothing referenced
+         its exports, but it redefined getAllUniversities() over the regional
+         version, so the directory heading counted its stale 25 entries while the
+         page listed the regional data below it. -->
+
     <script src="js/textbooks-index.js"></script>
     <script src="js/faculty-dashboard.js"></script>
     <script src="js/auth.js"></script>

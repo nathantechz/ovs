@@ -437,7 +437,7 @@ const coursesData = [
         level: "graduate",
         country: "usa",
         description: "Pre- and post-operative management of surgical patients",
-        icon: "fa-scalpel",
+        icon: "fa-user-doctor",
         lectures: 10,
         materials: 20,
         degree: "Master in Clinical Optometry"

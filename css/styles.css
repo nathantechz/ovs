@@ -807,8 +807,15 @@ body {
         font-size: 16px;
     }
 
+    /* Keep the search bar on one line. Stacking it made the button full-width
+       and doubled the height of the hero's most important control. */
     .search-bar {
-        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-bar button {
+        padding: 12px 18px;
+        flex-shrink: 0;
     }
 
     .courses-layout {
@@ -1432,6 +1439,34 @@ body {
 
 .btn-download-small.btn-read:hover {
     background-color: var(--primary-dark);
+}
+
+.material-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-view-small {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-view-small:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
 }
 
 .btn-download {
@@ -2067,4 +2102,79 @@ body {
 
 .mt-4 {
     margin-top: 16px;
+}
+
+/* ==========================================================================
+   Interaction polish
+   ========================================================================== */
+
+/* Keyboard users could not see where focus was on most controls. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Comfortable tap targets on touch screens. */
+@media (hover: none) and (pointer: coarse) {
+    .nav-link,
+    .btn-download-small,
+    .btn-view-small,
+    .btn-submit {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+/* Cards settle rather than snap. */
+.course-card,
+.feature-card,
+.stat-card,
+.textbook-card,
+.region-card {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover,
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.course-card:active,
+.feature-card:active,
+.stat-card:active {
+    transform: translateY(-1px);
+}
+
+/* Long course titles and university names should not overflow their card. */
+.course-card-title,
+.uni-name,
+.textbook-card-title {
+    overflow-wrap: anywhere;
+}
+
+/* Honour a reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .course-card:hover,
+    .feature-card:hover,
+    .stat-card:hover {
+        transform: none;
+    }
 }
