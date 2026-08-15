@@ -306,8 +306,9 @@ def dedupe(courses):
     unique = []
 
     for course in courses:
-        # Contents pages pad titles with dot leaders.
-        course["title"] = re.sub(r"[.\s]{3,}$", "", course["title"]).strip(" .")
+        # Contents pages pad titles with dot leaders, sometimes followed by a
+        # page number, so cut at the leader rather than trimming the end.
+        course["title"] = re.split(r"\.{3,}", course["title"])[0].strip(" .")
         key = (course["code"], course["title"].lower())
         if key in seen:
             continue
