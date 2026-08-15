@@ -236,6 +236,30 @@ KNOWN_UNIVERSITIES = {
             "degree": "COS",
             "duration": "3 years",
             "accreditation": "AIOS"
+        },
+        {
+            "name": "MGR Medical University",
+            "city": "Chennai",
+            "program": "Bachelor of Optometry",
+            "degree": "B.Optom",
+            "duration": "4 years",
+            "accreditation": "AIOS, COO"
+        },
+        {
+            "name": "Algappa University",
+            "city": "Karaikudi",
+            "program": "Bachelor of Optometry",
+            "degree": "B.Optom",
+            "duration": "4 years",
+            "accreditation": "AIOS"
+        },
+        {
+            "name": "SRM Deemed University",
+            "city": "Chennai",
+            "program": "Bachelor of Optometry",
+            "degree": "B.Optom",
+            "duration": "4 years",
+            "accreditation": "AIOS, COO"
         }
     ],
     "United Kingdom": [
