@@ -2,7 +2,7 @@
   "source": "local programme handbooks (PDF)",
   "base": "/Users/nathan/Library/CloudStorage/OneDrive-MSRamaiahUniversityofAppliedSciences/Saad/Optometry Study/Opto Benchmark",
   "programme_count": 4,
-  "total_courses": 138,
+  "total_courses": 155,
   "programmes": [
     {
       "institution": "King Saud University",
@@ -716,9 +716,134 @@
       "programme_type": "diploma",
       "duration_years": 2,
       "source_file": "KSU/OPTICIAN/OpticianryProgram Handbook.pdf",
-      "levels": [],
-      "course_count": 0,
-      "courses": []
+      "levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "course_count": 17,
+      "courses": [
+        {
+          "code": "OPTI 1101",
+          "title": "Principles of Optics I",
+          "level": 1,
+          "credits": 3,
+          "description": "An entry-level course introduces the student to fundamental principles and properties concerning basic optics and properties of light. The course includes lectures and laboratory studies containing formulas and exercises used in basic physical, and optical concepts of the eye and ophthalmic lenses, including reflection, refraction, absorption, and transmission. Also, the necessary math formulae required to problem-solve in this specific area are taught in this course."
+        },
+        {
+          "code": "OPTI 1102",
+          "title": "Ophthalmic Materials and Laboratory I",
+          "level": 1,
+          "credits": 3,
+          "description": "This course introduces the theory and application of ophthalmic lenses and refraction. It explains spherical lens design, fundamental aspects of cylindrical lenses, sphero-cylinder lens design, and toric lenses. Additionally, this course introduces students to the laboratory concepts involved in identifying the location, and fabrication of prescription ophthalmic eyewear. Emphasis is placed on single-vision physical and optical lens characteristics, physical frame, and design characteristics including lens materials, index of refraction, spherical, cylindrical power, and axis location. In addition, lens power transposition, lens cross, ophthalmic standards, diopter power formula, focal length, total lens power, and relationship of radius of curvature and index of refraction will be covered. Upon completion, students should be able to duplicate lenses, use basic formulas, and identify materials and procedures used in fabricating safely prescription lenses to specifications. 16 Development and Quality Committee 2024"
+        },
+        {
+          "code": "OPTI 1103",
+          "title": "Medical Terminology",
+          "level": 1,
+          "credits": 1,
+          "description": "This course explores the root words, suffixes, and prefixes of the vocabulary used in the optical centers and optical labs, and that are used in the ophthalmic field. Students learn to spell, define, and pronounce common medical terms in the field."
+        },
+        {
+          "code": "OPTI 1104",
+          "title": "Introduction to Anatomy and Physiology",
+          "level": 1,
+          "credits": 2,
+          "description": "This course enables students to understand the anatomy and physiology of the human body systems, especially the different ocular structures and their physiological functions with their applied anatomy. This knowledge of the anatomy and physiology of all ocular structures will help them in advanced courses and clinical practice."
+        },
+        {
+          "code": "OPTI 1201",
+          "title": "Principles of Optics II",
+          "level": 2,
+          "credits": 3,
+          "description": "This course introduces most of the physiological conditions affecting the eye and the prescriptions to manage them. Also, this course enables the students to apply different mathematical formulae used in the description of the lens power, equivalent power, compensative and effective lens powers, and back and front vertex powers of a prescribed lens. Optical lens focal lengths are discussed to understand where and how an image is focused on the retina before and after the corrective lens has been applied."
+        },
+        {
+          "code": "OPTI 1202",
+          "title": "Ophthalmic Materials and Laboratory II",
+          "level": 2,
+          "credits": 3,
+          "description": "This course explores the laboratory concepts involved in identifying the location and fabrication of prescription ophthalmic eyewear. Emphasis is placed on the calculated effects of the prism using a single vision lens power and achieving prism through the centration of optical centers. Identifying various ophthalmic lens-manufacturing techniques of factory finish, surfacing and casting methods to achieve lens powers, sphere and toric base curves will be covered. Multifocal lens and progressive lens characteristics are 17 Development and Quality Committee 2024 introduced including powers, design, material, lens profiles, lens blank size, frame size, and patient pupillary distance. The laboratory component focuses on the practical aspect of identifying, measuring, and fabricating ophthalmic projects that require wanted prism and fabrication of multifocal lens designs that incorporate patient distant and near pupillary distances."
+        },
+        {
+          "code": "OPTI 1203",
+          "title": "Contact Lenses I",
+          "level": 2,
+          "credits": 2,
+          "description": "The student reviews the structure and physiology of the cornea as it relates to contact lens wear followed by a study of the history and development of soft contact lenses, physical characteristics of various types of contact lenses, comparison of contact lens materials, and contact lens brand. The practical part develops skills in radioscope, profile analyzer, diameter and thickness gauges, using the lensometer, modalities of contact lens wear, and methods of cleaning and storage of contact lenses."
+        },
+        {
+          "code": "OPTI 1204",
+          "title": "Ophthalmic Dispensing I",
+          "level": 2,
+          "credits": 3,
+          "description": "An introductory course was designed to develop the student’s basic theoretical and hands-on clinical skills in preparation for patient care and service in an operational environment. Topics include lens and frame styles and materials, lens treatments, optical measurements, spectacle verification, frame repair and adjustment, and procedural systems in optical centers. Patient reception in optical centers, and providing assistance and technical support."
+        },
+        {
+          "code": "OPTI 1205",
+          "title": "Professional Observation",
+          "level": 2,
+          "credits": 2,
+          "description": "In this course, students visit any affiliated optometric practice of their choice for an observational period with the department coordination."
+        },
+        {
+          "code": "OPTI 1301",
+          "title": "Professional Field Practice I",
+          "level": 3,
+          "credits": 6,
+          "description": "18 Development and Quality Committee 2024 Upon completing all Semester 1 and Semester 2 courses, students can apply academic learning in a workplace setting for two days per week. In this course, students will work under the direct supervision of a registered Optician."
+        },
+        {
+          "code": "OPTI 1302",
+          "title": "Ophthalmic Materials and Laboratory III",
+          "level": 3,
+          "credits": 3,
+          "description": "This course covers the various ophthalmic lens manufacturing techniques of factory finish, surfacing, and casting methods to achieve lens powers. Also, this course covers the advanced theoretical didactic and practical concepts used in the selection, identification, location, and fabrication of eyewear prescriptions. Emphasis is placed on special procedures used in the material and fabrication of rimless, semi-rimless, nylon suspension and drill-mounted lenses. Repairs and customization of frames are also covered."
+        },
+        {
+          "code": "OPTI 1303",
+          "title": "Contact Lenses II",
+          "level": 3,
+          "credits": 2,
+          "description": "This course covers the theory and concepts of hard and toric contact lenses. Also, this course introduces the concepts of scleral lenses, keratoconus, presbyopia, extended wear and disposables, therapeutic lenses, and pediatric contact lenses. In addition, the practical part enhances skills development in radioscope, profile analyzer, diameter and thickness gauges, lensometer, modalities of contact lens wear along with cleaning and storage."
+        },
+        {
+          "code": "OPTI 1304",
+          "title": "Ophthalmic Dispensing II",
+          "level": 3,
+          "credits": 3,
+          "description": "This course covers factors that affect ophthalmic prescription, such as vertex distance, lens tilt, and magnification. The design and application of multifocal lenses are covered. Anatomical and physiological landmarks of the eye are discussed, and the fitting triangle is developed and detailed."
+        },
+        {
+          "code": "OPTI 1305",
+          "title": "Theory of Refractive Errors",
+          "level": 3,
+          "credits": 2,
+          "description": "19 Development and Quality Committee 2024 This course covers the refractive status of the eye. Topics include prevalence, etiology, types, causes, symptoms, and treatment of ocular refractive errors."
+        },
+        {
+          "code": "OPTI 1401",
+          "title": "Professional Field Practice II",
+          "level": 4,
+          "credits": 8,
+          "description": "Upon completing the professional field practice, students can apply academic learning in a workplace setting for two days per week. In this course, students will work under the direct supervision of a registered Optician/optometrist."
+        },
+        {
+          "code": "OPTI 1403",
+          "title": "Optical Practice Management",
+          "level": 4,
+          "credits": 2,
+          "description": "This course helps the student to understand and carry out the responsibilities assigned in today’s optical centers. This course covers the necessary skills for a successful business, including teamwork, team building, professionalism, customer service optically, and financially, managing time and stress, in addition to business ethics."
+        },
+        {
+          "code": "OPTI 1404",
+          "title": "Ophthalmic Dispensing III",
+          "level": 4,
+          "credits": 3,
+          "description": "This course provides lifestyle dispensing considerations to meet the patient’s eyewear needs and analyze complex prescriptions. The information presented will enable the students to determine proper lens design recommendations for a patient’s occupational and avocational needs. Lens extras, such as absorptive tints and coatings will be discussed and trained. 20 Development and Quality Committee 2024"
+        }
+      ]
     },
     {
       "institution": "University of Jeddah",

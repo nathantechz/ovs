@@ -57,6 +57,13 @@ MS_CONTENTS = re.compile(
     r"^(.+?)\s+([A-Z]{2,4})\s?(\d{3})\s*[:.]?\s*\((\d+)\+(\d+)=(\d+)\)"
 )
 
+# Opticianry lines: "OPTI 1201: Principles of Optics II - 3 credit(s)"
+# The dash may be a hyphen or an en dash.
+COLON_CREDITS = re.compile(
+    r"^([A-Z]{2,4})\s?(\d{3,4})\s*:\s*(.+?)\s*[-–—]\s*(\d+)\s*credit",
+    re.IGNORECASE,
+)
+
 SOURCES = [
     {
         "path": "KSU/OD/Optometry Doctor Program Handout KSU.pdf",
@@ -83,7 +90,7 @@ SOURCES = [
         "programme": "Opticianry",
         "programme_type": "diploma",
         "duration_years": 2,
-        "parser": "tabular",
+        "parser": "colon_credits",
     },
     {
         "path": "JED/البصريات.pdf",
@@ -237,10 +244,60 @@ def parse_bilingual_tables(pdf):
     return courses
 
 
+def parse_colon_credits(pdf):
+    """
+    Opticianry format: 'OPTI 1201: Title - 3 credit(s)', with the same codes
+    reappearing later under 'Course Description' followed by a paragraph. The
+    second occurrence is used to attach the description.
+    """
+    courses = {}
+    order = []
+    current_code = None
+    description = []
+
+    def flush():
+        if current_code and description:
+            text = " ".join(description).strip()
+            if len(text) > 60 and current_code in courses:
+                courses[current_code].setdefault("description", text)
+
+    for page in pdf.pages:
+        for raw in (page.extract_text() or "").split("\n"):
+            line = raw.strip()
+            match = COLON_CREDITS.match(line)
+
+            if match:
+                flush()
+                description = []
+
+                prefix, number, title, credits = match.groups()
+                code = f"{prefix} {number}"
+                current_code = code
+
+                if code not in courses:
+                    courses[code] = {
+                        "code": code,
+                        "title": title.strip(" ."),
+                        # OPTI 1201 -> the second digit is the semester.
+                        "level": int(number[1]) if len(number) == 4 else level_from_code(code),
+                        "credits": int(credits),
+                    }
+                    order.append(code)
+                continue
+
+            # Skip running headers and stray page furniture.
+            if current_code and line and not line.isupper():
+                description.append(line)
+
+    flush()
+    return [courses[code] for code in order]
+
+
 PARSERS = {
     "tabular": parse_tabular,
     "ms_contents": parse_ms_contents,
     "bilingual_tables": parse_bilingual_tables,
+    "colon_credits": parse_colon_credits,
 }
 
 
@@ -249,6 +306,8 @@ def dedupe(courses):
     unique = []
 
     for course in courses:
+        # Contents pages pad titles with dot leaders.
+        course["title"] = re.sub(r"[.\s]{3,}$", "", course["title"]).strip(" .")
         key = (course["code"], course["title"].lower())
         if key in seen:
             continue
