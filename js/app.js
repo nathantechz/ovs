@@ -298,13 +298,95 @@ function performSearch() {
     window.scrollTo(0, 0);
 }
 
-// Navigate to course detail (placeholder for future implementation)
+// Navigate to course detail page
 function navigateToCourse(courseId) {
     const course = coursesData.find(c => c.id === courseId);
-    if (course) {
-        alert(`Course: ${course.title}\n\nFull course content will be available here.\n\nLectures: ${course.lectures}\nMaterials: ${course.materials}`);
-        // In future: navigate to detailed course page
+    if (!course) return;
+
+    // Track course view
+    trackMaterialView(course.title, 'course');
+
+    // Hide all pages
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+    // Show course detail page
+    const courseDetailPage = document.getElementById('courseDetail');
+    if (courseDetailPage) {
+        courseDetailPage.classList.add('active');
     }
+
+    // Update title and description
+    document.getElementById('courseTitle').textContent = course.title;
+    document.getElementById('courseDescription').textContent = course.description;
+
+    // Render course materials
+    const content = document.getElementById('courseDetailContent');
+    let html = `
+        <div class="course-info">
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-book"></i>
+                    <div>
+                        <div class="info-label">Lectures</div>
+                        <div class="info-value">${course.lectures}</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-file"></i>
+                    <div>
+                        <div class="info-label">Materials</div>
+                        <div class="info-value">${course.materials}</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-layer-group"></i>
+                    <div>
+                        <div class="info-label">Level</div>
+                        <div class="info-value">${getLevelName(course.level)}</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <div class="info-label">Country</div>
+                        <div class="info-value">${getCountryName(course.country)}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Check if materials are available
+    if (typeof availableMaterials !== 'undefined' && availableMaterials[course.title]) {
+        html += renderMaterialsForDownload(course.title);
+    } else {
+        html += `
+            <div class="materials-section">
+                <h3>📥 Course Materials</h3>
+                <p style="color: var(--text-secondary); text-align: center; padding: 40px 20px;">
+                    Materials for this course will be available soon.
+                </p>
+            </div>
+        `;
+    }
+
+    content.innerHTML = html;
+    window.scrollTo(0, 0);
+}
+
+// Show courses page
+function showCoursesPage() {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+    const coursesPage = document.getElementById('courses');
+    const coursesLink = document.querySelector('[data-page="courses"]');
+
+    if (coursesPage) coursesPage.classList.add('active');
+    if (coursesLink) coursesLink.classList.add('active');
+
+    window.scrollTo(0, 0);
 }
 
 // Helper functions

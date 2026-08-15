@@ -105,7 +105,7 @@ function renderMaterialsForDownload(courseName) {
                                     <i class="fas fa-video"></i>
                                     <strong>Week ${lecture.week}:</strong> ${lecture.title}
                                 </span>
-                                <a href="${course.folder}/${lecture.file}" download class="btn-download-small">
+                                <a href="${course.folder}/${lecture.file}" download class="btn-download-small" onclick="trackDownload('${lecture.file}', '${courseName}')">
                                     <i class="fas fa-download"></i> Download PDF
                                 </a>
                             </div>
@@ -124,7 +124,7 @@ function renderMaterialsForDownload(courseName) {
                                     <i class="fas fa-book"></i>
                                     <strong>Week ${reading.week}</strong> Reading Notes
                                 </span>
-                                <a href="${course.folder}/${reading.file}" download class="btn-download-small">
+                                <a href="${course.folder}/${reading.file}" download class="btn-download-small" onclick="trackDownload('${reading.file}', '${courseName}')">
                                     <i class="fas fa-download"></i> Download
                                 </a>
                             </div>
@@ -143,7 +143,7 @@ function renderMaterialsForDownload(courseName) {
                                     <i class="fas fa-sticky-note"></i>
                                     <strong>Week ${note.week}</strong> Lecture Notes
                                 </span>
-                                <a href="${course.folder}/${note.file}" download class="btn-download-small">
+                                <a href="${course.folder}/${note.file}" download class="btn-download-small" onclick="trackDownload('${note.file}', '${courseName}')">
                                     <i class="fas fa-download"></i> Download
                                 </a>
                             </div>
@@ -162,7 +162,7 @@ function renderMaterialsForDownload(courseName) {
                                     <i class="fas fa-flask"></i>
                                     ${practical.title}
                                 </span>
-                                <a href="${course.folder}/${practical.file}" download class="btn-download-small">
+                                <a href="${course.folder}/${practical.file}" download class="btn-download-small" onclick="trackDownload('${practical.file}', '${courseName}')">
                                     <i class="fas fa-download"></i> Download
                                 </a>
                             </div>

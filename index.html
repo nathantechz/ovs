@@ -17,62 +17,6 @@
     </script>
 </head>
 <body>
-    <!-- Registration Modal -->
-    <div id="registrationModal" class="registration-modal">
-        <div class="registration-content">
-            <div class="registration-header">
-                <h2>Welcome to OLH</h2>
-                <p>Join our community of optometry educators and students</p>
-            </div>
-            <form id="registrationForm" class="registration-form">
-                <label for="registrationEmail">Email Address</label>
-                <input
-                    type="email"
-                    id="registrationEmail"
-                    placeholder="your.email@university.edu"
-                    required
-                >
-                <button type="submit" class="btn-register">
-                    <i class="fas fa-check"></i> Register & Continue
-                </button>
-            </form>
-            <p class="registration-info">
-                <i class="fas fa-lock"></i> Your email is secure and will only be used for platform updates.
-            </p>
-            <p class="forgot-password-link">
-                <a href="#" onclick="event.preventDefault(); showForgotPasswordModal();">Forgot password?</a>
-            </p>
-        </div>
-    </div>
-
-    <!-- Forgot Password Modal -->
-    <div id="forgotPasswordModal" class="registration-modal">
-        <div class="registration-content">
-            <div class="registration-header">
-                <h2>Reset Your Access</h2>
-                <p>Enter your email to reset your password</p>
-            </div>
-            <form id="forgotPasswordForm" class="registration-form">
-                <label for="forgotPasswordEmail">Email Address</label>
-                <input
-                    type="email"
-                    id="forgotPasswordEmail"
-                    placeholder="your.email@university.edu"
-                    required
-                >
-                <button type="submit" class="btn-register">
-                    <i class="fas fa-key"></i> Reset Password
-                </button>
-            </form>
-            <p class="registration-info">
-                <i class="fas fa-info-circle"></i> We'll log you out and let you register again with a new email.
-            </p>
-            <p class="forgot-password-link">
-                <a href="#" onclick="event.preventDefault(); hideForgotPasswordModal();">Back to login</a>
-            </p>
-        </div>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -163,6 +107,21 @@
                         </div>
                     </div>
                 </section>
+            </div>
+
+            <!-- Course Detail Page -->
+            <div id="courseDetail" class="page">
+                <div class="page-header">
+                    <a href="#" onclick="event.preventDefault(); showCoursesPage();" style="color: var(--primary-color); text-decoration: none; margin-bottom: 16px; display: inline-block;">
+                        <i class="fas fa-arrow-left"></i> Back to Courses
+                    </a>
+                    <h1 id="courseTitle"></h1>
+                    <p id="courseDescription"></p>
+                </div>
+
+                <div class="course-detail-content" id="courseDetailContent">
+                    <!-- Populated by JavaScript -->
+                </div>
             </div>
 
             <!-- Courses Page -->
