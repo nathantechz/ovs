@@ -353,6 +353,47 @@ function renderMaterialsForDownload(courseName) {
             author: "Edith Cohen",
             version: "3rd Edition"
         }
+    },
+
+    "Advanced Optics & Lens Design": {
+        folder: "materials/Advanced Optics",
+        lectures: [
+            { week: 1, title: "Optical Aberrations Overview", file: "Lecture 1 - Aberrations Overview.pdf" },
+            { week: 2, title: "Spherical Aberration in Lens Systems", file: "Lecture 2 - Spherical Aberration.pdf" },
+            { week: 3, title: "Chromatic Aberration and Dispersion", file: "Lecture 3 - Chromatic Aberration.pdf" },
+            { week: 4, title: "Astigmatism and Coma in Optical Systems", file: "Lecture 4 - Astigmatism Coma.pdf" },
+            { week: 5, title: "Distortion and Field Curvature", file: "Lecture 5 - Distortion Field.pdf" },
+            { week: 6, title: "Advanced Lens Design Principles", file: "Lecture 6 - Lens Design.pdf" },
+            { week: 7, title: "Optical Coatings and Surface Treatments", file: "Lecture 7 - Coatings.pdf" },
+            { week: 8, title: "Wavefront Aberrations and Measurement", file: "Lecture 8 - Wavefront.pdf" },
+            { week: 9, title: "High-Order Aberrations in Vision", file: "Lecture 9 - High Order.pdf" },
+            { week: 10, title: "Correcting Aberrations with Advanced Lenses", file: "Lecture 10 - Correction.pdf" },
+            { week: 11, title: "Custom Lens Design for Individual Eyes", file: "Lecture 11 - Custom Design.pdf" },
+            { week: 12, title: "Progressive Lens Design and Technology", file: "Lecture 12 - Progressive.pdf" },
+            { week: 13, title: "Specialized Lens Designs (Ortho-K, Scleral)", file: "Lecture 13 - Specialized.pdf" },
+            { week: 14, title: "Future Technologies in Lens Design", file: "Lecture 14 - Future Tech.pdf" }
+        ],
+        readings: [
+            { week: 1, file: "Reading Notes Week 1 - Introduction.pdf" },
+            { week: 2, file: "Reading Notes Week 2 - Aberration Theory.pdf" },
+            { week: 3, file: "Reading Notes Week 3 - Design Principles.pdf" },
+            { week: 4, file: "Reading Notes Week 4 - Advanced Materials.pdf" },
+            { week: 5, file: "Reading Notes Week 5 - Case Studies.pdf" },
+            { week: 6, file: "Reading Notes Week 6 - Measurement Techniques.pdf" }
+        ],
+        practicals: [
+            { title: "Optical Bench Aberration Measurement", file: "Practical 1 - Optical Bench.pdf" },
+            { title: "Wavefront Analyzer Operation", file: "Practical 2 - Wavefront Analysis.pdf" },
+            { title: "Lens Design Software (Zemax) Introduction", file: "Practical 3 - Design Software.pdf" },
+            { title: "Ray Tracing Simulation Exercises", file: "Practical 4 - Ray Tracing.pdf" },
+            { title: "Custom Lens Design Project", file: "Practical 5 - Design Project.pdf" },
+            { title: "Advanced Testing Procedures", file: "Practical 6 - Testing.pdf" }
+        ],
+        textbook: {
+            title: "Modern Lens Optics",
+            author: "Warren J. Smith",
+            version: "2nd Edition"
+        }
     }
 };
 
