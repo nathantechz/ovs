@@ -227,7 +227,7 @@ We welcome contributions from:
 
 ## 📧 Contact & Support
 
-- **Email:** info@ovs-education.org (when available)
+- **Contact form:** Use the Contact page on the site
 - **GitHub Issues:** [Report bugs or request features](https://github.com/nathantechz/ovs/issues)
 - **GitHub Discussions:** [Join our community](https://github.com/nathantechz/ovs/discussions)
 

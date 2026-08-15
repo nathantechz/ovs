@@ -125,7 +125,7 @@ function handleContactFormSubmit(e) {
     })
     .catch(error => {
         formMessage.className = 'form-message error';
-        formMessage.textContent = '✗ Something went wrong. Please try again or email us directly at mn.nathantech@gmail.com';
+        formMessage.textContent = '✗ Something went wrong. Please try again in a moment.';
         formMessage.style.display = 'block';
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
