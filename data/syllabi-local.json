@@ -1,8 +1,8 @@
 {
   "source": "local programme handbooks (PDF)",
   "base": "/Users/nathan/Library/CloudStorage/OneDrive-MSRamaiahUniversityofAppliedSciences/Saad/Optometry Study/Opto Benchmark",
-  "programme_count": 4,
-  "total_courses": 154,
+  "programme_count": 6,
+  "total_courses": 236,
   "programmes": [
     {
       "institution": "King Saud University",
@@ -45,7 +45,7 @@
         },
         {
           "code": "ENGL 140",
-          "title": "English 1",
+          "title": "English",
           "level": 1,
           "lecture_hours": 8,
           "lab_hours": 0,
@@ -109,7 +109,7 @@
         },
         {
           "code": "OPTO 224",
-          "title": "Clinical Examination of the",
+          "title": "Clinical Examination of the Visual System I",
           "level": 2,
           "lecture_hours": 1,
           "lab_hours": 2,
@@ -181,7 +181,7 @@
         },
         {
           "code": "OPTO 314",
-          "title": "Clinical Examination of Visual",
+          "title": "Clinical Examination of Visual System II",
           "level": 3,
           "lecture_hours": 1,
           "lab_hours": 2,
@@ -197,7 +197,7 @@
         },
         {
           "code": "OPTO 316",
-          "title": "Anatomy and Physiology of the",
+          "title": "Anatomy and Physiology of the Eye",
           "level": 3,
           "lecture_hours": 2,
           "lab_hours": 1,
@@ -229,7 +229,7 @@
         },
         {
           "code": "OPTO 323",
-          "title": "Clinical Examination of the Visual",
+          "title": "Clinical Examination of the Visual System III",
           "level": 3,
           "lecture_hours": 1,
           "lab_hours": 2,
@@ -301,7 +301,7 @@
         },
         {
           "code": "OPTO 413",
-          "title": "Ocular Neuroanatomy and",
+          "title": "Ocular Neuroanatomy and Neurophysiology",
           "level": 4,
           "lecture_hours": 2,
           "lab_hours": 0,
@@ -309,7 +309,7 @@
         },
         {
           "code": "OPTO 414",
-          "title": "Oculomotor Functions and",
+          "title": "Oculomotor Functions and Binocular Vision",
           "level": 4,
           "lecture_hours": 2,
           "lab_hours": 0,
@@ -341,7 +341,7 @@
         },
         {
           "code": "OPTO 419",
-          "title": "Clinical Examination of the Visual",
+          "title": "Clinical Examination of the Visual System IV",
           "level": 4,
           "lecture_hours": 1,
           "lab_hours": 2,
@@ -429,7 +429,7 @@
         },
         {
           "code": "OPTO 431",
-          "title": "Clinical Examination of the Visual",
+          "title": "Clinical Examination of the Visual System V",
           "level": 4,
           "lecture_hours": 1,
           "lab_hours": 2,
@@ -469,7 +469,7 @@
         },
         {
           "code": "OPTO 439",
-          "title": "Principles and Psychology of",
+          "title": "Principles and Psychology of Learning",
           "level": 4,
           "lecture_hours": 3,
           "lab_hours": 0,
@@ -541,7 +541,7 @@
         },
         {
           "code": "OPTO 450",
-          "title": "Current Topics in Optometry and",
+          "title": "Current Topics in Optometry and Vision Science",
           "level": 4,
           "lecture_hours": 0,
           "lab_hours": 2,
@@ -730,7 +730,7 @@
           "title": "Ophthalmic Materials and Laboratory I",
           "level": 1,
           "credits": 3,
-          "description": "This course introduces the theory and application of ophthalmic lenses and refraction. It explains spherical lens design, fundamental aspects of cylindrical lenses, sphero-cylinder lens design, and toric lenses. Additionally, this course introduces students to the laboratory concepts involved in identifying the location, and fabrication of prescription ophthalmic eyewear. Emphasis is placed on single-vision physical and optical lens characteristics, physical frame, and design characteristics including lens materials, index of refraction, spherical, cylindrical power, and axis location. In addition, lens power transposition, lens cross, ophthalmic standards, diopter power formula, focal length, total lens power, and relationship of radius of curvature and index of refraction will be covered. Upon completion, students should be able to duplicate lenses, use basic formulas, and identify materials and procedures used in fabricating safely prescription lenses to specifications. 16 Development and Quality Committee 2024"
+          "description": "This course introduces the theory and application of ophthalmic lenses and refraction. It explains spherical lens design, fundamental aspects of cylindrical lenses, sphero-cylinder lens design, and toric lenses. Additionally, this course introduces students to the laboratory concepts involved in identifying the location, and fabrication of prescription ophthalmic eyewear. Emphasis is placed on single-vision physical and optical lens characteristics, physical frame, and design characteristics including lens materials, index of refraction, spherical, cylindrical power, and axis location. In addition, lens power transposition, lens cross, ophthalmic standards, diopter power formula, focal length, total lens power, and relationship of radius of curvature and index of refraction will be covered. Upon completion, students should be able to duplicate lenses, use basic formulas, and identify materials and procedures used in fabricating safely prescription lenses to specifications."
         },
         {
           "code": "OPTI 1103",
@@ -758,7 +758,7 @@
           "title": "Ophthalmic Materials and Laboratory II",
           "level": 2,
           "credits": 3,
-          "description": "This course explores the laboratory concepts involved in identifying the location and fabrication of prescription ophthalmic eyewear. Emphasis is placed on the calculated effects of the prism using a single vision lens power and achieving prism through the centration of optical centers. Identifying various ophthalmic lens-manufacturing techniques of factory finish, surfacing and casting methods to achieve lens powers, sphere and toric base curves will be covered. Multifocal lens and progressive lens characteristics are 17 Development and Quality Committee 2024 introduced including powers, design, material, lens profiles, lens blank size, frame size, and patient pupillary distance. The laboratory component focuses on the practical aspect of identifying, measuring, and fabricating ophthalmic projects that require wanted prism and fabrication of multifocal lens designs that incorporate patient distant and near pupillary distances."
+          "description": "This course explores the laboratory concepts involved in identifying the location and fabrication of prescription ophthalmic eyewear. Emphasis is placed on the calculated effects of the prism using a single vision lens power and achieving prism through the centration of optical centers. Identifying various ophthalmic lens-manufacturing techniques of factory finish, surfacing and casting methods to achieve lens powers, sphere and toric base curves will be covered. Multifocal lens and progressive lens characteristics are  introduced including powers, design, material, lens profiles, lens blank size, frame size, and patient pupillary distance. The laboratory component focuses on the practical aspect of identifying, measuring, and fabricating ophthalmic projects that require wanted prism and fabrication of multifocal lens designs that incorporate patient distant and near pupillary distances."
         },
         {
           "code": "OPTI 1203",
@@ -786,7 +786,7 @@
           "title": "Professional Field Practice I",
           "level": 3,
           "credits": 6,
-          "description": "18 Development and Quality Committee 2024 Upon completing all Semester 1 and Semester 2 courses, students can apply academic learning in a workplace setting for two days per week. In this course, students will work under the direct supervision of a registered Optician."
+          "description": "Upon completing all Semester 1 and Semester 2 courses, students can apply academic learning in a workplace setting for two days per week. In this course, students will work under the direct supervision of a registered Optician."
         },
         {
           "code": "OPTI 1302",
@@ -814,7 +814,7 @@
           "title": "Theory of Refractive Errors",
           "level": 3,
           "credits": 2,
-          "description": "19 Development and Quality Committee 2024 This course covers the refractive status of the eye. Topics include prevalence, etiology, types, causes, symptoms, and treatment of ocular refractive errors."
+          "description": "This course covers the refractive status of the eye. Topics include prevalence, etiology, types, causes, symptoms, and treatment of ocular refractive errors."
         },
         {
           "code": "OPTI 1401",
@@ -835,7 +835,7 @@
           "title": "Ophthalmic Dispensing III",
           "level": 4,
           "credits": 3,
-          "description": "This course provides lifestyle dispensing considerations to meet the patient’s eyewear needs and analyze complex prescriptions. The information presented will enable the students to determine proper lens design recommendations for a patient’s occupational and avocational needs. Lens extras, such as absorptive tints and coatings will be discussed and trained. 20 Development and Quality Committee 2024"
+          "description": "This course provides lifestyle dispensing considerations to meet the patient’s eyewear needs and analyze complex prescriptions. The information presented will enable the students to determine proper lens design recommendations for a patient’s occupational and avocational needs. Lens extras, such as absorptive tints and coatings will be discussed and trained."
         }
       ]
     },
@@ -877,8 +877,8 @@
         },
         {
           "code": "ASOD214",
-          "title": "Human Anatomy &\nphysiology",
-          "title_ar": "فئاظوو يرشبلا ح يرشتلا\nء اضعلأا",
+          "title": "Human Anatomy & Physiology",
+          "title_ar": "فئاظوو يرشبلا ح يرشتلا ء اضعلأا",
           "level": 2,
           "credits": 3
         },
@@ -891,8 +891,8 @@
         },
         {
           "code": "ASOD216",
-          "title": "Ophthalmic optics &\ndispensing I",
-          "title_ar": "ذيفنتو ةينويعلا ت ايرصبلا\n1 ت افصولا",
+          "title": "Ophthalmic Optics & Dispensing I",
+          "title_ar": "ذيفنتو ةينويعلا ت ايرصبلا 1 ت افصولا",
           "level": 2,
           "credits": 3
         },
@@ -919,15 +919,15 @@
         },
         {
           "code": "ASOD223",
-          "title": "Optometry 1",
+          "title": "Optometry",
           "title_ar": "2 تايرصبلا م لع",
           "level": 2,
           "credits": 2
         },
         {
           "code": "ASOD224",
-          "title": "Ophthalmic optics &\ndispensing II",
-          "title_ar": "ذيفنتو ةينويعلا ت ايرصبلا\n2 ت افصولا",
+          "title": "Ophthalmic Optics & Dispensing II",
+          "title_ar": "ذيفنتو ةينويعلا ت ايرصبلا 2 ت افصولا",
           "level": 2,
           "credits": 3
         },
@@ -961,14 +961,14 @@
         },
         {
           "code": "ASOD312",
-          "title": "Clinical Examination of the\nVisual System I",
-          "title_ar": "ماظنلل يريرسلا ص حفلا\n1 ي رصبلا",
+          "title": "Clinical Examination of the Visual System I",
+          "title_ar": "ماظنلل يريرسلا ص حفلا 1 ي رصبلا",
           "level": 3,
           "credits": 3
         },
         {
           "code": "ASOD313",
-          "title": "Anatomy and physiology of",
+          "title": "Anatomy and Physiology of the Head and Neck",
           "title_ar": "قنعلاو س أرلا ا يجولويسفو ح يرشت",
           "level": 3,
           "credits": 2
@@ -1003,7 +1003,7 @@
         },
         {
           "code": "ASOD321",
-          "title": "Islamic culture 3",
+          "title": "Islamic culture",
           "title_ar": "٣ ةيملاسإ ةفاقث",
           "level": 3,
           "credits": 2
@@ -1066,7 +1066,7 @@
         },
         {
           "code": "ASOD412",
-          "title": "Clinical examination of the\nvisual system II",
+          "title": "Clinical Examination of the Visual System II",
           "title_ar": "2 يرصبلا ماظنلل يريرسلا ص حفلا",
           "level": 4,
           "credits": 3
@@ -1122,7 +1122,7 @@
         },
         {
           "code": "ASOD424",
-          "title": "Clinical examination of the\nvisual system III",
+          "title": "Clinical Examination of the Visual System III",
           "title_ar": "3 يرصبلا ماظنلل يريرسلا ص حفلا",
           "level": 4,
           "credits": 3
@@ -1157,7 +1157,7 @@
         },
         {
           "code": "ASOD512",
-          "title": "Optometry professionalism\nand ethics",
+          "title": "Optometry Professionalism and Ethics",
           "title_ar": "تايرصبلا يف قلاخلأاو ة يفارتحلاا",
           "level": 5,
           "credits": 3
@@ -1238,6 +1238,579 @@
           "title_ar": "2 ع ورشم",
           "level": 5,
           "credits": 3
+        }
+      ]
+    },
+    {
+      "institution": "Qassim University",
+      "country": "Saudi Arabia",
+      "programme": "Doctor of Optometry",
+      "programme_type": "od",
+      "duration_years": 6,
+      "source_file": "QU/Course Specifications + Programme Specification",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "course_count": 57,
+      "courses": [
+        {
+          "code": "ANAT 212",
+          "title": "Human Anatomy",
+          "level": 2
+        },
+        {
+          "code": "HLTH 222",
+          "title": "Medical Ethics",
+          "level": 2
+        },
+        {
+          "code": "HLTH 225",
+          "title": "Health Informatics",
+          "level": 2
+        },
+        {
+          "code": "HLTH 233",
+          "title": "Introduction to Health Sciences",
+          "level": 2
+        },
+        {
+          "code": "HLTH 421",
+          "title": "Biostatistics",
+          "level": 4,
+          "credits": 2,
+          "description": "This course is designed to provide students with a basic understanding of biostatistics. The course covers descriptive statistics with concepts of dispersion and central tendency measurements. Graphical and tabular displays are also covered. Simple inferential statistics involving probability, sampling, confidence intervals, and tests of significance are presented. Simple linear regression and correlations are also covered. Understanding concepts and rationale for various methods are emphasized with use of computer statistical software (such as Excel, SPSS) for graphs and calculations"
+        },
+        {
+          "code": "HLTH 424",
+          "title": "Epidemiology",
+          "level": 4
+        },
+        {
+          "code": "HLTH 426",
+          "title": "Health Management",
+          "level": 4
+        },
+        {
+          "code": "MDL 111",
+          "title": "General Biology",
+          "level": 1
+        },
+        {
+          "code": "MDL 242",
+          "title": "Microbiology",
+          "level": 2
+        },
+        {
+          "code": "MDL 352",
+          "title": "General Pathology",
+          "level": 3
+        },
+        {
+          "code": "MEDU 111",
+          "title": "Medical Education",
+          "level": 1
+        },
+        {
+          "code": "OPTM 231",
+          "title": "Ocular Anatomy and Physiology",
+          "level": 2,
+          "credits": 4
+        },
+        {
+          "code": "OPTM 232",
+          "title": "Introduction to Optometry",
+          "level": 2,
+          "lecture_hours": 28,
+          "lab_hours": 4
+        },
+        {
+          "code": "OPTM 241",
+          "title": "Geometrical Optics",
+          "level": 2,
+          "credits": 3,
+          "lecture_hours": 28,
+          "lab_hours": 4,
+          "description": "This course one of the four courses (Geometrical Optics; Physical Optics; Visual Optics; Ophthalmic Optics;) which covers the fundamental knowledge and scientific principles that support the application of optics theories in the diagnosis, prevention, treatment and management of refractive, oculomotor and sensory integrative conditions, that can present to the optometrist"
+        },
+        {
+          "code": "OPTM 242",
+          "title": "Physical Optics",
+          "level": 2,
+          "credits": 2,
+          "lecture_hours": 14,
+          "lab_hours": 4,
+          "description": "This course will provide a strong basis in physical optics and the properties of the behavior of light as a wave. The interaction of light with the optical systems will be discussed for understanding a range of concepts and principles encountered in optometry, such as visual optics, dispensing and visual science modules in the later years of the program"
+        },
+        {
+          "code": "OPTM 251",
+          "title": "Neuroscience",
+          "level": 2,
+          "credits": 2,
+          "description": "The main purpose of this course is to: Familiarize the students with the knowledge of the structures and cellular contents of the human nervous system, and impact on them the knowledge of how the brain organ systems interacts to coordinate the function of the different organs of the body in order to respond to both internal and external stimuli. This will prepare them to understand easily the key concepts of ocular neuroscience"
+        },
+        {
+          "code": "OPTM 332",
+          "title": "Ocular Biochemistry",
+          "level": 3,
+          "credits": 2
+        },
+        {
+          "code": "OPTM 342",
+          "title": "Visual Optics",
+          "level": 3,
+          "credits": 2,
+          "lecture_hours": 28,
+          "lab_hours": 4,
+          "description": "This course builds on knowledge and skills gained in the geometric and physical optics courses and provide the fundamental knowledge of the optics of the human eye, its clinical aspects and phenomena, with emphasize on the Schematic eyes models and visual function aberration and the retinal image quality. The course also covers how the optical refraction errors and the optical parameters of the eye can be measured and corrected"
+        },
+        {
+          "code": "OPTM 344",
+          "title": "Ophthalmic Optics and Dispensing",
+          "level": 3,
+          "credits": 3,
+          "description": "Provides student with theoretical and the practical knowledge and skills necessary to provide high quality dispensing services in a private practice setting. The course covers the basics of lens materials, single vision lenses, prisms, bifocals, vertical imbalance problems and basic dispensing"
+        },
+        {
+          "code": "OPTM 352",
+          "title": "Vision Science 1",
+          "level": 3,
+          "credits": 2,
+          "lecture_hours": 28,
+          "lab_hours": 4
+        },
+        {
+          "code": "OPTM 353",
+          "title": "Vision Science 2",
+          "level": 3,
+          "credits": 2,
+          "lecture_hours": 28,
+          "lab_hours": 10
+        },
+        {
+          "code": "OPTM 361",
+          "title": "Optometry I",
+          "level": 3,
+          "credits": 4,
+          "lecture_hours": 28,
+          "lab_hours": 4,
+          "description": "This course will deliver knowledge of the role and services of an optometrist and appreciate the eye care team as sources and points patient’s referrals and co-management"
+        },
+        {
+          "code": "OPTM 362",
+          "title": "Optometry II",
+          "level": 3,
+          "credits": 4,
+          "lecture_hours": 28,
+          "lab_hours": 4,
+          "description": "This course is continuation of optometry I, and also will deliver knowledge of the role and services of an optometrist and appreciate the eye care team as sources and points patient’s referrals and co-management"
+        },
+        {
+          "code": "OPTM 371",
+          "title": "Ocular Disease 1 (Anterior Segment)",
+          "level": 3,
+          "credits": 3,
+          "description": "This course is related to common diseases involving the anterior segment of the eye including the ocular adnexa, cornea, conjunctiva, iris, lens etc. In this course, patho-physiology, clinical features, investigations and treatment will be discussed in details. In the end, the students will be capable of diagnosing and treating the common anterior segment disorders"
+        },
+        {
+          "code": "OPTM 381",
+          "title": "Clinical Procedures I",
+          "level": 3,
+          "credits": 1,
+          "description": "This course provides with the clinical procedures and diagnostic devices used for the examination of the anterior segment of the eye including the wide range of examination with direct ophthalmoscope, keratometer, slit lamp, Pentacam, dry eye evaluation, tonometer etc"
+        },
+        {
+          "code": "OPTM 454",
+          "title": "Binocular Vision",
+          "level": 4,
+          "credits": 2,
+          "lecture_hours": 28,
+          "lab_hours": 0
+        },
+        {
+          "code": "OPTM 463",
+          "title": "Optometry III",
+          "level": 4,
+          "credits": 4,
+          "lecture_hours": 28,
+          "lab_hours": 4,
+          "description": "Continuation of Optometry I and II. The clinical assessment of the refractive state of the eye at near is studied in detail. This includes tests of accommodation and vergence and their interaction. Integration of the full distance and near refractive sequence is developed"
+        },
+        {
+          "code": "OPTM 464",
+          "title": "Pediatric Optometry",
+          "level": 4,
+          "credits": 3,
+          "lecture_hours": 14,
+          "lab_hours": 4,
+          "description": "This behavioral and clinically oriented course is intended to give the student an opportunity to establish a comprehensive understanding of the optometric experience with pediatric patients and other special populations. The course goal is to develop an understanding and appreciation of a pediatric oriented examination so that the clinician can better"
+        },
+        {
+          "code": "OPTM 465",
+          "title": "Integrated Optometry",
+          "level": 4,
+          "credits": 3,
+          "description": "The purpose of this course is to expound on the scope of the definition of vision as it pertains to a holistic view on ocular visual health; Students are instructed on how effective visual function alters or can beneficially influence some structural ocular and or visual defects. Students will be able to differentiate between physiological and pathological changes in the oculo-visual functions in older patients"
+        },
+        {
+          "code": "OPTM 466",
+          "title": "Occupational Optometry",
+          "level": 4,
+          "credits": 3,
+          "lecture_hours": 28,
+          "lab_hours": 4,
+          "description": "The aim of this subject is to detail the visual problems that can be encountered in the workplace. This course deals with general aspects of occupational health, Visual demand in various job, task-analyzing method, visual standards for various jobs, occupational hazards and remedial aspects through classroom sessions and field visit to the factories. Material covered in this course equips the optometrist to provide advice on vision in the working environment. This course consists of the following components: laws regulating the field of workplace; repetitive motion injuries; corporate healthcare in Saudi Arabia; visual ergonomics and illumination; visual quality; computer screen quality and psychosocial workplace conditions"
+        },
+        {
+          "code": "OPTM 472",
+          "title": "Ocular Pharmacology I",
+          "level": 4
+        },
+        {
+          "code": "OPTM 473",
+          "title": "Clinical Procedures II",
+          "level": 4
+        },
+        {
+          "code": "OPTM 474",
+          "title": "Ocular Pharmacology II",
+          "level": 4
+        },
+        {
+          "code": "OPTM 475",
+          "title": "Eye and Systemic Disease",
+          "level": 4,
+          "credits": 2
+        },
+        {
+          "code": "OPTM 477",
+          "title": "Ocular Diseases 3",
+          "level": 4,
+          "credits": 3,
+          "description": "The course will introduce the students to understand the Epidemiology, Classification and Pathophysiology of Glaucoma, principle to proper diagnosis, conduct relevant investigations and proper management and introduction to differentiate the neurological diseases and their visual field defects"
+        },
+        {
+          "code": "OPTM 478",
+          "title": "Ocular Disease 2 (Posterior Segment)",
+          "level": 4
+        },
+        {
+          "code": "OPTM 482",
+          "title": "Clinical Procedures III",
+          "level": 4
+        },
+        {
+          "code": "OPTM 491",
+          "title": "Contact Lens 1",
+          "level": 4,
+          "credits": 3,
+          "lecture_hours": 28,
+          "lab_hours": 4
+        },
+        {
+          "code": "OPTM 492",
+          "title": "Contact Lens 2",
+          "level": 4,
+          "credits": 3,
+          "lecture_hours": 28,
+          "lab_hours": 4
+        },
+        {
+          "code": "OPTM 493",
+          "title": "Low Vision",
+          "level": 4
+        },
+        {
+          "code": "OPTM 494",
+          "title": "Specialty Contact Lens",
+          "level": 4,
+          "credits": 3,
+          "lecture_hours": 28,
+          "lab_hours": 4
+        },
+        {
+          "code": "OPTM 545",
+          "title": "Community Optometry",
+          "level": 5
+        },
+        {
+          "code": "OPTM 566",
+          "title": "Neuro-Optometry Clinic",
+          "level": 5
+        },
+        {
+          "code": "OPTM 567",
+          "title": "Optometry Practice and Management",
+          "level": 5,
+          "credits": 2,
+          "lecture_hours": 21,
+          "lab_hours": 4,
+          "description": "Students will have abroad knowledge about an independent desirable future practice in any specialty of optometry as well as the principles of private practice implementation and administration"
+        },
+        {
+          "code": "OPTM 569",
+          "title": "Graduation Project",
+          "level": 5,
+          "credits": 4,
+          "lecture_hours": 6,
+          "lab_hours": 4,
+          "description": "This course is an essential part of the final year of the OD program. Students along with their mentors will go through intensified research experience. This course should prepare students to actively involve in research while practicing optometry. Students in this course will learn all the necessary steps to conduct a research"
+        },
+        {
+          "code": "OPTM 583",
+          "title": "Clinical Externship I",
+          "level": 5
+        },
+        {
+          "code": "OPTM 585",
+          "title": "Clinical Externship II",
+          "level": 5
+        },
+        {
+          "code": "OPTM 586",
+          "title": "Pediatric Clinic",
+          "level": 5
+        },
+        {
+          "code": "OPTM 588",
+          "title": "Contact Lens Clinic",
+          "level": 5
+        },
+        {
+          "code": "OPTM 589",
+          "title": "Clinical Externship III",
+          "level": 5
+        },
+        {
+          "code": "OPTM 594",
+          "title": "Optometry Clinic I",
+          "level": 5
+        },
+        {
+          "code": "OPTM 595",
+          "title": "Optometry Clinic II",
+          "level": 5
+        },
+        {
+          "code": "OPTM 597",
+          "title": "Internship",
+          "level": 5
+        },
+        {
+          "code": "OPTO 565",
+          "title": "Optometric Research Methods",
+          "level": 5
+        },
+        {
+          "code": "PHG 333",
+          "title": "General Pharmacology",
+          "level": 3,
+          "credits": 2
+        },
+        {
+          "code": "PHS 115",
+          "title": "Medical Physics",
+          "level": 1
+        },
+        {
+          "code": "PHSL 215",
+          "title": "Human Physiology",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "institution": "Umm Al-Qura University",
+      "country": "Saudi Arabia",
+      "programme": "Opticianry Diploma",
+      "programme_type": "diploma",
+      "duration_years": 2,
+      "source_file": "UmQ/9aad98cd-c8e4-45ab-9bf6-89ac58092085-2.pdf",
+      "levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "course_count": 25,
+      "courses": [
+        {
+          "code": "APOP2109T",
+          "title": "Ophthalmic Lens Fitting I",
+          "title_ar": "2 ﺔﻳﺮﺼﺑ ﺕﺎﺳﺪﻋ 4 (١) ﺔﻳﺰﻴﻠﺠﻧﻹﺍ ﺔﻐﻠﻟﺍ 2 ﺔﻴﺋﺎﻳﺰﻴﻔﻟﺍ ﺕﺎﻳﺮﺼﺒﻟﺍ 2 ﻦﻴﻌﻟﺍ ﺢﻳﺮﺸﺗﻭ ﺔﻴﺟﻮﻟﻮﻴﺴﻓ 2 ﺕﺎﻴﺿﺎﻳﺮﻟﺍ ﺀﻱﺩﺎﺒﻣ 2 ﻲﻓ ﻖﻳﻮﺴﺘﻟﺍ ﻭ ﻝﺎﺼﺗﻻﺍ ﺕﺍﺭﺎﻬﻣ ﺕﺎﻳﺮﺼﺒﻟﺍ 2 ﺔﻨﻬﻤﻟﺍ ﺕﺎﻴﻗﻼﺧﺃﻭ ﻦﻴﻌﻟﺎﺑ ﺔﻴﻟﻭﻷﺍ ﺔﻳﺎﻨﻌﻟﺍ 2 ﺔﻴﻨﻬﻣ ﺕﺍﺭﺎﻬﻣ",
+          "level": 2,
+          "credits": 3
+        },
+        {
+          "code": "APOP1105T",
+          "title": "Ophthalmic Lenses",
+          "title_ar": "2 ﺔﻳﺮﺼﺑ ﺕﺎﺳﺪﻋ 4 (١) ﺔﻳﺰﻴﻠﺠﻧﻹﺍ ﺔﻐﻠﻟﺍ 2 ﺔﻴﺋﺎﻳﺰﻴﻔﻟﺍ ﺕﺎﻳﺮﺼﺒﻟﺍ 2 ﻦﻴﻌﻟﺍ ﺢﻳﺮﺸﺗﻭ ﺔﻴﺟﻮﻟﻮﻴﺴﻓ 2 ﺕﺎﻴﺿﺎﻳﺮﻟﺍ ﺀﻱﺩﺎﺒﻣ 2 ﻲﻓ ﻖﻳﻮﺴﺘﻟﺍ ﻭ ﻝﺎﺼﺗﻻﺍ ﺕﺍﺭﺎﻬﻣ ﺕﺎﻳﺮﺼﺒﻟﺍ 2 ﺔﻨﻬﻤﻟﺍ ﺕﺎﻴﻗﻼﺧﺃﻭ ﻦﻴﻌﻟﺎﺑ ﺔﻴﻟﻭﻷﺍ ﺔﻳﺎﻨﻌﻟﺍ 2 ﺔﻴﻨﻬﻣ ﺕﺍﺭﺎﻬﻣ",
+          "level": 1,
+          "credits": 3
+        },
+        {
+          "code": "APOP2110T",
+          "title": "Contact Lenses I",
+          "title_ar": "(١) ﺔﻳﺰﻴﻠﺠﻧﻹﺍ ﺔﻐﻠﻟﺍ",
+          "level": 2,
+          "credits": 3
+        },
+        {
+          "code": "AP1301T",
+          "title": "English Language I",
+          "title_ar": "(١) ﺔﻳﺰﻴﻠﺠﻧﻹﺍ ﺔﻐﻠﻟﺍ",
+          "level": 1,
+          "credits": 3
+        },
+        {
+          "code": "APOP1106T",
+          "title": "Physical Optics",
+          "title_ar": "ﺔﻴﺋﺎﻳﺰﻴﻔﻟﺍ ﺕﺎﻳﺮﺼﺒﻟﺍ",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "AP1302T",
+          "title": "English Language II",
+          "title_ar": "(١) ﺔﻳﺰﻴﻠﺠﻧﻹﺍ ﺔﻐﻠﻟﺍ",
+          "level": 1,
+          "credits": 4
+        },
+        {
+          "code": "APOP2107T",
+          "title": "Geometric Optics",
+          "title_ar": "ﻦﻴﻌﻟﺍ ﺢﻳﺮﺸﺗﻭ ﺔﻴﺟﻮﻟﻮﻴﺴﻓ",
+          "level": 2,
+          "credits": 3
+        },
+        {
+          "code": "APOP1102T",
+          "title": "Ocular Anatomy and Physiology",
+          "title_ar": "ﻦﻴﻌﻟﺍ ﺢﻳﺮﺸﺗﻭ ﺔﻴﺟﻮﻟﻮﻴﺴﻓ",
+          "level": 1,
+          "credits": 3
+        },
+        {
+          "code": "AP1310T",
+          "title": "Values and Ethics",
+          "title_ar": "ﺕﺎﻴﺿﺎﻳﺮﻟﺍ ﺀﻱﺩﺎﺒﻣ",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "APOP1101T",
+          "title": "Principles of Mathematics",
+          "title_ar": "ﺕﺎﻴﺿﺎﻳﺮﻟﺍ ﺀﻱﺩﺎﺒﻣ",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "APOP2108T",
+          "title": "Ophthalmic Lens Manufacturing",
+          "title_ar": "ﺔﻴﺒﻄﻟﺍ ﺕﺎﺳﺪﻌﻟﺍ ﻊﻴﻨﺼﺗ",
+          "level": 2,
+          "credits": 3
+        },
+        {
+          "code": "APOP1104T",
+          "title": "Communication and Marketing Skills in Optometry",
+          "title_ar": "ﻲﻓ ﻖﻳﻮﺴﺘﻟﺍ ﻭ ﻝﺎﺼﺗﻻﺍ ﺕﺍﺭﺎﻬﻣ ﺕﺎﻳﺮﺼﺒﻟﺍ",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "APOP1103T",
+          "title": "Primary Eye Care and Professional Ethics",
+          "title_ar": "ﺔﻨﻬﻤﻟﺍ ﺕﺎﻴﻗﻼﺧﺃﻭ ﻦﻴﻌﻟﺎﺑ ﺔﻴﻟﻭﻷﺍ ﺔﻳﺎﻨﻌﻟﺍ",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "AP1510T",
+          "title": "Professional Skills",
+          "title_ar": "ﺔﻴﻨﻬﻣ ﺕﺍﺭﺎﻬﻣ",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "APOP4118T",
+          "title": "Optical Center Management",
+          "title_ar": "ﺕﺎﻳﺮﺼﺒﻟﺍ ﻲﻓ ﻖﻳﻮﺴﺘﻟﺍ ﻭ ﻝﺎﺼﺗﻻﺍ ﺕﺍﺭﺎﻬﻣ",
+          "level": 4,
+          "credits": 2
+        },
+        {
+          "code": "APOP3111T",
+          "title": "Optometric Examination I",
+          "title_ar": "ﺕﺎﻳﺮﺼﺒﻟﺍ ﻲﻓ ﻖﻳﻮﺴﺘﻟﺍ ﻭ ﻝﺎﺼﺗﻻﺍ ﺕﺍﺭﺎﻬﻣ",
+          "level": 3,
+          "credits": 2
+        },
+        {
+          "code": "APOP4115T",
+          "title": "Medical Reports",
+          "title_ar": "ﺔﻨﻬﻤﻟﺍ ﺕﺎﻴﻗﻼﺧﺃﻭ ﻦﻴﻌﻟﺎﺑ ﺔﻴﻟﻭﻷﺍ ﺔﻳﺎﻨﻌﻟﺍ",
+          "level": 4,
+          "credits": 2
+        },
+        {
+          "code": "APOP3113T",
+          "title": "Ophthalmic Lens Fitting II",
+          "title_ar": "ﺔﻨﻬﻤﻟﺍ ﺕﺎﻴﻗﻼﺧﺃﻭ ﻦﻴﻌﻟﺎﺑ ﺔﻴﻟﻭﻷﺍ ﺔﻳﺎﻨﻌﻟﺍ",
+          "level": 3,
+          "credits": 2
+        },
+        {
+          "code": "APOP4116T",
+          "title": "Biostatistics",
+          "title_ar": "2 ﻲﻋﺎﻨﻄﺻﻻﺍ ﺀﺎﻛﺬﻟﺍ ﺕﺎﻘﻴﺒﻄﺗ 3 ﻲﻟﻵﺍ ﺐﺳﺎﺤﻟﺍ ﺕﺍﺭﺎﻬﻣ",
+          "level": 4,
+          "credits": 3
+        },
+        {
+          "code": "AP1201T",
+          "title": "AI Applications",
+          "title_ar": "2 ﻲﻋﺎﻨﻄﺻﻻﺍ ﺀﺎﻛﺬﻟﺍ ﺕﺎﻘﻴﺒﻄﺗ 3 ﻲﻟﻵﺍ ﺐﺳﺎﺤﻟﺍ ﺕﺍﺭﺎﻬﻣ",
+          "level": 1,
+          "credits": 3
+        },
+        {
+          "code": "APOP3112T",
+          "title": "Computer Skills",
+          "title_ar": "ﻲﻟﻵﺍ ﺐﺳﺎﺤﻟﺍ ﺕﺍﺭﺎﻬﻣ",
+          "level": 3,
+          "credits": 3
+        },
+        {
+          "code": "APOP4117T",
+          "title": "Optometric Examination II",
+          "title_ar": "١ ﺮﻈﻨﻟﺍ ﺺﺤﻓ",
+          "level": 4,
+          "credits": 4
+        },
+        {
+          "code": "APOP3114T",
+          "title": "Contact Lenses II",
+          "title_ar": "١ ﺔﻘﺻﻻ ﺕﺎﺳﺪﻋ",
+          "level": 3,
+          "credits": 3
+        },
+        {
+          "code": "APOP4119T",
+          "title": "Ophthalmic Lens Fitting III",
+          "title_ar": "٢ ﺔﻴﺒﻄﻟﺍ ﺕﺎﺳﺪﻌﻟﺍ ﺐﻴﻛﺮﺗ",
+          "level": 4,
+          "credits": 4
+        },
+        {
+          "code": "APOP4901T",
+          "title": "Cooperative Training in Optometry",
+          "title_ar": "6 ﺕﺎﻳﺮﺼﺒﻟﺍ ﻲﻓ ﻲﻧﻭﺎﻌﺗ ﺐﻳﺭﺪﺗ",
+          "level": 4,
+          "credits": 6
         }
       ]
     }
