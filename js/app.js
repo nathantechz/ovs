@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     setupPageNavigation();
     setupEventListeners();
+    setupContactForm();
     renderFeaturedCourses();
     renderCategoriesFilter();
     renderResources();
@@ -70,6 +71,65 @@ function setupEventListeners() {
 
     // Filter listeners
     setupFilterListeners();
+}
+
+// Setup contact form
+function setupContactForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+
+    form.addEventListener('submit', handleContactFormSubmit);
+}
+
+// Handle contact form submission
+function handleContactFormSubmit(e) {
+    e.preventDefault();
+
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    const submitBtn = form.querySelector('.btn-submit');
+
+    // Get form data
+    const formData = new FormData(form);
+
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+    // Send via Formspree (free service for static sites)
+    fetch('https://formspree.io/f/mnakdvwl', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            // Success
+            formMessage.className = 'form-message success';
+            formMessage.textContent = '✓ Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+            formMessage.style.display = 'block';
+            form.reset();
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+
+            // Track submission
+            trackUserBehavior('contact_form_submit', {
+                subject: formData.get('subject'),
+                category: formData.get('category')
+            });
+        } else {
+            throw new Error('Form submission failed');
+        }
+    })
+    .catch(error => {
+        formMessage.className = 'form-message error';
+        formMessage.textContent = '✗ Something went wrong. Please try again or email us directly at mn.nathantech@gmail.com';
+        formMessage.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    });
 }
 
 function closeNavMenu() {

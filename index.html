@@ -31,6 +31,7 @@
                 <a href="#" class="nav-link" data-page="courses">Courses</a>
                 <a href="#" class="nav-link" data-page="materials">📥 Materials</a>
                 <a href="#" class="nav-link" data-page="resources">Resources</a>
+                <a href="#" class="nav-link" data-page="contact">Contact</a>
                 <a href="#" class="nav-link" data-page="about">About</a>
             </div>
             <button class="nav-toggle" id="navToggle">
@@ -258,6 +259,76 @@
 
                 <div class="resources-grid" id="resourcesGrid">
                     <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Contact Us Page -->
+            <div id="contact" class="page">
+                <div class="page-header">
+                    <h1>📧 Get in Touch</h1>
+                    <p>Have questions or want to contribute? We'd love to hear from you.</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>mn.nathantech@gmail.com</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-globe"></i>
+                            <h3>Website</h3>
+                            <p><a href="https://nathantechz.github.io/ovs" target="_blank">OLS - Optometry Learning System</a></p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-code-branch"></i>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/nathantechz/ovs" target="_blank">github.com/nathantechz/ovs</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h2>Send us a Message</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Your message here..." rows="6"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <select id="category" name="category">
+                                    <option value="">Select a category</option>
+                                    <option value="suggestion">Suggestion</option>
+                                    <option value="bug">Bug Report</option>
+                                    <option value="contribution">Content Contribution</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </div>
                 </div>
             </div>
 
