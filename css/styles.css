@@ -1407,6 +1407,178 @@ body {
     line-height: 1.5;
 }
 
+/* Regional University Directory */
+.resources-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 24px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border-radius: 12px;
+}
+
+.resources-header h2 {
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.resources-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.region-card {
+    background-color: var(--surface);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.region-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: linear-gradient(to right, var(--primary-light), #f0f9ff);
+    cursor: pointer;
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.region-header:hover {
+    background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+}
+
+.region-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.region-info i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.region-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+.region-info p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.region-toggle {
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.region-content {
+    padding: 24px;
+    background-color: var(--background);
+}
+
+.country-section {
+    margin-bottom: 32px;
+}
+
+.country-section:last-child {
+    margin-bottom: 0;
+}
+
+.country-section h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.universities-list {
+    display: grid;
+    gap: 12px;
+}
+
+.university-item {
+    padding: 16px;
+    background-color: var(--surface);
+    border-radius: 8px;
+    border-left: 3px solid var(--secondary-color);
+    transition: var(--transition);
+}
+
+.university-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+.uni-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.uni-details {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.uni-program {
+    font-size: 12px;
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.uni-duration {
+    font-size: 12px;
+    background-color: #f0fdf4;
+    color: var(--secondary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.uni-city {
+    font-size: 13px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@media (max-width: 768px) {
+    .region-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .region-info {
+        width: 100%;
+    }
+
+    .region-toggle {
+        align-self: flex-end;
+        margin-top: 12px;
+    }
+
+    .uni-details {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
 /* Registration & Auth System */
 .registration-modal {
     display: none;

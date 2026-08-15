@@ -190,32 +190,93 @@ function renderMaterials() {
     container.innerHTML = html;
 }
 
-// Render resources
+// Render resources with regional organization
 function renderResources() {
     const container = document.getElementById('resourcesGrid');
     if (!container) return;
 
-    container.innerHTML = resourcesData.map(resource => `
-        <div class="resource-card">
-            <div class="resource-card-header">
-                <div>
-                    <i class="fas ${resource.icon}"></i>
-                </div>
-                <div>
-                    <div class="resource-card-title">${resource.title}</div>
-                </div>
-            </div>
-            <div class="resource-card-body">
-                <div class="resource-university">${resource.university}</div>
-                <div class="resource-country">
-                    <i class="fas fa-map-marker-alt"></i>
-                    ${resource.country} • ${resource.region}
-                </div>
-                <p class="resource-desc">${resource.description}</p>
-                <a href="${resource.link}" class="resource-link">View Syllabus →</a>
-            </div>
+    if (typeof universitiesByRegion === 'undefined') {
+        container.innerHTML = '<p>Loading universities...</p>';
+        return;
+    }
+
+    let html = `
+        <div class="resources-header">
+            <h2>Global Optometry Universities Directory</h2>
+            <p>Browse ${getTotalUniversitiesCount()}+ optometry programs across ${getAllRegions().length} major world regions</p>
         </div>
-    `).join('');
+    `;
+
+    // Render regions
+    const regions = getAllRegions();
+    regions.forEach(regionName => {
+        const regionInfo = getRegionInfo(regionName);
+        const countries = regionInfo.countries;
+        const universityCount = Object.values(countries).reduce((sum, unis) => sum + unis.length, 0);
+
+        html += `
+            <div class="region-card">
+                <div class="region-header" onclick="toggleRegion('${regionName}')">
+                    <div class="region-info">
+                        <i class="fas ${regionInfo.icon}"></i>
+                        <div>
+                            <h3>${regionName}</h3>
+                            <p>${universityCount} universities</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-down region-toggle" id="toggle-${regionName}"></i>
+                </div>
+                <div class="region-content" id="region-${regionName}" style="display: none;">
+        `;
+
+        // Render countries within region
+        Object.entries(countries).forEach(([country, universities]) => {
+            html += `
+                <div class="country-section">
+                    <h4>${country} (${universities.length})</h4>
+                    <div class="universities-list">
+            `;
+
+            universities.forEach(uni => {
+                html += `
+                    <div class="university-item">
+                        <div class="uni-name">${uni.name}</div>
+                        <div class="uni-details">
+                            <span class="uni-program">${uni.program}</span>
+                            <span class="uni-duration">${uni.duration}</span>
+                        </div>
+                        <div class="uni-city"><i class="fas fa-map-pin"></i> ${uni.city}</div>
+                    </div>
+                `;
+            });
+
+            html += `
+                    </div>
+                </div>
+            `;
+        });
+
+        html += `
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+}
+
+// Toggle region expansion
+function toggleRegion(regionName) {
+    const content = document.getElementById(`region-${regionName}`);
+    const toggle = document.getElementById(`toggle-${regionName}`);
+
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        toggle.style.transform = 'rotate(180deg)';
+    } else {
+        content.style.display = 'none';
+        toggle.style.transform = 'rotate(0deg)';
+    }
 }
 
 // Setup filter listeners
