@@ -34,7 +34,11 @@ const availableMaterials = {
             { week: 7, file: "Reading Notes/Week 7.docx" },
             { week: 8, file: "Reading Notes/Week 8.docx" }
         ],
-        textbook: "Ocular Anatomy and Physiology, Second Edition (Al Lens Sheila Coyne Nemeth).pdf"
+        textbook: {
+            title: "Ocular Anatomy and Physiology",
+            author: "Al Lens, Sheila Coyne Nemeth",
+            version: "Second Edition"
+        }
     },
 
     "Physical Optics": {
@@ -55,7 +59,11 @@ const availableMaterials = {
             { week: 13, title: "Wavefront Optics", file: "Lecture PPT/Week 13 Wavefront_Optics.pdf" },
             { week: 14, title: "Laser Refractive Physics", file: "Lecture PPT/Week 14 Laser_Refractive_Physics.pdf" }
         ],
-        textbook: "Principles of Physical Optics, 2e (Charles A. Bennett) (z-library.sk, 1lib.sk, z-lib.sk)-2.pdf"
+        textbook: {
+            title: "Principles of Physical Optics",
+            author: "Charles A. Bennett",
+            version: "2nd Edition"
+        }
     },
 
     "Strabismus": {
@@ -174,14 +182,14 @@ function renderMaterialsForDownload(courseName) {
             ${course.textbook ? `
                 <div class="material-group">
                     <h4>📕 Textbook Reference</h4>
-                    <div class="material-item">
-                        <span class="material-info">
-                            <i class="fas fa-book-open"></i>
-                            ${course.textbook}
-                        </span>
-                        <a href="${course.folder}/${course.textbook}" download class="btn-download-small">
-                            <i class="fas fa-download"></i> Download
-                        </a>
+                    <div class="material-reference">
+                        <i class="fas fa-book-open"></i>
+                        <div class="reference-text">
+                            ${typeof course.textbook === 'string'
+                                ? course.textbook
+                                : `<strong>${course.textbook.title}</strong> by ${course.textbook.author} (${course.textbook.version})`
+                            }
+                        </div>
                     </div>
                 </div>
             ` : ''}

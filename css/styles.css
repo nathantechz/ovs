@@ -1386,6 +1386,27 @@ body {
     gap: 32px;
 }
 
+.material-reference {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background-color: var(--background);
+    border-radius: 8px;
+    border-left: 3px solid #8b5cf6;
+}
+
+.material-reference i {
+    color: #8b5cf6;
+    font-size: 18px;
+}
+
+.reference-text {
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 /* Registration & Auth System */
 .registration-modal {
     display: none;
