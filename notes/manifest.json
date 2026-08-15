@@ -1,0 +1,212 @@
+{
+  "Ocular Anatomy & Physiology": [
+    {
+      "week": 1,
+      "title": "The Eye\u2019s Bodyguards and \u201cHouse\u201d",
+      "html_file": "ocular-anatomy-01-the-eyes-bodyguards-and-house.html",
+      "md_file": "Week 1 - The Eye\u2019s Bodyguards and \u201cHouse\u201d.md"
+    },
+    {
+      "week": 2,
+      "title": "The Eyeball and How It Moves",
+      "html_file": "ocular-anatomy-02-the-eyeball-and-how-it-moves.html",
+      "md_file": "Week 2 - The Eyeball and How It Moves.md"
+    },
+    {
+      "week": 3,
+      "title": "The Cornea \u2013 The Eye\u2019s Clear Window",
+      "html_file": "ocular-anatomy-03-the-cornea-the-eyes-clear-window.html",
+      "md_file": "Week 3 - The Cornea \u2013 The Eye\u2019s Clear Window.md"
+    },
+    {
+      "week": 4,
+      "title": "Inside the Front of the Eye",
+      "html_file": "ocular-anatomy-04-inside-the-front-of-the-eye.html",
+      "md_file": "Week 4 - Inside the Front of the Eye.md"
+    },
+    {
+      "week": 5,
+      "title": "Inside the Back of the Eye",
+      "html_file": "ocular-anatomy-05-inside-the-back-of-the-eye.html",
+      "md_file": "Week 5 - Inside the Back of the Eye.md"
+    },
+    {
+      "week": 6,
+      "title": "How the Eye Talks to the Brain",
+      "html_file": "ocular-anatomy-06-how-the-eye-talks-to-the-brain.html",
+      "md_file": "Week 6 - How the Eye Talks to the Brain.md"
+    },
+    {
+      "week": 7,
+      "title": "How the Eye is Made and Fed",
+      "html_file": "ocular-anatomy-07-how-the-eye-is-made-and-fed.html",
+      "md_file": "Week 7 - How the Eye is Made and Fed.md"
+    },
+    {
+      "week": 8,
+      "title": "How We See and Why We Need Glasses",
+      "html_file": "ocular-anatomy-08-how-we-see-and-why-we-need-glasses.html",
+      "md_file": "Week 8 - How We See and Why We Need Glasses.md"
+    }
+  ],
+  "Physical Optics": [
+    {
+      "week": 1,
+      "title": "The Nature of Light",
+      "html_file": "physical-optics-01-the-nature-of-light.html",
+      "md_file": "Week 1 - The Nature of Light.md"
+    },
+    {
+      "week": 2,
+      "title": "Wave Parameters (The Anatomy of a Wave)",
+      "html_file": "physical-optics-02-wave-parameters-the-anatomy-of-a-wave.html",
+      "md_file": "Week 2 - Wave Parameters (The Anatomy of a Wave).md"
+    },
+    {
+      "week": 3,
+      "title": "Superposition & Coherence (When Waves Meet)",
+      "html_file": "physical-optics-03-superposition-coherence-when-waves-meet.html",
+      "md_file": "Week 3 - Superposition & Coherence (When Waves Meet).md"
+    },
+    {
+      "week": 4,
+      "title": "Young\u2019s Double-Slit Experiment (Proving Light is a Wave)",
+      "html_file": "physical-optics-04-youngs-double-slit-experiment-proving-li.html",
+      "md_file": "Week 4 - Young\u2019s Double-Slit Experiment (Proving Light is a.md"
+    },
+    {
+      "week": 5,
+      "title": "Thin Film Interference & Anti-Reflective Coatings (The Magic of Invisible Glare)",
+      "html_file": "physical-optics-05-thin-film-interference-anti-reflective-c.html",
+      "md_file": "Week 5 - Thin Film Interference & Anti-Reflective Coatings .md"
+    },
+    {
+      "week": 6,
+      "title": "Newton\u2019s Rings (Testing Lens Shapes with Light)",
+      "html_file": "physical-optics-06-newtons-rings-testing-lens-shapes-with-l.html",
+      "md_file": "Week 6 - Newton\u2019s Rings (Testing Lens Shapes with Light).md"
+    },
+    {
+      "week": 7,
+      "title": "Fraunhofer vs. Fresnel Diffraction (The Bending of Light)",
+      "html_file": "physical-optics-07-fraunhofer-vs-fresnel-diffraction-the-be.html",
+      "md_file": "Week 7 - Fraunhofer vs. Fresnel Diffraction (The Bending of.md"
+    },
+    {
+      "week": 8,
+      "title": "Diffraction at a Circular Aperture & The Airy Disc (The \"Blurry\" Point of Light)",
+      "html_file": "physical-optics-08-diffraction-at-a-circular-aperture-the-a.html",
+      "md_file": "Week 8 - Diffraction at a Circular Aperture & The Airy Disc.md"
+    },
+    {
+      "week": 9,
+      "title": "The Rayleigh Criterion (The Ultimate Limit of Human Vision)",
+      "html_file": "physical-optics-09-the-rayleigh-criterion-the-ultimate-limi.html",
+      "md_file": "Week 9 - The Rayleigh Criterion (The Ultimate Limit of Huma.md"
+    },
+    {
+      "week": 10,
+      "title": "Methods of Polarization (Taming the Light Waves)",
+      "html_file": "physical-optics-10-methods-of-polarization-taming-the-light.html",
+      "md_file": "Week 10 - Methods of Polarization (Taming the Light Waves).md"
+    },
+    {
+      "week": 11,
+      "title": "Brewster\u2019s Law & Polarized Sunglasses (Cutting the Glare)",
+      "html_file": "physical-optics-11-brewsters-law-polarized-sunglasses-cutti.html",
+      "md_file": "Week 11 - Brewster\u2019s Law & Polarized Sunglasses (Cutting the.md"
+    },
+    {
+      "week": 12,
+      "title": "The Scattering of Light (Blue Skies & Cloudy Eyes)",
+      "html_file": "physical-optics-12-the-scattering-of-light-blue-skies-cloud.html",
+      "md_file": "Week 12 - The Scattering of Light (Blue Skies & Cloudy Eyes).md"
+    },
+    {
+      "week": 13,
+      "title": "Wavefront Optics & Ocular Aberrations (Mapping the Eye's Mistakes)",
+      "html_file": "physical-optics-13-wavefront-optics-ocular-aberrations-mapp.html",
+      "md_file": "Week 13 - Wavefront Optics & Ocular Aberrations (Mapping the.md"
+    },
+    {
+      "week": 14,
+      "title": "Lasers in Optometry (Sculpting the Eye with Light)",
+      "html_file": "physical-optics-14-lasers-in-optometry-sculpting-the-eye-wi.html",
+      "md_file": "Week 14 - Lasers in Optometry (Sculpting the Eye with Light).md"
+    }
+  ],
+  "Strabismus": [
+    {
+      "week": 1,
+      "title": "Introduction, Definitions, Epidemiology, and Classification.",
+      "html_file": "strabismus-01-introduction-definitions-epidemiology-an.html",
+      "md_file": "Week 1 - Introduction, Definitions, Epidemiology, and Class.md"
+    },
+    {
+      "week": 2,
+      "title": "The Myth of Critical Periods & Neuroplasticity",
+      "html_file": "strabismus-02-the-myth-of-critical-periods-neuroplasti.html",
+      "md_file": "Week 2 - The Myth of Critical Periods & Neuroplasticity.md"
+    },
+    {
+      "week": 3,
+      "title": "Advanced Visual Acuity & Contrast Sensitivity",
+      "html_file": "strabismus-03-advanced-visual-acuity-contrast-sensitiv.html",
+      "md_file": "Week 3 - Advanced Visual Acuity & Contrast Sensitivity.md"
+    },
+    {
+      "week": 4,
+      "title": "Evaluation of Deviations (Cover Test & Incomitancy)",
+      "html_file": "strabismus-04-evaluation-of-deviations-cover-test-inco.html",
+      "md_file": "Week 4 - Evaluation of Deviations (Cover Test & Incomitancy.md"
+    },
+    {
+      "week": 5,
+      "title": "Sensory Adaptations I \u2013 Suppression & Correspondence",
+      "html_file": "strabismus-05-sensory-adaptations-i-suppression-corres.html",
+      "md_file": "Week 5 - Sensory Adaptations I \u2013 Suppression & Corresponden.md"
+    },
+    {
+      "week": 6,
+      "title": "Sensory Adaptations II \u2013 Eccentric Fixation & The 4 $\\Delta$ Base-Out Test",
+      "html_file": "strabismus-06-sensory-adaptations-ii-eccentric-fixatio.html",
+      "md_file": "Week 6 - Sensory Adaptations II \u2013 Eccentric Fixation & The .md"
+    },
+    {
+      "week": 7,
+      "title": "Electrophysiology in Binocular Vision (VEP, ERG, EOG, OKN)",
+      "html_file": "strabismus-07-electrophysiology-in-binocular-vision-ve.html",
+      "md_file": "Week 7 - Electrophysiology in Binocular Vision (VEP, ERG, E.md"
+    },
+    {
+      "week": 8,
+      "title": "Refractive Management & Accommodative Control",
+      "html_file": "strabismus-08-refractive-management-accommodative-cont.html",
+      "md_file": "Week 8 - Refractive Management & Accommodative Control.md"
+    },
+    {
+      "week": 9,
+      "title": "Amblyopia Therapy (Protocols, Active Therapy, and Schedules)",
+      "html_file": "strabismus-09-amblyopia-therapy-protocols-active-thera.html",
+      "md_file": "Week 9 - Amblyopia Therapy (Protocols, Active Therapy, and .md"
+    },
+    {
+      "week": 10,
+      "title": "Prisms in Therapy (Standard, Behavioral/Over-correcting, and Diagnostic)",
+      "html_file": "strabismus-10-prisms-in-therapy-standard-behavioralove.html",
+      "md_file": "Week 10 - Prisms in Therapy (Standard, Behavioral-Over-corre.md"
+    },
+    {
+      "week": 11,
+      "title": "Advanced Vision Therapy Procedures",
+      "html_file": "strabismus-11-advanced-vision-therapy-procedures.html",
+      "md_file": "Week 11 - Advanced Vision Therapy Procedures.md"
+    },
+    {
+      "week": 12,
+      "title": "Nystagmus and Complex Cases",
+      "html_file": "strabismus-12-nystagmus-and-complex-cases.html",
+      "md_file": "Week 12 - Nystagmus and Complex Cases.md"
+    }
+  ]
+}

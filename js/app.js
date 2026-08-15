@@ -1,6 +1,5 @@
 // Initialize app on page load
 document.addEventListener('DOMContentLoaded', () => {
-    setupPageNavigation();
     setupEventListeners();
     setupContactForm();
     renderFeaturedCourses();
@@ -12,40 +11,98 @@ document.addEventListener('DOMContentLoaded', () => {
     renderAllTextbooks();
     setupSearchSuggestions();
     setupCardLinks();
+
+    // Router last: it reads the address bar and renders whatever it points at,
+    // so everything it may need has to exist by now.
+    startRouter();
 });
 
-// Make the static home/contact cards act as real links. Only .course-card had a
-// handler, so everything else on the page looked clickable but did nothing.
-function setupCardLinks() {
-    // Feature cards -> the section of the site each one describes
-    const featureTargets = ['courses', 'resources', 'materials', 'courses'];
-    document.querySelectorAll('.features .feature-card').forEach((card, i) => {
-        makeCardNavigate(card, featureTargets[i] || 'courses');
-    });
+/* ==========================================================================
+   Router
 
-    // Stat cards -> the page the number refers to
-    const statTargets = ['materials', 'resources', 'resources', 'courses'];
-    document.querySelectorAll('.stats .stat-card').forEach((card, i) => {
-        makeCardNavigate(card, statTargets[i] || 'courses');
-    });
+   Every view has an address. Before this, navigation only toggled CSS classes
+   and the URL never changed, so the back button, refresh, bookmarking and
+   sharing a link to a course were all impossible, and the standalone notes
+   pages could only ever link back to the home page.
+
+     #/                     home
+     #/courses              course catalogue
+     #/course/7             one course
+     #/search/dry%20eye     catalogue filtered by a query
+     #/materials #/textbooks #/resources #/contact #/about
+   ========================================================================== */
+
+const ROUTABLE_PAGES = [
+    'home', 'courses', 'materials', 'textbooks', 'resources', 'contact', 'about'
+];
+
+function startRouter() {
+    window.addEventListener('hashchange', renderRoute);
+    renderRoute();
 }
 
-function makeCardNavigate(card, pageName) {
-    card.classList.add('is-clickable');
-    card.setAttribute('role', 'link');
-    card.setAttribute('tabindex', '0');
+// Turn the current hash into { page, courseId, query }.
+function parseRoute() {
+    const raw = window.location.hash.replace(/^#\/?/, '').trim();
+    if (!raw) return { page: 'home' };
 
-    const go = () => showPage(pageName);
-    card.addEventListener('click', go);
-    card.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            go();
-        }
-    });
+    const [head, ...rest] = raw.split('/');
+    const tail = rest.join('/');
+
+    if (head === 'course') {
+        const id = Number(tail);
+        if (Number.isFinite(id)) return { page: 'courseDetail', courseId: id };
+        return { page: 'courses' };
+    }
+
+    if (head === 'search') {
+        return { page: 'courses', query: decodeURIComponent(tail || '') };
+    }
+
+    if (ROUTABLE_PAGES.includes(head)) return { page: head };
+
+    return { page: 'home' };
 }
 
-// Single place that switches pages, so nav links, cards and search all agree.
+function renderRoute() {
+    const route = parseRoute();
+
+    if (route.page === 'courseDetail') {
+        const course = coursesData.find(c => c.id === route.courseId);
+        if (!course) return navigateTo('#/courses');
+        showPage('courseDetail');
+        renderCourseDetail(course);
+        return;
+    }
+
+    if (route.page === 'courses') {
+        showPage('courses');
+        renderCourses(route.query ? { search: route.query } : {});
+
+        // Keep the search box showing what is actually being filtered on.
+        const input = document.getElementById('searchInput');
+        if (input && route.query) input.value = route.query;
+        return;
+    }
+
+    showPage(route.page);
+}
+
+// Change the address; the hashchange listener does the rendering. Assigning the
+// same hash fires no event, so render directly in that case.
+function navigateTo(hash) {
+    if (window.location.hash === hash) {
+        renderRoute();
+    } else {
+        window.location.hash = hash;
+    }
+}
+
+function courseHref(courseId) {
+    return `#/course/${courseId}`;
+}
+
+// Show one page and mark the matching nav link. Called only by the router.
 function showPage(pageName) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
@@ -53,7 +110,9 @@ function showPage(pageName) {
     const page = document.getElementById(pageName);
     if (page) page.classList.add('active');
 
-    const link = document.querySelector(`.nav-link[data-page="${pageName}"]`);
+    // A course detail page keeps Courses highlighted in the navbar.
+    const navTarget = pageName === 'courseDetail' ? 'courses' : pageName;
+    const link = document.querySelector(`.nav-link[data-page="${navTarget}"]`);
     if (link) link.classList.add('active');
 
     closeNavMenu();
@@ -61,14 +120,31 @@ function showPage(pageName) {
     trackPageView(pageName);
 }
 
-// Setup navigation between pages. Covers any [data-page] element, not just the
-// navbar, so in-page links like the one on the About page work too.
-function setupPageNavigation() {
-    document.querySelectorAll('[data-page]').forEach(link => {
-        link.addEventListener('click', (e) => {
+// Make the static home cards act as real links.
+function setupCardLinks() {
+    const featureTargets = ['#/courses', '#/resources', '#/materials', '#/courses'];
+    document.querySelectorAll('.features .feature-card').forEach((card, i) => {
+        makeCardNavigate(card, featureTargets[i] || '#/courses');
+    });
+
+    const statTargets = ['#/materials', '#/resources', '#/resources', '#/courses'];
+    document.querySelectorAll('.stats .stat-card').forEach((card, i) => {
+        makeCardNavigate(card, statTargets[i] || '#/courses');
+    });
+}
+
+function makeCardNavigate(card, hash) {
+    card.classList.add('is-clickable');
+    card.setAttribute('role', 'link');
+    card.setAttribute('tabindex', '0');
+
+    const go = () => navigateTo(hash);
+    card.addEventListener('click', go);
+    card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            showPage(link.getAttribute('data-page'));
-        });
+            go();
+        }
     });
 }
 
@@ -266,21 +342,21 @@ function renderFeaturedCourses() {
     const featured = coursesData.slice(0, 4);
 
     container.innerHTML = featured.map(course => `
-        <div class="course-card" onclick="navigateToCourse(${course.id})">
+        <a class="course-card" href="${courseHref(course.id)}">
             <div class="course-card-header">
                 <div>
                     <i class="fas ${course.icon}"></i>
-                    <div class="course-card-title">${course.title}</div>
+                    <div class="course-card-title">${escapeHtml(course.title)}</div>
                 </div>
             </div>
             <div class="course-card-body">
-                <p class="course-card-desc">${course.description}</p>
+                <p class="course-card-desc">${escapeHtml(course.description)}</p>
                 <div class="course-card-footer">
                     <span><i class="fas fa-book"></i> ${course.lectures} Lectures</span>
                     <span><i class="fas fa-file"></i> ${course.materials} Materials</span>
                 </div>
             </div>
-        </div>
+        </a>
     `).join('');
 }
 
@@ -307,36 +383,60 @@ function renderCourses(filter = {}) {
     }
 
     if (filtered.length === 0) {
+        // An empty result used to be a dead end. Say what was searched for, and
+        // offer a way out.
+        const suggestions = filter.search
+            ? coursesData.slice(0, 4)
+            : [];
+
         container.innerHTML = `
-            <div style="grid-column: 1/-1; text-align: center; padding: 40px;">
-                <i class="fas fa-search" style="font-size: 48px; color: #ccc; margin-bottom: 20px; display: block;"></i>
-                <p style="color: var(--text-secondary);">No courses found matching your criteria.</p>
+            <div class="empty-state">
+                <i class="fas fa-magnifying-glass"></i>
+                <h3>No courses match ${filter.search ? `“${escapeHtml(filter.search)}”` : 'those filters'}</h3>
+                <p>Try a broader term, or browse everything.</p>
+                <a class="btn-empty" href="#/courses">Show all ${coursesData.length} courses</a>
+                ${suggestions.length ? `
+                    <div class="empty-suggestions">
+                        <span>Popular topics</span>
+                        <div>
+                            ${suggestions.map(c => `
+                                <a class="empty-chip" href="${courseHref(c.id)}">${escapeHtml(c.title)}</a>
+                            `).join('')}
+                        </div>
+                    </div>
+                ` : ''}
             </div>
         `;
         return;
     }
 
-    container.innerHTML = filtered.map(course => `
-        <div class="course-card" onclick="navigateToCourse(${course.id})">
+    container.innerHTML = filtered.map(course => {
+        const hasMaterials = typeof resolveMaterialsKey === 'function'
+            && resolveMaterialsKey(course.title);
+
+        return `
+        <a class="course-card" href="${courseHref(course.id)}">
             <div class="course-card-header">
                 <div style="width: 100%;">
                     <i class="fas ${course.icon}"></i>
-                    <div class="course-card-title">${course.title}</div>
+                    <div class="course-card-title">${escapeHtml(course.title)}</div>
                 </div>
             </div>
             <div class="course-card-body">
-                <p class="course-card-desc">${course.description}</p>
-                <div style="margin-bottom: 16px;">
-                    <span class="course-badge">${getLevelName(course.level)}</span>
-                    <span class="course-badge" style="background-color: #f0f9ff; color: #0066cc; margin-left: 8px;">${getCountryName(course.country)}</span>
+                <p class="course-card-desc">${escapeHtml(course.description)}</p>
+                <div class="course-card-badges">
+                    <span class="course-badge">${escapeHtml(getLevelName(course.level))}</span>
+                    <span class="course-badge course-badge-country">${escapeHtml(getCountryName(course.country))}</span>
+                    ${hasMaterials ? '<span class="course-badge course-badge-ready">Materials ready</span>' : ''}
                 </div>
                 <div class="course-card-footer">
                     <span><i class="fas fa-book"></i> ${course.lectures} Lectures</span>
                     <span><i class="fas fa-file"></i> ${course.materials} Materials</span>
                 </div>
             </div>
-        </div>
-    `).join('');
+        </a>
+        `;
+    }).join('');
 }
 
 // Render category filters
@@ -514,8 +614,9 @@ function performSearch() {
     hideSearchSuggestions();
     trackSearch(searchTerm);
 
-    showPage('courses');
-    renderCourses({ search: searchTerm });
+    // Searches get their own address, so a result set can be shared or returned
+    // to with the back button.
+    navigateTo(`#/search/${encodeURIComponent(searchTerm)}`);
 }
 
 // Live suggestion dropdown under the home search box.
@@ -600,6 +701,7 @@ function setupSearchSuggestions() {
         const item = e.target.closest('.suggestion');
         if (!item) return;
         e.preventDefault();
+        input.blur();
         navigateToCourse(Number(item.dataset.courseId));
         hideSearchSuggestions();
     });
@@ -625,29 +727,30 @@ function escapeHtml(str) {
     }[c]));
 }
 
-// Navigate to course detail page
+// Send the browser to a course. The router does the rendering.
 function navigateToCourse(courseId) {
-    const course = coursesData.find(c => c.id === courseId);
-    if (!course) return;
+    navigateTo(courseHref(courseId));
+}
 
-    // Track course view
+// Draw one course. Only renderRoute() calls this.
+function renderCourseDetail(course) {
     trackMaterialView(course.title, 'course');
 
-    // Hide all pages
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-
-    // Show course detail page
-    const courseDetailPage = document.getElementById('courseDetail');
-    if (courseDetailPage) {
-        courseDetailPage.classList.add('active');
-    }
-
-    // Update title and description
     document.getElementById('courseTitle').textContent = course.title;
     document.getElementById('courseDescription').textContent = course.description;
 
-    // Render course materials
+    // Where am I, and how do I get back? Neither was previously answerable.
+    const crumbs = document.getElementById('courseBreadcrumb');
+    if (crumbs) {
+        crumbs.innerHTML = `
+            <a href="#/">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="#/courses">Courses</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">${escapeHtml(course.title)}</span>
+        `;
+    }
+
     const content = document.getElementById('courseDetailContent');
     let html = `
         <div class="course-info">
@@ -708,16 +811,7 @@ function navigateToCourse(courseId) {
 
 // Show courses page
 function showCoursesPage() {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-
-    const coursesPage = document.getElementById('courses');
-    const coursesLink = document.querySelector('[data-page="courses"]');
-
-    if (coursesPage) coursesPage.classList.add('active');
-    if (coursesLink) coursesLink.classList.add('active');
-
-    window.scrollTo(0, 0);
+    navigateTo('#/courses');
 }
 
 // Helper functions

@@ -27,13 +27,13 @@
                 <span class="tagline">Optometry Learning Hub</span>
             </div>
             <div class="nav-menu" id="navMenu">
-                <a href="#" class="nav-link active" data-page="home">Home</a>
-                <a href="#" class="nav-link" data-page="courses">Courses</a>
-                <a href="#" class="nav-link" data-page="materials">Materials</a>
-                <a href="#" class="nav-link" data-page="textbooks">Textbooks</a>
-                <a href="#" class="nav-link" data-page="resources">Resources</a>
-                <a href="#" class="nav-link" data-page="contact">Contact</a>
-                <a href="#" class="nav-link" data-page="about">About</a>
+                <a href="#/" class="nav-link active" data-page="home">Home</a>
+                <a href="#/courses" class="nav-link" data-page="courses">Courses</a>
+                <a href="#/materials" class="nav-link" data-page="materials">Materials</a>
+                <a href="#/textbooks" class="nav-link" data-page="textbooks">Textbooks</a>
+                <a href="#/resources" class="nav-link" data-page="resources">Resources</a>
+                <a href="#/contact" class="nav-link" data-page="contact">Contact</a>
+                <a href="#/about" class="nav-link" data-page="about">About</a>
             </div>
             <button class="nav-toggle" id="navToggle">
                 <span></span>
@@ -117,9 +117,7 @@
             <!-- Course Detail Page -->
             <div id="courseDetail" class="page">
                 <div class="page-header">
-                    <a href="#" onclick="event.preventDefault(); showCoursesPage();" style="color: var(--primary-color); text-decoration: none; margin-bottom: 16px; display: inline-block;">
-                        <i class="fas fa-arrow-left"></i> Back to Courses
-                    </a>
+                    <nav class="breadcrumb" id="courseBreadcrumb" aria-label="Breadcrumb"></nav>
                     <h1 id="courseTitle"></h1>
                     <p id="courseDescription"></p>
                 </div>
@@ -369,7 +367,7 @@
 
                     <div class="about-card">
                         <h2>Contact & Contributions</h2>
-                        <p>If you're an optometry educator, student, or professional interested in contributing materials or suggesting improvements, please reach out via our <a href="#" data-page="contact">Contact page</a>.</p>
+                        <p>If you're an optometry educator, student, or professional interested in contributing materials or suggesting improvements, please reach out via our <a href="#/contact">Contact page</a>.</p>
                         <p><strong>GitHub:</strong> <a href="https://github.com/nathantechz/ovs" target="_blank">github.com/nathantechz/ovs</a></p>
                     </div>
                 </section>
@@ -384,26 +382,23 @@
                 <div class="footer-section">
                     <h4>OLH Platform</h4>
                     <ul>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#resources">Resources</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#/courses">Courses</a></li>
+                        <li><a href="#/resources">Resources</a></li>
+                        <li><a href="#/about">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#/materials">Materials</a></li>
+                        <li><a href="#/textbooks">Textbooks</a></li>
+                        <li><a href="#/contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/nathantechz/ovs" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
