@@ -2003,6 +2003,1498 @@ VISUAL_OPTICS_BINOCULAR_VISION = {
     ],
 }
 
+# --- Contact Lenses: authored topics -------------------------------------
+
+IACLE_M2 = "IACLE M2, p. {}"
+IACLE_M5 = "IACLE M5, p. {}"
+IACLE_M6 = "IACLE M6, p. {}"
+
+FIG_CL_NOMENCLATURE = """
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Cross-section of a contact lens labelling back optic zone radius, back optic zone diameter, back peripheral zone, total diameter, centre thickness and edge">
+  <path d="M110 120 Q 320 58 530 120" fill="none" stroke="#0066cc" stroke-width="2.5"/>
+  <path d="M110 138 Q 320 82 530 138" fill="none" stroke="#0066cc" stroke-width="2.5"/>
+  <line x1="110" y1="120" x2="110" y2="138" stroke="#0066cc" stroke-width="2.5"/>
+  <line x1="530" y1="120" x2="530" y2="138" stroke="#0066cc" stroke-width="2.5"/>
+
+  <line x1="110" y1="180" x2="530" y2="180" stroke="#6b7280" stroke-width="1"/>
+  <line x1="110" y1="174" x2="110" y2="186" stroke="#6b7280" stroke-width="1"/>
+  <line x1="530" y1="174" x2="530" y2="186" stroke="#6b7280" stroke-width="1"/>
+  <text x="320" y="199" font-size="12.5" fill="#374151" text-anchor="middle">
+    Total Diameter (TD, &#216;<tspan font-size="9" dy="3">T</tspan>)</text>
+
+  <line x1="230" y1="152" x2="410" y2="152" stroke="#16a34a" stroke-width="1"/>
+  <line x1="230" y1="146" x2="230" y2="158" stroke="#16a34a" stroke-width="1"/>
+  <line x1="410" y1="146" x2="410" y2="158" stroke="#16a34a" stroke-width="1"/>
+  <text x="320" y="171" font-size="12" fill="#15803d" text-anchor="middle">
+    Back Optic Zone Diameter (BOZD, &#216;<tspan font-size="9" dy="3">0</tspan>)</text>
+
+  <path d="M320 240 L 320 95" stroke="#dc2626" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="330" y="234" font-size="12" fill="#b91c1c">BOZR (r<tspan font-size="9" dy="3">0</tspan>)</text>
+  <text x="330" y="252" font-size="11" fill="#6b7280">back optic zone radius</text>
+
+  <line x1="320" y1="72" x2="320" y2="90" stroke="#7c3aed" stroke-width="2"/>
+  <text x="332" y="70" font-size="12" fill="#6d28d9">t<tspan font-size="9" dy="3">c</tspan> centre thickness</text>
+
+  <text x="60" y="118" font-size="11.5" fill="#6b7280">edge</text>
+  <text x="140" y="250" font-size="11.5" fill="#374151">Peripheral zone &#216;<tspan font-size="9" dy="3">1</tspan> (BPZD) flattens toward the edge</text>
+  <text x="140" y="272" font-size="11.5" fill="#374151">F<tspan font-size="9" dy="3">v</tspan>&#8242; = Back Vertex Power (BVP) &#183; F<tspan font-size="9" dy="3">v</tspan> = Front Vertex Power</text>
+</svg>
+"""
+
+FIG_TEAR_LENS = """
+<svg viewBox="0 0 660 260" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Three rigid lens fitting relationships: flat with apical touch, aligned or parallel, and steep with apical clearance">
+  <g>
+    <text x="55" y="28" font-size="13" font-weight="bold" fill="#b45309">Flatter than K</text>
+    <text x="52" y="45" font-size="11" fill="#6b7280">apical touch</text>
+    <path d="M25 150 Q 100 95 175 150" fill="none" stroke="#6b7280" stroke-width="2.5"/>
+    <path d="M35 142 Q 100 108 165 142" fill="none" stroke="#d97706" stroke-width="2.5"/>
+    <text x="45" y="185" font-size="11.5" fill="#b45309">tear lens MINUS</text>
+  </g>
+  <g transform="translate(240,0)">
+    <text x="48" y="28" font-size="13" font-weight="bold" fill="#15803d">Aligned</text>
+    <text x="40" y="45" font-size="11" fill="#6b7280">parallel / on K</text>
+    <path d="M25 150 Q 100 95 175 150" fill="none" stroke="#6b7280" stroke-width="2.5"/>
+    <path d="M30 145 Q 100 92 170 145" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+    <text x="42" y="185" font-size="11.5" fill="#15803d">tear lens PLANO</text>
+  </g>
+  <g transform="translate(470,0)">
+    <text x="42" y="28" font-size="13" font-weight="bold" fill="#1d4ed8">Steeper than K</text>
+    <text x="40" y="45" font-size="11" fill="#6b7280">apical clearance</text>
+    <path d="M25 150 Q 100 95 175 150" fill="none" stroke="#6b7280" stroke-width="2.5"/>
+    <path d="M28 148 Q 100 78 172 148" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+    <text x="40" y="185" font-size="11.5" fill="#1d4ed8">tear lens PLUS</text>
+  </g>
+  <text x="30" y="225" font-size="12" fill="#374151">Grey = cornea &#183; coloured = rigid lens back surface. The gap between them is the tear lens.</text>
+  <text x="30" y="245" font-size="12" fill="#374151">A soft lens drapes over the cornea, so its tear lens is thin and has no power.</text>
+</svg>
+"""
+
+CONTACT_LENSES["topics"] = [
+    {
+        "slug": "01-history-of-contact-lenses",
+        "title": "History of Contact Lenses",
+        "hours": 1,
+        "summary": (
+            "From a sketch in 1508 to the hydrogel that made lenses a mass product — "
+            "the people, the dates and, more usefully, the problems each step was "
+            "trying to solve."
+        ),
+        "wco": (
+            "<strong>Category 1 — Optical Technology Services.</strong> Context "
+            "rather than competency, but the failures in this timeline are the "
+            "reason modern fitting rules exist."
+        ),
+        "sections": [
+            {
+                "heading": "1. The idea before the object",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "Despite early understanding of the eye and the development of "
+                        "ophthalmic optics, <strong>the concept of a correcting lens on the "
+                        "eye did not emerge until Herschel's 'Dissertation on Light' was "
+                        "published in 1845</strong>.",
+                     "cite": IACLE_M2.format(5)},
+                    {"type": "prose", "text":
+                        "<strong>Leonardo da Vinci (1508)</strong> is often claimed to be "
+                        "the first to describe a 'contact' lens. His sketches of a schematic "
+                        "eye and of a head immersed in water have been used to illustrate a "
+                        "refractive system in contact with the eye. The original manuscript "
+                        "(Manuscript D, held at the Bibliothèque Mazarine) describes "
+                        "<strong>the neutralisation of the cornea by water</strong> and the "
+                        "mechanism of image formation at the optic nerve.",
+                     "cite": IACLE_M2.format(5)},
+                    {"type": "callout",
+                     "title": "Read the claim carefully",
+                     "text":
+                        "IACLE does not say da Vinci invented the contact lens — it says he "
+                        "is <em>often claimed</em> to have described one, and that his "
+                        "sketches <em>have been used</em> to illustrate the concept. He "
+                        "described neutralising the cornea with water. That is the honest "
+                        "version, and it is the one to give in an exam."},
+                ],
+            },
+            {
+                "heading": "2. The glass era",
+                "blocks": [
+                    {"type": "table",
+                     "headers": ["Year", "Who", "What"],
+                     "rows": [
+                         ["1887", "Müller brothers", "Protective shell of clear blown glass for a patient with lid disease"],
+                         ["1888", "<strong>Adolf Fick</strong>", "Published his work using glass shells on <strong>rabbit corneas</strong>"],
+                         ["1888", "<strong>Eugène Kalt</strong>", "Used glass shells on patients with <strong>keratoconus</strong>"],
+                         ["1889", "<strong>August Müller</strong>", "Experimented on his own eyes (a <strong>−14 D myope</strong>) and described the effects of corneal oedema"],
+                         ["1892", "D. E. Sulzer", "Reported the use of lathe-cut glass lenses"],
+                         ["1892", "Henry Dor", "Suggested replacing the post-lens glucose solution with <strong>normal saline</strong>"],
+                         ["1896", "Thomas Lohnstein", "Produced 'water spectacles' — the Hydrodiascope"],
+                         ["1896", "Adolf Fick", "Lost interest in contact lenses following Elschnig's critical commentary"],
+                     ],
+                     "source": "IACLE M2, p. 30"},
+                    {"type": "prose", "text":
+                        "August Müller's account is the one worth remembering. He compared "
+                        "spectacles with contact lenses which almost totally corrected his "
+                        "14 D of myopia, and <strong>described the effects of corneal oedema "
+                        "including progressive veiling of objects and coloured haloes around "
+                        "lights</strong>. He attempted to improve lacrimal circulation by a "
+                        "<strong>lens edge lift at the limbus</strong>.",
+                     "cite": IACLE_M2.format(12)},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "The first oedema symptoms ever recorded are the ones you still ask about",
+                     "text":
+                        "Veiling of vision and coloured haloes around lights, described in "
+                        "1889 by a man wearing glass on his own eyes. When you ask a lens "
+                        "wearer about haloes you are asking August Müller's question, and "
+                        "his instinct — lift the edge to improve tear exchange — is still "
+                        "the principle behind peripheral curves."},
+                ],
+            },
+            {
+                "heading": "3. PMMA and the corneal lens",
+                "blocks": [
+                    {"type": "table",
+                     "headers": ["Year", "Development"],
+                     "rows": [
+                         ["1946", "About <strong>50,000 pairs</strong> sold in the USA; improvement in PMMA chemistry after wartime fitting of service personnel"],
+                         ["1948", "<strong>Kevin Tuohy</strong> developed large-diameter (<strong>11.5–12.5 mm</strong>) corneal PMMA lenses, fitted <strong>much flatter than K</strong>. Rapid exodus from scleral PMMA lenses"],
+                         ["1949", "About <strong>200,000 pairs</strong> sold in the USA"],
+                         ["1950", "Tuohy's patent for corneal lenses granted"],
+                         ["1950", "<strong>George Butterfield</strong> proposed fitting the corneal lens <strong>'on K'</strong> and patented the first <strong>multicurve</strong> design"],
+                         ["1950s", "Increased publication on the relationship of contact lens wear to corneal physiology"],
+                         ["1953", "'Micro lenses' introduced by Söhnges, Neill and Dickinson — <strong>9.5 mm</strong> diameter, fitted flatter than K"],
+                     ],
+                     "source": "IACLE M2, p. 31"},
+                    {"type": "callout",
+                     "title": "Two years, two philosophies",
+                     "text":
+                        "Tuohy fitted <em>much flatter than K</em> in 1948; Butterfield "
+                        "proposed <em>on K</em> in 1950 and invented the multicurve to make "
+                        "it work. The argument about how closely a rigid lens should follow "
+                        "the cornea starts here, and the answer — align centrally, flatten "
+                        "peripherally — is still what you do today."},
+                ],
+            },
+            {
+                "heading": "4. The hydrogel",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "In 1954 <strong>Professor Otto Wichterle and Dr Drahoslav Lim</strong> "
+                        "of the Institute of Macromolecular Chemistry of the Czechoslovak "
+                        "Academy of Sciences in Prague suggested that a plastic which more "
+                        "closely simulated living tissue would be more suitable for orbital "
+                        "implants than the metallic elements then being considered.",
+                     "cite": IACLE_M2.format(21)},
+                    {"type": "prose", "text":
+                        "They discovered a stable transparent gel, "
+                        "<strong>poly-hydroxyethyl-methacrylate (PHEMA)</strong>, a "
+                        "water-absorbing polymer (<strong>38.6%</strong> water), "
+                        "<strong>permeable to nutrients and metabolites</strong>.",
+                     "cite": IACLE_M2.format(21)},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Why 38.6% matters",
+                     "text":
+                        "PHEMA's water content is the number every later soft material is "
+                        "compared against. Water was how early hydrogels carried oxygen, so "
+                        "water content became shorthand for physiological performance — a "
+                        "shorthand that only broke down when silicone hydrogels arrived and "
+                        "decoupled the two. Learn the number and you understand why the "
+                        "industry talked about water for forty years."},
+                ],
+            },
+            {
+                "heading": "5. What is happening now",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "The IACLE modules are <strong>First Edition</strong> and their "
+                        "timeline effectively ends before the material that now dominates "
+                        "soft lens fitting. Treat what follows as signposting beyond the "
+                        "textbook."},
+                    {"type": "list", "items": [
+                        "<strong>Silicone hydrogels</strong> broke the link between water "
+                        "content and oxygen transmissibility, raising Dk/t far beyond what "
+                        "PHEMA-based materials could reach and making extended wear "
+                        "physiologically plausible.",
+                        "<strong>Daily disposables</strong> moved the main safety lever from "
+                        "disinfection compliance to simply not reusing the lens.",
+                        "<strong>Myopia control</strong> lenses — orthokeratology and "
+                        "dual-focus soft designs — have given contact lenses a therapeutic "
+                        "purpose beyond refractive correction.",
+                        "<strong>Scleral lenses</strong> have returned, now in gas-permeable "
+                        "materials, for irregular corneas and ocular surface disease. The "
+                        "shape Fick and Kalt used in 1888 is current practice again.",
+                    ]},
+                ],
+            },
+        ],
+        "check": [
+            "What did Herschel contribute, and in what year?",
+            "State precisely what da Vinci described — and what he did not.",
+            "Who first used glass shells on patients with keratoconus, and in what year?",
+            "What symptoms of corneal oedema did August Müller describe, and how did he try to solve the problem?",
+            "Give the diameter and fitting philosophy of Tuohy's 1948 corneal lens.",
+            "How did Butterfield's approach differ from Tuohy's, and what did he invent to achieve it?",
+            "Name the material Wichterle and Lim discovered, its water content, and why that mattered.",
+        ],
+        "sources": [
+            IACLE_FULL + " — Module 2, Lecture 2.1 History of Contact Lenses: "
+            "Herschel and da Vinci p. 5; August Müller p. 12; Wichterle and Lim "
+            "p. 21; chronology of the glass era p. 30 and the PMMA era p. 31.",
+        ],
+    },
+
+    {
+        "slug": "02-corneal-topography-and-nomenclature",
+        "title": "Corneal Topography and Contact Lens Nomenclature",
+        "hours": 2,
+        "summary": (
+            "The vocabulary and symbols used on every lens order and verification "
+            "form — and the corneal measurements those numbers have to match."
+        ),
+        "wco": (
+            "<strong>Category 1 — Optical Technology Services.</strong> Specifying "
+            "and verifying a lens correctly is the foundation of everything else in "
+            "this course."
+        ),
+        "sections": [
+            {
+                "heading": "1. The parameters, and their symbols",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "Every lens is described by the same small set of parameters. "
+                        "IACLE's symbols are the ones used on order forms and in the "
+                        "literature, and are worth learning exactly."},
+                    {"type": "table",
+                     "headers": ["Symbol", "Parameter"],
+                     "rows": [
+                         ["<strong>r<sub>0</sub></strong>", "Back Optic Zone Radius (BOZR)"],
+                         ["<strong>&Oslash;<sub>0</sub></strong>", "Back Optic Zone Diameter (BOZD)"],
+                         ["<strong>&Oslash;<sub>a0</sub></strong>", "Front Optic Zone Diameter (FOZD)"],
+                         ["<strong>&Oslash;<sub>1</sub></strong>", "Back Peripheral Zone Diameter (BPZD)"],
+                         ["<strong>&Oslash;<sub>T</sub></strong>", "Total Diameter (TD)"],
+                         ["<strong>t<sub>c</sub></strong>", "Geometric centre thickness"],
+                         ["<strong>t<sub>EA</sub> / t<sub>ER</sub></strong>", "Axial and radial edge thickness"],
+                         ["<strong>F<sub>v</sub>&prime;</strong>", "Back Vertex Power (BVP)"],
+                         ["<strong>F<sub>v</sub></strong>", "Front Vertex Power (FVP)"],
+                     ],
+                     "source": "IACLE M2, p. 162"},
+                    {"type": "figure", "svg": FIG_CL_NOMENCLATURE,
+                     "caption": "Lens parameters in section. Compare with the labelled "
+                                "diagram in IACLE M2 p. 162."},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "BVP, not FVP",
+                     "text":
+                        "A contact lens is specified and verified by its <strong>back</strong> "
+                        "vertex power, because that is the surface nearest the eye and "
+                        "therefore what determines the correction. A lensmeter reading taken "
+                        "with the lens the wrong way round gives FVP, and for a high-powered "
+                        "lens the two differ enough to matter."},
+                ],
+            },
+            {
+                "heading": "2. Design factors that change on-eye performance",
+                "blocks": [
+                    {"type": "list", "intro":
+                        "IACLE lists the soft lens design factors, noting that "
+                        "<strong>each can affect 'on-eye' performance</strong>:",
+                     "items": [
+                        "Geometric centre thickness (t<sub>c</sub>)",
+                        "Lens diameter (total diameter, TD, &Oslash;<sub>T</sub>)",
+                        "Back optic zone radius (BOZR, r<sub>0</sub>)",
+                        "Back surface design",
+                     ], "source": "IACLE M2, p. 162"},
+                    {"type": "callout",
+                     "title": "Thickness is not only about comfort",
+                     "text":
+                        "Centre thickness sets oxygen transmissibility, because Dk/t divides "
+                        "the material's permeability by the thickness. A thicker lens in the "
+                        "same material delivers less oxygen. Thickness is a physiological "
+                        "parameter, not just a handling one."},
+                ],
+            },
+            {
+                "heading": "3. Corneal measurement",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "The lens has to match a cornea, so the cornea has to be measured. "
+                        "IACLE's optics lecture devotes a section to <strong>Corneal Radius "
+                        "of Curvature</strong>, sitting immediately before "
+                        "<strong>The Tear Lens</strong> and <strong>Over-Refraction</strong> "
+                        "— the order tells you how the three connect.",
+                     "cite": IACLE_M2.format(104)},
+                    {"type": "list", "intro": "Two approaches, with different reach:", "items": [
+                        "<strong>Keratometry</strong> measures the radius of curvature of a "
+                        "small central zone, typically about 3 mm, in two principal "
+                        "meridians. Quick, reproducible, and the basis of first trial lens "
+                        "selection.",
+                        "<strong>Corneal topography</strong> maps thousands of points across "
+                        "the whole cornea, showing peripheral flattening, irregularity and "
+                        "asymmetry that keratometry averages away.",
+                     ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Why keratometry alone was rejected in 1946",
+                     "text":
+                        "A 1946 patent application for a corneal lens was refused, one "
+                        "ground being that <em>\"many eyes present corneal surfaces of "
+                        "irregular curvature; keratometer measurements alone would not "
+                        "avail.\"</em> <span class=\"cite\">IACLE M2, p. 19</span> That "
+                        "objection is exactly why topography exists. Keratometry gives you "
+                        "a starting lens; it does not describe the cornea."},
+                ],
+            },
+        ],
+        "check": [
+            "Write the symbols for back optic zone radius, total diameter and back vertex power.",
+            "Why is a contact lens specified by BVP rather than FVP?",
+            "List the four soft lens design factors IACLE names.",
+            "Explain why centre thickness is a physiological parameter.",
+            "What does keratometry measure, and over roughly what zone?",
+            "Give the 1946 objection to relying on keratometry, and say what modern instrument answers it.",
+        ],
+        "sources": [
+            IACLE_FULL + " — Module 2: lens parameters and soft lens design factors "
+            "p. 162; optics lecture contents including corneal radius of curvature, "
+            "the tear lens and over-refraction p. 104; the 1946 patent objection p. 19.",
+        ],
+    },
+]
+
+CONTACT_LENSES["topics"] += [
+    {
+        "slug": "03-rigid-gas-permeable-lenses",
+        "title": "Rigid Gas Permeable Lenses: Materials, Manufacturing, Care",
+        "hours": 2,
+        "summary": (
+            "What Dk and Dk/t actually mean, how they are measured, what the "
+            "high-Dk materials cost you in handling, and why RGP care is a "
+            "different problem from soft lens care."
+        ),
+        "wco": (
+            "<strong>Category 1 — Optical Technology Services.</strong> Material "
+            "selection, verification and care instruction are performed directly at "
+            "diploma level."
+        ),
+        "sections": [
+            {
+                "heading": "1. Oxygen permeability and transmissibility",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "These two terms are constantly confused and the distinction is "
+                        "simple once stated. <strong>Dk is a property of the material</strong>. "
+                        "<strong>Dk/t is a property of the lens</strong>.",
+                     "cite": IACLE_M2.format(41)},
+                    {"type": "equation", "text": "Dk/t  =  Material Dk &divide; t",
+                     "where": "t may be t<sub>c</sub> (geometric centre thickness) or "
+                              "t<sub>Local</sub>, depending on the transmissibility being calculated"},
+                    {"type": "list", "items": [
+                        "<strong>D</strong> = diffusion coefficient of the material",
+                        "<strong>k</strong> = solubility of the gas in the material",
+                        "<strong>Dk</strong> is therefore <strong>not</strong> a function of "
+                        "lens thickness, shape or back vertex power",
+                        "<strong>Dk/t</strong> divides that permeability by the thickness, so "
+                        "it describes what a particular lens delivers",
+                    ], "source": "IACLE M2, p. 41"},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Why a high-Dk material can still starve a cornea",
+                     "text":
+                        "Order a high-Dk material in a thick, high-minus design and you have "
+                        "diluted the very property you paid for. When a patient shows "
+                        "hypoxic signs, ask about lens <em>thickness</em> and power, not just "
+                        "the material name."},
+                    {"type": "prose", "text":
+                        "Transmissibility is measured instrumentally. The "
+                        "<strong>coulometric</strong> technique mounts the lens in an "
+                        "environment-controlled cell and feeds data to a recorder or data "
+                        "logger; <strong>Dk is determined indirectly from Dk/t and thickness "
+                        "measurements</strong>. The <strong>polarographic</strong> technique "
+                        "is the main alternative.",
+                     "cite": IACLE_M2.format(41)},
+                ],
+            },
+            {
+                "heading": "2. What high-Dk materials cost you",
+                "blocks": [
+                    {"type": "list", "intro":
+                        "IACLE is candid about the manufacturing disadvantages of "
+                        "fluorosilicone acrylates and silicone acrylates:",
+                     "items": [
+                        "They are <strong>more susceptible to solvent damage during "
+                        "manufacture</strong>, and solvents can affect the surface.",
+                        "The <strong>back optic zone radius of finished lenses has been "
+                        "known to change over time</strong>, especially in high minus back "
+                        "vertex powers.",
+                        "<strong>The more exotic materials of high Dk are often difficult to "
+                        "modify</strong>, especially in contact lens practice.",
+                        "<strong>Reproducibility of lenses fabricated in these materials is "
+                        "lower</strong> than that of less permeable materials.",
+                     ], "source": "IACLE M2, p. 61"},
+                    {"type": "callout",
+                     "title": "Two practical consequences",
+                     "text":
+                        "First, <strong>re-verify</strong> high-Dk RGPs at aftercare — the "
+                        "BOZR may not be what you ordered, particularly in high minus. "
+                        "Second, do not promise in-practice modification of an exotic "
+                        "high-Dk lens; the textbook says it is often not feasible."},
+                ],
+            },
+            {
+                "heading": "3. Care of rigid lenses",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "Rigid lenses are not replaced frequently, which changes the care "
+                        "problem. IACLE notes that protein removers are included in the care "
+                        "systems for soft lenses <strong>and some RGP lenses, that are not "
+                        "replaced regularly (&gt;1 month)</strong>.",
+                     "cite": IACLE_M5.format(18)},
+                    {"type": "list", "intro": "The regimen has distinct steps:", "items": [
+                        "<strong>Surface cleaning</strong> — removes surface debris and "
+                        "loosely bound deposit at the end of each wearing period.",
+                        "<strong>Rinsing</strong> — removes the cleaner itself before the "
+                        "lens goes near the eye.",
+                        "<strong>Disinfection</strong> — kills micro-organisms during storage.",
+                        "<strong>Protein removal</strong> — periodic, for lenses kept longer "
+                        "than a month. <strong>Not all protein removers are enzyme-based</strong>; "
+                        "those that are are usually supplied in tablet form, chemical-based "
+                        "systems as ready-to-use liquids. They are effective at loosening "
+                        "tightly bound protein deposits, but <strong>cannot be expected to "
+                        "remove all proteins</strong>.",
+                     ], "source": "IACLE M5, p. 18"},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "The step patients skip",
+                     "text":
+                        "IACLE is explicit that <strong>lenses should be cleaned and rinsed "
+                        "before</strong> being placed in the container with the tablet or "
+                        "solution. Patients routinely drop the tablet in with a dirty lens "
+                        "and wonder why deposits persist. Say the order out loud when you "
+                        "teach it: clean, rinse, then protein-remove."},
+                ],
+            },
+        ],
+        "check": [
+            "Define Dk and Dk/t, and say which is a property of the lens rather than the material.",
+            "What do D and k stand for?",
+            "Why is Dk independent of back vertex power but Dk/t is not?",
+            "Name the two techniques for measuring oxygen transmissibility.",
+            "Give three manufacturing disadvantages of high-Dk materials.",
+            "Which lenses need periodic protein removal, and above what replacement interval?",
+            "What must be done to a lens before protein removal, and why?",
+        ],
+        "sources": [
+            IACLE_FULL + " — Module 2: oxygen permeability and transmissibility and "
+            "their measurement p. 41; manufacturing disadvantages of high-Dk materials "
+            "p. 61. Module 5: protein removal p. 18.",
+        ],
+    },
+
+    {
+        "slug": "04-optical-properties-of-rigid-lenses",
+        "title": "Optical Properties of Rigid Lenses",
+        "hours": 2,
+        "summary": (
+            "The tear lens — the single idea that makes rigid lens power make sense. "
+            "Why fitting flatter or steeper than K changes the power you must order, "
+            "and what decentration does to it."
+        ),
+        "wco": (
+            "<strong>Category 1 — Optical Technology Services.</strong> Calculating "
+            "the ordered power from a trial lens and over-refraction is a core "
+            "dispensing competency."
+        ),
+        "sections": [
+            {
+                "heading": "1. The tear lens exists only under a rigid lens",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "<strong>When a flexible lens is placed on the cornea, the 'tear "
+                        "lens' under the contact lens is very thin. It has no dioptric power "
+                        "due to the conformity of the lens to the shape of the cornea.</strong>",
+                     "cite": IACLE_M2.format(135)},
+                    {"type": "prose", "text":
+                        "<strong>If a rigid lens is used, the 'tear lens' depends on the "
+                        "relationship between the curvatures of the lens back surface and "
+                        "the cornea</strong> and, to a lesser extent, the material's "
+                        "rigidity.",
+                     "cite": IACLE_M2.format(135)},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "This single difference drives everything",
+                     "text":
+                        "A soft lens drapes, so what you order is essentially the ocular "
+                        "refraction adjusted for vertex distance. A rigid lens does not "
+                        "drape, so it creates a liquid lens between itself and the cornea — "
+                        "and that liquid lens has power you must account for."},
+                ],
+            },
+            {
+                "heading": "2. The three fitting relationships",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "IACLE names the three simplest RGP/cornea relationships as "
+                        "<strong>flatter or apical touch</strong>, <strong>alignment or "
+                        "parallel</strong>, and <strong>steeper or apical clearance</strong>.",
+                     "cite": IACLE_M2.format(135)},
+                    {"type": "figure", "svg": FIG_TEAR_LENS,
+                     "caption": "The three relationships and the tear lens each creates. "
+                                "Compare IACLE M2 p. 135."},
+                    {"type": "table",
+                     "headers": ["Fit", "Tear lens shape", "Tear lens power", "Compensate by ordering"],
+                     "rows": [
+                         ["<strong>Flatter than K</strong> (apical touch)",
+                          "Minus meniscus", "<strong>Minus</strong>", "<strong>More plus</strong> in the lens"],
+                         ["<strong>Aligned</strong> (on K, parallel)",
+                          "Parallel", "<strong>Plano</strong>", "No compensation"],
+                         ["<strong>Steeper than K</strong> (apical clearance)",
+                          "Plus meniscus", "<strong>Plus</strong>", "<strong>More minus</strong> in the lens"],
+                     ]},
+                    {"type": "callout",
+                     "title": "SAM–FAP",
+                     "text":
+                        "<strong>S</strong>teeper <strong>A</strong>dd <strong>M</strong>inus, "
+                        "<strong>F</strong>latter <strong>A</strong>dd <strong>P</strong>lus. "
+                        "The mnemonic is only worth using if you can also say why: a steep "
+                        "fit creates a plus tear lens, so the contact lens must carry more "
+                        "minus for the total to stay correct."},
+                ],
+            },
+            {
+                "heading": "3. Decentration induces prism",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "<strong>If a rigid lens decentres, the tear lens will acquire a "
+                        "prismatic component</strong> in addition to the spherical or "
+                        "sphero-cylindrical optics dictated by the fitting relationship.",
+                     "cite": IACLE_M2.format(135)},
+                    {"type": "prose", "text":
+                        "When a rigid lens decentres, and is possibly tilted by upper or "
+                        "lower lid pressures, a prismatic tear lens may be induced under it. "
+                        "<strong>In higher powered lenses, any induced tear prismatic effect "
+                        "may be insignificant when compared with the prism induced by the "
+                        "decentred optics.</strong>",
+                     "cite": IACLE_M2.format(135)},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "A patient who sees well only sometimes",
+                     "text":
+                        "Intermittent blur or doubling in a rigid lens wearer, worse after "
+                        "blinking, points at a lens moving off centre. Two prismatic effects "
+                        "are in play — the tear lens and the decentred lens optics — and in "
+                        "high powers the second dominates. Assess the fit, not the "
+                        "prescription."},
+                ],
+            },
+            {
+                "heading": "4. Over-refraction is how you resolve it",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "IACLE places <strong>Over-Refraction</strong> immediately after the "
+                        "tear lens section, and there is a practical exercise devoted to it "
+                        "(Practical 2.3, Contact Lens Over-Refraction).",
+                     "cite": IACLE_M2.format(104)},
+                    {"type": "steps", "intro": "The logic in order:", "items": [
+                        "Place a <strong>trial lens of known BOZR and BVP</strong> on the eye "
+                        "and let it settle.",
+                        "Assess the <strong>fitting relationship</strong> — flat, aligned or "
+                        "steep — since this tells you what the tear lens is doing.",
+                        "Perform an <strong>over-refraction</strong> through the trial lens.",
+                        "<strong>Ordered BVP = trial lens BVP + over-refraction</strong>, "
+                        "adjusted if the final lens BOZR differs from the trial lens, because "
+                        "changing BOZR changes the tear lens.",
+                    ]},
+                    {"type": "callout",
+                     "title": "The reason over-refraction beats calculation",
+                     "text":
+                        "Over-refraction measures the eye <em>with the tear lens already in "
+                        "place</em>. It absorbs the tear lens, vertex distance and any "
+                        "flexure into one reading. Calculate only when you must change the "
+                        "BOZR between trial and final lens."},
+                ],
+            },
+        ],
+        "check": [
+            "Why does a soft lens have no tear-lens power?",
+            "Name the three RGP fitting relationships and the tear lens power each creates.",
+            "A lens fitted 0.10 mm steeper than K — should the ordered power be more plus or more minus, and why?",
+            "What happens to the tear lens when a rigid lens decentres?",
+            "In a high-powered lens, which prismatic effect dominates?",
+            "Write the relationship between trial lens BVP, over-refraction and ordered BVP.",
+            "When must you calculate rather than rely on over-refraction alone?",
+        ],
+        "sources": [
+            IACLE_FULL + " — Module 2, Lecture 2.3 Optics and Vision of Contact "
+            "Lenses: the tear lens, fitting relationships and decentration-induced "
+            "prism p. 135; lecture contents listing corneal radius, tear lens and "
+            "over-refraction p. 104.",
+        ],
+    },
+
+    {
+        "slug": "05-complications-of-rigid-lenses",
+        "title": "Complications of Rigid Lenses",
+        "hours": 1,
+        "summary": (
+            "Hypoxia and its signs, mechanical effects of a lens that does not drape, "
+            "and the one complication that must never be managed in the chair."
+        ),
+        "wco": (
+            "<strong>Category 3 — Ocular Diagnostic Services.</strong> Recognising "
+            "and grading complications, and referring microbial keratitis the same "
+            "day."
+        ),
+        "sections": [
+            {
+                "heading": "1. Oxygen is the underlying variable",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "IACLE frames the whole subject around supply and demand: a lens "
+                        "should be selected which <strong>allows a level of oxygen above, "
+                        "and preferably well above, the 'average' minimum required</strong>. "
+                        "Considerable research has established <strong>general agreement on "
+                        "the oxygen levels required for safe daily and overnight wear</strong>, "
+                        "and the module notes that many lenses historically marketed were "
+                        "<strong>incapable of meeting</strong> those levels, especially for "
+                        "overnight extended wear.",
+                     "cite": IACLE_M6.format(5)},
+                    {"type": "callout",
+                     "title": "The historical point that still matters",
+                     "text":
+                        "The textbook admits the industry sold lenses that could not meet "
+                        "the published oxygen requirements. That is the context for every "
+                        "hypoxic complication described below — and the reason material Dk "
+                        "improved so sharply afterwards."},
+                ],
+            },
+            {
+                "heading": "2. Signs of hypoxia",
+                "blocks": [
+                    {"type": "list", "intro":
+                        "August Müller described the symptoms in 1889 — veiling of vision "
+                        "and coloured haloes around lights "
+                        "<span class=\"cite\">IACLE M2, p. 12</span>. The signs you look "
+                        "for:",
+                     "items": [
+                        "<strong>Corneal oedema</strong> — the direct consequence; striae "
+                        "and folds appear as it increases.",
+                        "<strong>Epithelial microcysts</strong> — a marker of chronic "
+                        "metabolic stress rather than acute insult, appearing weeks into the "
+                        "problem and, importantly, <em>increasing</em> transiently when the "
+                        "cause is removed.",
+                        "<strong>Neovascularisation</strong> — vessels growing into a tissue "
+                        "that Kanski reminds us is normally <strong>free of blood "
+                        "vessels</strong> <span class=\"cite\">Kanski 8e, p. 168</span>.",
+                        "<strong>Reduced corneal sensitivity</strong> with chronic wear.",
+                     ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Any new corneal vessel is abnormal",
+                     "text":
+                        "The cornea is avascular by design. A vessel crossing the limbus in "
+                        "a lens wearer is the eye responding to a problem you have not yet "
+                        "named. Find it before the vessel gets further."},
+                ],
+            },
+            {
+                "heading": "3. Mechanical complications",
+                "blocks": [
+                    {"type": "list", "intro":
+                        "A rigid lens does not conform to the cornea, which creates problems "
+                        "a soft lens does not:",
+                     "items": [
+                        "<strong>3 and 9 o'clock staining</strong> — peripheral desiccation "
+                        "where the lid fails to resurface the cornea beside the lens edge.",
+                        "<strong>Corneal abrasion</strong> from a foreign body trapped "
+                        "beneath the lens — rigid lenses trap debris that a soft lens would "
+                        "not.",
+                        "<strong>Lens binding / adherence</strong>, particularly after "
+                        "overnight wear.",
+                        "<strong>Corneal warpage and spectacle blur</strong> — the cornea "
+                        "moulds to the lens, so spectacle vision is poor immediately after "
+                        "removal.",
+                        "<strong>Ptosis</strong> with long-term rigid wear.",
+                     ]},
+                    {"type": "callout",
+                     "title": "Spectacle blur is a fitting signal",
+                     "text":
+                        "A patient who cannot see with their glasses for hours after lens "
+                        "removal has a cornea being reshaped. Recheck keratometry against "
+                        "the original readings before assuming the spectacle prescription "
+                        "has changed."},
+                ],
+            },
+            {
+                "heading": "4. The one that cannot wait",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "<strong>Contact lens wear, particularly if extended, is the most "
+                        "important risk factor</strong> for bacterial keratitis. Corneal "
+                        "epithelial compromise secondary to <strong>hypoxia</strong> and "
+                        "minor trauma is thought to be important, as is bacterial adherence "
+                        "to the lens surface. <strong>Wearers of soft lenses are at higher "
+                        "risk than those of rigid gas permeable</strong> and other types.",
+                     "cite": "Kanski 8e, p. 175"},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Lower risk is not no risk",
+                     "text":
+                        "RGP wearers are at lower risk than soft lens wearers — but a rigid "
+                        "lens wearer with a red, painful eye and an infiltrate is managed "
+                        "exactly the same way: remove the lens, do not patch, do not "
+                        "steroid, keep the lens and case for culture, refer the same day."},
+                ],
+            },
+        ],
+        "check": [
+            "What does IACLE say about the oxygen performance of lenses historically marketed?",
+            "List four signs of corneal hypoxia in a lens wearer.",
+            "Why is any new corneal blood vessel abnormal?",
+            "Explain the mechanism of 3 and 9 o'clock staining.",
+            "A patient cannot see through their spectacles after removing RGPs. What is happening and what do you check?",
+            "Are RGP or soft lens wearers at higher risk of bacterial keratitis?",
+            "State the five immediate actions on finding an infiltrate in a lens wearer.",
+        ],
+        "sources": [
+            IACLE_FULL + " — Module 6, Lecture 6.1 Corneal Oxygen Requirements and "
+            "the Effects of Hypoxia p. 5; Module 2 p. 12 for Müller's description of "
+            "oedema symptoms.",
+            KANSKI_FULL + " — corneal avascularity p. 168; bacterial keratitis risk "
+            "factors p. 175.",
+        ],
+    },
+]
+
+CONTACT_LENSES["topics"] += [
+    {
+        "slug": "06-soft-contact-lenses",
+        "title": "Soft Contact Lenses: Materials, Manufacturing, Design, Use",
+        "hours": 2,
+        "summary": (
+            "PHEMA and what followed, how hydration changes a finished lens, the "
+            "design factors that alter on-eye behaviour — and an honest account of "
+            "where this First Edition textbook stops."
+        ),
+        "wco": (
+            "<strong>Category 1 — Optical Technology Services.</strong> Material and "
+            "modality selection, and patient instruction, are performed directly."
+        ),
+        "sections": [
+            {
+                "heading": "1. The founding material",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "Wichterle and Lim's <strong>poly-hydroxyethyl-methacrylate "
+                        "(PHEMA)</strong> is a water-absorbing polymer at "
+                        "<strong>38.6% water</strong>, <strong>permeable to nutrients and "
+                        "metabolites</strong>.",
+                     "cite": IACLE_M2.format(21)},
+                    {"type": "callout",
+                     "title": "Water was the oxygen strategy",
+                     "text":
+                        "In a conventional hydrogel, oxygen crosses the lens dissolved in "
+                        "its water. Raise the water content and you raise Dk — but you also "
+                        "make the lens more fragile, more prone to dehydration and more "
+                        "deposit-attracting. Every conventional soft lens is a compromise "
+                        "along that one axis."},
+                ],
+            },
+            {
+                "heading": "2. Hydration changes the lens you made",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "A soft lens is manufactured dry and worn wet, and the two states "
+                        "differ. IACLE's quality control notes on the wet state are "
+                        "practical and specific:",
+                     "cite": IACLE_M2.format(67)},
+                    {"type": "list", "items": [
+                        "<strong>BOZR is critical. It influences the lens fit and the optics "
+                        "of the tear lens. The BOZR will be approximately 0.03 mm flatter "
+                        "after hydration.</strong>",
+                        "<strong>Image quality</strong> is reassessed to determine the "
+                        "optical quality of the product; vision quality depends on the "
+                        "prescription being accurate and the quality of the optics.",
+                        "<strong>Workmanship</strong> is reassessed to confirm that hydration "
+                        "has not revealed previously undetected defects. Defects may include "
+                        "<strong>edge chips and surface scratches</strong>.",
+                    ], "source": "IACLE M2, p. 67"},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Verify wet, always",
+                     "text":
+                        "A lens measured dry is not the lens the patient wears — the BOZR "
+                        "alone shifts about 0.03 mm flatter on hydration. Any verification "
+                        "that matters is done in the hydrated state."},
+                ],
+            },
+            {
+                "heading": "3. Design factors",
+                "blocks": [
+                    {"type": "list", "intro":
+                        "IACLE lists the soft lens design factors, each of which "
+                        "<strong>can affect 'on-eye' performance</strong>:",
+                     "items": [
+                        "<strong>Geometric centre thickness (t<sub>c</sub>)</strong> — sets "
+                        "Dk/t, handling and the degree to which the lens drapes.",
+                        "<strong>Total diameter (TD, &Oslash;<sub>T</sub>)</strong> — governs "
+                        "corneal coverage and limbal relationship.",
+                        "<strong>Back optic zone radius (BOZR, r<sub>0</sub>)</strong> — with "
+                        "diameter, determines sagittal height and therefore tightness.",
+                        "<strong>Back surface design</strong>.",
+                     ], "source": "IACLE M2, p. 162"},
+                    {"type": "callout",
+                     "title": "Judge a soft fit by sagittal height, not BOZR alone",
+                     "text":
+                        "BOZR and diameter act together: a lens can be made tighter by "
+                        "steepening the radius <em>or</em> by increasing the diameter. When a "
+                        "soft lens is too tight or too loose, either parameter is a lever."},
+                ],
+            },
+            {
+                "heading": "4. What is happening now",
+                "blocks": [
+                    {"type": "callout",
+                     "title": "Where the textbook stops",
+                     "text":
+                        "The IACLE modules are <strong>First Edition</strong> and predate "
+                        "silicone hydrogels. Searching the whole library for the term returns "
+                        "a single passing line, in Evans on paediatric fitting "
+                        "<span class=\"cite\">Evans, p. 82</span>. Everything in this section "
+                        "is therefore flagged as current practice beyond the cited texts, "
+                        "and none of it should be attributed to IACLE."},
+                    {"type": "list", "intro":
+                        "The four developments that changed soft lens practice after this "
+                        "textbook:",
+                     "items": [
+                        "<strong>Silicone hydrogels.</strong> Oxygen travels through the "
+                        "silicone phase rather than the water, breaking the water–Dk link "
+                        "entirely. Dk/t rose several-fold, which is why overnight wear "
+                        "became physiologically defensible. The trade-offs moved to modulus "
+                        "(stiffer material, mechanical complications) and surface wettability.",
+                        "<strong>Daily disposables.</strong> A lens used once removes the "
+                        "storage case, the solution and the compliance problem — the three "
+                        "places infection risk concentrates. Note Kanski's caution that "
+                        "infection <em>can still occur</em> with daily disposables "
+                        "<span class=\"cite\">Kanski 8e, p. 175</span>.",
+                        "<strong>Myopia control designs.</strong> Dual-focus and "
+                        "peripheral-defocus soft lenses give contact lenses a therapeutic "
+                        "role in slowing axial elongation in children.",
+                        "<strong>Modern scleral lenses.</strong> Gas-permeable sclerals for "
+                        "irregular corneas and ocular surface disease — a return to the lens "
+                        "shape Fick and Kalt used in 1888, now in materials that let the "
+                        "cornea breathe.",
+                     ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "The exam answer, and the clinic answer",
+                     "text":
+                        "If asked how water content relates to oxygen performance, the "
+                        "textbook answer is that higher water carries more oxygen — true for "
+                        "conventional hydrogels. Add that this no longer holds for silicone "
+                        "hydrogels, where a <em>lower</em> water material can transmit far "
+                        "more oxygen. Knowing which rule applies to which material is the "
+                        "competency."},
+                ],
+            },
+        ],
+        "check": [
+            "Name the founding soft lens material, its water content and who discovered it.",
+            "In a conventional hydrogel, how does oxygen reach the cornea?",
+            "By how much does BOZR change on hydration, and in which direction?",
+            "Why must soft lens verification be done in the hydrated state?",
+            "List the soft lens design factors and say which two together determine tightness.",
+            "Explain why the water-content rule does not hold for silicone hydrogels.",
+            "Does a daily disposable modality eliminate the risk of microbial keratitis?",
+        ],
+        "sources": [
+            IACLE_FULL + " — Module 2: PHEMA and its discovery p. 21; wet-state "
+            "quality control and the 0.03 mm hydration change p. 67; soft lens design "
+            "factors p. 162.",
+            KANSKI_FULL + " — infection with daily disposables p. 175.",
+            "Silicone hydrogels, daily disposable modalities, myopia control designs "
+            "and modern scleral lenses postdate the First Edition modules and are "
+            "marked as current practice in the text.",
+        ],
+    },
+
+    {
+        "slug": "07-care-of-soft-lenses",
+        "title": "Care of Soft Lenses",
+        "hours": 1,
+        "summary": (
+            "What each bottle actually does, the disinfection families and how they "
+            "differ, and why the care regimen depends on the replacement schedule."
+        ),
+        "wco": (
+            "<strong>Category 1 — Optical Technology Services.</strong> Selecting a "
+            "care system and teaching it is performed directly, and is the single "
+            "biggest lever a diploma optometrist has on infection risk."
+        ),
+        "sections": [
+            {
+                "heading": "1. Regimen follows replacement schedule",
+                "blocks": [
+                    {"type": "table",
+                     "headers": ["Modality", "Care required"],
+                     "rows": [
+                         ["<strong>Daily disposables</strong>",
+                          "Because of its single use concept, this lens <strong>does not "
+                          "require use of surfactant cleaner, disinfecting solution or weekly "
+                          "enzyme</strong>. If needed, in-eye re-wetting drops or sterile "
+                          "saline for rinsing prior to insertion"],
+                         ["<strong>Regular disposables</strong> (weekly or bi-weekly)",
+                          "<strong>Multi-purpose solutions given as a complete care "
+                          "system</strong>. Lenses can be rinsed with aerosol saline prior to "
+                          "insertion or a lubricating solution used to re-wet. "
+                          "<strong>No weekly protein removal is needed</strong>"],
+                         ["<strong>Lenses kept longer than a month</strong>",
+                          "Add periodic <strong>protein removal</strong> — see below"],
+                     ],
+                     "source": "IACLE M5, p. 23 and p. 18"},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Do not sell care a patient does not need",
+                     "text":
+                        "IACLE is explicit that daily disposables need no cleaner, no "
+                        "disinfectant and no enzyme, and that regular disposables need no "
+                        "weekly protein removal. Prescribing them anyway costs the patient "
+                        "money and teaches them that your instructions are negotiable."},
+                ],
+            },
+            {
+                "heading": "2. The disinfection families",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "<strong>Chemical disinfection systems vary greatly and a wide "
+                        "variety of types exist.</strong> Included in the chemical category "
+                        "are <strong>hydrogen peroxide and multi-purpose solutions</strong>. "
+                        "Chemical disinfection subdivides into <strong>oxidative (hydrogen "
+                        "peroxide and chlorine)</strong> and <strong>conventional cold "
+                        "chemical</strong>. IACLE adds, candidly, that "
+                        "<strong>\"sometimes, the distinctions can seem confusing and "
+                        "complicated to patient and practitioner alike\"</strong>.",
+                     "cite": IACLE_M5.format(12)},
+                    {"type": "list", "items": [
+                        "<strong>Oxidative — hydrogen peroxide.</strong> Effective and "
+                        "preservative-free, which suits sensitive patients. Requires "
+                        "neutralisation, and an unneutralised lens causes a painful chemical "
+                        "injury.",
+                        "<strong>Oxidative — chlorine.</strong> The other oxidative route.",
+                        "<strong>Conventional cold chemical / multi-purpose.</strong> One "
+                        "bottle cleans, rinses, disinfects and stores. Convenience is the "
+                        "point, and compliance is better for it — but the preservatives are "
+                        "the source of the problem below.",
+                        "<strong>Thermal.</strong> Historically standard; IACLE notes a "
+                        "system for thermal disinfection <strong>in a domestic microwave "
+                        "oven</strong> had recently been released at the time of writing.",
+                     ], "source": "IACLE M5, p. 12"},
+                    {"type": "callout",
+                     "title": "The preservative problem, stated by the textbook",
+                     "text":
+                        "\"The use of strong disinfectants (many of which are also used in "
+                        "lower concentrations as preservatives) in chemical-based "
+                        "disinfection systems can cause problems for the patient.\" "
+                        "<span class=\"cite\">IACLE M5, p. 12</span> A patient with chronic "
+                        "low-grade redness and stinging on insertion may be reacting to "
+                        "their solution, not their lens."},
+                ],
+            },
+            {
+                "heading": "3. Protein removal",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "Protein removers <strong>are included in the care systems for soft "
+                        "contact lenses, and some RGP lenses, that are not replaced regularly "
+                        "(&gt;1 month)</strong>. <strong>Not all protein removers are "
+                        "enzyme-based</strong>; those that are are usually supplied in tablet "
+                        "form, while chemical-based systems are supplied as ready-to-use "
+                        "liquids.",
+                     "cite": IACLE_M5.format(18)},
+                    {"type": "prose", "text":
+                        "They are <strong>effective in loosening tightly bound protein "
+                        "deposits</strong>. However, they <strong>cannot be expected to "
+                        "remove all proteins</strong>. <strong>Prior to protein removal, the "
+                        "lenses should be cleaned and rinsed</strong> before being placed in "
+                        "the recommended container with the tablet or solution.",
+                     "cite": IACLE_M5.format(18)},
+                ],
+            },
+            {
+                "heading": "4. Teaching it",
+                "blocks": [
+                    {"type": "steps", "intro":
+                        "IACLE devotes a practical to patient education (Practical 5.1, Use "
+                        "and Care of Contact Lenses). The points that change outcomes:",
+                     "items": [
+                        "<strong>Wash and dry hands</strong> before handling — the step most "
+                        "often skipped and the one that matters most.",
+                        "<strong>Never rinse lenses or the case in tap water.</strong> This "
+                        "is the <em>Acanthamoeba</em> route.",
+                        "<strong>Discard and replace solution every time</strong>; never top "
+                        "up a case that still has fluid in it.",
+                        "<strong>Air-dry the case face down</strong> after rinsing, and "
+                        "replace it regularly.",
+                        "<strong>Do not swim or shower in lenses</strong> without advice.",
+                        "<strong>Remove the lens and seek help</strong> for any red, painful "
+                        "or photophobic eye — never 'wait and see'.",
+                     ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "One sentence worth rehearsing",
+                     "text":
+                        "\"If your eye is red, painful or light-sensitive, take the lens out "
+                        "and contact us the same day — do not put it back in.\" Said at every "
+                        "fitting and every aftercare, that sentence prevents more sight loss "
+                        "than any solution you can sell."},
+                ],
+            },
+        ],
+        "check": [
+            "What care does a daily disposable lens require, according to IACLE?",
+            "Do regular disposables need weekly protein removal?",
+            "Name the two oxidative disinfection agents.",
+            "What does IACLE say about preservatives in chemical disinfection systems?",
+            "Which lenses need protein removal, and what must happen to the lens first?",
+            "Can protein removers remove all protein?",
+            "Why must tap water never touch a lens or its case?",
+        ],
+        "sources": [
+            IACLE_FULL + " — Module 5, Lecture 5.1 Overview of Care and Maintenance: "
+            "disinfection systems and preservatives p. 12; protein removal p. 18; "
+            "care by replacement schedule p. 23. Practical 5.1 covers patient "
+            "education.",
+        ],
+    },
+]
+
+CONTACT_LENSES["topics"] += [
+    {
+        "slug": "08-complications-of-soft-lenses",
+        "title": "Complications of Soft Lenses",
+        "hours": 1,
+        "summary": (
+            "The hypoxic and metabolic consequences of covering a cornea that has no "
+            "blood supply — oedema, microcysts, neovascularisation — and how to grade "
+            "what you see."
+        ),
+        "wco": (
+            "<strong>Category 3 — Ocular Diagnostic Services.</strong> Detection, "
+            "grading and the decision to modify, suspend or refer."
+        ),
+        "sections": [
+            {
+                "heading": "1. Start from the physiology",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "The cornea is <strong>free of blood vessels</strong>; nutrients are "
+                        "supplied and metabolic products removed <strong>mainly via the "
+                        "aqueous humour posteriorly and the tears anteriorly</strong>.",
+                     "cite": "Kanski 8e, p. 168"},
+                    {"type": "callout",
+                     "title": "A contact lens sits on the anterior supply route",
+                     "text":
+                        "Every soft lens complication in this topic follows from that single "
+                        "sentence. Cover the anterior surface and you interfere with the "
+                        "tear-borne supply of oxygen and the removal of metabolic products. "
+                        "The lens does not injure the cornea; it starves it."},
+                    {"type": "prose", "text":
+                        "IACLE frames fitting as meeting a demand: select a lens which "
+                        "<strong>allows a level of oxygen above, and preferably well above, "
+                        "the 'average' minimum required</strong>, noting general agreement on "
+                        "the levels needed for <strong>safe daily and overnight wear</strong>.",
+                     "cite": IACLE_M6.format(5)},
+                ],
+            },
+            {
+                "heading": "2. Corneal oedema",
+                "blocks": [
+                    {"type": "list", "intro":
+                        "The first and most direct consequence. Graded by what appears as it "
+                        "worsens:",
+                     "items": [
+                        "<strong>Subtle</strong> — detectable only by pachymetry; no slit "
+                        "lamp sign.",
+                        "<strong>Striae</strong> — fine vertical greyish-white lines in the "
+                        "posterior stroma. The first visible sign, and the one to hunt for.",
+                        "<strong>Folds</strong> — in Descemet membrane, indicating greater "
+                        "swelling.",
+                        "<strong>Gross oedema</strong> — epithelial haze and reduced vision.",
+                     ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "The symptoms are still Müller's",
+                     "text":
+                        "<strong>Progressive veiling of objects and coloured haloes around "
+                        "lights</strong> <span class=\"cite\">IACLE M2, p. 12</span>. A "
+                        "patient reporting haloes at the end of the day is describing "
+                        "oedema, whatever else they say. Ask when in the day it happens — "
+                        "end-of-day haloes point at the lens, on-waking haloes at overnight "
+                        "wear."},
+                ],
+            },
+            {
+                "heading": "3. Epithelial microcysts",
+                "blocks": [
+                    {"type": "list", "items": [
+                        "Small, discrete, irregular inclusions in the epithelium, seen best "
+                        "on <strong>marginal retroillumination</strong>, showing "
+                        "<strong>reversed illumination</strong> — the optical signature that "
+                        "distinguishes them from vacuoles.",
+                        "A marker of <strong>chronic</strong> metabolic disturbance, not an "
+                        "acute event. They take weeks of altered epithelial turnover to "
+                        "appear.",
+                        "<strong>Counterintuitive behaviour on treatment:</strong> when the "
+                        "hypoxic stimulus is removed, microcysts transiently "
+                        "<em>increase</em> before resolving, as the backlog of affected "
+                        "cells moves to the surface.",
+                    ]},
+                    {"type": "callout",
+                     "title": "A rebound is success, not failure",
+                     "text":
+                        "You move a patient into a higher-Dk lens and the microcyst count "
+                        "goes up at the next visit. That is the expected course. Record it, "
+                        "explain it, and review again rather than reversing a correct "
+                        "decision."},
+                ],
+            },
+            {
+                "heading": "4. Neovascularisation",
+                "blocks": [
+                    {"type": "list", "items": [
+                        "New vessels growing in from the limbus into a tissue that is "
+                        "normally avascular.",
+                        "Driven by <strong>chronic hypoxia</strong> and by inflammation.",
+                        "<strong>Vessels do not regress fully</strong> once established — "
+                        "they may empty and become ghost vessels, but the structural change "
+                        "persists.",
+                        "Significant encroachment on the visual axis threatens vision and "
+                        "prejudices any future corneal graft.",
+                    ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Measure it, do not just note it",
+                     "text":
+                        "Record the extent in millimetres of encroachment from the limbus "
+                        "and the clock hours involved. \"Some neovascularisation\" at two "
+                        "consecutive visits tells you nothing; \"1.2 mm at 3 o'clock, "
+                        "previously 0.8 mm\" tells you to change the lens today."},
+                ],
+            },
+            {
+                "heading": "5. Reduced corneal sensitivity",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "The cornea is the <strong>most densely innervated tissue in the "
+                        "body</strong>, supplied by the <strong>first division of the "
+                        "trigeminal nerve</strong>.",
+                     "cite": "Kanski 8e, p. 168"},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Why this is the most dangerous complication",
+                     "text":
+                        "Chronic lens wear reduces corneal sensitivity. A cornea that cannot "
+                        "feel pain does not warn its owner about an ulcer. The long-term "
+                        "wearer who says \"it doesn't really hurt\" may be the one in most "
+                        "trouble — never let the absence of pain reassure you in a lens "
+                        "wearer with a corneal lesion."},
+                ],
+            },
+        ],
+        "check": [
+            "Why does covering the cornea with a lens cause metabolic problems?",
+            "Name the visible signs of corneal oedema in order of increasing severity.",
+            "How are microcysts best viewed, and what optical sign identifies them?",
+            "Why do microcysts increase after you improve a patient's oxygen supply?",
+            "Do corneal new vessels regress completely when the cause is removed?",
+            "How should neovascularisation be recorded so that progression is detectable?",
+            "Why is reduced corneal sensitivity dangerous rather than convenient?",
+        ],
+        "sources": [
+            KANSKI_FULL + " — corneal avascularity, nutrition and innervation p. 168.",
+            IACLE_FULL + " — Module 6, Lecture 6.1 Corneal Oxygen Requirements and "
+            "the Effects of Hypoxia p. 5; Module 2 p. 12 for the symptoms of oedema.",
+        ],
+    },
+
+    {
+        "slug": "09-complications-of-soft-lenses-continued",
+        "title": "Complications of Soft Lenses (continued)",
+        "hours": 1,
+        "summary": (
+            "The inflammatory, mechanical and infective complications — and the "
+            "distinction between a sterile infiltrate and microbial keratitis, which "
+            "is the most consequential judgement in contact lens practice."
+        ),
+        "wco": (
+            "<strong>Category 3 — Ocular Diagnostic Services.</strong> Same-day "
+            "recognition and referral of microbial keratitis is a defining safety "
+            "competency."
+        ),
+        "sections": [
+            {
+                "heading": "1. Papillary conjunctivitis",
+                "blocks": [
+                    {"type": "list", "items": [
+                        "<strong>Papillae on the upper tarsal conjunctiva</strong> — the "
+                        "reason lid eversion is not optional in a symptomatic wearer.",
+                        "Caused by a combined mechanical and immunological response to the "
+                        "lens edge, surface deposits or care solutions.",
+                        "Symptoms: itch, mucus, increasing lens awareness, shortening "
+                        "wearing time and lens mobility on blink.",
+                        "Managed by changing lens, modality or care system — often moving to "
+                        "daily disposable removes the deposit and the solution together.",
+                    ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "Evert, or miss it",
+                     "text":
+                        "Kanski places giant papillae on the <em>upper</em> tarsal "
+                        "conjunctiva. A wearer complaining of reducing wearing time whose "
+                        "lids you have not everted has not been examined."},
+                ],
+            },
+            {
+                "heading": "2. Solution-related reactions",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "<strong>\"The use of strong disinfectants (many of which are also "
+                        "used in lower concentrations as preservatives) in chemical-based "
+                        "disinfection systems can cause problems for the patient.\"</strong>",
+                     "cite": IACLE_M5.format(12)},
+                    {"type": "list", "items": [
+                        "Diffuse punctate staining, worst where the solution pools.",
+                        "Stinging on insertion, redness settling through the day.",
+                        "A peroxide system inserted without neutralisation causes immediate, "
+                        "severe pain and a chemical injury — a genuine emergency.",
+                    ]},
+                    {"type": "callout",
+                     "title": "Change one thing at a time",
+                     "text":
+                        "When lens, modality and solution are all changed at once and the "
+                        "patient improves, you have learned nothing about the cause. Change "
+                        "the solution first — it is the cheapest variable and often the "
+                        "culprit."},
+                ],
+            },
+            {
+                "heading": "3. Mechanical complications",
+                "blocks": [
+                    {"type": "list", "items": [
+                        "<strong>Superior epithelial arcuate lesion (SEAL)</strong> — an arc "
+                        "of epithelial disruption in the superior cornea, from mechanical "
+                        "interaction between a stiffer lens and the upper lid. More "
+                        "associated with higher-modulus materials.",
+                        "<strong>Tight lens syndrome</strong> — a dehydrated or steep lens "
+                        "binds, giving pain, injection and an indentation ring after removal.",
+                        "<strong>Lens dehydration staining</strong> — punctate staining in "
+                        "the pattern of the lens, worse in dry environments and toward the "
+                        "end of the day.",
+                    ]},
+                ],
+            },
+            {
+                "heading": "4. The judgement that matters",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "<strong>Contact lens wear, particularly if extended, is the most "
+                        "important risk factor</strong> for bacterial keratitis. "
+                        "<strong>Wearers of soft lenses are at higher risk than those of "
+                        "rigid gas permeable and other types.</strong> Infection is more "
+                        "likely with poor lens hygiene, <strong>but it can also occur even "
+                        "with apparently meticulous lens care, and with daily disposable "
+                        "lenses</strong>.",
+                     "cite": "Kanski 8e, p. 175"},
+                    {"type": "table",
+                     "headers": ["", "Sterile infiltrate", "Microbial keratitis"],
+                     "rows": [
+                         ["Pain", "Mild or absent", "<strong>Significant</strong>"],
+                         ["Position", "Peripheral", "More central"],
+                         ["Number", "Often multiple", "Usually single"],
+                         ["Size", "Small", "Larger"],
+                         ["Overlying epithelium", "Intact or minimally stained",
+                          "<strong>Definite defect</strong>"],
+                         ["Anterior chamber", "Quiet", "<strong>Activity, possibly hypopyon</strong>"],
+                         ["Discharge", "Minimal", "Present"],
+                     ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "The rule when you are unsure",
+                     "text":
+                        "If you cannot place a lesion confidently in the left-hand column, "
+                        "treat it as the right-hand one. The cost of referring a sterile "
+                        "infiltrate is an unnecessary appointment. The cost of observing a "
+                        "microbial keratitis is a cornea."},
+                    {"type": "steps", "intro": "On suspicion, in order:", "items": [
+                        "<strong>Remove the lens</strong> and do not replace it.",
+                        "<strong>Do not patch</strong> the eye.",
+                        "<strong>Do not start a topical steroid.</strong>",
+                        "<strong>Retain the lens, case and solutions</strong> — they may be "
+                        "cultured.",
+                        "<strong>Refer the same day</strong> for scraping and intensive "
+                        "topical antibiotics.",
+                    ]},
+                    {"type": "callout",
+                     "title": "Acanthamoeba",
+                     "text":
+                        "Kanski gives protozoan keratitis its own section "
+                        "<span class=\"cite\">p. 197</span>. Suspect it in a lens wearer with "
+                        "<strong>pain markedly out of proportion to the signs</strong>, "
+                        "particularly with any history of water exposure — tap water rinsing, "
+                        "swimming or showering in lenses. It is the reason the tap-water rule "
+                        "is absolute."},
+                ],
+            },
+        ],
+        "check": [
+            "Where do the papillae of contact lens papillary conjunctivitis form, and what does that mean for your examination?",
+            "Give three signs of a solution-related reaction.",
+            "What is a SEAL and which material property is it associated with?",
+            "List four features that distinguish microbial keratitis from a sterile infiltrate.",
+            "Does meticulous hygiene exclude microbial keratitis?",
+            "State the five immediate actions on suspicion of microbial keratitis.",
+            "Which organism should you suspect when pain is out of proportion to the signs?",
+        ],
+        "sources": [
+            KANSKI_FULL + " — bacterial keratitis risk factors p. 175; protozoan "
+            "keratitis p. 197.",
+            IACLE_FULL + " — Module 5: disinfectants and preservatives p. 12.",
+        ],
+    },
+
+    {
+        "slug": "10-optical-properties-of-soft-lenses",
+        "title": "Optical Properties of Soft Lenses",
+        "hours": 2,
+        "summary": (
+            "Why a soft lens has no tear lens, what flexure does to the correction, "
+            "how vertex distance changes the power you order, and the magnification "
+            "difference that makes lenses valuable in anisometropia."
+        ),
+        "wco": (
+            "<strong>Category 1 — Optical Technology Services.</strong> Power "
+            "determination, over-refraction and management of anisometropia."
+        ),
+        "sections": [
+            {
+                "heading": "1. No tear lens — the defining simplification",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "<strong>When a flexible lens is placed on the cornea, the 'tear "
+                        "lens' under the contact lens is very thin. It has no dioptric power "
+                        "due to the conformity of the lens to the shape of the cornea.</strong>",
+                     "cite": IACLE_M2.format(135)},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "What this buys you",
+                     "text":
+                        "Because there is no tear lens to compensate for, soft lens power is "
+                        "the ocular refraction corrected for vertex distance — nothing more. "
+                        "Changing the BOZR of a soft lens changes the <em>fit</em>, not the "
+                        "power. That is the opposite of a rigid lens, and it is the single "
+                        "most useful contrast in this course."},
+                ],
+            },
+            {
+                "heading": "2. Flexure — the complication that returns",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "The same conformity that removes the tear lens creates a different "
+                        "problem: the lens takes on the shape of what it drapes over. IACLE "
+                        "notes that the tear lens under a rigid lens depends on the fitting "
+                        "relationship <strong>and, to a lesser extent, the material's "
+                        "rigidity</strong> — rigidity being exactly what a soft lens lacks.",
+                     "cite": IACLE_M2.format(135)},
+                    {"type": "list", "intro": "The practical consequences:", "items": [
+                        "<strong>Corneal astigmatism is not masked.</strong> A soft sphere "
+                        "wraps onto a toric cornea and reproduces its astigmatism, so "
+                        "significant cylinder needs a toric lens rather than a spherical one.",
+                        "<strong>Thickness resists flexure.</strong> A thicker lens flexes "
+                        "less — but thickness also lowers Dk/t, so the two requirements pull "
+                        "against each other.",
+                        "<strong>Toric lenses must be stabilised</strong>, since a rotating "
+                        "cylinder is worse than none.",
+                    ]},
+                ],
+            },
+            {
+                "heading": "3. Vertex distance",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "A spectacle lens sits roughly 12–14 mm in front of the cornea; a "
+                        "contact lens sits on it. The effective power differs, and the "
+                        "difference grows with the power of the correction.",
+                     "cite": IACLE_M2.format(104)},
+                    {"type": "equation", "text": "F<sub>c</sub>  =  F<sub>s</sub> / (1 &minus; d &middot; F<sub>s</sub>)",
+                     "where": "F<sub>s</sub> = spectacle power (D) &middot; F<sub>c</sub> = "
+                              "contact lens power (D) &middot; d = vertex distance in metres"},
+                    {"type": "table",
+                     "headers": ["Spectacle Rx", "Direction of change", "Roughly"],
+                     "rows": [
+                         ["Low (under about &plusmn;4 D)", "Negligible", "No change"],
+                         ["<strong>High minus</strong>", "Needs <strong>less minus</strong>", "e.g. &minus;10.00 &rarr; about &minus;9.00"],
+                         ["<strong>High plus</strong>", "Needs <strong>more plus</strong>", "e.g. +10.00 &rarr; about +11.00"],
+                     ]},
+                    {"type": "callout",
+                     "title": "The threshold to remember",
+                     "text":
+                        "Compensate above about <strong>&plusmn;4.00 D</strong>. Below that "
+                        "the change is inside your measurement error; above it, failing to "
+                        "compensate is the reason a high myope complains their new lenses "
+                        "are over-minused."},
+                ],
+            },
+            {
+                "heading": "4. Magnification and anisometropia",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "IACLE devotes a section to <strong>Magnification</strong> and "
+                        "specifically to <strong>Spectacle and Contact Lens</strong> "
+                        "magnification.",
+                     "cite": IACLE_M2.format(104)},
+                    {"type": "list", "items": [
+                        "A <strong>minus spectacle lens minifies</strong> the retinal image; "
+                        "a <strong>plus spectacle lens magnifies</strong> it. The effect grows "
+                        "with power and with vertex distance.",
+                        "A <strong>contact lens sits at the cornea</strong>, so the "
+                        "magnification difference between the two eyes is far smaller.",
+                        "In <strong>anisometropia</strong>, spectacles therefore produce "
+                        "unequal retinal image sizes (<strong>aniseikonia</strong>), which "
+                        "may prevent comfortable fusion. Contact lenses largely remove this.",
+                    ]},
+                    {"type": "callout", "variant": "clinical",
+                     "title": "The strongest optical argument for contact lenses",
+                     "text":
+                        "For a patient with significant anisometropia, contact lenses are not "
+                        "a cosmetic preference — they are the correction that makes binocular "
+                        "vision possible. Evans makes the related point that anisometropic "
+                        "amblyopes may not perceive an immediate benefit on insertion and so "
+                        "are more likely to drop out "
+                        "<span class=\"cite\">Evans, p. 82</span>: warn them, or you will "
+                        "lose them in the first fortnight."},
+                ],
+            },
+            {
+                "heading": "5. Over-refraction",
+                "blocks": [
+                    {"type": "prose", "text":
+                        "IACLE provides a dedicated practical, <strong>Practical 2.3 Contact "
+                        "Lens Over-Refraction</strong>.",
+                     "cite": IACLE_M2.format(104)},
+                    {"type": "steps", "intro": "For a soft lens:", "items": [
+                        "Insert a trial lens of known BVP and <strong>allow it to "
+                        "settle</strong> — a lens refracted immediately on insertion gives a "
+                        "misleading result.",
+                        "Check the <strong>fit</strong> first: movement, centration, coverage. "
+                        "An over-refraction through a poorly fitting lens measures the "
+                        "misfit, not the eye.",
+                        "Over-refract. <strong>Ordered BVP = trial BVP + over-refraction.</strong>",
+                        "If the over-refraction contains unexpected cylinder, suspect "
+                        "<strong>flexure over a toric cornea</strong> before assuming the "
+                        "spectacle refraction was wrong.",
+                    ]},
+                ],
+            },
+        ],
+        "check": [
+            "Why does a soft lens have no tear-lens power, and what does changing its BOZR alter instead?",
+            "Why does a spherical soft lens fail to mask corneal astigmatism?",
+            "Why do flexure resistance and oxygen transmissibility pull against each other?",
+            "Write the vertex distance formula and state the power threshold above which you compensate.",
+            "A +10.00 D spectacle wearer — more plus or less plus in the contact lens?",
+            "Explain why contact lenses help in anisometropia.",
+            "Unexpected cylinder appears in a soft lens over-refraction. What do you suspect first?",
+        ],
+        "sources": [
+            IACLE_FULL + " — Module 2, Lecture 2.3: the tear lens and material "
+            "rigidity p. 135; lecture contents covering back vertex power, ametropia, "
+            "magnification, spectacle and contact lens magnification and "
+            "over-refraction p. 104; Practical 2.3 Contact Lens Over-Refraction.",
+            EVANS_FULL + " — anisometropic amblyopes and contact lens drop-out p. 82.",
+        ],
+    },
+]
+
 COURSES = [
     OCULAR_DISEASES,
     CONTACT_LENSES,
