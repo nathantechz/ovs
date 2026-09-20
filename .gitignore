@@ -34,3 +34,18 @@ build/
 .env.local
 *.log
 *.bak
+
+# Local-only working data
+#
+# wiki/ holds the full extracted text of copyrighted textbooks, cached so
+# citations can be looked up without reopening the PDFs. It is a local research
+# aid and must never be published — committing it would redistribute the books
+# in full. Rebuild it with: .venv/bin/python scripts/build-wiki.py --course-books
+wiki/
+
+# Python virtualenv used by the extraction scripts
+.venv/
+
+# Library index: derived from the local textbook collection, rebuildable
+data/library-index.json
+__pycache__/

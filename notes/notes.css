@@ -312,3 +312,52 @@ figcaption {
 @media print {
     .note-downloads { display: none; }
 }
+
+/* ==========================================================================
+   Citation and sourcing marks
+   ========================================================================== */
+
+/* Inline citation after a claim */
+.cite {
+    display: inline;
+    font-size: 0.85em;
+    color: var(--primary);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.cite::before { content: "["; }
+.cite::after  { content: "]"; }
+
+/* Source line under a table or block */
+.source {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    font-style: italic;
+}
+
+/* WCO competency callout */
+.callout.wco {
+    border-color: var(--primary);
+    background-color: var(--primary-light);
+}
+
+/* Full source list at the foot of a note */
+.note-sources {
+    margin-top: 44px;
+    padding: 20px 24px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.note-sources h2 {
+    margin: 0 0 12px;
+    padding: 0;
+    border: none;
+    font-size: 17px;
+}
+
+.note-sources ol { margin: 0 0 0 20px; }
+.note-sources li { font-size: 14.5px; margin-bottom: 10px; }
