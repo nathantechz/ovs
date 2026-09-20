@@ -1,8 +1,8 @@
 {
   "source": "local programme handbooks (PDF)",
   "base": "/Users/nathan/Library/CloudStorage/OneDrive-MSRamaiahUniversityofAppliedSciences/Saad/Optometry Study/Opto Benchmark",
-  "programme_count": 6,
-  "total_courses": 236,
+  "programme_count": 7,
+  "total_courses": 293,
   "programmes": [
     {
       "institution": "King Saud University",
@@ -1811,6 +1811,410 @@
           "title_ar": "6 ﺕﺎﻳﺮﺼﺒﻟﺍ ﻲﻓ ﻲﻧﻭﺎﻌﺗ ﺐﻳﺭﺪﺗ",
           "level": 4,
           "credits": 6
+        }
+      ]
+    },
+    {
+      "institution": "University of Bisha",
+      "country": "Saudi Arabia",
+      "programme": "Diploma in Optometry",
+      "programme_type": "diploma",
+      "duration_years": 2,
+      "source_file": "course-content tables (transcribed from syllabus images)",
+      "levels": [
+        1,
+        2
+      ],
+      "course_count": 57,
+      "contact_hours": 80,
+      "courses": [
+        {
+          "code": "OCUL-01",
+          "title": "Introduction to ophthalmic diseases",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/01-introduction-to-ophthalmic-diseases.html"
+        },
+        {
+          "code": "OCUL-02",
+          "title": "Eyelid disorders (ptosis, blepharospasm)",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/02-eyelid-disorders-ptosis-blepharospasm.html"
+        },
+        {
+          "code": "OCUL-03",
+          "title": "Eyelid malpositions (entropion, ectropion, dermatitis)",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/03-eyelid-malpositions.html"
+        },
+        {
+          "code": "OCUL-04",
+          "title": "Eyelid infections and inflammation",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/04-eyelid-infections-and-inflammation.html"
+        },
+        {
+          "code": "OCUL-05",
+          "title": "Conjunctival diseases and allergic conjunctivitis",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/05-conjunctival-and-allergic-disease.html"
+        },
+        {
+          "code": "OCUL-06",
+          "title": "Dry eye disease",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/06-dry-eye-disease.html"
+        },
+        {
+          "code": "OCUL-07",
+          "title": "Corneal diseases (part 1)",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/07-corneal-diseases-part-1.html"
+        },
+        {
+          "code": "OCUL-08",
+          "title": "Corneal diseases (part 2)",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/08-corneal-diseases-part-2.html"
+        },
+        {
+          "code": "OCUL-09",
+          "title": "Lens diseases",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/09-lens-diseases.html"
+        },
+        {
+          "code": "OCUL-10",
+          "title": "Retinal diseases",
+          "course": "Ocular Diseases",
+          "level": 1,
+          "credits": 3,
+          "notes_url": "notes/ub-diploma/ocular-diseases/10-retinal-diseases.html"
+        },
+        {
+          "code": "CONT-01",
+          "title": "History of contact lenses",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 1
+        },
+        {
+          "code": "CONT-02",
+          "title": "Corneal topography and basic nomenclature of contact lenses",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "CONT-03",
+          "title": "Rigid gas permeable (GP) lenses: materials, manufacturing, care",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "CONT-04",
+          "title": "Optical properties of rigid lenses",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "CONT-05",
+          "title": "Complications of rigid lenses",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 1
+        },
+        {
+          "code": "CONT-06",
+          "title": "Soft contact lenses (SCL): materials, manufacturing, design, use",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "CONT-07",
+          "title": "Care of soft lenses",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 1
+        },
+        {
+          "code": "CONT-08",
+          "title": "Complications of soft lenses",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 1
+        },
+        {
+          "code": "CONT-09",
+          "title": "Complications of soft lenses (continued)",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 1
+        },
+        {
+          "code": "CONT-10",
+          "title": "Optical properties of soft lenses",
+          "course": "Contact Lenses",
+          "level": 1,
+          "credits": 2
+        },
+        {
+          "code": "NEUR-01",
+          "title": "Retina and primary visual cortex",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "NEUR-02",
+          "title": "Physiology of vision",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "NEUR-03",
+          "title": "Light and dark adaptation",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "NEUR-04",
+          "title": "Visual acuity",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "NEUR-05",
+          "title": "Contrast sensitivity",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "NEUR-06",
+          "title": "Color vision",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 4
+        },
+        {
+          "code": "NEUR-07",
+          "title": "Color vision deficiencies",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "NEUR-08",
+          "title": "Spatial vision",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "NEUR-09",
+          "title": "Depth perception",
+          "course": "Neurovisual Perception",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "OPTI-01",
+          "title": "Visual acuity, contrast sensitivity, and color vision testing instruments",
+          "course": "Optical Instrumentation",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "OPTI-02",
+          "title": "Corneal topography and retinoscopy instruments",
+          "course": "Optical Instrumentation",
+          "level": 2,
+          "credits": 3
+        },
+        {
+          "code": "OPTI-03",
+          "title": "Visual field testing",
+          "course": "Optical Instrumentation",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "OPTI-04",
+          "title": "A-scan, B-scan, and ultrasound imaging",
+          "course": "Optical Instrumentation",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "OPTI-05",
+          "title": "Electrophysiological tests (VEP, ERG, EOG)",
+          "course": "Optical Instrumentation",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "OPTI-06",
+          "title": "Contact lens curvature measurement device",
+          "course": "Optical Instrumentation",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "OPTI-07",
+          "title": "Lens power measurement device (lensmeter)",
+          "course": "Optical Instrumentation",
+          "level": 2,
+          "credits": 2
+        },
+        {
+          "code": "OPHT-01",
+          "title": "Optics of ophthalmic lenses",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-02",
+          "title": "Spherical lenses",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-03",
+          "title": "Cylindrical lenses",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-04",
+          "title": "Contact lenses",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-05",
+          "title": "Lens notations and symbols",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-06",
+          "title": "Prism, conical sections, and spherical equivalent",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-07",
+          "title": "Vertex distance",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-08",
+          "title": "Distance and near vision",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-09",
+          "title": "Prentice's rule and decentration",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-10",
+          "title": "Frames: types, parts, and measurements",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "OPHT-11",
+          "title": "Frame design and lens mounting",
+          "course": "Ophthalmic Lenses and Spectacle Dispensing",
+          "level": 2
+        },
+        {
+          "code": "VISU-01",
+          "title": "Theoretical optics: the eye as an optical system",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-02",
+          "title": "Optical principles of refractive errors and their correction",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-03",
+          "title": "Fundamentals of corneal measurement and corneal topography",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-04",
+          "title": "Principles of retinal imaging and their application to the eye",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-05",
+          "title": "Accommodation of the eye",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-06",
+          "title": "Binocular vision and eye movements",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-07",
+          "title": "Eye movements and the use of prisms",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-08",
+          "title": "Relationship between accommodation and eye movements",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-09",
+          "title": "Strabismus and its types",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
+        },
+        {
+          "code": "VISU-10",
+          "title": "Measurement of fixation disparity and eye stability",
+          "course": "Visual Optics and Binocular Vision",
+          "level": 2
         }
       ]
     }

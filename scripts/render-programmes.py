@@ -89,6 +89,11 @@ table.courses td.cr {{ text-align: right; white-space: nowrap; }}
           color: var(--text-muted); margin-left: 8px; }}
 .track.research {{ background: #eef2ff; border-color: #6366f1; color: #4338ca; }}
 .track.clinical {{ background: #e8f8f0; border-color: #00a854; color: #00794a; }}
+.topic-link {{ color: var(--primary); text-decoration: none; font-weight: 600; }}
+.topic-link:hover {{ text-decoration: underline; }}
+.has-notes {{ font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .04em; margin-left: 8px; padding: 2px 7px;
+              border-radius: 999px; background: #e8f8f0; color: #00794a; }}
 .desc {{ font-size: 13.5px; color: var(--text-muted); margin-top: 4px; }}
 .none {{ padding: 40px; text-align: center; color: var(--text-muted);
          border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }}
@@ -263,18 +268,30 @@ function render() {{
                 ? '<div class="desc" dir="rtl">' + esc(course.title_ar) + '</div>'
                 : '';
 
+            // A topic with notes written links to them; the rest are listed
+            // plainly so the gap between syllabus and notes stays visible.
+            const title = course.notes_url
+                ? '<a class="topic-link" href="' + course.notes_url + '">' + esc(course.title) + '</a>'
+                  + '<span class="has-notes">notes</span>'
+                : esc(course.title);
+
             return '<tr>' +
                 '<td class="code">' + esc(course.code) + '</td>' +
-                '<td>' + esc(course.title) + track + arabic + desc + '</td>' +
+                '<td>' + title + track + arabic + desc + '</td>' +
                 '<td class="cr">' + (course.credits == null ? '—' : course.credits) + '</td>' +
                 '</tr>';
         }}).join('');
 
         const levelCredits = byLevel[key].reduce(function (s, c) {{ return s + (c.credits || 0); }}, 0);
 
+        const courseNames = [...new Set(byLevel[key].map(c => c.course).filter(Boolean))];
+        const courseNote = courseNames.length
+            ? ' · ' + esc(courseNames.join(', '))
+            : '';
+
         return '<section class="term">' +
-            '<h2>' + esc(key) + ' — ' + byLevel[key].length + ' courses, ' +
-            levelCredits + ' credits</h2>' +
+            '<h2>' + esc(key) + ' — ' + byLevel[key].length + ' topics, ' +
+            levelCredits + ' h' + courseNote + '</h2>' +
             '<div class="table-wrap"><table class="courses">' +
             '<thead><tr><th>Code</th><th>Course</th><th style="text-align:right">Cr</th></tr></thead>' +
             '<tbody>' + rows + '</tbody></table></div></section>';
