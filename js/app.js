@@ -123,7 +123,7 @@ function showPage(pageName) {
 
 // Make the static home cards act as real links.
 function setupCardLinks() {
-    const featureTargets = ['#/courses', 'programmes.html', 'curriculum-map.html'];
+    const featureTargets = ['notes/ub-diploma/index.html', 'programmes.html', 'curriculum-map.html'];
     document.querySelectorAll('.features .feature-card').forEach((card, i) => {
         if (featureTargets[i]) makeCardNavigate(card, featureTargets[i]);
     });
@@ -518,7 +518,12 @@ function renderMaterials() {
     container.innerHTML = html;
 }
 
-// Render resources with regional organization
+// Render resources: the syllabus routes first, then the university directory.
+//
+// The page is titled "Resources & Syllabuses" but used to show only a list of
+// universities, with no route to the curricula the site actually holds and no
+// link to the Programmes or Curriculum Map pages. It also rendered regions
+// with zero universities as empty cards.
 function renderResources() {
     const container = document.getElementById('resourcesGrid');
     if (!container) return;
@@ -528,61 +533,114 @@ function renderResources() {
         return;
     }
 
+    const all = getAllUniversities();
+    const withCurricula = all.filter(u => u.curriculumUrl);
+    const courseTotal = withCurricula.reduce((n, u) => n + (u.courseCount || 0), 0);
+
     let html = `
-        <div class="resources-header">
-            <h2>Global Optometry Universities Directory</h2>
-            <p>Browse ${getTotalUniversitiesCount()}+ optometry programs across ${getAllRegions().length} major world regions</p>
-        </div>
+        <section class="resource-routes">
+            <h2>Syllabuses and curricula</h2>
+            <p class="resource-lede">
+                Full curricula are held for ${withCurricula.length} institutions
+                &mdash; ${courseTotal} courses, browsable by programme, level and
+                credit hours.
+            </p>
+            <div class="route-grid">
+                <a class="route-card" href="programmes.html">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Programmes &amp; Levels</h3>
+                    <p>Pick a programme and a level to see its courses and credit load.</p>
+                </a>
+                <a class="route-card" href="curriculum-map.html">
+                    <i class="fas fa-diagram-project"></i>
+                    <h3>Curriculum Map</h3>
+                    <p>The same subject taught under different names, lined up across institutions.</p>
+                </a>
+                <a class="route-card" href="notes/ub-diploma/index.html">
+                    <i class="fas fa-file-lines"></i>
+                    <h3>Study notes</h3>
+                    <p>Cited, topic-by-topic notes for the University of Bisha diploma.</p>
+                </a>
+                <a class="route-card" href="#/materials">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Study materials</h3>
+                    <p>Notes, lecture slides and practical guides by course.</p>
+                </a>
+            </div>
+        </section>
     `;
 
-    // Render regions
-    const regions = getAllRegions();
-    regions.forEach(regionName => {
+    // Regions with nothing in them are omitted rather than shown empty.
+    const populated = getAllRegions().filter(name => countUniversities(name) > 0);
+    const empty = getAllRegions().length - populated.length;
+
+    html += `
+        <section class="resources-directory">
+            <h2>University directory</h2>
+            <p class="resource-lede">
+                ${all.length} optometry programmes across ${populated.length} regions.
+                Select a region to expand it.
+            </p>
+        </section>
+    `;
+
+    populated.forEach(regionName => {
         const regionInfo = getRegionInfo(regionName);
         const countries = regionInfo.countries;
-        const universityCount = Object.values(countries).reduce((sum, unis) => sum + unis.length, 0);
+        const universityCount = countUniversities(regionName);
 
         html += `
             <div class="region-card">
-                <div class="region-header" onclick="toggleRegion('${regionName}')">
+                <button type="button" class="region-header" onclick="toggleRegion('${regionName}')"
+                        aria-expanded="false" aria-controls="region-${regionName}">
                     <div class="region-info">
                         <i class="fas ${regionInfo.icon}"></i>
                         <div>
                             <h3>${regionName}</h3>
-                            <p>${universityCount} universities</p>
+                            <p>${universityCount} ${universityCount === 1 ? 'institution' : 'institutions'}</p>
                         </div>
                     </div>
                     <i class="fas fa-chevron-down region-toggle" id="toggle-${regionName}"></i>
-                </div>
+                </button>
                 <div class="region-content" id="region-${regionName}" style="display: none;">
         `;
 
-        // Render countries within region
-        Object.entries(countries).forEach(([country, universities]) => {
-            html += `
-                <div class="country-section">
-                    <h4>${country} (${universities.length})</h4>
-                    <div class="universities-list">
-            `;
-
-            universities.forEach(uni => {
+        // Countries with no entries are skipped too.
+        Object.entries(countries)
+            .filter(([, universities]) => universities.length > 0)
+            .forEach(([country, universities]) => {
                 html += `
-                    <div class="university-item">
-                        <div class="uni-name">${uni.name}</div>
-                        <div class="uni-details">
-                            <span class="uni-program">${uni.program}</span>
-                            <span class="uni-duration">${uni.duration}</span>
+                    <div class="country-section">
+                        <h4>${escapeHtml(country)} (${universities.length})</h4>
+                        <div class="universities-list">
+                `;
+
+                universities.forEach(uni => {
+                    // Institutions whose curricula are on file link through.
+                    const curriculum = uni.curriculumUrl
+                        ? `<a class="uni-curriculum" href="${uni.curriculumUrl}">
+                               View curriculum${uni.courseCount ? ` &middot; ${uni.courseCount} courses` : ''}
+                           </a>`
+                        : '';
+
+                    html += `
+                        <div class="university-item">
+                            <div class="uni-name">${escapeHtml(uni.name)}</div>
+                            <div class="uni-details">
+                                <span class="uni-program">${escapeHtml(uni.program || '')}</span>
+                                ${uni.duration ? `<span class="uni-duration">${escapeHtml(uni.duration)}</span>` : ''}
+                            </div>
+                            ${uni.city ? `<div class="uni-city"><i class="fas fa-map-pin"></i> ${escapeHtml(uni.city)}</div>` : ''}
+                            ${curriculum}
                         </div>
-                        <div class="uni-city"><i class="fas fa-map-pin"></i> ${uni.city}</div>
+                    `;
+                });
+
+                html += `
+                        </div>
                     </div>
                 `;
             });
-
-            html += `
-                    </div>
-                </div>
-            `;
-        });
 
         html += `
                 </div>
@@ -590,21 +648,37 @@ function renderResources() {
         `;
     });
 
+    if (empty > 0) {
+        html += `
+            <p class="resource-footnote">
+                ${empty} further ${empty === 1 ? 'region is' : 'regions are'} in the
+                directory structure with no institutions recorded yet
+                (South America). Contributions welcome via the
+                <a href="#/contact">contact form</a>.
+            </p>
+        `;
+    }
+
     container.innerHTML = html;
+}
+
+// Universities in a region, across all its countries.
+function countUniversities(regionName) {
+    const region = getRegionInfo(regionName);
+    if (!region) return 0;
+    return Object.values(region.countries).reduce((sum, list) => sum + list.length, 0);
 }
 
 // Toggle region expansion
 function toggleRegion(regionName) {
     const content = document.getElementById(`region-${regionName}`);
     const toggle = document.getElementById(`toggle-${regionName}`);
+    const header = content?.previousElementSibling;
 
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-        toggle.style.transform = 'rotate(180deg)';
-    } else {
-        content.style.display = 'none';
-        toggle.style.transform = 'rotate(0deg)';
-    }
+    const opening = content.style.display === 'none';
+    content.style.display = opening ? 'block' : 'none';
+    toggle.style.transform = opening ? 'rotate(180deg)' : 'rotate(0deg)';
+    if (header) header.setAttribute('aria-expanded', String(opening));
 }
 
 // Setup filter listeners

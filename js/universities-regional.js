@@ -4,7 +4,7 @@
 // 24 entries scraped live from the ASCO member directory
 // 32 entries are hand-curated (source: "curated")
 // Every record carries a `source` field saying which it is.
-// Total: 56
+// Total: 61
 
 const universitiesByRegion = {
     "North America": {
@@ -50,7 +50,7 @@ const universitiesByRegion = {
                     "source": "scraped:ASCO"
                 },
                 {
-                    "name": "University of California \u2013 Berkeley",
+                    "name": "University of California – Berkeley",
                     "city": "Berkeley",
                     "state": "California",
                     "country": "USA",
@@ -122,7 +122,7 @@ const universitiesByRegion = {
                     "source": "scraped:ASCO"
                 },
                 {
-                    "name": "University of Pikeville \u2013 Kentucky College of Optometry",
+                    "name": "University of Pikeville – Kentucky College of Optometry",
                     "city": "Pikeville",
                     "state": "Kentucky",
                     "country": "USA",
@@ -218,7 +218,7 @@ const universitiesByRegion = {
                     "source": "scraped:ASCO"
                 },
                 {
-                    "name": "Northeastern State University \u2013 Oklahoma College of Optometry",
+                    "name": "Northeastern State University – Oklahoma College of Optometry",
                     "city": "Tahlequah",
                     "state": "Oklahoma",
                     "country": "USA",
@@ -314,7 +314,7 @@ const universitiesByRegion = {
                     "source": "curated"
                 },
                 {
-                    "name": "Universit\u00e9 de Montr\u00e9al \u00c9cole d'optom\u00e9trie",
+                    "name": "Université de Montréal École d'optométrie",
                     "city": "Montreal",
                     "country": "Canada",
                     "degree": "O.D.",
@@ -685,7 +685,73 @@ const universitiesByRegion = {
         "icon": "fa-map-marker-alt",
         "description": "Optometry programs in Middle East",
         "countries": {
-            "Saudi Arabia": [],
+            "Saudi Arabia": [
+                {
+                    "name": "King Saud University",
+                    "city": "Riyadh",
+                    "country": "Saudi Arabia",
+                    "program": "Doctor of Optometry, MSc Optometry, Opticianry",
+                    "degree": "Diploma / MSc / O.D.",
+                    "duration": "6 years",
+                    "accreditation": "NCAAA",
+                    "programmeCount": 3,
+                    "courseCount": 99,
+                    "curriculumUrl": "programmes.html",
+                    "source": "curricula-on-file"
+                },
+                {
+                    "name": "Qassim University",
+                    "city": "Buraydah",
+                    "country": "Saudi Arabia",
+                    "program": "Doctor of Optometry",
+                    "degree": "O.D.",
+                    "duration": "6 years",
+                    "accreditation": "NCAAA",
+                    "programmeCount": 1,
+                    "courseCount": 57,
+                    "curriculumUrl": "programmes.html",
+                    "source": "curricula-on-file"
+                },
+                {
+                    "name": "Umm Al-Qura University",
+                    "city": "Makkah",
+                    "country": "Saudi Arabia",
+                    "program": "Opticianry Diploma",
+                    "degree": "Diploma",
+                    "duration": "2 years",
+                    "accreditation": "NCAAA",
+                    "programmeCount": 1,
+                    "courseCount": 25,
+                    "curriculumUrl": "programmes.html",
+                    "source": "curricula-on-file"
+                },
+                {
+                    "name": "University of Bisha",
+                    "city": "Bisha",
+                    "country": "Saudi Arabia",
+                    "program": "Diploma in Optometry",
+                    "degree": "Diploma",
+                    "duration": "2 years",
+                    "accreditation": "NCAAA",
+                    "programmeCount": 1,
+                    "courseCount": 57,
+                    "curriculumUrl": "programmes.html",
+                    "source": "curricula-on-file"
+                },
+                {
+                    "name": "University of Jeddah",
+                    "city": "Jeddah",
+                    "country": "Saudi Arabia",
+                    "program": "Bachelor of Optometry",
+                    "degree": "B.Optom",
+                    "duration": "5 years",
+                    "accreditation": "NCAAA",
+                    "programmeCount": 1,
+                    "courseCount": 55,
+                    "curriculumUrl": "programmes.html",
+                    "source": "curricula-on-file"
+                }
+            ],
             "United Arab Emirates": [],
             "Iran": []
         }

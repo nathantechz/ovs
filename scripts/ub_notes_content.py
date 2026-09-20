@@ -1807,4 +1807,207 @@ OCULAR_DISEASES["topics"] += [
 # Keep topics in syllabus order.
 OCULAR_DISEASES["topics"].sort(key=lambda t: t["slug"])
 
-COURSES = [OCULAR_DISEASES]
+
+# ---------------------------------------------------------------------------
+# The remaining five courses.
+#
+# Topic lists are transcribed from the University of Bisha course-content
+# tables. Topics without a "sections" key have not been written yet and render
+# as "outline only" in the course index, so the gap between the syllabus and
+# the notes stays visible instead of being quietly hidden.
+# ---------------------------------------------------------------------------
+
+def outline(slug, title, hours=None):
+    entry = {"slug": slug, "title": title}
+    if hours:
+        entry["hours"] = hours
+    return entry
+
+
+CONTACT_LENSES = {
+    "name": "Contact Lenses",
+    "slug": "contact-lenses",
+    "summary": (
+        "Ten topics from the first glass shells to modern soft lens optics — "
+        "materials and manufacture, the tear lens that governs rigid lens power, "
+        "care systems, and the complications that bring wearers back."
+    ),
+    "wco": (
+        "<strong>Category 1 — Optical Technology Services</strong> for fitting, "
+        "verification and care, with <strong>Category 3</strong> for recognising "
+        "and referring the complications of lens wear."
+    ),
+    "grounding": (
+        "Grounded in " + IACLE_FULL + " — Module 2 (Introduction), Module 3 "
+        "(Fitting), Module 5 (Care and Maintenance), Module 6 (The Cornea in "
+        "Contact Lens Wear) and Module 9 (Special Topics). The modules are First "
+        "Edition and predate silicone hydrogels, so soft lens materials carry "
+        "clearly marked current-practice notes."
+    ),
+    "topics": [
+        outline("01-history-of-contact-lenses", "History of Contact Lenses", 1),
+        outline("02-corneal-topography-and-nomenclature",
+                "Corneal Topography and Contact Lens Nomenclature", 2),
+        outline("03-rigid-gas-permeable-lenses",
+                "Rigid Gas Permeable Lenses: Materials, Manufacturing, Care", 2),
+        outline("04-optical-properties-of-rigid-lenses",
+                "Optical Properties of Rigid Lenses", 2),
+        outline("05-complications-of-rigid-lenses",
+                "Complications of Rigid Lenses", 1),
+        outline("06-soft-contact-lenses",
+                "Soft Contact Lenses: Materials, Manufacturing, Design, Use", 2),
+        outline("07-care-of-soft-lenses", "Care of Soft Lenses", 1),
+        outline("08-complications-of-soft-lenses",
+                "Complications of Soft Lenses", 1),
+        outline("09-complications-of-soft-lenses-continued",
+                "Complications of Soft Lenses (continued)", 1),
+        outline("10-optical-properties-of-soft-lenses",
+                "Optical Properties of Soft Lenses", 2),
+    ],
+}
+
+NEUROVISUAL_PERCEPTION = {
+    "name": "Neurovisual Perception",
+    "slug": "neurovisual-perception",
+    "summary": (
+        "How the retina and visual cortex turn light into sight — adaptation, "
+        "acuity, contrast, colour and its deficiencies, spatial vision and depth."
+    ),
+    "wco": (
+        "<strong>Category 2 — Visual Function Services.</strong> Measuring and "
+        "interpreting visual function is the core of this course: acuity, contrast "
+        "sensitivity and colour vision testing all sit squarely in diploma scope."
+    ),
+    "grounding": (
+        "Grounded in " + SCHWARTZ_FULL + ", with the AAO Basic and Clinical "
+        "Science Course Section 5 (Neuro-Ophthalmology) for the afferent pathway."
+    ),
+    "topics": [
+        outline("01-retina-and-primary-visual-cortex",
+                "Retina and Primary Visual Cortex", 2),
+        outline("02-physiology-of-vision", "Physiology of Vision", 2),
+        outline("03-light-and-dark-adaptation", "Light and Dark Adaptation", 2),
+        outline("04-visual-acuity", "Visual Acuity", 2),
+        outline("05-contrast-sensitivity", "Contrast Sensitivity", 2),
+        outline("06-color-vision", "Colour Vision", 4),
+        outline("07-color-vision-deficiencies", "Colour Vision Deficiencies", 2),
+        outline("08-spatial-vision", "Spatial Vision", 2),
+        outline("09-depth-perception", "Depth Perception", 2),
+    ],
+}
+
+OPTICAL_INSTRUMENTATION = {
+    "name": "Optical Instrumentation",
+    "slug": "optical-instrumentation",
+    "summary": (
+        "The instruments on a clinic bench — what each one measures, the principle "
+        "it works on, how to use it, and how to read what it produces."
+    ),
+    "wco": (
+        "<strong>Category 2 and 3.</strong> Operating and interpreting diagnostic "
+        "instruments is a defining diploma competency; the electrophysiology topics "
+        "are interpretive rather than operational at this level."
+    ),
+    "grounding": (
+        "Grounded in " + VOI_FULL + ", Kaschke et al. <em>Optical Devices in "
+        "Ophthalmology and Optometry</em>, and the dedicated texts in the library "
+        "for perimetry, ultrasound and optical coherence tomography."
+    ),
+    "topics": [
+        outline("01-acuity-contrast-colour-instruments",
+                "Visual Acuity, Contrast Sensitivity and Colour Vision Instruments", 2),
+        outline("02-topography-and-retinoscopy-instruments",
+                "Corneal Topography and Retinoscopy Instruments", 3),
+        outline("03-visual-field-testing", "Visual Field Testing", 2),
+        outline("04-ultrasound-imaging",
+                "A-scan, B-scan and Ultrasound Imaging", 2),
+        outline("05-electrophysiological-tests",
+                "Electrophysiological Tests (VEP, ERG, EOG)", 2),
+        outline("06-keratometry-instruments",
+                "Contact Lens Curvature Measurement", 2),
+        outline("07-lensmeter", "Lens Power Measurement (Lensmeter)", 2),
+    ],
+}
+
+OPHTHALMIC_LENSES_DISPENSING = {
+    "name": "Ophthalmic Lenses and Spectacle Dispensing",
+    "slug": "ophthalmic-lenses-dispensing",
+    "summary": (
+        "From the optics of a spectacle lens to a finished, fitted pair — notation, "
+        "prism and decentration, vertex distance, frames and lens mounting."
+    ),
+    "wco": (
+        "<strong>Category 1 — Optical Technology Services.</strong> This is the "
+        "course most fully inside diploma scope: every topic is something a "
+        "dispensing optometrist performs directly."
+    ),
+    "grounding": (
+        "Grounded in " + BROOKS_FULL + " — the page offset for this book was "
+        "verified exact, so citations name the printed page a reader turns to."
+    ),
+    "topics": [
+        outline("01-optics-of-ophthalmic-lenses", "Optics of Ophthalmic Lenses"),
+        outline("02-spherical-lenses", "Spherical Lenses"),
+        outline("03-cylindrical-lenses", "Cylindrical Lenses"),
+        outline("04-contact-lenses", "Contact Lenses"),
+        outline("05-lens-notations-and-symbols", "Lens Notations and Symbols"),
+        outline("06-prism-and-spherical-equivalent",
+                "Prism, Conical Sections and Spherical Equivalent"),
+        outline("07-vertex-distance", "Vertex Distance"),
+        outline("08-distance-and-near-vision", "Distance and Near Vision"),
+        outline("09-prentices-rule-and-decentration",
+                "Prentice's Rule and Decentration"),
+        outline("10-frames-types-parts-measurements",
+                "Frames: Types, Parts and Measurements"),
+        outline("11-frame-design-and-lens-mounting",
+                "Frame Design and Lens Mounting"),
+    ],
+}
+
+VISUAL_OPTICS_BINOCULAR_VISION = {
+    "name": "Visual Optics and Binocular Vision",
+    "slug": "visual-optics-binocular-vision",
+    "summary": (
+        "The eye as an optical system, the optics of refractive error and its "
+        "correction, accommodation, and how the two eyes work together — through "
+        "to strabismus and fixation disparity."
+    ),
+    "wco": (
+        "<strong>Category 2 — Visual Function Services</strong>, with "
+        "<strong>Category 1</strong> for the optical correction of refractive "
+        "error and prism prescribing."
+    ),
+    "grounding": (
+        "Grounded in " + BORISH_FULL + ", Atchison &amp; Smith <em>Optics of the "
+        "Human Eye</em>, " + VON_NOORDEN_FULL + " and " + EVANS_FULL + "."
+    ),
+    "topics": [
+        outline("01-the-eye-as-an-optical-system",
+                "Theoretical Optics: The Eye as an Optical System"),
+        outline("02-refractive-errors-and-correction",
+                "Optical Principles of Refractive Errors and Their Correction"),
+        outline("03-corneal-measurement-and-topography",
+                "Fundamentals of Corneal Measurement and Corneal Topography"),
+        outline("04-retinal-imaging-principles",
+                "Principles of Retinal Imaging and Their Application to the Eye"),
+        outline("05-accommodation", "Accommodation of the Eye"),
+        outline("06-binocular-vision-and-eye-movements",
+                "Binocular Vision and Eye Movements"),
+        outline("07-eye-movements-and-prisms",
+                "Eye Movements and the Use of Prisms"),
+        outline("08-accommodation-and-eye-movements",
+                "Relationship Between Accommodation and Eye Movements"),
+        outline("09-strabismus-and-its-types", "Strabismus and Its Types"),
+        outline("10-fixation-disparity",
+                "Measurement of Fixation Disparity and Eye Stability"),
+    ],
+}
+
+COURSES = [
+    OCULAR_DISEASES,
+    CONTACT_LENSES,
+    NEUROVISUAL_PERCEPTION,
+    OPTICAL_INSTRUMENTATION,
+    OPHTHALMIC_LENSES_DISPENSING,
+    VISUAL_OPTICS_BINOCULAR_VISION,
+]

@@ -2543,3 +2543,106 @@ a.course-card .course-card-footer {
 .courses-grid {
     grid-auto-rows: 1fr;
 }
+
+/* ==========================================================================
+   Resources page
+   ========================================================================== */
+
+.resource-routes,
+.resources-directory {
+    grid-column: 1 / -1;
+    margin-bottom: 8px;
+}
+
+.resource-routes h2,
+.resources-directory h2 {
+    font-size: 21px;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.resource-lede {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    max-width: 68ch;
+}
+
+.route-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.route-card {
+    display: block;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--surface);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.18s ease;
+}
+
+.route-card:hover {
+    border-color: var(--primary-color);
+}
+
+.route-card i {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.route-card h3 {
+    font-size: 16.5px;
+    margin-bottom: 6px;
+}
+
+.route-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Region header is a button now, so reset the browser's styling. */
+button.region-header {
+    width: 100%;
+    background: none;
+    border: none;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* Link through to a curriculum we actually hold. */
+.uni-curriculum {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.uni-curriculum::after {
+    content: " \2192";
+}
+
+.uni-curriculum:hover {
+    text-decoration: underline;
+}
+
+.resource-footnote {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.resource-footnote a {
+    color: var(--primary-color);
+}

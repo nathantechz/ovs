@@ -240,6 +240,120 @@ def render_course_index(course, courses):
 """
 
 
+
+def render_programme_index(courses):
+    """Landing page for the whole diploma, linking each course."""
+    cards = []
+    total_topics = 0
+    total_written = 0
+
+    for course in courses:
+        written = sum(1 for t in course["topics"]
+                      if t.get("sections") or t.get("external"))
+        total = len(course["topics"])
+        total_topics += total
+        total_written += written
+
+        hours = sum(t.get("hours") or 0 for t in course["topics"])
+        state = ("all topics written" if written == total
+                 else f"{written} of {total} written" if written
+                 else "not started")
+        cls = "done" if written == total else ("part" if written else "todo")
+
+        cards.append(f"""
+        <a class="course-tile {cls}" href="{course['slug']}/index.html">
+            <h3>{esc(course['name'])}</h3>
+            <p>{course['summary']}</p>
+            <div class="tile-meta">
+                <span>{total} topics</span>
+                {f'<span>{hours} contact hours</span>' if hours else ''}
+                <span class="state">{state}</span>
+            </div>
+        </a>""")
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diploma in Optometry — University of Bisha</title>
+<link rel="stylesheet" href="../notes.css">
+<style>
+.wrap {{ max-width: 900px; margin: 0 auto; padding: 36px 24px 80px; }}
+.tiles {{ display: grid; gap: 16px;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }}
+.course-tile {{ display: block; padding: 20px; border: 1px solid var(--border);
+                border-radius: 10px; background: var(--surface);
+                text-decoration: none; color: inherit;
+                transition: border-color .18s ease; }}
+.course-tile:hover {{ border-color: var(--primary); }}
+.course-tile h3 {{ margin: 0 0 8px; font-size: 17px; }}
+.course-tile p {{ font-size: 14px; color: var(--text-muted); line-height: 1.5;
+                  margin-bottom: 14px; }}
+.tile-meta {{ display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; }}
+.tile-meta span {{ padding: 3px 9px; border-radius: 999px;
+                   border: 1px solid var(--border); color: var(--text-muted); }}
+.tile-meta .state {{ font-weight: 650; }}
+.course-tile.done .state {{ background: #e8f8f0; border-color: #b6e6cd; color: #00794a; }}
+.course-tile.part .state {{ background: #fff7e6; border-color: #f5d9a0; color: #92610a; }}
+.summary-row {{ display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 32px; }}
+.summary-row div {{ border: 1px solid var(--border); border-radius: 8px;
+                    padding: 10px 16px; background: var(--surface); }}
+.summary-row b {{ display: block; font-size: 21px; color: var(--primary); }}
+.summary-row span {{ font-size: 12.5px; color: var(--text-muted); }}
+</style>
+</head>
+<body>
+
+<nav class="note-nav">
+    <div class="note-nav-inner">
+        <a class="note-return" href="../../index.html#/">&larr; Optometry Learning Hub</a>
+        <span class="course-tag">University of Bisha</span>
+    </div>
+</nav>
+
+<div class="wrap">
+    <div class="note-eyebrow">Saudi Arabia &middot; 2-year programme</div>
+    <h1>Diploma in Optometry</h1>
+    <p class="note-summary">
+        Study notes for the six courses of the University of Bisha optometry
+        diploma. Every concept is cited to the textbook page it came from, and
+        each topic is mapped to a World Council of Optometry competency category.
+    </p>
+
+    <div class="summary-row">
+        <div><b>{len(courses)}</b><span>courses</span></div>
+        <div><b>{total_topics}</b><span>topics</span></div>
+        <div><b>{total_written}</b><span>notes written</span></div>
+    </div>
+
+    <div class="tiles">{''.join(cards)}</div>
+
+    <h2>How these notes are built</h2>
+    <p>
+        Source pages are located in the textbook, read, and turned into notes &mdash;
+        nothing is written from memory. Citations name the book, edition and the
+        printed page a reader would turn to. Where a textbook predates current
+        practice, that sits in a separate section marked as such rather than being
+        presented as textbook content. Illustrations are drawn rather than copied,
+        since the textbook figures are copyrighted; notes cite the figure number so
+        the original can be found.
+    </p>
+
+    <p class="note-summary" style="font-size:14.5px;">
+        See also the
+        <a href="../../programmes.html">Programmes &amp; Levels</a> page for the full
+        syllabus, and the
+        <a href="../../curriculum-map.html">Curriculum Map</a> for how these courses
+        line up against other institutions.
+    </p>
+</div>
+
+</body>
+</html>
+"""
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--course", help="build only this course")
@@ -278,6 +392,12 @@ def main():
             render_course_index(course, COURSES))
 
         print(f"{course['name']}: {len(written)}/{total} topics -> {course_dir}")
+
+    if not args.course:
+        programme_index = os.path.join(OUT_DIR, "index.html")
+        open(programme_index, "w", encoding="utf-8").write(
+            render_programme_index(COURSES))
+        print(f"programme index -> {programme_index}")
 
     print(f"\n{built} note pages written")
     return 0
