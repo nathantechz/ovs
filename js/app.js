@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupEventListeners();
     setupContactForm();
     renderFeaturedCourses();
+    renderStats();
     renderCategoriesFilter();
     renderResources();
     renderCourses();
@@ -122,15 +123,13 @@ function showPage(pageName) {
 
 // Make the static home cards act as real links.
 function setupCardLinks() {
-    const featureTargets = ['#/courses', '#/resources', '#/materials', '#/courses'];
+    const featureTargets = ['#/courses', 'programmes.html', 'curriculum-map.html'];
     document.querySelectorAll('.features .feature-card').forEach((card, i) => {
-        makeCardNavigate(card, featureTargets[i] || '#/courses');
+        if (featureTargets[i]) makeCardNavigate(card, featureTargets[i]);
     });
 
-    const statTargets = ['#/materials', '#/resources', '#/resources', '#/courses'];
-    document.querySelectorAll('.stats .stat-card').forEach((card, i) => {
-        makeCardNavigate(card, statTargets[i] || '#/courses');
-    });
+    // Stat cards are rendered as anchors by renderStats(), so they need no
+    // click handler of their own.
 }
 
 function makeCardNavigate(card, hash) {
@@ -146,6 +145,42 @@ function makeCardNavigate(card, hash) {
             go();
         }
     });
+}
+
+// Home page counts, derived from the data so they cannot go stale. The markup
+// previously hardcoded "150+ Lecture Notes" and "25+ Universities" against an
+// actual 545 and 56.
+function renderStats() {
+    const container = document.getElementById('statsRow');
+    if (!container) return;
+
+    let materialCount = 0;
+    if (typeof availableMaterials !== 'undefined') {
+        for (const course of Object.values(availableMaterials)) {
+            for (const group of ['readings', 'notes', 'lectures', 'practicals']) {
+                materialCount += (course[group] || []).length;
+            }
+        }
+    }
+
+    const universityCount = typeof getTotalUniversitiesCount === 'function'
+        ? getTotalUniversitiesCount() : 0;
+    const countryCount = typeof getAllUniversities === 'function'
+        ? new Set(getAllUniversities().map(u => u.country).filter(Boolean)).size : 0;
+
+    const stats = [
+        { value: coursesData.length, label: 'Courses', href: '#/courses' },
+        { value: materialCount, label: 'Study materials', href: '#/materials' },
+        { value: universityCount, label: 'Universities', href: '#/resources' },
+        { value: countryCount, label: 'Countries', href: '#/resources' }
+    ].filter(stat => stat.value > 0);
+
+    container.innerHTML = stats.map(stat => `
+        <a class="stat-card" href="${stat.href}">
+            <h3>${stat.value}</h3>
+            <p>${stat.label}</p>
+        </a>
+    `).join('');
 }
 
 // Setup event listeners
@@ -197,6 +232,11 @@ function handleContactFormSubmit(e) {
 
     // Get form data
     const formData = new FormData(form);
+    const name = (formData.get('name') || '').trim();
+    const email = (formData.get('email') || '').trim();
+    const subject = (formData.get('subject') || '').trim();
+    const message = (formData.get('message') || '').trim();
+    const category = (formData.get('category') || 'General').trim();
 
     // Show loading state
     submitBtn.disabled = true;
@@ -214,7 +254,7 @@ function handleContactFormSubmit(e) {
         if (response.ok) {
             // Success
             formMessage.className = 'form-message success';
-            formMessage.textContent = '✓ Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+            formMessage.innerHTML = '<i class="fas fa-check-circle"></i> <strong>Thank you!</strong> Your message has been sent successfully. We\'ll get back to you soon.';
             formMessage.style.display = 'block';
             form.reset();
             submitBtn.disabled = false;
@@ -222,19 +262,30 @@ function handleContactFormSubmit(e) {
 
             // Track submission
             trackUserBehavior('contact_form_submit', {
-                subject: formData.get('subject'),
-                category: formData.get('category')
+                subject: subject,
+                category: category
             });
         } else {
-            throw new Error('Form submission failed');
+            throw new Error('Form service response error');
         }
     })
     .catch(error => {
+        // The contact address is deliberately not published anywhere in this
+        // page, so the fallback cannot be a mailto: link. Ask the reader to
+        // retry instead; the form is the only route and it keeps the address
+        // on the form service, not in the markup.
         formMessage.className = 'form-message error';
-        formMessage.textContent = '✗ Something went wrong. Please try again in a moment.';
+        formMessage.innerHTML = `
+            <div style="text-align: left; line-height: 1.5;">
+                <strong><i class="fas fa-exclamation-circle"></i> Message not sent.</strong>
+                The form service could not be reached &mdash; this is usually a
+                browser privacy extension, an ad-blocker or a network restriction.
+                Please disable blockers for this page and try again.
+            </div>
+        `;
         formMessage.style.display = 'block';
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Try Again';
     });
 }
 

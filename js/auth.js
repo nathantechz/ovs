@@ -11,6 +11,9 @@ function getSessionId() {
 }
 
 // Track user behavior (page views, downloads, etc.)
+// Set to a collector URL to enable server-side event tracking.
+const TRACKING_ENDPOINT = null;
+
 function trackUserBehavior(action, details = {}) {
     const event = {
         timestamp: new Date().toISOString(),
@@ -28,10 +31,13 @@ function trackUserBehavior(action, details = {}) {
         });
     }
 
-    // Also send to server if backend is available
-    if (navigator.sendBeacon) {
+    // There is no backend. The site is served as static files from GitHub
+    // Pages, so this beacon POSTed to /api/track on every page view and every
+    // visitor logged a failed request in the console. Analytics go to gtag
+    // above; if a collector is added later, set TRACKING_ENDPOINT to its URL.
+    if (TRACKING_ENDPOINT && navigator.sendBeacon) {
         try {
-            navigator.sendBeacon('/api/track', JSON.stringify(event));
+            navigator.sendBeacon(TRACKING_ENDPOINT, JSON.stringify(event));
         } catch (e) {
             // Fail silently
         }

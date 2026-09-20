@@ -2325,3 +2325,221 @@ a.course-card:hover {
     border-color: var(--primary-color);
     background-color: var(--primary-light);
 }
+
+/* ==========================================================================
+   Minimal pass
+   --------------------------------------------------------------------------
+   The cards led with a 120px blue gradient panel and a 48px icon. Since most
+   courses share an icon, every card looked the same and the content started
+   halfway down. These rules move the emphasis to the title and description,
+   replace shadows with hairline borders, and flatten the palette so the only
+   saturated colour on a page is a link or a live state.
+   ========================================================================== */
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: var(--surface);
+    transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.course-card:hover {
+    transform: none;
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+/* Title row: small inline icon, no coloured panel. */
+.course-card-header {
+    background: none;
+    color: inherit;
+    padding: 18px 18px 0;
+    min-height: 0;
+    display: block;
+    text-align: left;
+}
+
+.course-card-header i {
+    font-size: 15px;
+    margin: 0 8px 0 0;
+    color: var(--primary-color);
+    vertical-align: baseline;
+}
+
+.course-card-title {
+    display: inline;
+    font-size: 16.5px;
+    font-weight: 650;
+    color: var(--text-primary);
+    line-height: 1.35;
+}
+
+.course-card-body {
+    padding: 10px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.course-card-desc {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 14px;
+}
+
+/* Footer sits at the bottom so cards in a row align. */
+.course-card-footer {
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    gap: 14px;
+}
+
+/* Badges: quiet by default, colour only where it carries meaning. */
+.course-badge {
+    background-color: var(--background);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 3px 10px;
+}
+
+.course-badge-country {
+    background-color: var(--background);
+    color: var(--text-secondary);
+}
+
+.course-badge-ready {
+    background-color: #e8f8f0;
+    border-color: #b6e6cd;
+    color: #00794a;
+}
+
+/* Stat cards are anchors now. */
+.stats .stat-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: none;
+    transition: border-color 0.18s ease;
+}
+
+.stats .stat-card:hover {
+    border-color: var(--primary-color);
+    transform: none;
+    box-shadow: none;
+}
+
+.stats .stat-card h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+    letter-spacing: -0.02em;
+}
+
+.stats .stat-card p {
+    color: var(--text-secondary);
+    font-size: 13.5px;
+}
+
+/* Feature cards match. */
+.feature-card {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.feature-card:hover {
+    border-color: var(--primary-color);
+    transform: none;
+    box-shadow: none;
+}
+
+.feature-card i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+/* Hero: a quiet band rather than a saturated gradient. */
+.hero {
+    background: none;
+    background-color: var(--surface);
+    border: 1px solid var(--border-color);
+    padding: 48px 24px;
+    margin-bottom: 48px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    letter-spacing: -0.025em;
+}
+
+.hero .subtitle {
+    font-size: 16.5px;
+    max-width: 62ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section headings: smaller, so cards carry the page. */
+.featured-courses h2,
+.features h2 {
+    font-size: 21px;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+}
+
+/* Page headers */
+.page-header h1 {
+    letter-spacing: -0.025em;
+}
+
+/* Navbar: lighter, no shadow. */
+.navbar {
+    box-shadow: none;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.nav-menu {
+    gap: 22px;
+}
+
+.nav-link {
+    font-size: 14.5px;
+}
+
+/* Materials and region cards lose their drop shadows too. */
+.materials-section,
+.region-card,
+.textbook-card,
+.info-card {
+    box-shadow: none;
+    border: 1px solid var(--border-color);
+}
+
+/* The anchor rule above (a.course-card) is more specific than .course-card and
+   was resetting the card to display:block, which stopped the body from
+   stretching and left the footer floating mid-card. Restate it on the anchor. */
+a.course-card {
+    display: flex;
+    flex-direction: column;
+}
+
+a.course-card .course-card-footer {
+    margin-top: auto;
+}
+
+/* Cards left alone on the final row stretched to their own content height,
+   which read as a broken grid. Give every row the same track height. */
+.course-grid,
+.courses-grid {
+    grid-auto-rows: 1fr;
+}
